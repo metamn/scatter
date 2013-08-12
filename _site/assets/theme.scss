@@ -56,6 +56,7 @@ body {
               @include block;
               margin-top: $minor;
               
+              
               h1 {
                 color: $background;
               }
@@ -65,8 +66,9 @@ body {
               @include block;
               
               input[type='submit'] {
-                font-variant: small-caps;
-                font-size: large;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: $pad/8;
                 padding: $pad;
               }
               
