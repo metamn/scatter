@@ -1,0 +1,40 @@
+
+/* Set all parents to full height */
+html, body, .container, #content, #content section {
+  height: 100%;
+}
+
+
+body {
+  .container {
+  
+    #header {
+      @include block;
+      
+      hgroup {
+        width: $major;
+        margin-left: $margin;
+        
+        position: fixed;
+        z-index: 1;
+        
+        bottom: $pad;
+      }
+    }
+  
+    /* background-attachment does the trick */
+    #content {
+      section {
+        position: relative;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    }
+  }
+}
+
+
+
+
