@@ -1,16 +1,41 @@
 
 
-$background: #000;
-$color: #f1f1f1;
+$background: #F0EFEB;
+$color: #363636;
+
+$red: #FF4637;
+$blue: #77C8F5;
 
 
 body {
+  background: $background;
   color: $color;
   
+  a {
+    @include link-colors($red);
+    text-decoration: none;
+  }
   
   .container {
     #header {
-      
+      hgroup {
+        h1 {
+          text-transform: uppercase;
+          font-weight: bold;
+          
+          span:nth-of-type(1) {
+            border: 2px solid;
+            @include border-radius($pad/4);
+            padding: $pad/12 $pad/3 $pad/8;
+            
+            margin-right: $pad/4;
+          }
+          
+          span:nth-of-type(2) {
+            letter-spacing: $pad/2;
+          }
+        }
+      }
     }
     
     #content {
