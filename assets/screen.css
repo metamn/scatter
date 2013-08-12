@@ -91,21 +91,27 @@ html, body, .container, #content, #content section { height: 100%; }
 
 body .container { /* background-attachment does the trick */ }
 body .container #header { width: 100%; float: left; }
-body .container #header h1 { width: 61.804%; margin-left: 19.098%; position: fixed; z-index: 1; bottom: 1.25em; }
+body .container #header h1 { width: 61.804%; margin-left: 19.098%; position: fixed; z-index: 1; bottom: 1.25em; padding-bottom: 0; }
 body .container #content section { position: relative; background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 body .container #content section article { width: 61.804%; margin-left: 19.098%; }
 
 body { background: #f0efeb; color: #363636; }
-body a { color: #ff4637; text-decoration: none; }
+body .container a { color: #ff4637; text-decoration: none; }
+body .container form input[type="submit"] { background: #363636; color: #f0efeb; }
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
 body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter.png); }
-body .container #content section#intro article header { width: 100%; float: left; }
+body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
+body .container #content section#intro article header h1 { color: #f0efeb; }
 body .container #content section#intro article form { width: 100%; float: left; }
-body .container #content section#intro article nav { width: 100%; float: left; width: 61.804%; }
+body .container #content section#intro article form input[type='submit'] { font-variant: small-caps; font-size: large; padding: 1.25em; }
+body .container #content section#intro article form a { background: #ff4637; color: #f0efeb; font-weight: 400; padding: 0.625em; padding-bottom: 0.9375em; }
+body .container #content section#intro article nav { width: 100%; float: left; width: 61.804%; display: none; position: absolute; top: 19.098%; left: 30.902%; }
 body .container #content section#intro article nav ul { display: block; margin: 0; }
 body .container #content section#intro article nav ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
 body .container #content section#intro article nav ul li.last { margin-right: 0; }
+body .container #content section#intro article nav ul li { display: none; }
+body .container #content section#intro article nav ul li:nth-child(1) { display: block; }
 body .container #content section#intro article nav ul li figure img { width: 19.098%; margin-right: 9.549%; float: left; }
 body .container #content section#intro article nav ul li figure figcaption { width: 71.353%; float: left; }
 body .container #content section#intro article nav ul li figure figcaption p { margin-bottom: 1.25em; }

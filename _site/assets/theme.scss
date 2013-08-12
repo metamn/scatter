@@ -11,12 +11,22 @@ body {
   background: $background;
   color: $color;
   
-  a {
-    @include link-colors($red);
-    text-decoration: none;
-  }
   
   .container {
+  
+    a {
+      @include link-colors($red);
+      text-decoration: none;
+    }
+    
+    form {
+      input[type="submit"] {
+        background: $color;
+        color: $background;
+      }
+    }
+  
+  
     #header {
       h1 {
         text-transform: uppercase;
@@ -44,20 +54,50 @@ body {
           article {
             header {
               @include block;
+              margin-top: $minor;
+              
+              h1 {
+                color: $background;
+              }
             }
             
             form {
               @include block;
+              
+              input[type='submit'] {
+                font-variant: small-caps;
+                font-size: large;
+                padding: $pad;
+              }
+              
+              a {
+                background: $red;
+                color: $background;
+                font-weight: 400;
+                
+                padding: $pad/2;
+                padding-bottom: $pad/2 + $pad/4;
+              }
             }
             
             nav {
               @include block;
               width: $major;
               
+              display: none;
+              
+              position: absolute;
+              top: $minor/2;
+              left: $major/2;
+              
               ul {
                 @include list-inline;
                 
                 li {
+                  display: none;
+                  &:nth-child(1) {
+                    display: block;
+                  }
                   figure {
                     img {
                       width: $minor / 2;
