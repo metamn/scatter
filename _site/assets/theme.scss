@@ -39,6 +39,8 @@ body {
       section {
       
         &#intro {
+          background-image: url(/assets/smartphone-with-scatter.png);
+          
           article {
             header {
               @include block;
