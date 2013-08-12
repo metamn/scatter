@@ -11,7 +11,7 @@ body {
     #header {
       @include block;
       
-      hgroup {
+      h1 {
         width: $major;
         margin-left: $margin;
         
@@ -30,6 +30,11 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        
+        article {
+          width: $major;
+          margin-left: $margin;
+        }
       }
     }
   }

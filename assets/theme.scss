@@ -18,22 +18,19 @@ body {
   
   .container {
     #header {
-      hgroup {
-        h1 {
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: $pad/2;
+      h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: $pad/2;
+        
+        &:first-letter {
+          border: 2px solid;
+          @include border-radius($pad/4);
           
-          &:first-letter {
-            border: 2px solid;
-            @include border-radius($pad/4);
-            
-            padding: $pad/12 $pad/3 $pad/8; /* S is aligned left */
-            /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */
-            
-            margin-right: $pad/4;
-          }
+          padding: $pad/12 $pad/3 $pad/8; /* S is aligned left */
+          /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */
           
+          margin-right: $pad/4;
         }
       }
     }
@@ -41,6 +38,45 @@ body {
     #content {
       section {
       
+        &#intro {
+          article {
+            header {
+              @include block;
+            }
+            
+            form {
+              @include block;
+            }
+            
+            nav {
+              @include block;
+              width: $major;
+              
+              ul {
+                @include list-inline;
+                
+                li {
+                  figure {
+                    img {
+                      width: $minor / 2;
+                      margin-right: $margin / 2;
+                      float: left;
+                    }
+                    
+                    figcaption {
+                      width: $major + $minor / 2 - $margin / 2;
+                      float: left;
+                      
+                      p {
+                        margin-bottom: $pad;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
