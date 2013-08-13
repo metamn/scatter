@@ -49,7 +49,7 @@ body {
       section {
       
         &#intro {
-          background-image: url(/assets/smartphone-with-scatter.png);
+          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -83,8 +83,12 @@ body {
               
               a:last-of-type {
                 display: inline-block;
-                margin-top: $pad*6;
+                margin-top: $pad*3;
                 color: $color;
+                
+                @include big-screen {
+                  margin-top: $pad*5;
+                }
                 
                 &:hover {
                   border-bottom: 1px solid $red;
@@ -92,50 +96,14 @@ body {
               }
             }
             
-            aside {
-              @include block;
-              width: $major;
-              
-              display: none;
-              
-              position: absolute;
-              top: $minor/2;
-              left: $major/2;
-              
-              ul {
-                @include list-inline;
-                
-                li {
-                  display: none;
-                  &:nth-child(1) {
-                    display: block;
-                  }
-                  figure {
-                    img {
-                      width: $minor / 2;
-                      margin-right: $margin / 2;
-                      float: left;
-                    }
-                    
-                    figcaption {
-                      width: $major + $minor / 2 - $margin / 2;
-                      float: left;
-                      
-                      p {
-                        margin-bottom: $pad;
-                      }
-                    }
-                  }
-                }
-              }
-            }
+            
           }
         }
         
         
         
         &#features {
-          background-image: url(/assets/tablet-with-scatter.png);
+          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
           
           article {
             form {
@@ -159,10 +127,10 @@ body {
                   opacity: .9;
                   margin-bottom: $pad/4;
                   
-                  display: inline-block;
-                  padding: $pad;
-                  
                   font-weight: 400;
+                  
+                  display: inline-block;
+                  padding: $pad/2;
                 }
                 
                 span:last-of-type {
@@ -173,15 +141,80 @@ body {
                     content: '\2192';
                     
                     position: relative;
-                    left: -$pad;
+                    left: -$pad/2;
                   }
                 }
+                
+                @include big-screen {
+                  span {
+                    padding: $pad;
+                  
+                    &:last-of-type {
+                      &:before {
+                        left: -$pad;
+                      }
+                    }
+                  }
+                }
+                
               }
             }
             
             aside {
               display: none;
             }
+          }
+        }
+        
+        
+        &#testimonials {
+          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          
+          article {
+            figure {
+              @include block;
+              margin: $pad 0;
+              
+              img {
+                max-width: $pad*5;
+                margin-right: $pad;
+                float: left;
+              }
+              
+              ul {
+                list-style: none;
+                float: left;
+              } 
+              
+              figcaption {
+                margin-top: $pad;
+                width: $minor;
+                float: left;
+                
+                background: $color;
+                color: $background;
+                opacity: .9;
+                padding: $pad;
+              }
+            }
+            
+            form {
+              @include block;
+              margin-top: $pad;
+              
+              @include big-screen {
+                margin-top: $pad*10;
+              }
+              
+              a {
+                color: $color;
+                
+                &:hover {
+                  border-bottom: 1px solid $red;
+                }
+              }
+            }
+            
           }
         }
         

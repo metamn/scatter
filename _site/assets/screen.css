@@ -94,36 +94,40 @@ body .container #header { width: 100%; float: left; }
 body .container #header h1 { width: 61.804%; margin-left: 19.098%; position: fixed; z-index: 1; bottom: 1.25em; padding-bottom: 0; }
 body .container #content section { position: relative; background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 body .container #content section article { width: 61.804%; margin-left: 19.098%; }
+body .container #content section#features article { width: 80.902%; }
 
 body { background: #f0efeb; color: #363636; }
 body .container a { color: #ff4637; text-decoration: none; }
 body .container form input[type="submit"] { background: #363636; color: #f0efeb; }
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
-body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter.png); }
+body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 body .container #content section#intro article form { width: 100%; float: left; }
 body .container #content section#intro article form input[type='submit'] { text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; }
 body .container #content section#intro article form a:first-of-type { background: #ff4637; color: #f0efeb; font-weight: 400; padding: 0.625em; padding-bottom: 0.9375em; }
-body .container #content section#intro article form a:last-of-type { display: inline-block; margin-top: 7.5em; color: #363636; }
+body .container #content section#intro article form a:last-of-type { display: inline-block; margin-top: 3.75em; color: #363636; }
+@media only screen and (min-width: 1401px) { body .container #content section#intro article form a:last-of-type { margin-top: 6.25em; } }
 body .container #content section#intro article form a:last-of-type:hover { border-bottom: 1px solid #ff4637; }
-body .container #content section#intro article aside { width: 100%; float: left; width: 61.804%; display: none; position: absolute; top: 19.098%; left: 30.902%; }
-body .container #content section#intro article aside ul { display: block; margin: 0; }
-body .container #content section#intro article aside ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
-body .container #content section#intro article aside ul li.last { margin-right: 0; }
-body .container #content section#intro article aside ul li { display: none; }
-body .container #content section#intro article aside ul li:nth-child(1) { display: block; }
-body .container #content section#intro article aside ul li figure img { width: 19.098%; margin-right: 9.549%; float: left; }
-body .container #content section#intro article aside ul li figure figcaption { width: 71.353%; float: left; }
-body .container #content section#intro article aside ul li figure figcaption p { margin-bottom: 1.25em; }
-body .container #content section#features { background-image: url(/assets/tablet-with-scatter.png); }
+body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); }
 body .container #content section#features article form a:hover { border-bottom: 1px solid #363636; }
 body .container #content section#features article ul { list-style: none; margin: 0; padding-top: 38.196%; }
-body .container #content section#features article ul li span { background: #77c8f5; opacity: .9; margin-bottom: 0.3125em; display: inline-block; padding: 1.25em; font-weight: 400; }
+body .container #content section#features article ul li span { background: #77c8f5; opacity: .9; margin-bottom: 0.3125em; font-weight: 400; display: inline-block; padding: 0.625em; }
 body .container #content section#features article ul li span:last-of-type { background: #ff4637; color: #f0efeb; }
-body .container #content section#features article ul li span:last-of-type:before { content: '\2192'; position: relative; left: -1.25em; }
+body .container #content section#features article ul li span:last-of-type:before { content: '\2192'; position: relative; left: -0.625em; }
+@media only screen and (min-width: 1401px) { body .container #content section#features article ul li span { padding: 1.25em; }
+  body .container #content section#features article ul li span:last-of-type:before { left: -1.25em; } }
 body .container #content section#features article aside { display: none; }
+body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); }
+body .container #content section#testimonials article figure { width: 100%; float: left; margin: 1.25em 0; }
+body .container #content section#testimonials article figure img { max-width: 6.25em; margin-right: 1.25em; float: left; }
+body .container #content section#testimonials article figure ul { list-style: none; float: left; }
+body .container #content section#testimonials article figure figcaption { margin-top: 1.25em; width: 38.196%; float: left; background: #363636; color: #f0efeb; opacity: .9; padding: 1.25em; }
+body .container #content section#testimonials article form { width: 100%; float: left; margin-top: 1.25em; }
+@media only screen and (min-width: 1401px) { body .container #content section#testimonials article form { margin-top: 12.5em; } }
+body .container #content section#testimonials article form a { color: #363636; }
+body .container #content section#testimonials article form a:hover { border-bottom: 1px solid #ff4637; }
 
 .outline { display: none; }
 

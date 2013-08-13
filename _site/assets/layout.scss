@@ -36,6 +36,12 @@ body {
           width: $major;
           margin-left: $margin;
         }
+        
+        &#features {
+          article {
+            width: $major + $minor - $margin;
+          }
+        }
       }
     }
   }
