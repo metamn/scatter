@@ -7,6 +7,28 @@ $red: #FF4637;
 $blue: #77C8F5;
 
 
+
+
+@mixin button {
+  background: $color;        
+  color: $background;      
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: $pad/8;
+  padding: $pad;
+}
+
+@mixin link($type : normal) {
+  @if $type == normal {
+    color: $color;
+    border-bottom: 1px solid $red;
+  }
+}
+
+
+
+
+
 body {
   background: $background;
   color: $color;
@@ -21,8 +43,7 @@ body {
     
     form {
       input[type="submit"] {
-        background: $color;
-        color: $background;
+        @include button
       }
     }
   
@@ -49,13 +70,12 @@ body {
       section {
       
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
               @include block;
               margin-top: $minor;
-              
               
               h1 {
                 color: $background;
@@ -65,13 +85,7 @@ body {
             form {
               @include block;
               
-              input[type='submit'] {
-                text-transform: uppercase;
-                font-weight: 700;
-                letter-spacing: $pad/8;
-                padding: $pad;
-              }
-              
+              /* Enter now */
               a:first-of-type {
                 background: $red;
                 color: $background;
@@ -81,18 +95,17 @@ body {
                 padding-bottom: $pad/2 + $pad/4;
               }
               
+              /* I'm a business */
               a:last-of-type {
+                @include link(normal);
+                
                 display: inline-block;
                 margin-top: $pad*3;
-                color: $color;
                 
                 @include big-screen {
                   margin-top: $pad*5;
                 }
                 
-                &:hover {
-                  border-bottom: 1px solid $red;
-                }
               }
             }
             
@@ -103,14 +116,12 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+          background-image: url(/assets/tablet-with-scatter.png);
           
           article {
             form {
               a {
-                &:hover {
-                  border-bottom: 1px solid $color;
-                }
+                @include link(normal);
               }
             }
             
@@ -163,12 +174,46 @@ body {
             aside {
               display: none;
             }
+            
+            nav {
+              position: absolute;
+              bottom: $pad;
+              right: $pad;
+              float: right;
+              
+              cursor: pointer;
+              
+              h3 {
+                text-align: right;
+                visibility: hidden;
+                padding: 0;
+                font-variant: small-caps;
+                
+                &:after {
+                  content: '\2794';
+                  
+                  @include rotate(90deg);
+                  display: inline-block;
+                  
+                  font-size: larger;
+                  padding-left: $pad/2;
+                  
+                  visibility: visible;
+                }
+                
+                &:hover {
+                  visibility: visible;
+                }
+              }
+            }
           }
         }
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          @include hidden;
+          
+          background-image: url(/assets/laptop-with-scatter.png);
           
           article {
             figure {
@@ -207,14 +252,14 @@ body {
               }
               
               a {
-                color: $color;
-                
-                &:hover {
-                  border-bottom: 1px solid $red;
-                }
+                @include link(normal);
               }
             }
             
+          }
+          
+          &.active {
+            display: block;
           }
         }
         

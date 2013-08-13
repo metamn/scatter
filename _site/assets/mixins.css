@@ -7,9 +7,9 @@
   .desktop { display: none !important; } }
 @media only screen and (min-width: 381px) { .mobile { display: none; }
   .desktop { display: block; } }
-/* General mixins
-*/
 /* Site specific mixins
+*/
+/* General mixins
 */
 /* list, inline 
 */

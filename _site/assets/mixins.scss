@@ -96,6 +96,12 @@ $breakpoint-a4-height: 1122.51px !default;
 
 
 
+/* Site specific mixins
+*/
+
+
+
+
 
 
 
@@ -109,16 +115,8 @@ $breakpoint-a4-height: 1122.51px !default;
 }
 
 
-
-
-/* Site specific mixins
-*/
-
-
-@mixin list($c: $color) {
-  li {
-    border-bottom: 1px solid $c;
-  }
+@mixin hidden {
+  display: none;
 }
 
 
@@ -127,15 +125,17 @@ $breakpoint-a4-height: 1122.51px !default;
 @mixin list-inline {
   display: block;
   margin: 0;
+  
   li {
     display: inline-block;
     list-style-type: none;
     margin-left: 0;
     float: left;
     margin-right: $pad;
-  }
-  li.last {
-    margin-right: 0;
+    
+    &.last {
+      margin-right: 0;
+    }
   }
 }
 

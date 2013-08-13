@@ -1,3 +1,3 @@
-.outline { display: none; }
+.outline, .hidden { display: none; }
 
 img { max-width: 100%; }
