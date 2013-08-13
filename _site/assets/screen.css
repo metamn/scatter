@@ -105,7 +105,9 @@ body .container #content section#intro article header { width: 100%; float: left
 body .container #content section#intro article header h1 { color: #f0efeb; }
 body .container #content section#intro article form { width: 100%; float: left; }
 body .container #content section#intro article form input[type='submit'] { text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; }
-body .container #content section#intro article form a { background: #ff4637; color: #f0efeb; font-weight: 400; padding: 0.625em; padding-bottom: 0.9375em; }
+body .container #content section#intro article form a:first-of-type { background: #ff4637; color: #f0efeb; font-weight: 400; padding: 0.625em; padding-bottom: 0.9375em; }
+body .container #content section#intro article form a:last-of-type { display: inline-block; margin-top: 2.5em; font-weight: 400; font-style: italic; color: #363636; }
+body .container #content section#intro article form a:last-of-type:hover { border-bottom: 1px solid #ff4637; }
 body .container #content section#intro article nav { width: 100%; float: left; width: 61.804%; display: none; position: absolute; top: 19.098%; left: 30.902%; }
 body .container #content section#intro article nav ul { display: block; margin: 0; }
 body .container #content section#intro article nav ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
