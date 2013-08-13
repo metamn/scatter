@@ -187,7 +187,9 @@ body {
                 text-align: right;
                 visibility: hidden;
                 padding: 0;
+                
                 font-variant: small-caps;
+                font-size: 100%;
                 
                 &:after {
                   content: '\2794';
@@ -195,7 +197,7 @@ body {
                   @include rotate(90deg);
                   display: inline-block;
                   
-                  font-size: larger;
+                  font-size: 200%;
                   padding-left: $pad/2;
                   
                   visibility: visible;
