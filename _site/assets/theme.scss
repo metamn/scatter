@@ -49,7 +49,7 @@ body {
       section {
       
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -83,11 +83,7 @@ body {
               
               a:last-of-type {
                 display: inline-block;
-                margin-top: $pad*2;
-                
-                font-weight: 400;
-                font-style: italic;
-                
+                margin-top: $pad*6;
                 color: $color;
                 
                 &:hover {
@@ -96,7 +92,7 @@ body {
               }
             }
             
-            nav {
+            aside {
               @include block;
               width: $major;
               
@@ -135,6 +131,61 @@ body {
             }
           }
         }
+        
+        
+        
+        &#features {
+          background-image: url(/assets/tablet-with-scatter.png);
+          
+          article {
+            form {
+              a {
+                &:hover {
+                  border-bottom: 1px solid $color;
+                }
+              }
+            }
+            
+            
+            ul {
+              list-style: none;
+              margin: 0;
+              padding-top: $minor;
+              
+              li {
+                
+                span {
+                  background: $blue;
+                  opacity: .9;
+                  margin-bottom: $pad/4;
+                  
+                  display: inline-block;
+                  padding: $pad;
+                  
+                  font-weight: 400;
+                }
+                
+                span:last-of-type {
+                  background: $red;
+                  color: $background;
+                  
+                  &:before {
+                    content: '\2192';
+                    
+                    position: relative;
+                    left: -$pad;
+                  }
+                }
+              }
+            }
+            
+            aside {
+              display: none;
+            }
+          }
+        }
+        
+        
       }
     }
   }
