@@ -1,34 +1,37 @@
 $(document).ready(function() {
 
 
-  // Hover on a feature
-  $('#features ul li').hover(
+  // Hover on a bubble feature
+  $('#features aside div').hover(
     function () {
-      var content = $(this).children('span').last().html();
       var index = $(this).index() + 1;
+      $("#features ul li:nth-child(" + index + ") span").last().show('slow');
       
-      changeContent($("#features aside div:nth-child(" + index + ")"), content);
+      $("#features ul li:nth-child(" + index + ")").addClass('active');
+      $(this).addClass('active');
     },
     function () {
-      var content = $(this).children('span').last().html();
-      var index = $(this).index() + 1;
+      $(this).removeClass('active');
       
-      restoreContent($("#features aside div:nth-child(" + index + ")"));
+      var index = $(this).index() + 1;
+      $("#features ul li:nth-child(" + index + ")").removeClass('active');
     }
   );
   
-  
-  function changeContent(div, content) {
-    div.children().hide();
-    if (!(div.children('p').length > 0)) {
-      div.append('<p>' + content + '</p>');
+
+  // Hover on a blue feature
+  $('#features ul li').hover(
+    function () {
+      var index = $(this).index() + 1;
+      $("#features aside div:nth-child(" + index + ")").addClass('active');
+      $(this).children('span').last().show('slow');
+    },
+    function () {
+      var index = $(this).index() + 1;
+      $("#features aside div:nth-child(" + index + ")").removeClass('active');
     }
-  }
-  
-  function restoreContent(div) {
-    div.children('p').remove();
-    div.children().show();
-  }
+  );
+ 
   
   
   

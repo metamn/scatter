@@ -111,13 +111,15 @@ body .container #content section#intro article form a:last-of-type { color: #363
 @media only screen and (min-width: 1401px) { body .container #content section#intro article form a:last-of-type { margin-top: 6.25em; } }
 body .container #content section#features { background-image: url(/assets/tablet-with-scatter.png); }
 body .container #content section#features article aside { position: absolute; top: 7.5em; }
-body .container #content section#features article aside div { display: inline-block; background: #f2c7c4; border: 0.625em solid #f0efeb; padding: 1.25em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; position: relative; top: 0px; left: 0px; max-width: 19.098%; opacity: .2; }
-body .container #content section#features article ul { list-style: none; margin: 0; padding-top: 38.196%; width: 38.196%; float: left; }
-body .container #content section#features article ul li span { cursor: pointer; background: #77c8f5; opacity: .9; margin-bottom: 0.3125em; font-weight: 400; display: inline-block; padding: 0.625em; }
-body .container #content section#features article ul li span:last-of-type { display: none; }
-body .container #content section#features article ul li span:nth-of-type(2):after { content: '\2794'; color: #ff4637; margin-left: 0.3125em; }
+body .container #content section#features article aside div { display: inline-block; cursor: pointer; background: #f2c7c4; border: 0.625em solid #f0efeb; padding: 1.25em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; position: relative; top: 0px; left: 0px; max-width: 19.098%; opacity: .2; }
+body .container #content section#features article aside div.active { border-color: #77c8f5; background: #77c8f5; }
+body .container #content section#features article ul { list-style: none; margin: 0; padding-top: 38.196%; float: left; }
+body .container #content section#features article ul li span { cursor: pointer; background: #ff4637; color: #f0efeb; opacity: .9; margin-bottom: 0.3125em; font-weight: 400; display: inline-block; padding: 0.625em; }
+body .container #content section#features article ul li span:nth-of-type(2):after { content: '\2794'; margin-left: 0.3125em; }
+body .container #content section#features article ul li span:nth-of-type(3) { background: #77c8f5; color: #363636; display: none; }
+body .container #content section#features article ul li.active span { color: #363636; }
 @media only screen and (min-width: 1401px) { body .container #content section#features article ul li span { padding: 1.25em; } }
-body .container #content section#features article form a { color: #363636; border-bottom: 1px solid #ff4637; }
+body .container #content section#features article form { margin-top: 1.25em; }
 body .container #content section#features article nav { position: absolute; bottom: 1.25em; right: 1.25em; float: right; cursor: pointer; }
 body .container #content section#features article nav h3 { text-align: right; padding: 0; font-variant: small-caps; font-size: 100%; }
 body .container #content section#features article nav h3:after { content: '\2794'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-size: 200%; padding-left: 0.625em; visibility: visible; }
