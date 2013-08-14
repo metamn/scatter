@@ -5,6 +5,7 @@ $color: #363636;
 
 $red: #FF4637;
 $blue: #77C8F5;
+$lightred: #F2C7C4;
 
 
 
@@ -72,6 +73,8 @@ body {
         &#intro {
           background-image: url(/assets/smartphone-with-scatter.png);
           
+          display: none;
+          
           article {
             header {
               @include block;
@@ -126,21 +129,43 @@ body {
           background-image: url(/assets/tablet-with-scatter.png);
           
           article {
-            form {
-              a {
-                @include link(normal);
+          
+            
+            aside {
+              position: absolute;
+              top: $pad*6;
+              
+              div {
+                display: inline-block;
+                
+                background: $lightred;
+                border: $pad/2 solid $background;
+                padding: $pad;
+                @include border-radius($pad);
+                
+                position: relative;
+                top: 0px;
+                left: 0px;
+                max-width: $minor/2;
+                
+                opacity: .2;
               }
+              
             }
             
             
             ul {
               list-style: none;
               margin: 0;
+              
               padding-top: $minor;
+              width: $minor;
+              float: left;
               
               li {
-                
                 span {
+                  cursor: pointer;
+                  
                   background: $blue;
                   opacity: .9;
                   margin-bottom: $pad/4;
@@ -149,38 +174,36 @@ body {
                   
                   display: inline-block;
                   padding: $pad/2;
-                }
-                
-                span:last-of-type {
-                  background: $red;
-                  color: $background;
                   
-                  &:before {
-                    content: '\2192';
-                    
-                    position: relative;
-                    left: -$pad/2;
+                  &:last-of-type {
+                    display: none;
+                  }
+                  
+                  &:nth-of-type(2) {
+                    &:after {
+                      content: '\2794';
+                      color: $red;
+                      margin-left: $pad/4;
+                    }
                   }
                 }
+                
                 
                 @include big-screen {
                   span {
                     padding: $pad;
-                  
-                    &:last-of-type {
-                      &:before {
-                        left: -$pad;
-                      }
-                    }
                   }
                 }
                 
               }
             }
             
-            aside {
-              display: none;
+            form {
+              a {
+                @include link;
+              }
             }
+            
             
             nav {
               position: absolute;
@@ -192,7 +215,6 @@ body {
               
               h3 {
                 text-align: right;
-                visibility: hidden;
                 padding: 0;
                 
                 font-variant: small-caps;
@@ -210,9 +232,6 @@ body {
                   visibility: visible;
                 }
                 
-                &:hover {
-                  visibility: visible;
-                }
               }
             }
           }
