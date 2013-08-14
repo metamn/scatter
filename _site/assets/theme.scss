@@ -71,9 +71,8 @@ body {
       section {
       
         &#intro {
-          background-image: url(/assets/smartphone-with-scatter.png);
+          background-image: url(url: http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
           
-          display: none;
           
           article {
             header {
@@ -126,9 +125,8 @@ body {
         
         
         &#features {
-          background-image: url(/assets/tablet-with-scatter.png);
+          background-image: url(url: http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
           
-          display: none;
           
           article {
           
@@ -201,16 +199,12 @@ body {
               li {
                 span {
                   cursor: pointer;
-                  
                   background: $red;
-                  
                   margin-bottom: $pad/4;
-                  
                   font-weight: 300;
                   
                   display: inline-block;
                   padding: $pad/2;
-                  
                   
                   &:nth-of-type(2) {
                     &:after {
@@ -283,34 +277,46 @@ body {
         
         &#testimonials {
           
-          background-image: url(/assets/laptop-with-scatter.png);
+          background-image: url(url: http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
           
           article {
-            figure {
+            ul {
               @include block;
-              margin: $pad 0;
+              margin: $pad*2 0 $pad;
+              list-style: none;
               
-              img {
-                max-width: $pad*5;
-                margin-right: $pad;
-                float: left;
-              }
-              
-              ul {
-                list-style: none;
-                float: left;
-              } 
-              
-              figcaption {
-                margin-top: $pad;
-                width: $minor;
-                float: left;
-                
+              li {
+                margin-bottom: $pad;
+                @include block;
+                  
                 background: $color;
                 color: $background;
                 opacity: .9;
-                padding: $pad;
+                
+                @include big-screen {
+                  max-width: $major;
+                }
+                
+                img {
+                  max-width: $pad*5;
+                  float: left;
+                  margin-right: $pad;
+                }
+                
+                p {
+                  padding: $pad;
+                  padding-bottom: 0;
+                  
+                  &:nth-of-type(2) {
+                    font-size: small;
+                  }
+                }
+                
+                p + p {
+                  margin-top: 0;
+                }
               }
+              
             }
             
             form {
