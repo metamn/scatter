@@ -44,7 +44,7 @@ $(document).ready(function() {
     
     switch(index) {
       case 0:
-        var top = "+=100";
+        var top = "+=50";
         var left = "+=50";
         break;
       case 1:
@@ -53,7 +53,7 @@ $(document).ready(function() {
         break;
        case 2:
         var top = "+=30";
-        var left = "+=5";
+        var left = "+=100";
         break;
     }
     

@@ -71,8 +71,9 @@ body {
       section {
       
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
+          display: none;
           
           article {
             header {
@@ -125,7 +126,9 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+          background-image: url(/assets/tablet-with-scatter.png);
+          
+          display: none;
           
           article {
           
@@ -134,26 +137,54 @@ body {
               top: $pad*6;
               
               div {
-                display: inline-block;
-                
                 cursor: pointer;
+                font-weight: 300;
                 
-                background: $lightred;
-                border: $pad/2 solid $background;
+                background: $blue;
                 padding: $pad;
                 @include border-radius($pad);
                 
+                display: inline-block;
                 position: relative;
-                top: 0px;
-                left: 0px;
+                top: 0em;
+                left: 0em;
                 max-width: $minor/2;
                 
-                opacity: .2;
                 
                 &.active {
-                  border-color: $blue;
-                  background: $blue;
+                  font-weight: 400;
+                  transition: all 0.25s ease-out 0s
                 }
+                
+                
+                p {
+                  font-size: smaller;
+                  border-bottom: 1px dashed;
+                  padding-bottom: $pad/2;
+                  text-align: center;
+                  
+                  &:nth-of-type(2) {
+                    display: block;
+                    border-bottom: none;
+                    font-size: small;
+                    
+                    &:before {
+                      content: url(http://scatteralpha.appspot.com/images/mapicon.png);
+
+                      position: relative;
+                      top: $pad/4;
+                    }
+                  }
+                }
+                
+                p + p {
+                  margin-top: $pad/2;
+                }
+                
+                @include big-screen {
+                  padding: $pad + $pad/2;
+                }
+                
               }
               
             }
@@ -166,17 +197,16 @@ body {
               padding-top: $minor;
               float: left;
               
+              
               li {
                 span {
                   cursor: pointer;
                   
                   background: $red;
-                  color: $background;
                   
-                  opacity: .9;
                   margin-bottom: $pad/4;
                   
-                  font-weight: 400;
+                  font-weight: 300;
                   
                   display: inline-block;
                   padding: $pad/2;
@@ -197,9 +227,10 @@ body {
                   }
                 }
                 
-                &.active {
+                &.active, &:hover {
                   span {
-                    color: $color;
+                    font-weight: 400;
+                    transition: all 0.25s ease-out 0s
                   }
                 }
                 
@@ -251,9 +282,8 @@ body {
         
         
         &#testimonials {
-          @include hidden;
           
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           article {
             figure {
