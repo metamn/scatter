@@ -101,14 +101,15 @@ body .container a { color: #ff4637; text-decoration: none; }
 body .container form input[type="submit"] { background: #363636; color: #f0efeb; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; }
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
-body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); }
+body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter.png); }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 body .container #content section#intro article form { width: 100%; float: left; /* Enter now */ /* I'm a business */ }
-body .container #content section#intro article form a:first-of-type { background: #ff4637; color: #f0efeb; font-weight: 400; padding: 0.625em; padding-bottom: 0.9375em; }
+body .container #content section#intro article form a:first-of-type { background: #ff4637; color: #f0efeb; font-weight: 400; font-style: italic; padding: 0.625em; padding-bottom: 0.9375em; }
+body .container #content section#intro article form a:first-of-type:after { content: '\2794'; margin-left: 0.3125em; }
 body .container #content section#intro article form a:last-of-type { color: #363636; border-bottom: 1px solid #ff4637; display: inline-block; margin-top: 3.75em; }
 @media only screen and (min-width: 1401px) { body .container #content section#intro article form a:last-of-type { margin-top: 6.25em; } }
-body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); }
+body .container #content section#features { background-image: url(/assets/tablet-with-scatter.png); }
 body .container #content section#features article form a { color: #363636; border-bottom: 1px solid #ff4637; }
 body .container #content section#features article ul { list-style: none; margin: 0; padding-top: 38.196%; }
 body .container #content section#features article ul li span { background: #77c8f5; opacity: .9; margin-bottom: 0.3125em; font-weight: 400; display: inline-block; padding: 0.625em; }
@@ -121,7 +122,7 @@ body .container #content section#features article nav { position: absolute; bott
 body .container #content section#features article nav h3 { text-align: right; visibility: hidden; padding: 0; font-variant: small-caps; font-size: 100%; }
 body .container #content section#features article nav h3:after { content: '\2794'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-size: 200%; padding-left: 0.625em; visibility: visible; }
 body .container #content section#features article nav h3:hover { visibility: visible; }
-body .container #content section#testimonials { display: none; background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); }
+body .container #content section#testimonials { display: none; background-image: url(/assets/laptop-with-scatter.png); }
 body .container #content section#testimonials article figure { width: 100%; float: left; margin: 1.25em 0; }
 body .container #content section#testimonials article figure img { max-width: 6.25em; margin-right: 1.25em; float: left; }
 body .container #content section#testimonials article figure ul { list-style: none; float: left; }
