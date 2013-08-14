@@ -128,7 +128,7 @@ body .container #content section#features article form { margin-top: 1.25em; }
 body .container #content section#features article nav { position: absolute; bottom: 1.25em; right: 1.25em; float: right; cursor: pointer; }
 body .container #content section#features article nav h3 { text-align: right; padding: 0; font-variant: small-caps; font-size: 100%; }
 body .container #content section#features article nav h3:after { content: '\2794'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-size: 200%; padding-left: 0.625em; visibility: visible; }
-body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); }
+body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); display: none; }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 2.5em 0 1.25em; list-style: none; }
 body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; background: #363636; color: #f0efeb; opacity: .9; }
 @media only screen and (min-width: 1401px) { body .container #content section#testimonials article ul li { max-width: 61.804%; } }
