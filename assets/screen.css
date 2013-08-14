@@ -101,7 +101,7 @@ body .container a { color: #ff4637; text-decoration: none; }
 body .container form input[type="submit"] { background: #363636; color: #f0efeb; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; }
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
-body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); display: none; }
+body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 body .container #content section#intro article form { width: 100%; float: left; /* Enter now */ /* I'm a business */ }
