@@ -9,14 +9,56 @@ $lightred: #F2C7C4;
 
 
 
+@mixin active {
+  @include shadow;
+  font-weight: 400;
+  
+  transition: all 0.25s ease-out 0.15s;
+}
 
-@mixin button {
+
+@mixin shadow {
+  @include box-shadow(
+    1px 0px #3a587f, 0px 1px #4171ae,
+    2px 1px #3a587f, 1px 2px #4171ae,
+    3px 2px #3a587f, 2px 3px #4171ae,
+    4px 3px #3a587f, 3px 4px #4171ae,
+    5px 4px #3a587f, 4px 5px #4171ae
+  );
+  
+  &:hover, &:focus,
+  &.hover, &.focus {
+    transform: translate(2px, 2px);
+    @include box-shadow( 
+      1px 0px #3a587f, 0px 1px #4171ae,
+      2px 1px #3a587f, 1px 2px #4171ae,
+      3px 2px #3a587f, 2px 3px #4171ae,
+      4px 3px #3a587f, 3px 4px #4171ae
+    );
+  }
+  
+  &:active,
+  &.active {
+   	transform: translate(4px, 4px);
+    @include box-shadow( 
+      1px 0px #3a587f, 0px 1px #4171ae,
+      2px 1px #3a587f, 1px 2px #4171ae
+    );
+  }
+}
+
+
+@mixin button($background, $color) {
   background: $color;        
-  color: $background;      
+  color: $background;    
+    
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: $pad/8;
   padding: $pad;
+  margin-right: $pad;
+  
+  @include shadow;
 }
 
 @mixin link($type : normal) {
@@ -44,7 +86,7 @@ body {
     
     form {
       input[type="submit"] {
-        @include button
+        @include button($background, $color)
       }
     }
   
@@ -71,7 +113,7 @@ body {
       section {
       
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -87,24 +129,13 @@ body {
               @include block;
               
               /* Enter now */
-              a:first-of-type {
-                background: $red;
-                color: $background;
+              input:last-of-type {
+                @include button($background, $red);
                 
-                font-weight: 400;
-                font-style: italic;
-                
-                padding: $pad/2;
-                padding-bottom: $pad/2 + $pad/4;
-                
-                &:after {
-                  content: '\2794';
-                  margin-left: $pad/4;
-                }
               }
               
               /* I'm a business */
-              a:last-of-type {
+              a:first-of-type {
                 @include link(normal);
                 
                 display: inline-block;
@@ -124,7 +155,7 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+          background-image: url(/assets/tablet-with-scatter.png);
           
           
           article {
@@ -149,8 +180,7 @@ body {
                 
                 
                 &.active {
-                  font-weight: 400;
-                  transition: all 0.25s ease-out 0s
+                  @include active;
                 }
                 
                 
@@ -222,8 +252,7 @@ body {
                 
                 &.active, &:hover {
                   span {
-                    font-weight: 400;
-                    transition: all 0.25s ease-out 0s
+                    @include active;
                   }
                 }
                 
@@ -275,7 +304,7 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           display: none;
           
@@ -292,6 +321,8 @@ body {
                 background: $color;
                 color: $background;
                 opacity: .9;
+                
+                font-weight: 400;
                 
                 @include big-screen {
                   max-width: $major;
@@ -315,6 +346,7 @@ body {
                 p + p {
                   margin-top: 0;
                 }
+              
               }
               
             }

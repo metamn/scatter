@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'link-colors'.
-        on line 41 of /home/cs/work/scatter/assets/theme.scss, in `link-colors'
-        from line 41 of /home/cs/work/scatter/assets/theme.scss
+        on line 83 of /home/cs/work/scatter/assets/theme.scss, in `link-colors'
+        from line 83 of /home/cs/work/scatter/assets/theme.scss
 
 Backtrace:
-/home/cs/work/scatter/assets/theme.scss:41:in `link-colors'
-/home/cs/work/scatter/assets/theme.scss:41
+/home/cs/work/scatter/assets/theme.scss:83:in `link-colors'
+/home/cs/work/scatter/assets/theme.scss:83
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -94,4 +94,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'link-colors'.\A         on line 41 of /home/cs/work/scatter/assets/theme.scss, in `link-colors'\A         from line 41 of /home/cs/work/scatter/assets/theme.scss"; }
+  content: "Syntax error: Undefined mixin 'link-colors'.\A         on line 83 of /home/cs/work/scatter/assets/theme.scss, in `link-colors'\A         from line 83 of /home/cs/work/scatter/assets/theme.scss"; }
