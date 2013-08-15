@@ -36,10 +36,11 @@ $(document).ready(function() {
   
   
 
-  // Animate features 
-  $('#features aside div').hide();
+  // Animate features
+  // Animate devices on the business page
+  $('#features aside div, .business article div').hide();
   
-  $('#features aside div').each(function(index) {
+  $('#features aside div, .business article div').each(function(index) {
     var div = $(this);
     
     switch(index) {

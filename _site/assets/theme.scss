@@ -387,7 +387,7 @@ body {
           
           input:last-of-type {
             @include button($background, $red);
-            margin-left: $major;
+            margin-left: $margin;
           }
         }
         
@@ -396,7 +396,108 @@ body {
           font-size: 200%;
         }
         
+        section {
         
+          div {
+            border: $pad/2 solid $lightred;
+            @include border-radius($pad);
+            
+            display: inline-block;
+            position: relative;
+            top: 0em;
+            left: 0em;
+            margin-top: $margin;
+            
+            &#desktop {
+              width: 15em;
+              height: 10em;
+            }
+            
+            &#mobile {
+              width: 3em;
+              height: 5em;
+            }
+            
+            &#tablet {
+              width: 5em;
+              height: 7em;
+            }
+            
+            &#roof {
+              position: relative;
+              top: -8em;
+              left: 12.8em;
+              
+              width: 0; 
+              height: 0; 
+              border-left: 7em solid transparent;
+              border-right: 7em solid transparent;
+              border-top: 7em solid transparent;
+              border-bottom: 7em solid $lightred;
+            }
+            
+            &#house {
+              width: 10em;
+              height: 15em;
+              
+              #door {
+                width: 2em;
+                height: 4em;
+                position: relative;
+                top: 7em;
+                left: 2em;
+              }
+            }
+          }
+          
+          &#slide-3 {
+            @include block;
+            
+            article {
+              width: 25%;
+              margin-right: 2.5%;
+              margin-left: 0;
+              float: left;
+              
+              div {
+                background: $lightred;
+                width: 10em;
+                height: 15em;
+              }
+              
+              &:nth-of-type(1) {
+                margin-left: $margin;
+              }
+              
+              &:nth-of-type(3) {
+                margin-right: 0;
+                
+                div {
+                  min-height: 15em;
+                  height: auto;
+                  
+                  background: transparent;
+                  border: none;
+                  
+                  ul {
+                    list-style: none;
+                    margin: 0;
+                    
+                    li {
+                      background: $lightred;
+                      border: $pad/2 solid $lightred;
+                      @include border-radius($pad);
+                      margin-bottom: $pad*2;
+                    }
+                  }
+                }
+              }
+              
+            }  
+          
+          }
+        
+        }
         
       }
     }
