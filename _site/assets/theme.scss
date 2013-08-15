@@ -385,9 +385,13 @@ body {
           
           width: $major;
           
-          input:last-of-type {
-            @include button($background, $red);
-            margin-left: $margin;
+          input {
+            margin-right: $pad*2;
+            
+            &:last-of-type {
+              @include button($background, $red);
+              margin-right: $pad*4;
+            }
           }
         }
         
