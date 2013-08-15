@@ -373,24 +373,23 @@ body {
       }
       
       
+      
+      
+      
       &.business {
       
         
         form {
           position: fixed;
           bottom: $pad*6;
-          left: $margin;
+          left: $minor;
           float: left;
           z-index: 1;
-          
           width: $major;
           
           input {
-            margin-right: $pad*2;
-            
             &:last-of-type {
               @include button($background, $red);
-              margin-right: $pad*4;
             }
           }
         }
@@ -402,6 +401,15 @@ body {
         
         section {
         
+          &#slide-1 div, 
+          &#slide-2 div#tablet {
+            background-image: url(/assets/scatter-clip.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          
+        
           div {
             border: $pad/2 solid $lightred;
             @include border-radius($pad);
@@ -411,6 +419,7 @@ body {
             top: 0em;
             left: 0em;
             margin-top: $margin;
+            
             
             &#desktop {
               width: 15em;
@@ -425,6 +434,7 @@ body {
             &#tablet {
               width: 5em;
               height: 7em;
+              left: 1em;
             }
             
             &#roof {
@@ -454,6 +464,63 @@ body {
             }
           }
           
+          &#slide-1 {
+            div {
+              &:after {
+                content: '\21B7';
+                font-size: 1000%;
+                color: $lightred;
+                display: inline-block;
+                position: relative;
+              }
+              
+              &:nth-of-type(1) {
+                &:after {
+                  @include transform(rotate(-90deg));
+                  top: -1.05em;
+                  left: 50%;
+                }
+              
+              }
+              
+              &:nth-of-type(2) {
+                &:after {
+                  @include transform(rotate(25deg));
+                  left: 75%;
+                  top: -.4em;
+                }
+              
+              }
+              
+              &:nth-of-type(3) {
+                &:after {
+                  @include transform(rotate(125deg));
+                  top: 40%;
+                  left: -.5em;
+                }
+              
+              }
+            }
+          }
+          
+          &#slide-2 {
+            #tablet {
+              &:after {
+                content: '\21E8';
+                font-size: 1000%;
+                color: $lightred;
+                display: inline-block;
+                position: relative;
+              }
+            }
+          
+            figure {
+              position: relative;
+              top: -30em;
+              left: 5em;
+            }
+          }
+          
           &#slide-3 {
             @include block;
             
@@ -467,10 +534,24 @@ body {
                 background: $lightred;
                 width: 10em;
                 height: 15em;
+                
+                position: relative;
+                top: -5em;
               }
               
               &:nth-of-type(1) {
                 margin-left: $margin;
+              }
+              
+              &:nth-of-type(1), 
+              &:nth-of-type(2) {
+                &:after {
+                  content: '\21E8';
+                  font-size: 1000%;
+                  color: $lightred;
+                  display: inline-block;
+                  position: relative;
+                }
               }
               
               &:nth-of-type(3) {
@@ -482,6 +563,8 @@ body {
                   
                   background: transparent;
                   border: none;
+                  
+                  top: 0;
                   
                   ul {
                     list-style: none;
