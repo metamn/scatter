@@ -65,6 +65,7 @@ $lightred: #F2C7C4;
   @if $type == normal {
     color: $color;
     border-bottom: 1px solid $red;
+    text-decoration: none;
   }
 }
 
@@ -80,13 +81,18 @@ body {
   .container {
   
     a {
-      @include link-colors($red);
+      color: $red;
       text-decoration: none;
     }
+    
     
     form {
       input[type="submit"] {
         @include button($background, $color)
+      }
+      
+      a {
+        @include link;
       }
     }
   
@@ -136,8 +142,6 @@ body {
               
               /* I'm a business */
               a:first-of-type {
-                @include link(normal);
-                
                 display: inline-block;
                 margin-top: $pad*3;
                 
@@ -157,9 +161,7 @@ body {
         &#features {
           background-image: url(/assets/tablet-with-scatter.png);
           
-          
           article {
-          
             aside {
               position: absolute;
               top: $pad*6;
@@ -358,10 +360,6 @@ body {
               @include big-screen {
                 margin-top: $pad*10;
               }
-              
-              a {
-                @include link(normal);
-              }
             }
             
           }
@@ -370,6 +368,34 @@ body {
             display: block;
           }
         }
+        
+        
+      }
+      
+      
+      &.business {
+      
+        
+        form {
+          position: fixed;
+          bottom: $pad*6;
+          left: $margin;
+          float: left;
+          z-index: 1;
+          
+          width: $major;
+          
+          input:last-of-type {
+            @include button($background, $red);
+            margin-left: $major;
+          }
+        }
+        
+        h1, h2, h3 {
+          font-weight: 300;
+          font-size: 200%;
+        }
+        
         
         
       }
