@@ -1,6 +1,22 @@
 $(document).ready(function() {
 
 
+  // Scrolling on the business page
+  
+  $('.business nav li').click(function() {
+    var index = $(this).index() + 1;
+    var slide = $('.business section:nth-child(' + index + ')');
+    $("html, body").animate({ scrollTop: slide.offset().top }, "slow");
+    
+    $('.business nav li').removeClass('active');
+    $(this).addClass('active');
+    
+    return false;
+  });
+  
+  
+  
+
   // Hover on a bubble feature
   $('#features aside div').hover(
     function () {

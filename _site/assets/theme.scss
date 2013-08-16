@@ -421,7 +421,7 @@ body {
           bottom: $pad + $pad/2;
           left: $major + 5%;
           float: left;
-          z-index: 1;
+          z-index: 2;
           width: $major;
           
           ul {
@@ -457,6 +457,10 @@ body {
         
         
         section {
+          
+          &.active {
+            display: block;
+          }
         
           article {
             @include block;
@@ -588,8 +592,8 @@ body {
             @include block;
             
             article {
-              width: 25%;
-              margin-right: 2.5%;
+              width: 30%;
+              margin-right: 5%;
               margin-left: 0;
               float: left;
               
@@ -602,9 +606,6 @@ body {
                 top: -5em;
               }
               
-              &:nth-of-type(1) {
-                margin-left: $margin;
-              }
               
               &:nth-of-type(1), 
               &:nth-of-type(2) {
