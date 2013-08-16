@@ -104,7 +104,7 @@ body .container form input[type="submit"]:active, body .container form input[typ
 body .container form a { color: #363636; border-bottom: 1px solid #ff4637; text-decoration: none; }
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
-body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter.png); }
+body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 body .container #content section#intro article form { width: 100%; float: left; /* Enter now */ /* I'm a business */ }
@@ -113,7 +113,7 @@ body .container #content section#intro article form input:last-of-type:hover, bo
 body .container #content section#intro article form input:last-of-type:active, body .container #content section#intro article form input:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 body .container #content section#intro article form a:first-of-type { display: inline-block; margin-top: 3.75em; }
 @media only screen and (min-width: 1401px) { body .container #content section#intro article form a:first-of-type { margin-top: 6.25em; } }
-body .container #content section#features { background-image: url(/assets/tablet-with-scatter.png); }
+body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); }
 body .container #content section#features article aside { position: absolute; top: 7.5em; }
 body .container #content section#features article aside div { cursor: pointer; font-weight: 300; background: #77c8f5; padding: 1.25em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; position: relative; top: 0em; left: 0em; max-width: 19.098%; }
 body .container #content section#features article aside div.active { -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; font-weight: 400; transition: all 0.25s ease-out 0.15s; }
@@ -137,7 +137,7 @@ body .container #content section#features article form { margin-top: 1.25em; }
 body .container #content section#features article nav { position: absolute; bottom: 1.25em; right: 1.25em; float: right; cursor: pointer; }
 body .container #content section#features article nav h3 { text-align: right; padding: 0; font-variant: small-caps; font-size: 100%; }
 body .container #content section#features article nav h3:after { content: '\2794'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-size: 200%; padding-left: 0.625em; visibility: visible; }
-body .container #content section#testimonials { background-image: url(/assets/laptop-with-scatter.png); display: none; }
+body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); display: none; }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 2.5em 0 1.25em; list-style: none; }
 body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; background: #363636; color: #f0efeb; opacity: .9; font-weight: 400; }
 @media only screen and (min-width: 1401px) { body .container #content section#testimonials article ul li { max-width: 61.804%; } }
