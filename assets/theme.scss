@@ -450,7 +450,11 @@ body {
         
         h1, h2, h3 {
           font-weight: 300;
-          font-size: 200%;
+          font-size: 150%;
+          
+          @include big-screen {
+            font-size: 200%;
+          }
         }
         
        
@@ -464,7 +468,9 @@ body {
         
           article {
             @include block;
-            margin-left: 0;
+            width: 90%;
+            margin: 0 auto;
+            
             text-align: center;
           } 
         
@@ -485,7 +491,7 @@ body {
             position: relative;
             top: 0em;
             left: 0em;
-            margin-top: $margin;
+            margin-top: $margin/2;
             
             
             &#desktop {
@@ -583,7 +589,7 @@ body {
           
             figure {
               position: relative;
-              top: -30em;
+              top: -20em;
               left: 5em;
             }
           }
