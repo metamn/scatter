@@ -5,7 +5,10 @@ $(document).ready(function() {
   $('#features aside div').hover(
     function () {
       var index = $(this).index() + 1;
-      $("#features ul li:nth-child(" + index + ") span").last().show('slow');
+      var content = $("#features ul li:nth-child(" + index + ") span").last().html();
+      
+      $("#features #highlight").html(content);
+      $("#features #highlight").fadeIn();
       
       $("#features ul li:nth-child(" + index + ")").addClass('active');
       $(this).addClass('active');
@@ -15,20 +18,26 @@ $(document).ready(function() {
       
       var index = $(this).index() + 1;
       $("#features ul li:nth-child(" + index + ")").removeClass('active');
+      
+      $("#features #highlight").fadeOut();
     }
   );
   
 
-  // Hover on a blue feature
+  // Hover on a feature title
   $('#features ul li').hover(
     function () {
       var index = $(this).index() + 1;
       $("#features aside div:nth-child(" + index + ")").addClass('active');
-      $(this).children('span').last().show('slow');
+      
+      var content = $("#features ul li:nth-child(" + index + ") span").last().html();
+      $("#features #highlight").html(content);
+      $("#features #highlight").fadeIn();
     },
     function () {
       var index = $(this).index() + 1;
       $("#features aside div:nth-child(" + index + ")").removeClass('active');
+      $("#features #highlight").fadeOut();
     }
   );
  

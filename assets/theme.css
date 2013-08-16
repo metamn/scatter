@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined variable: "$pad".
-        on line 57 of /home/cs/work/scatter/assets/theme.scss, in `button'
-        from line 92 of /home/cs/work/scatter/assets/theme.scss
+        on line 58 of /home/cs/work/scatter/assets/theme.scss, in `button'
+        from line 93 of /home/cs/work/scatter/assets/theme.scss
 
 Backtrace:
-/home/cs/work/scatter/assets/theme.scss:57:in `button'
-/home/cs/work/scatter/assets/theme.scss:92
+/home/cs/work/scatter/assets/theme.scss:58:in `button'
+/home/cs/work/scatter/assets/theme.scss:93
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/operation.rb:74:in `_perform'
@@ -117,4 +117,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$pad\".\A         on line 57 of /home/cs/work/scatter/assets/theme.scss, in `button'\A         from line 92 of /home/cs/work/scatter/assets/theme.scss"; }
+  content: "Syntax error: Undefined variable: \"$pad\".\A         on line 58 of /home/cs/work/scatter/assets/theme.scss, in `button'\A         from line 93 of /home/cs/work/scatter/assets/theme.scss"; }

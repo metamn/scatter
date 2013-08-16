@@ -6,6 +6,7 @@ $color: #363636;
 $red: #FF4637;
 $blue: #77C8F5;
 $lightred: #F2C7C4;
+$orange: #FF782A;
 
 
 
@@ -119,7 +120,7 @@ body {
       section {
       
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -159,7 +160,8 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+          background-image: url(/assets/tablet-with-scatter.png);
+          
           
           article {
             aside {
@@ -219,12 +221,33 @@ body {
             }
             
             
+            #highlight {
+              width: $minor/2;
+              float: left;
+              margin-top: $minor - 6%;
+              
+              background: $blue;
+              color: $background;
+              padding: $pad*2;
+              border: 1px dashed;
+              
+              text-align: center;
+              font-size: 200%;
+              
+              
+              @include border-radius($pad*1);
+              
+              display: none;
+            }
+            
+            
             ul {
               list-style: none;
               margin: 0;
               
               padding-top: $minor;
               float: left;
+              width: $minor;
               
               
               li {
@@ -306,7 +329,7 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           display: none;
           
@@ -339,9 +362,11 @@ body {
                 p {
                   padding: $pad;
                   padding-bottom: 0;
+                  color: $orange;
                   
                   &:nth-of-type(2) {
                     font-size: small;
+                    color: $background;
                   }
                 }
                 
@@ -403,7 +428,7 @@ body {
         
           &#slide-1 div, 
           &#slide-2 div#tablet {
-            background-image: url(http://metamn.github.io/scatter/assets/scatter-clip.png);
+            background-image: url(/assets/scatter-clip.png);
             background-position: top center;
             background-repeat: no-repeat;
             background-size: cover;
