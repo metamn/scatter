@@ -164,7 +164,7 @@ body.business .container #header nav ul li:after { content: ''; position: absolu
 body.business .container #header nav ul li:hover:after, body.business .container #header nav ul li.active:after { background: #77c8f5; }
 body.business .container #content h1, body.business .container #content h2, body.business .container #content h3 { font-weight: 300; font-size: 150%; }
 @media only screen and (min-width: 1401px) { body.business .container #content h1, body.business .container #content h2, body.business .container #content h3 { font-size: 200%; } }
-body.business .container #content section#slide-1 div, body.business .container #content section#slide-2 div#tablet { background-image: url(/assets/scatter-clip.png); background-position: top center; background-repeat: no-repeat; background-size: cover; }
+body.business .container #content section#slide-1 div, body.business .container #content section#slide-2 div#tablet { background-image: url(http://metamn.github.io/scatter/assets/scatter-clip.png); background-position: top center; background-repeat: no-repeat; background-size: cover; }
 body.business .container #content section div { border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; position: relative; top: 0em; left: -50px; margin-top: 9.549%; }
 body.business .container #content section div#desktop { width: 15em; height: 10em; }
 body.business .container #content section div#mobile { width: 3em; height: 5em; }

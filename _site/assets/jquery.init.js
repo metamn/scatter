@@ -62,7 +62,7 @@ $(document).ready(function() {
       arrow(div, speed, color);
     });
   }
-  borderColor($('.business #slide-1 div').first(), 500, '#77C8F5');
+  borderColor($('.business #slide-1 div').first(), 700, '#77C8F5');
   
   
   // Change arrow color
