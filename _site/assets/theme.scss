@@ -575,6 +575,18 @@ body.business {
               display: inline-block;
               position: relative;
             }
+            
+            &.highlight {
+              width: 7em;
+              height: 9em;
+              transition: all 1s ease;
+              
+              &:after {
+                font-size: 1500%;
+                color: $blue;
+                transition: all 1s ease;
+              }
+            }
           }
 
           figure {

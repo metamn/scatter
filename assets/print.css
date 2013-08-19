@@ -179,6 +179,8 @@ body.business .container #content section#slide-1 div:nth-of-type(3):after { -we
 body.business .container #content section#slide-1 div.highlight:after { color: #77c8f5; transition: all 1s ease; }
 body.business .container #content section#slide-2 #tablet { margin-right: 10em; }
 body.business .container #content section#slide-2 #tablet:after { content: '\21E8'; font-size: 1000%; color: #f2c7c4; display: inline-block; position: relative; }
+body.business .container #content section#slide-2 #tablet.highlight { width: 7em; height: 9em; transition: all 1s ease; }
+body.business .container #content section#slide-2 #tablet.highlight:after { font-size: 1500%; color: #77c8f5; transition: all 1s ease; }
 body.business .container #content section#slide-2 figure { position: relative; top: -20em; left: 5em; }
 body.business .container #content section#slide-3 article div:nth-of-type(1) { background: #f2c7c4; width: 10em; height: 15em; float: left; }
 body.business .container #content section#slide-3 article div:nth-of-type(1) h4 { font-size: larger; border-bottom: 1px dashed; padding: 1.25em 0; margin-bottom: 1.25em; }
