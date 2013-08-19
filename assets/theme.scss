@@ -474,8 +474,6 @@ body.business {
           left: -50px;
           margin-top: $margin/2;
           
-          cursor: pointer;
-          
           
           &#desktop {
             width: 15em;
@@ -534,7 +532,7 @@ body.business {
               &:after {
                 @include transform(rotate(-90deg));
                 top: -1.05em;
-                left: 39%;
+                left: 59%;
               }
             
             }
@@ -555,6 +553,13 @@ body.business {
                 left: -.5em;
               }
             
+            }
+            
+            &.highlight {
+              &:after {
+                color: $blue;
+                transition: all 1s ease;
+              }
             }
           }
         }

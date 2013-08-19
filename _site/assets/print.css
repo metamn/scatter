@@ -95,9 +95,8 @@ body .container #header h1 { width: 61.804%; margin-left: 19.098%; position: fix
 body .container #header form, body .container #header nav { display: none; }
 body .container #content section { position: relative; background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 body .container #content section article { width: 61.804%; margin-left: 19.098%; }
-body .container #content section#features article { width: 80.902%; }
 
-body.business .container #header { position: fixed; bottom: 2.5em; }
+body.business .container #header { position: fixed; bottom: 2.5em; z-index: 1; }
 body.business .container #header h1, body.business .container #header form, body.business .container #header nav { display: inline-block; width: auto; margin-right: 2.5em; position: relative; }
 body.business .container #header h1 { top: 0.3125em; }
 
@@ -166,7 +165,7 @@ body.business .container #header nav ul li:hover:after, body.business .container
 body.business .container #content h1, body.business .container #content h2, body.business .container #content h3 { font-weight: 300; font-size: 150%; }
 @media only screen and (min-width: 1401px) { body.business .container #content h1, body.business .container #content h2, body.business .container #content h3 { font-size: 200%; } }
 body.business .container #content section#slide-1 div, body.business .container #content section#slide-2 div#tablet { background-image: url(/assets/scatter-clip.png); background-position: top center; background-repeat: no-repeat; background-size: cover; }
-body.business .container #content section div { border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; position: relative; top: 0em; left: -50px; margin-top: 9.549%; cursor: pointer; }
+body.business .container #content section div { border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; position: relative; top: 0em; left: -50px; margin-top: 9.549%; }
 body.business .container #content section div#desktop { width: 15em; height: 10em; }
 body.business .container #content section div#mobile { width: 3em; height: 5em; }
 body.business .container #content section div#tablet { width: 5em; height: 7em; left: 0; }
@@ -174,9 +173,10 @@ body.business .container #content section div#roof { position: relative; top: -8
 body.business .container #content section div#house { width: 10em; height: 15em; }
 body.business .container #content section div#house #door { width: 2em; height: 4em; position: relative; top: 7em; left: 2em; }
 body.business .container #content section#slide-1 div:after { content: '\21B7'; font-size: 1000%; color: #f2c7c4; display: inline-block; position: relative; }
-body.business .container #content section#slide-1 div:nth-of-type(1):after { -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); top: -1.05em; left: 39%; }
+body.business .container #content section#slide-1 div:nth-of-type(1):after { -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); top: -1.05em; left: 59%; }
 body.business .container #content section#slide-1 div:nth-of-type(2):after { -webkit-transform: rotate(25deg); -moz-transform: rotate(25deg); -ms-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg); left: 75%; top: -.4em; }
 body.business .container #content section#slide-1 div:nth-of-type(3):after { -webkit-transform: rotate(125deg); -moz-transform: rotate(125deg); -ms-transform: rotate(125deg); -o-transform: rotate(125deg); transform: rotate(125deg); top: 40%; left: -.5em; }
+body.business .container #content section#slide-1 div.highlight:after { color: #77c8f5; transition: all 1s ease; }
 body.business .container #content section#slide-2 #tablet { margin-right: 10em; }
 body.business .container #content section#slide-2 #tablet:after { content: '\21E8'; font-size: 1000%; color: #f2c7c4; display: inline-block; position: relative; }
 body.business .container #content section#slide-2 figure { position: relative; top: -20em; left: 5em; }

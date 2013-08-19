@@ -1,83 +1,11 @@
 $(document).ready(function() {
 
-
-  // Scrolling on the business page
-  
-  $('.business nav li').click(function() {
-    var index = $(this).index() + 1;
-    
-    var slide = $('.business section:nth-child(' + index + ')');
-    $("html, body").animate({ scrollTop: slide.offset().top }, "slow");
-    
-    $('.business nav li').removeClass('active');
-    $(this).addClass('active');
-    
-    return false;
-  });
+  // Animations on the business page
   
   
-  
-  // Hover on a testimonial
-  
-  $('#testimonials ul li').hover(
-    function () {
-      $(this).addClass('animated pulse');
-    },
-    function () {
-      $(this).removeClass('animated pulse');
-    }
-  );
-  
-
-  // Hover on a bubble feature
-  
-  $('#features aside div').hover(
-    function () {
-      var index = $(this).index() + 1;
-      var content = $("#features ul li:nth-child(" + index + ") span").last().html();
-      
-      $("#features #highlight").html(content);
-      $("#features #highlight").addClass('animated rollIn');
-      
-      $("#features ul li:nth-child(" + index + ")").addClass('active');
-      $(this).addClass('active');
-    },
-    function () {
-      $(this).removeClass('active');
-      
-      var index = $(this).index() + 1;
-      $("#features ul li:nth-child(" + index + ")").removeClass('active');
-      
-      $("#features #highlight").removeClass('animated rollIn');
-    }
-  );
-  
-
-  // Hover on a feature title
-  
-  $('#features ul li').hover(
-    function () {
-      var index = $(this).index() + 1;
-      $("#features aside div:nth-child(" + index + ")").addClass('active');
-      
-      var content = $("#features ul li:nth-child(" + index + ") span").last().html();
-      $("#features #highlight").html(content);
-    },
-    function () {
-      var index = $(this).index() + 1;
-      $("#features aside div:nth-child(" + index + ")").removeClass('active');
-    }
-  );
- 
-  
-  
-  
-
-  // Animate features
-  // Animate devices on the business page
-  $('#features aside div, .business article div').hide();
-  
-  $('#features aside div, .business article div').each(function(index) {
+  // First slide
+  $('.business #slide-1 div').hide();
+  $('.business #slide-1 div').each(function(index) {
     var div = $(this);
     
     switch(index) {
@@ -98,6 +26,46 @@ $(document).ready(function() {
     fly(div, top, left);
   }); 
   
+  
+  // Change device border color
+  function borderColor(div, speed) {
+    var color = "#77C8F5";
+    
+    div.animate({
+      borderRightColor: color
+    }, speed, function() {
+      // Animation complete
+    });
+    
+    div.animate({
+      borderBottomColor: color
+    }, speed, function() {
+      // Animation complete
+    });
+    
+    div.animate({
+      borderLeftColor: color
+    }, speed, function() {
+      // Animation complete
+    });
+    
+    div.animate({
+      borderTopColor: color
+    }, speed, function() {
+      arrow(div, speed);
+    });
+  }
+  borderColor($('.business #slide-1 div').first(), 500, '+');
+  
+  
+  function arrow(div, speed) {
+    div.addClass('highlight', speed);
+    borderColor(div.next(), speed);
+  }
+  
+  
+  
+  // Fly in devices
   function fly(div, top, left) {
     div.show();
     
@@ -106,11 +74,31 @@ $(document).ready(function() {
       left: left,
       top: top
     }, 1000, function() {
-      // Animation complete.
+      // Animation complete
     });
   }
  
   
+  
+  
+  // Scrolling on the business page
+  
+  $('.business #header nav li').click(function() {
+    var index = $(this).index() + 1;
+    
+    var slide = $('.business section:nth-child(' + index + ')');
+    $("html, body").animate({ scrollTop: slide.offset().top }, "slow");
+    
+    $('.business #header nav li').removeClass('active');
+    $(this).addClass('active');
+    
+    return false;
+  });
+  
+  
+  
+  
+  // Scrolling on the frontpage
 
   // Scroll to features
   $('#intro form input').click(function() {

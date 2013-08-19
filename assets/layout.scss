@@ -40,11 +40,6 @@ body {
           margin-left: $margin;
         }
         
-        &#features {
-          article {
-            width: $major + $minor - $margin;
-          }
-        }
       }
     }
   }
@@ -56,6 +51,7 @@ body.business {
     #header {
       position: fixed;
       bottom: $pad*2;
+      z-index: 1;
       
       h1, form, nav {
         display: inline-block;
