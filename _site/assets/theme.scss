@@ -397,223 +397,197 @@ body {
       }
       
       
-      
-      
-      
-      &.business {
-      
-        
-        form {
-          position: fixed;
-          bottom: $pad;
-          left: $minor;
-          float: left;
-          z-index: 1;
-          width: $major;
-          
-          input {
-            &:last-of-type {
-              @include button($background, $red);
-            }
+    }
+  }
+}
+ 
+
+
+body.business {
+  .container {
+  
+    #header {
+      form {
+        input {
+          &:last-of-type {
+            @include button($background, $red);
           }
         }
-        
-        nav {
-          position: fixed;
-          bottom: $pad + $pad/2;
-          left: $major + 5%;
-          float: left;
-          z-index: 2;
-          width: $major;
+      }
+      
+      nav {
+        ul {
+          @include list-inline;
           
-          ul {
-            @include list-inline;
-            
-            li {
-              padding-right: $pad;
-              cursor: pointer;
-              
-              &:after {
-                content: '';
-                position: absolute;
-                width: 24px;
-                height: 24px;
-                border-radius: 50%;
-                border: 4px solid $blue;
-              }
-              
-              &:hover:after,
-              &.active:after {
-                background: $blue;
-              }
-            }
-          }
-        }
-        
-        h1, h2, h3 {
-          font-weight: 300;
-          font-size: 150%;
-          
-          @include big-screen {
-            font-size: 200%;
-          }
-        }
-        
-       
-        
-        
-        section {
-        
-          article {
-            @include block;
-            width: 90%;
-            margin: 0 auto;
-            
-            text-align: center;
-          } 
-        
-          &#slide-1 div, 
-          &#slide-2 div#tablet {
-            background-image: url(/assets/scatter-clip.png);
-            background-position: top center;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-          
-        
-          div {
-            border: $pad/2 solid $lightred;
-            @include border-radius($pad);
-            
-            display: inline-block;
-            position: relative;
-            top: 0em;
-            left: -50px;
-            margin-top: $margin/2;
-            
+          li {
+            padding-right: $pad;
             cursor: pointer;
             
-            
-            &#desktop {
-              width: 15em;
-              height: 10em;
+            &:after {
+              content: '';
+              position: absolute;
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              border: 4px solid $blue;
             }
             
-            &#mobile {
-              width: 3em;
-              height: 5em;
-            }
-            
-            &#tablet {
-              width: 5em;
-              height: 7em;
-              left: 0;
-            }
-            
-            &#roof {
-              position: relative;
-              top: -8em;
-              left: 10.2em;
-              
-              width: 0; 
-              height: 0; 
-              border-left: 7em solid transparent;
-              border-right: 7em solid transparent;
-              border-top: 7em solid transparent;
-              border-bottom: 7em solid $lightred;
-            }
-            
-            &#house {
-              width: 10em;
-              height: 15em;
-              
-              #door {
-                width: 2em;
-                height: 4em;
-                position: relative;
-                top: 7em;
-                left: 2em;
-              }
+            &:hover:after,
+            &.active:after {
+              background: $blue;
             }
           }
+        }
+      }
+    }
+      
+      
+    #content { 
+      
+      h1, h2, h3 {
+        font-weight: 300;
+        font-size: 150%;
+        
+        @include big-screen {
+          font-size: 200%;
+        }
+      }
+  
+      section {
+      
+        &#slide-1 div, 
+        &#slide-2 div#tablet {
+          background-image: url(/assets/scatter-clip.png);
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+
+        div {
+          border: $pad/2 solid $lightred;
+          @include border-radius($pad);
           
-          &#slide-1 {
+          display: inline-block;
+          position: relative;
+          top: 0em;
+          left: -50px;
+          margin-top: $margin/2;
+          
+          cursor: pointer;
+          
+          
+          &#desktop {
+            width: 15em;
+            height: 10em;
+          }
+          
+          &#mobile {
+            width: 3em;
+            height: 5em;
+          }
+          
+          &#tablet {
+            width: 5em;
+            height: 7em;
+            left: 0;
+          }
+          
+          &#roof {
+            position: relative;
+            top: -8em;
+            left: 10.2em;
+            
+            width: 0; 
+            height: 0; 
+            border-left: 7em solid transparent;
+            border-right: 7em solid transparent;
+            border-top: 7em solid transparent;
+            border-bottom: 7em solid $lightred;
+          }
+          
+          &#house {
+            width: 10em;
+            height: 15em;
+            
+            #door {
+              width: 2em;
+              height: 4em;
+              position: relative;
+              top: 7em;
+              left: 2em;
+            }
+          }
+        }
+
+        &#slide-1 {
+          div {
+            &:after {
+              content: '\21B7';
+              font-size: 1000%;
+              color: $lightred;
+              display: inline-block;
+              position: relative;
+            }
+            
+            &:nth-of-type(1) {
+              &:after {
+                @include transform(rotate(-90deg));
+                top: -1.05em;
+                left: 39%;
+              }
+            
+            }
+            
+            &:nth-of-type(2) {
+              &:after {
+                @include transform(rotate(25deg));
+                left: 75%;
+                top: -.4em;
+              }
+            
+            }
+            
+            &:nth-of-type(3) {
+              &:after {
+                @include transform(rotate(125deg));
+                top: 40%;
+                left: -.5em;
+              }
+            
+            }
+          }
+        }
+
+        &#slide-2 {
+          #tablet {
+            margin-right: 10em;
+            
+            &:after {
+              content: '\21E8';
+              font-size: 1000%;
+              color: $lightred;
+              display: inline-block;
+              position: relative;
+            }
+          }
+
+          figure {
+            position: relative;
+            top: -20em;
+            left: 5em;
+          }
+        }
+
+        &#slide-3 {
+          
+          article {
             div {
-              &:after {
-                content: '\21B7';
-                font-size: 1000%;
-                color: $lightred;
-                display: inline-block;
-                position: relative;
-              }
-              
               &:nth-of-type(1) {
-                &:after {
-                  @include transform(rotate(-90deg));
-                  top: -1.05em;
-                  left: 39%;
-                }
-              
-              }
-              
-              &:nth-of-type(2) {
-                &:after {
-                  @include transform(rotate(25deg));
-                  left: 75%;
-                  top: -.4em;
-                }
-              
-              }
-              
-              &:nth-of-type(3) {
-                &:after {
-                  @include transform(rotate(125deg));
-                  top: 40%;
-                  left: -.5em;
-                }
-              
-              }
-            }
-          }
-          
-          &#slide-2 {
-            #tablet {
-              margin-right: 10em;
-              
-              &:after {
-                content: '\21E8';
-                font-size: 1000%;
-                color: $lightred;
-                display: inline-block;
-                position: relative;
-              }
-            }
-          
-            figure {
-              position: relative;
-              top: -20em;
-              left: 5em;
-            }
-          }
-          
-          &#slide-3 {
-            @include block;
-            
-            @include big-screen {
-              width: 70%;
-              margin: 0 15%;
-            }
-            
-            article {
-              width: 25%;
-              margin-right: 5%;
-              margin-left: 5%;
-              float: left;
-              
-              div {
                 background: $lightred;
                 width: 10em;
                 height: 15em;
+                float: left;
                 
                 h4 {
                   font-size: larger;
@@ -622,11 +596,7 @@ body {
                   padding: $pad 0;
                   margin-bottom: $pad;
                 }
-              }
-              
-              
-              &:nth-of-type(1), 
-              &:nth-of-type(2) {
+                
                 &:after {
                   content: '\21E8';
                   font-size: 800%;
@@ -640,8 +610,8 @@ body {
                 }
               }
               
-              &:nth-of-type(3) {
-                margin-right: 0;
+              &:nth-of-type(2) {
+                border: none;
                 
                 ul {
                   list-style: none;
@@ -656,16 +626,10 @@ body {
                   }
                 }
               }
-              
-            }  
-          
-          }
-          
+            }
+          } 
         }
-        
-      }
-    }
-  }
+       }
+     }
+   }
 }
- 
-

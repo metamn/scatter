@@ -7,7 +7,6 @@ html, body, .container, #content, #content section {
 
 body {
   .container {
-  
     #header {
       @include block;
       
@@ -20,6 +19,10 @@ body {
         
         bottom: $pad;
         padding-bottom: 0;
+      }
+      
+      form, nav {
+        display: none;
       }
     }
   
@@ -43,6 +46,30 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+body.business {
+  .container {
+  
+    #header {
+      position: fixed;
+      bottom: $pad*2;
+      
+      h1, form, nav {
+        display: inline-block;
+        width: auto;
+        margin-right: $pad*2;
+        
+        position: relative;
+      }
+      
+      h1 {
+        top: $pad/4;
+      }
+      
+      
     }
   }
 }
