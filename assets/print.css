@@ -104,7 +104,7 @@ body .container form input[type="submit"]:active, body .container form input[typ
 body .container form a { color: #363636; border-bottom: 1px solid #ff4637; text-decoration: none; }
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
-body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); }
+body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter.png); }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 body .container #content section#intro article form { width: 100%; float: left; /* Enter now */ /* I'm a business */ }
@@ -113,7 +113,7 @@ body .container #content section#intro article form input:last-of-type:hover, bo
 body .container #content section#intro article form input:last-of-type:active, body .container #content section#intro article form input:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 body .container #content section#intro article form a:first-of-type { display: inline-block; margin-top: 3.75em; }
 @media only screen and (min-width: 1401px) { body .container #content section#intro article form a:first-of-type { margin-top: 6.25em; } }
-body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); }
+body .container #content section#features { background-image: url(/assets/tablet-with-scatter.png); }
 body .container #content section#features article aside { position: absolute; top: 7.5em; }
 body .container #content section#features article aside div { cursor: pointer; font-weight: 300; background: #77c8f5; padding: 1.25em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; position: relative; top: 0em; left: 0em; max-width: 19.098%; }
 body .container #content section#features article aside div.active { -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; font-weight: 400; transition: all 0.25s ease-out 0.15s; }
@@ -124,7 +124,7 @@ body .container #content section#features article aside div p:nth-of-type(2) { d
 body .container #content section#features article aside div p:nth-of-type(2):before { content: url(http://scatteralpha.appspot.com/images/mapicon.png); position: relative; top: 0.3125em; }
 body .container #content section#features article aside div p + p { margin-top: 0.625em; }
 @media only screen and (min-width: 1401px) { body .container #content section#features article aside div { padding: 1.875em; } }
-body .container #content section#features article #highlight { width: 19.098%; float: left; margin-top: 32.196%; background: #77c8f5; color: #f0efeb; padding: 2.5em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; text-align: center; font-size: 200%; display: none; }
+body .container #content section#features article #highlight { width: 19.098%; float: left; margin-top: 32.196%; background: #77c8f5; color: #f0efeb; padding: 2.5em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; text-align: center; font-size: 200%; }
 body .container #content section#features article ul { list-style: none; margin: 0; padding-top: 38.196%; float: left; width: 38.196%; }
 body .container #content section#features article ul li span { cursor: pointer; background: #ff4637; margin-bottom: 0.3125em; font-weight: 300; display: inline-block; padding: 0.625em; }
 body .container #content section#features article ul li span:nth-of-type(2):after { content: '\2794'; margin-left: 0.3125em; }
@@ -137,9 +137,9 @@ body .container #content section#features article form { margin-top: 1.25em; }
 body .container #content section#features article nav { position: absolute; bottom: 1.25em; right: 1.25em; float: right; cursor: pointer; }
 body .container #content section#features article nav h3 { text-align: right; padding: 0; font-variant: small-caps; font-size: 100%; }
 body .container #content section#features article nav h3:after { content: '\2794'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-size: 200%; padding-left: 0.625em; visibility: visible; }
-body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); display: none; }
+body .container #content section#testimonials { background-image: url(/assets/laptop-with-scatter.png); display: none; }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 2.5em 0 1.25em; list-style: none; }
-body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; background: #363636; color: #f0efeb; opacity: .9; font-weight: 400; }
+body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; background: #363636; color: #f0efeb; opacity: .9; font-weight: 400; cursor: pointer; }
 @media only screen and (min-width: 1401px) { body .container #content section#testimonials article ul li { max-width: 61.804%; } }
 body .container #content section#testimonials article ul li img { max-width: 6.25em; float: left; margin-right: 1.25em; }
 body .container #content section#testimonials article ul li p { padding: 1.25em; padding-bottom: 0; color: #ff782a; }
@@ -161,30 +161,32 @@ body .container #content.business nav ul li:after { content: ''; position: absol
 body .container #content.business nav ul li:hover:after, body .container #content.business nav ul li.active:after { background: #77c8f5; }
 body .container #content.business h1, body .container #content.business h2, body .container #content.business h3 { font-weight: 300; font-size: 150%; }
 @media only screen and (min-width: 1401px) { body .container #content.business h1, body .container #content.business h2, body .container #content.business h3 { font-size: 200%; } }
-body .container #content.business section.active { display: block; }
 body .container #content.business section article { width: 100%; float: left; width: 90%; margin: 0 auto; text-align: center; }
 body .container #content.business section#slide-1 div, body .container #content.business section#slide-2 div#tablet { background-image: url(/assets/scatter-clip.png); background-position: top center; background-repeat: no-repeat; background-size: cover; }
-body .container #content.business section div { border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; position: relative; top: 0em; left: 0em; margin-top: 9.549%; }
+body .container #content.business section div { border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; position: relative; top: 0em; left: -50px; margin-top: 9.549%; cursor: pointer; }
 body .container #content.business section div#desktop { width: 15em; height: 10em; }
 body .container #content.business section div#mobile { width: 3em; height: 5em; }
-body .container #content.business section div#tablet { width: 5em; height: 7em; left: 1em; }
-body .container #content.business section div#roof { position: relative; top: -8em; left: 12.8em; width: 0; height: 0; border-left: 7em solid transparent; border-right: 7em solid transparent; border-top: 7em solid transparent; border-bottom: 7em solid #f2c7c4; }
+body .container #content.business section div#tablet { width: 5em; height: 7em; left: 0; }
+body .container #content.business section div#roof { position: relative; top: -8em; left: 10.2em; width: 0; height: 0; border-left: 7em solid transparent; border-right: 7em solid transparent; border-top: 7em solid transparent; border-bottom: 7em solid #f2c7c4; }
 body .container #content.business section div#house { width: 10em; height: 15em; }
 body .container #content.business section div#house #door { width: 2em; height: 4em; position: relative; top: 7em; left: 2em; }
 body .container #content.business section#slide-1 div:after { content: '\21B7'; font-size: 1000%; color: #f2c7c4; display: inline-block; position: relative; }
-body .container #content.business section#slide-1 div:nth-of-type(1):after { -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); top: -1.05em; left: 50%; }
+body .container #content.business section#slide-1 div:nth-of-type(1):after { -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); top: -1.05em; left: 39%; }
 body .container #content.business section#slide-1 div:nth-of-type(2):after { -webkit-transform: rotate(25deg); -moz-transform: rotate(25deg); -ms-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg); left: 75%; top: -.4em; }
 body .container #content.business section#slide-1 div:nth-of-type(3):after { -webkit-transform: rotate(125deg); -moz-transform: rotate(125deg); -ms-transform: rotate(125deg); -o-transform: rotate(125deg); transform: rotate(125deg); top: 40%; left: -.5em; }
+body .container #content.business section#slide-2 #tablet { margin-right: 10em; }
 body .container #content.business section#slide-2 #tablet:after { content: '\21E8'; font-size: 1000%; color: #f2c7c4; display: inline-block; position: relative; }
 body .container #content.business section#slide-2 figure { position: relative; top: -20em; left: 5em; }
 body .container #content.business section#slide-3 { width: 100%; float: left; }
-body .container #content.business section#slide-3 article { width: 30%; margin-right: 5%; margin-left: 0; float: left; }
-body .container #content.business section#slide-3 article div { background: #f2c7c4; width: 10em; height: 15em; position: relative; top: -5em; }
-body .container #content.business section#slide-3 article:nth-of-type(1):after, body .container #content.business section#slide-3 article:nth-of-type(2):after { content: '\21E8'; font-size: 1000%; color: #f2c7c4; display: inline-block; position: relative; }
+@media only screen and (min-width: 1401px) { body .container #content.business section#slide-3 { width: 70%; margin: 0 15%; } }
+body .container #content.business section#slide-3 article { width: 25%; margin-right: 5%; margin-left: 5%; float: left; }
+body .container #content.business section#slide-3 article div { background: #f2c7c4; width: 10em; height: 15em; }
+body .container #content.business section#slide-3 article div h4 { font-size: larger; border-bottom: 1px dashed; padding: 1.25em 0; margin-bottom: 1.25em; }
+body .container #content.business section#slide-3 article:nth-of-type(1):after, body .container #content.business section#slide-3 article:nth-of-type(2):after { content: '\21E8'; font-size: 800%; color: #f2c7c4; display: inline-block; position: relative; }
+@media only screen and (min-width: 1401px) { body .container #content.business section#slide-3 article:nth-of-type(1):after, body .container #content.business section#slide-3 article:nth-of-type(2):after { font-size: 1000%; } }
 body .container #content.business section#slide-3 article:nth-of-type(3) { margin-right: 0; }
-body .container #content.business section#slide-3 article:nth-of-type(3) div { min-height: 15em; height: auto; background: transparent; border: none; top: 0; }
-body .container #content.business section#slide-3 article:nth-of-type(3) div ul { list-style: none; margin: 0; }
-body .container #content.business section#slide-3 article:nth-of-type(3) div ul li { background: #f2c7c4; border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; margin-bottom: 2.5em; }
+body .container #content.business section#slide-3 article:nth-of-type(3) ul { list-style: none; width: 70%; margin: 0 auto; }
+body .container #content.business section#slide-3 article:nth-of-type(3) ul li { background: #f2c7c4; border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; margin-bottom: 2.5em; }
 
 .outline, .hidden { display: none; }
 

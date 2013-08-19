@@ -5,6 +5,7 @@ $(document).ready(function() {
   
   $('.business nav li').click(function() {
     var index = $(this).index() + 1;
+    
     var slide = $('.business section:nth-child(' + index + ')');
     $("html, body").animate({ scrollTop: slide.offset().top }, "slow");
     
@@ -16,15 +17,27 @@ $(document).ready(function() {
   
   
   
+  // Hover on a testimonial
+  
+  $('#testimonials ul li').hover(
+    function () {
+      $(this).addClass('animated pulse');
+    },
+    function () {
+      $(this).removeClass('animated pulse');
+    }
+  );
+  
 
   // Hover on a bubble feature
+  
   $('#features aside div').hover(
     function () {
       var index = $(this).index() + 1;
       var content = $("#features ul li:nth-child(" + index + ") span").last().html();
       
       $("#features #highlight").html(content);
-      $("#features #highlight").fadeIn();
+      $("#features #highlight").addClass('animated rollIn');
       
       $("#features ul li:nth-child(" + index + ")").addClass('active');
       $(this).addClass('active');
@@ -35,12 +48,13 @@ $(document).ready(function() {
       var index = $(this).index() + 1;
       $("#features ul li:nth-child(" + index + ")").removeClass('active');
       
-      $("#features #highlight").fadeOut();
+      $("#features #highlight").removeClass('animated rollIn');
     }
   );
   
 
   // Hover on a feature title
+  
   $('#features ul li').hover(
     function () {
       var index = $(this).index() + 1;
@@ -48,12 +62,10 @@ $(document).ready(function() {
       
       var content = $("#features ul li:nth-child(" + index + ") span").last().html();
       $("#features #highlight").html(content);
-      $("#features #highlight").fadeIn();
     },
     function () {
       var index = $(this).index() + 1;
       $("#features aside div:nth-child(" + index + ")").removeClass('active');
-      $("#features #highlight").fadeOut();
     }
   );
  

@@ -120,7 +120,7 @@ body {
       section {
       
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -160,7 +160,7 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+          background-image: url(/assets/tablet-with-scatter.png);
           
           
           article {
@@ -234,7 +234,6 @@ body {
               text-align: center;
               font-size: 200%;
               
-              display: none;
             }
             
             
@@ -326,7 +325,7 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           display: none;
           
@@ -345,6 +344,9 @@ body {
                 opacity: .9;
                 
                 font-weight: 400;
+                
+                cursor: pointer;
+                
                 
                 @include big-screen {
                   max-width: $major;
@@ -461,10 +463,6 @@ body {
         
         
         section {
-          
-          &.active {
-            display: block;
-          }
         
           article {
             @include block;
@@ -490,8 +488,10 @@ body {
             display: inline-block;
             position: relative;
             top: 0em;
-            left: 0em;
+            left: -50px;
             margin-top: $margin/2;
+            
+            cursor: pointer;
             
             
             &#desktop {
@@ -507,13 +507,13 @@ body {
             &#tablet {
               width: 5em;
               height: 7em;
-              left: 1em;
+              left: 0;
             }
             
             &#roof {
               position: relative;
               top: -8em;
-              left: 12.8em;
+              left: 10.2em;
               
               width: 0; 
               height: 0; 
@@ -551,7 +551,7 @@ body {
                 &:after {
                   @include transform(rotate(-90deg));
                   top: -1.05em;
-                  left: 50%;
+                  left: 39%;
                 }
               
               }
@@ -578,6 +578,8 @@ body {
           
           &#slide-2 {
             #tablet {
+              margin-right: 10em;
+              
               &:after {
                 content: '\21E8';
                 font-size: 1000%;
@@ -597,10 +599,15 @@ body {
           &#slide-3 {
             @include block;
             
+            @include big-screen {
+              width: 70%;
+              margin: 0 15%;
+            }
+            
             article {
-              width: 30%;
+              width: 25%;
               margin-right: 5%;
-              margin-left: 0;
+              margin-left: 5%;
               float: left;
               
               div {
@@ -608,8 +615,13 @@ body {
                 width: 10em;
                 height: 15em;
                 
-                position: relative;
-                top: -5em;
+                h4 {
+                  font-size: larger;
+                  
+                  border-bottom: 1px dashed;
+                  padding: $pad 0;
+                  margin-bottom: $pad;
+                }
               }
               
               
@@ -617,35 +629,30 @@ body {
               &:nth-of-type(2) {
                 &:after {
                   content: '\21E8';
-                  font-size: 1000%;
+                  font-size: 800%;
                   color: $lightred;
                   display: inline-block;
                   position: relative;
+                  
+                  @include big-screen {
+                    font-size: 1000%;
+                  }
                 }
               }
               
               &:nth-of-type(3) {
                 margin-right: 0;
                 
-                div {
-                  min-height: 15em;
-                  height: auto;
+                ul {
+                  list-style: none;
+                  width: 70%;
+                  margin: 0 auto;
                   
-                  background: transparent;
-                  border: none;
-                  
-                  top: 0;
-                  
-                  ul {
-                    list-style: none;
-                    margin: 0;
-                    
-                    li {
-                      background: $lightred;
-                      border: $pad/2 solid $lightred;
-                      @include border-radius($pad);
-                      margin-bottom: $pad*2;
-                    }
+                  li {
+                    background: $lightred;
+                    border: $pad/2 solid $lightred;
+                    @include border-radius($pad);
+                    margin-bottom: $pad*2;
                   }
                 }
               }
