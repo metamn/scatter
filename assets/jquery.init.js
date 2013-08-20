@@ -40,11 +40,10 @@ $(document).ready(function() {
       div.children('span').animate({
         opacity: 1
       }, 3000, function() {
-        //
+        // Animation complete
       });
     });
   }
-  
   
   
   function focus() {
@@ -56,7 +55,62 @@ $(document).ready(function() {
     var span = $('.business #slide-1 div:nth-of-type(' + index + ') span');
     span.addClass('highlight');
   }
-  var p = setInterval(focus, 2000);
+  //var p = setInterval(focus, 2000);
+  
+  
+  
+  function connect(index) {
+  
+    index += 1;
+    if (index == 4) {
+      index = 1;
+    } 
+    
+    var speed = 1000;
+    
+    var div = $('.business #slide-1 #animator');
+    div.animate({
+      borderLeftColor: '#F2C7C4',
+      borderTopColor: '#F2C7C4',
+      borderRightColor: '#F2C7C4',
+      borderBottomColor: '#F2C7C4'
+    }, speed/2, function () {
+      //
+    });
+    
+    switch(index) {
+      case 1:
+        div.animate({
+          borderLeftColor: '#77C8F5'
+        }, speed, function () {
+          connect(index);
+        });
+        break;
+      case 2:
+        div.animate({
+          borderTopColor: '#77C8F5'
+        }, speed, function () {
+          connect(index);
+        });
+        break;
+      case 3:
+        div.animate({
+          borderRightColor: '#77C8F5'
+        }, speed, function () {
+          connect(index);
+        });
+        break;
+      case 4:
+        div.animate({
+          borderBottomColor: '#77C8F5'
+        }, speed, function () {
+          connect(index);
+        });
+        break;
+    }
+    
+  }
+  connect(1);
   
   
   // Scrolling on the business page
