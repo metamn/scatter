@@ -88,6 +88,8 @@ body {
     
     
     form {
+      @include block;
+      
       input[type="submit"] {
         @include button($background, $color)
       }
@@ -95,7 +97,14 @@ body {
       a {
         @include link;
       }
+      
+      /* Enter now */
+      input:last-of-type {
+        @include button($background, $red);
+      }
+      
     }
+  
   
   
     #header {
@@ -116,9 +125,24 @@ body {
       }
     }
     
+    
+    
     #content {
-      section {
+      h1 {
+        font-weight: 300;
+        font-size: 150%;
+        
+        @include big-screen {
+          font-size: 200%;
+        }
+      }
       
+      h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      section {
         &#intro {
           background-image: url(/assets/smartphone-with-scatter.png);
           
@@ -133,14 +157,6 @@ body {
             }
             
             form {
-              @include block;
-              
-              /* Enter now */
-              input:last-of-type {
-                @include button($background, $red);
-                
-              }
-              
               /* I'm a business */
               a:first-of-type {
                 display: inline-block;
@@ -149,147 +165,88 @@ body {
                 @include big-screen {
                   margin-top: $pad*5;
                 }
-                
               }
             }
-            
-            
           }
         }
         
         
         
         &#features {
-          background-image: url(/assets/tablet-with-scatter.png);
-          
+          background-image: url(/assets/laptop-with-scatter.png);
           
           article {
-            aside {
-              position: absolute;
-              top: $pad*6;
-              
-              div {
-                cursor: pointer;
-                font-weight: 300;
-                
-                background: $blue;
-                padding: $pad;
-                @include border-radius($pad);
-                
-                display: inline-block;
-                position: relative;
-                top: 0em;
-                left: 0em;
-                max-width: $minor/2;
-                
-                
-                &.active {
-                  @include active;
-                }
-                
-                
-                p {
-                  font-size: smaller;
-                  border-bottom: 1px dashed;
-                  padding-bottom: $pad/2;
-                  text-align: center;
-                  
-                  &:nth-of-type(2) {
-                    display: block;
-                    border-bottom: none;
-                    font-size: small;
-                    
-                    &:before {
-                      content: url(http://scatteralpha.appspot.com/images/mapicon.png);
-
-                      position: relative;
-                      top: $pad/4;
-                    }
-                  }
-                }
-                
-                p + p {
-                  margin-top: $pad/2;
-                }
-                
-                @include big-screen {
-                  padding: $pad + $pad/2;
-                }
-                
+            header {
+              h1 {
+                color: $background;
               }
-              
             }
-            
-            
-            #highlight {
-              width: $minor/2;
-              float: left;
-              margin-top: $minor - 6%;
-              
-              background: $blue;
-              color: $background;
-              padding: $pad*2;
-              @include border-radius($pad*1);
-              
-              text-align: center;
-              font-size: 200%;
-              
-            }
-            
             
             ul {
-              list-style: none;
-              margin: 0;
-              
-              padding-top: $minor;
-              float: left;
-              width: $minor;
-              
+              @include block;
+              @include list-inline;
+              margin: $pad*2 0;
               
               li {
+                width: 30%;
+                margin-right: 4.5%;
+                height: 17em;
+                
+                background: $blue;
+                
+                h2 {
+                  padding: $pad;
+                  height: $pad*2 + $pad/2;
+                }
+                
                 span {
-                  cursor: pointer;
-                  background: $red;
-                  margin-bottom: $pad/4;
-                  font-weight: 300;
+                  background: $color;
+                  color: $blue;
+                  padding: $pad;
+                  font-weight: 400;
                   
-                  display: inline-block;
-                  padding: $pad/2;
+                  position: relative;
+                  left: -$pad - $pad/8;
+                  float: left;
                   
-                  &:nth-of-type(2) {
-                    &:after {
-                      content: '\2794';
-                      margin-left: $pad/4;
-                    }
-                  }
+                  width: $pad;
+                  @include border-radius($pad*2);
+                }
+                
+                p {
+                  padding: $pad;
+                  padding-left: 0;
                   
-                  &:nth-of-type(3) {
-                    background: $blue;
-                    color: $color;
-                    
-                    display: none;
+                  float: left;
+                  width: 50%;
+                  position: relative;
+                  top: -$pad;
+                  
+                  @include big-screen {
+                    padding-left: $pad;
+                    line-height: 1.5;
                   }
                 }
                 
-                &.active, &:hover {
-                  span {
-                    @include active;
-                  }
-                }
                 
-                @include big-screen {
-                  span {
-                    padding: $pad;
-                  }
-                }
                 
+                &:last-of-type {
+                  margin-right: 0;
+                  border-right: none;
+                }
               }
             }
-            
+          
             form {
-              margin-top: $pad;
+              input:first-of-type {
+                @include hidden;
+              }
+              
+              /* I'm a business */
+              p {
+                display: inline-block;
+              }
             }
-            
             
             nav {
               position: absolute;
@@ -305,6 +262,7 @@ body {
                 
                 font-variant: small-caps;
                 font-size: 100%;
+                color: $background;
                 
                 &:after {
                   content: '\2794';
@@ -378,11 +336,13 @@ body {
             }
             
             form {
-              @include block;
-              margin-top: $pad;
+              input:first-of-type {
+                @include hidden;
+              }
               
-              @include big-screen {
-                margin-top: $pad*10;
+              /* I'm a business */
+              p {
+                display: inline-block;
               }
             }
             
@@ -446,17 +406,10 @@ body.business {
       
       
     #content { 
-      
-      h1, h2, h3 {
-        font-weight: 300;
-        font-size: 150%;
-        
-        @include big-screen {
-          font-size: 200%;
-        }
-      }
   
       section {
+        background-image: url(/assets/tablet-with-scatter.png);
+        
         
         &#slide-1 {
           div {

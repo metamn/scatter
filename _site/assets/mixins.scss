@@ -133,7 +133,7 @@ $breakpoint-a4-height: 1122.51px !default;
     float: left;
     margin-right: $pad;
     
-    &.last {
+    &.last, &:last-of-type {
       margin-right: 0;
     }
   }
