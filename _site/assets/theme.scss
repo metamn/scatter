@@ -408,7 +408,10 @@ body.business {
   
     #header {
       form {
+        font-size: smaller;
+        
         input {
+          font-size: small;
           &:last-of-type {
             @include button($background, $red);
           }
@@ -463,6 +466,8 @@ body.business {
             left: -50px;
             margin-top: $margin/2;
             
+            z-index: 2;
+            
             padding: $pad*2;
             
             span {
@@ -470,6 +475,12 @@ body.business {
               position: relative;
               top: 0;
               left: 0;
+              font-variant: small-caps;
+              
+              &.highlight {
+                font-weight: bold;
+                transition: all .5s ease-out .5s;
+              }
             }
             
             &#laptop {
@@ -501,6 +512,18 @@ body.business {
               text-align: center;
             }
             
+            
+            &#animator {
+              width: 30em;
+              height: 18em;
+              border: 1px solid $lightred;
+              z-index: 1;
+              
+              margin: 0;
+              padding: 0;
+              top: -14em;
+              left: 6em;
+            }
           }
         }
 

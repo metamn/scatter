@@ -31,6 +31,7 @@ $(document).ready(function() {
   function fly(div, top, left) {
     div.show();
     
+    
     div.animate({
       opacity: 1,
       left: left,
@@ -39,27 +40,23 @@ $(document).ready(function() {
       div.children('span').animate({
         opacity: 1
       }, 3000, function() {
-        // Animation complete
+        //
       });
     });
   }
- 
-  // Rotate device descriptions
-  function rotate() {
-    var div = $('.business #slide-1 div').first();
-    var span = div.children('span');
-    
-    var position = div.next().children('span').position();
-    
-    span.animate({
-      top: position.top,
-      left: position.left
-    }, 1000, function() {
-      // 
-    });
-  }
   
-  //rotate();
+  
+  
+  function focus() {
+    $('.business #slide-1 div span').each(function() {
+      $(this).removeClass('highlight');
+    });
+    
+    var index = Math.floor((Math.random()*3)+1); 
+    var span = $('.business #slide-1 div:nth-of-type(' + index + ') span');
+    span.addClass('highlight');
+  }
+  var p = setInterval(focus, 2000);
   
   
   // Scrolling on the business page
