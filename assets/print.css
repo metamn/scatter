@@ -97,8 +97,7 @@ body .container #content section { position: relative; background-position: top 
 body .container #content section article { width: 61.804%; margin-left: 19.098%; }
 
 body.business .container #header { position: fixed; bottom: 2.5em; z-index: 1; }
-body.business .container #header h1, body.business .container #header form, body.business .container #header nav { display: inline-block; width: auto; margin-right: 2.5em; position: relative; }
-body.business .container #header h1 { top: 0.3125em; }
+body.business .container #header h1, body.business .container #header form, body.business .container #header nav { display: inline-block; width: auto; margin-right: 2.5em; position: relative; float: left; }
 
 body { background: #f0efeb; color: #363636; }
 body .container a { color: #ff4637; text-decoration: none; }
@@ -163,24 +162,14 @@ body.business .container #header nav ul li { padding-right: 1.25em; cursor: poin
 body.business .container #header nav ul li:after { content: ''; position: absolute; width: 24px; height: 24px; border-radius: 50%; border: 4px solid #77c8f5; }
 body.business .container #header nav ul li:hover:after, body.business .container #header nav ul li.active:after { background: #77c8f5; }
 body.business .container #content section { background-image: url(/assets/tablet-with-scatter.png); }
-body.business .container #content section#slide-1 div { display: inline-block; position: relative; top: 0em; left: -50px; margin-top: 9.549%; z-index: 2; padding: 2.5em; }
-body.business .container #content section#slide-1 div span { opacity: 0; position: relative; top: 0; left: 0; font-variant: small-caps; }
-body.business .container #content section#slide-1 div span.highlight { font-weight: bold; transition: all .5s ease-out .5s; }
-body.business .container #content section#slide-1 div#laptop { width: 15em; height: 10em; background: #F2C7C4; padding-bottom: 1.25em; }
-body.business .container #content section#slide-1 div#mobile { width: 3em; height: 5em; background: #ECF4AD; padding-top: 1.875em; }
-body.business .container #content section#slide-1 div#mobile span { position: relative; top: -0.625em; left: -0.625em; }
-body.business .container #content section#slide-1 div#tablet { width: 7em; height: 7em; left: 0; background: #88A3BF; text-align: center; }
-body.business .container #content section#slide-1 div#animator { width: 30em; height: 18em; border: 1px solid #f2c7c4; z-index: 1; margin: 0; padding: 0; top: -14em; left: 6em; }
-body.business .container #content section#slide-2 div { display: inline-block; position: relative; padding: 2.5em; }
-body.business .container #content section#slide-2 div#laptop { width: 12em; height: 8em; background: #F2C7C4; padding-bottom: 1.25em; margin-right: 1.25em; }
-body.business .container #content section#slide-2 div#house { width: 14em; height: auto; background: #ECF4AD; }
-body.business .container #content section#slide-3 article div:nth-of-type(1) { background: #f2c7c4; width: 10em; height: 15em; float: left; }
-body.business .container #content section#slide-3 article div:nth-of-type(1) h4 { font-size: larger; border-bottom: 1px dashed; padding: 1.25em 0; margin-bottom: 1.25em; }
-body.business .container #content section#slide-3 article div:nth-of-type(1):after { content: '\21E8'; font-size: 800%; color: #f2c7c4; display: inline-block; position: relative; }
-@media only screen and (min-width: 1401px) { body.business .container #content section#slide-3 article div:nth-of-type(1):after { font-size: 1000%; } }
-body.business .container #content section#slide-3 article div:nth-of-type(2) { border: none; }
-body.business .container #content section#slide-3 article div:nth-of-type(2) ul { list-style: none; width: 70%; margin: 0 auto; }
-body.business .container #content section#slide-3 article div:nth-of-type(2) ul li { background: #f2c7c4; border: 0.625em solid #f2c7c4; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; margin-bottom: 2.5em; }
+body.business .container #content section div { display: inline-block; float: left; padding: 1.25em; background: #77c8f5; opacity: .9; text-align: center; }
+body.business .container #content section div#laptop, body.business .container #content section div#house, body.business .container #content section div#offer, body.business .container #content section div#spread { width: 40%; margin-right: 1%; padding: 5em 1.25em; }
+body.business .container #content section#slide-1 div#mobile { width: 40%; margin-bottom: 1%; }
+body.business .container #content section#slide-1 div#mobile img { width: 14%; }
+body.business .container #content section#slide-1 div#tablet { width: 40%; }
+body.business .container #content section#slide-1 div#tablet img { width: 23%; }
+body.business .container #content section#slide-2 div#house { padding: 1.25em; }
+body.business .container #content section#slide-3 div ul { list-style: none; width: 70%; margin: 0 auto; }
 
 .outline, .hidden { display: none; }
 
