@@ -1,6 +1,15 @@
 $(document).ready(function() {
 
-
+  // Typer
+  $(function () {
+    $('[data-typer-targets]').typer();
+  });
+  
+  $('[data-typer-targets]').bind('DOMNodeInserted DOMSubtreeModified DOMNodeRemoved', function(event) {
+    $('.business #slide-1 #devices p').html($('[data-typer-targets]').html());
+  })
+  
+  
   // Scrolling on the business page
   
   $('.business #header nav li').click(function() {
