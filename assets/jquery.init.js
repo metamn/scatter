@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  // Animations on the business page
+  
+  $('.business img').each(function(index) {
+    $(this).animate({ backgroundColor: "olive" }, "slow");
+  });
   
   
   // Scrolling on the business page

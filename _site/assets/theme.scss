@@ -144,7 +144,7 @@ body {
       
       section {
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -173,7 +173,7 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           article {
             header {
@@ -283,7 +283,7 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           display: none;
           
@@ -408,7 +408,7 @@ body.business {
     #content { 
   
       section {
-        background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+        background-image: url(/assets/tablet-with-scatter.png);
         
         div {
           display: inline-block;
@@ -488,19 +488,19 @@ body.business {
                   margin-right: $pad/2;
                 }
                 &:nth-of-type(1):before {
-                  content: url(http://metamn.github.io/scatter/assets/browser.png);
+                  content: url(/assets/browser.png);
                 }
                 &:nth-of-type(2):before {
-                  content: url(http://metamn.github.io/scatter/assets/smartphone-icon.png);
+                  content: url(/assets/smartphone-icon.png);
                 }
                 &:nth-of-type(3):before {
-                  content: url(http://metamn.github.io/scatter/assets/facebook.png);
+                  content: url(/assets/facebook.png);
                 }
                 &:nth-of-type(4):before {
-                  content: url(http://metamn.github.io/scatter/assets/twitter.png);
+                  content: url(/assets/twitter.png);
                 }
                 &:nth-of-type(5):before {
-                  content: url(http://metamn.github.io/scatter/assets/portals.png);
+                  content: url(/assets/portals.png);
                 }
               }
             }
