@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'block'.
-        on line 11 of /home/cs/work/scatter/assets/layout.scss, in `block'
-        from line 11 of /home/cs/work/scatter/assets/layout.scss
+        on line 12 of /home/cs/work/scatter/assets/layout.scss, in `block'
+        from line 12 of /home/cs/work/scatter/assets/layout.scss
 
 Backtrace:
-/home/cs/work/scatter/assets/layout.scss:11:in `block'
-/home/cs/work/scatter/assets/layout.scss:11
+/home/cs/work/scatter/assets/layout.scss:12:in `block'
+/home/cs/work/scatter/assets/layout.scss:12
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -94,4 +94,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'block'.\A         on line 11 of /home/cs/work/scatter/assets/layout.scss, in `block'\A         from line 11 of /home/cs/work/scatter/assets/layout.scss"; }
+  content: "Syntax error: Undefined mixin 'block'.\A         on line 12 of /home/cs/work/scatter/assets/layout.scss, in `block'\A         from line 12 of /home/cs/work/scatter/assets/layout.scss"; }

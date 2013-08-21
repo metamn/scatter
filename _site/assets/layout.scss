@@ -5,6 +5,7 @@ html, body, .container, #content, #content section {
 }
 
 
+
 body {
   .container {
     #header {
@@ -45,25 +46,38 @@ body {
   }
 }
 
+
+
+
+
+@mixin form-buttons {
+  display: inline-block;
+  width: auto;
+  margin-right: $pad*2;
+  
+  position: relative;
+  float: left;
+}
+
+@mixin fixed-to-bottom {
+  position: fixed;
+  bottom: $pad*2;
+  z-index: 1;
+}
+
+
+
+
+
 body.business {
   .container {
   
     #header {
-      position: fixed;
-      bottom: $pad*2;
-      z-index: 1;
+      @include fixed-to-bottom;
       
       h1, form, nav {
-        display: inline-block;
-        width: auto;
-        margin-right: $pad*2;
-        
-        position: relative;
-        float: left;
+        @include form-buttons;
       }
-      
-      
-      
     }
   }
 }

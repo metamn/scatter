@@ -33,12 +33,4 @@ $(document).ready(function() {
   });
 
 
-  // Show testimonials
-  $('#features nav').click(function() {
-    $('#testimonials').slideToggle();
-    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-  });
-  
-  
-
 });

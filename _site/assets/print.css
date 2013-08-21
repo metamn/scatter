@@ -111,9 +111,10 @@ body .container form input:last-of-type:hover, body .container form input:last-o
 body .container form input:last-of-type:active, body .container form input:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
-body .container #content h1 { font-weight: 300; font-size: 150%; }
-@media only screen and (min-width: 1401px) { body .container #content h1 { font-size: 200%; } }
+body .container #content h1 { font-weight: 300; font-size: 170%; }
+@media only screen and (min-width: 1401px) { body .container #content h1 { font-size: 220%; } }
 body .container #content h2 { font-weight: bold; text-transform: uppercase; }
+body .container #content h1, body .container #content h2 { padding: 1.25em 0; }
 body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter.png); }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
@@ -122,7 +123,7 @@ body .container #content section#intro article form a:first-of-type { display: i
 @media only screen and (min-width: 1401px) { body .container #content section#intro article form a:first-of-type { margin-top: 6.25em; } }
 body .container #content section#features { background-image: url(/assets/laptop-with-scatter.png); }
 body .container #content section#features article header h1 { color: #f0efeb; }
-body .container #content section#features article ul { width: 100%; float: left; display: block; margin: 0; margin: 2.5em 0; }
+body .container #content section#features article ul { width: 100%; float: left; display: block; margin: 0; margin: 1.25em 0; }
 body .container #content section#features article ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
 body .container #content section#features article ul li.last, body .container #content section#features article ul li:last-of-type { margin-right: 0; }
 body .container #content section#features article ul li { width: 30%; margin-right: 4.5%; height: 17em; background: #77c8f5; }
@@ -134,10 +135,7 @@ body .container #content section#features article ul li:last-of-type { margin-ri
 body .container #content section#features article form { /* I'm a business */ }
 body .container #content section#features article form input:first-of-type { display: none; }
 body .container #content section#features article form p { display: inline-block; }
-body .container #content section#features article nav { position: absolute; bottom: 1.25em; right: 1.25em; float: right; cursor: pointer; }
-body .container #content section#features article nav h3 { text-align: right; padding: 0; font-variant: small-caps; font-size: 100%; color: #f0efeb; }
-body .container #content section#features article nav h3:after { content: '\2794'; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); display: inline-block; font-size: 200%; padding-left: 0.625em; visibility: visible; }
-body .container #content section#testimonials { background-image: url(/assets/laptop-with-scatter.png); display: none; }
+body .container #content section#testimonials { background-image: url(/assets/laptop-with-scatter.png); }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 2.5em 0 1.25em; list-style: none; }
 body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; background: #363636; color: #f0efeb; opacity: .9; font-weight: 400; cursor: pointer; }
 @media only screen and (min-width: 1401px) { body .container #content section#testimonials article ul li { max-width: 61.804%; } }
