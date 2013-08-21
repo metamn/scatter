@@ -121,7 +121,6 @@ body {
     
     
     #content {
-    
       h1 {
         font-weight: 300;
         font-size: 170%;
@@ -226,8 +225,6 @@ body {
                   }
                 }
                 
-                
-                
                 &:last-of-type {
                   margin-right: 0;
                   border-right: none;
@@ -318,11 +315,7 @@ body {
             display: block;
           }
         }
-        
-        
       }
-      
-      
     }
   }
 }
@@ -333,6 +326,8 @@ body.business {
   .container {
   
     #header {
+      bottom: $pad;
+      
       form {
         font-size: smaller;
         
@@ -377,6 +372,10 @@ body.business {
         background-image: url(/assets/tablet-with-scatter.png);
         
         div {
+          width: 40%;
+          margin-right: 1%;
+          max-height: 22em;
+          
           display: inline-block;
           float: left;
           
@@ -386,90 +385,88 @@ body.business {
           
           text-align: center;
           
-          &#laptop, &#house, &#offer, &#spread {
-            width: 40%;
-            margin-right: 1%;
-            padding: $pad*4 $pad;
+          img {
+            width: 20%;
+            
+            &#laptop {
+              width: 60%;
+            }
+            
+            &#smartphone {
+              width: 10%;
+              position: relative;
+              top: -$pad;
+            }
+            
+            &#map {
+              width: 100%;
+            }
+            
+            &#communicate, &#buyers {
+              width: 100%;
+            }
           }
         }
         
-        
         &#slide-1 {
-          div {
-            &#mobile {
-              width: 40%;
-              margin-bottom: 1%;
-              
-              img {
-                width: 14%;
-              }
-            }
-            
-            &#tablet {
-              width: 40%;
-              
-              img {
-                width: 23%;
-              }
-            }
-          }
+          
         }
 
         &#slide-2 {
-          div {
-            &#house {
-              padding: $pad;
-              
-            }
-          }
+          
         }
 
         &#slide-3 {
           div {
             padding-top: $pad;
             
-            
             p {
               margin-bottom: $pad;
             }
             
-            
             ul {
-              list-style: none;
               text-align: left;
-              
-              li {
-                margin-bottom: $pad/2;
+            }
+            
+            &#spread {
+              ul {
+                list-style: none;
                 
-                &:before {
-                  position: relative;
-                  top: 15px;
+                li {
+                  margin-bottom: 0;
                   
-                  text-align: center;
-                  padding: 5px;
-                  width: 60px;
-                  height: 60px;
-                  display: inline-block;
-                  
-                  margin-right: $pad/2;
-                }
-                &:nth-of-type(1):before {
-                  content: url(/assets/browser.png);
-                }
-                &:nth-of-type(2):before {
-                  content: url(/assets/smartphone-icon.png);
-                }
-                &:nth-of-type(3):before {
-                  content: url(/assets/facebook.png);
-                }
-                &:nth-of-type(4):before {
-                  content: url(/assets/twitter.png);
-                }
-                &:nth-of-type(5):before {
-                  content: url(/assets/portals.png);
+                  &:before {
+                    position: relative;
+                    top: 15px;
+                    
+                    text-align: center;
+                    padding: 5px;
+                    width: 60px;
+                    height: 60px;
+                    display: inline-block;
+                    
+                    margin-right: $pad/2;
+                  }
+                  &:nth-of-type(1):before {
+                    content: url(/assets/browser.png);
+                  }
+                  &:nth-of-type(2):before {
+                    content: url(/assets/smartphone-icon.png);
+                  }
+                  &:nth-of-type(3):before {
+                    content: url(/assets/facebook.png);
+                  }
+                  &:nth-of-type(4):before {
+                    content: url(/assets/twitter.png);
+                  }
+                  &:nth-of-type(5):before {
+                    content: url(/assets/portals.png);
+                  }
                 }
               }
             }
+            
+            
           }
         }
       }
