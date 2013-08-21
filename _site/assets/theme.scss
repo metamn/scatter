@@ -460,13 +460,48 @@ body.business {
 
         &#slide-3 {
           div {
+            padding-top: $pad;
+            
+            
+            p {
+              margin-bottom: $pad;
+            }
+            
+            
             ul {
               list-style: none;
-              width: 70%;
-              margin: 0 auto;
+              text-align: left;
               
               li {
+                margin-bottom: $pad/2;
                 
+                &:before {
+                  position: relative;
+                  top: 15px;
+                  
+                  text-align: center;
+                  padding: 5px;
+                  width: 60px;
+                  height: 60px;
+                  display: inline-block;
+                  
+                  margin-right: $pad/2;
+                }
+                &:nth-of-type(1):before {
+                  content: url(http://metamn.github.io/scatter/assets/browser.png);
+                }
+                &:nth-of-type(2):before {
+                  content: url(http://metamn.github.io/scatter/assets/smartphone-icon.png);
+                }
+                &:nth-of-type(3):before {
+                  content: url(http://metamn.github.io/scatter/assets/facebook.png);
+                }
+                &:nth-of-type(4):before {
+                  content: url(http://metamn.github.io/scatter/assets/twitter.png);
+                }
+                &:nth-of-type(5):before {
+                  content: url(http://metamn.github.io/scatter/assets/portals.png);
+                }
               }
             }
           }
