@@ -89,7 +89,7 @@ body {
       
       a {
         @include link;
-      }business/
+      }
       
       /* Enter now */
       input:last-of-type {
@@ -142,7 +142,7 @@ body {
       section {
         &#intro {
           background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
-          business/
+          
           article {
             header {
               @include block;
