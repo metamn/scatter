@@ -141,7 +141,7 @@ body {
       
       section {
         &#intro {
-          background-image: url(/assets/smartphone-with-scatter.png);
+          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -170,7 +170,7 @@ body {
         
         
         &#features {
-          background-image: url(/assets/laptop-with-scatter.png);
+          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
           
           article {
             header {
@@ -248,7 +248,7 @@ body {
         
         
         &#testimonials {
-          background-image: url(/assets/laptop-with-scatter.png);
+          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
           
           article {
             ul {
@@ -369,7 +369,7 @@ body.business {
     #content { 
   
       section {
-        background-image: url(/assets/tablet-with-scatter.png);
+        background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
         
         div {
           width: 40%;
@@ -493,47 +493,67 @@ body.business {
             
             ul {
               text-align: left;
+              list-style: none;
+                
+              li {
+                margin-bottom: 0;
+                
+                &:before {
+                  position: relative;
+                  top: 15px;
+                  
+                  text-align: center;
+                  padding: 5px;
+                  width: 60px;
+                  height: 60px;
+                  display: inline-block;
+                  
+                  margin-right: $pad/2;
+                }
+              }
             }
             
-            &#spread {
+            &#offer {
               ul {
-                list-style: none;
-                
                 li {
-                  margin-bottom: 0;
-                  
-                  &:before {
-                    position: relative;
-                    top: 15px;
-                    
-                    text-align: center;
-                    padding: 5px;
-                    width: 60px;
-                    height: 60px;
-                    display: inline-block;
-                    
-                    margin-right: $pad/2;
-                  }
                   &:nth-of-type(1):before {
-                    content: url(/assets/browser.png);
+                    content: url(http://metamn.github.io/scatter/assets/clock.png);
                   }
                   &:nth-of-type(2):before {
-                    content: url(/assets/smartphone-icon.png);
-                  }
-                  &:nth-of-type(3):before {
-                    content: url(/assets/facebook.png);
-                  }
-                  &:nth-of-type(4):before {
-                    content: url(/assets/twitter.png);
-                  }
-                  &:nth-of-type(5):before {
-                    content: url(/assets/portals.png);
+                    content: url(http://metamn.github.io/scatter/assets/location.png);
                   }
                 }
               }
             }
             
+            &#spread {
+              ul {
+                li {
+                  &:nth-of-type(1):before {
+                    content: url(http://metamn.github.io/scatter/assets/browser.png);
+                  }
+                  &:nth-of-type(2):before {
+                    content: url(http://metamn.github.io/scatter/assets/smartphone-icon.png);
+                  }
+                  &:nth-of-type(3):before {
+                    content: url(http://metamn.github.io/scatter/assets/facebook.png);
+                  }
+                  &:nth-of-type(4):before {
+                    content: url(http://metamn.github.io/scatter/assets/twitter.png);
+                  }
+                  &:nth-of-type(5):before {
+                    content: url(http://metamn.github.io/scatter/assets/portals.png);
+                  }
+                }
+              }
+            }
             
+          }
+        }
+        
+        &#slide-4 {
+          div {
+            width: 100%;
           }
         }
       }
