@@ -429,7 +429,6 @@ body.business {
   
     #header {
       nav {
-        
         background: $background;
         padding: $pad/4 $pad/2 $pad/2 $pad/4;
         opacity: .9;
@@ -449,7 +448,7 @@ body.business {
               width: 24px;
               height: 24px;
               @include border-radius($pad/4);
-              border: 2px solid $blue;
+              border: 2px solid;
             }
             
             &:hover:after,
@@ -508,8 +507,8 @@ body.business {
           float: left;
           
           padding: $pad;
-          background: $blue;
-          opacity: .9;
+          background: transparent;
+          border: $pad/4 solid;
           @include border-radius($pad);
           
           
@@ -564,8 +563,6 @@ body.business {
               padding: 0;
               margin: 0;
               height: $pad*5;
-              
-              color: $background;
               font-weight: 400;
               
               
@@ -620,6 +617,10 @@ body.business {
             }
             
             &#offer {
+              img {
+                width: 100%;
+              }
+              
               ul {
                 li {
                   &:nth-of-type(1):before {
