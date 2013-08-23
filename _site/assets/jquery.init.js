@@ -6,7 +6,7 @@ $(document).ready(function() {
   });
   
   $('[data-typer-targets]').bind('DOMNodeInserted DOMSubtreeModified DOMNodeRemoved', function(event) {
-    $('.business #slide-1 #devices p').html($('[data-typer-targets]').html());
+    $('.business #slide-1 #p2, .business #slide-1 #p3').html($('[data-typer-targets]').html());
   })
   
   

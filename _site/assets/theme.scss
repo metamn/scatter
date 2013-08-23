@@ -490,8 +490,6 @@ body.business {
           background: $blue;
           opacity: .9;
           
-          text-align: center;
-          
           img {
             width: 20%;
             
@@ -517,66 +515,45 @@ body.business {
         
         &#slide-1 {
           div {
-            height: 10em;
-            
-            @include big-screen {
-              height: 15em;
-            }
+            @include block;
             
             h2 {
-              padding-top: 0;
+              text-align: center;
               
-              @include big-screen {
-                padding-top: $pad;
+              &:last-of-type {
+                position: relative;
+                top: -$pad*7;
               }
             }
-          }
-          
-          #create-ad {
-            p {
-              font-size: 170%;
-              height: $pad*3;
-              color: $background;
-            }
-          }
-          
-          #devices {
             
             p {
               position: relative;
               overflow: hidden;
               padding: 0;
               margin: 0;
+              height: $pad*5;
+              
               
               &#p1 {
-                top: -7em;
-                left: 16.5%;
+                top: -10em;
                 width: 30%;
-                font-size: 13px;
-                height: 50px;
+                left: 13%;
+                height: $pad*2;
               }
               
               &#p2 {
-                top: -27em;
-                left: 66%;
-                width: 5%;
-                font-size: 5px;
-                height: 25px;
+                font-size: $pad/2;
+                top: -18em;
+                left: 62%;
+                width: 7%;
               }
               
               &#p3 {
-                top: -15em;
-                left: 80%;
+                font-size: small;
+                top: -20em;
+                left: 75%;
                 width: 8%;
-                font-size: 9px;
-                height: 40px;
               }
-            }
-          }
-          
-          #location-2 {
-            h2 {
-              margin-top: $pad;
             }
           }
         }
