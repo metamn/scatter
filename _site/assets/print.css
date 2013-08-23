@@ -194,22 +194,25 @@ body.business .container #content section { background-image: url(/assets/tablet
 body.business .container #content section div { width: 42%; margin-right: 2%; margin-bottom: 2%; height: 22em; display: inline-block; float: left; padding: 1.25em; background: #77c8f5; opacity: .9; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 @media only screen and (min-width: 1401px) { body.business .container #content section div { height: 30em; } }
 body.business .container #content section div:last-of-type { margin-right: 0; }
+body.business .container #content section div h2 { text-transform: none; font-weight: 300; font-size: larger; }
 body.business .container #content section div img { width: 20%; }
 body.business .container #content section div img#laptop { width: 60%; }
 body.business .container #content section div img#smartphone { width: 10%; position: relative; top: -1.25em; }
 body.business .container #content section div img#map { width: 100%; }
 body.business .container #content section div img#communicate, body.business .container #content section div img#buyers { width: 100%; }
-body.business .container #content section#slide-1 div { width: 100%; float: left; }
-body.business .container #content section#slide-1 div h2 { margin-left: 2.5em; }
-body.business .container #content section#slide-1 div h2:last-of-type { position: relative; top: -8.75em; }
-body.business .container #content section#slide-1 div p { position: relative; overflow: hidden; padding: 0; margin: 0; height: 6.25em; }
+body.business .container #content section#slide-1 div { width: 100%; float: left; width: 94%; }
+body.business .container #content section#slide-1 div img { margin-top: 1.25em; }
+body.business .container #content section#slide-1 div h2 { position: relative; top: -7.5em; }
+body.business .container #content section#slide-1 div h2:first-of-type { padding-bottom: 0; }
+body.business .container #content section#slide-1 div h2:last-of-type { padding-top: 0; }
+body.business .container #content section#slide-1 div p { position: relative; overflow: hidden; padding: 0; margin: 0; height: 6.25em; color: #f0efeb; }
 body.business .container #content section#slide-1 div p#p1 { top: -10em; width: 30%; left: 13%; height: 2.5em; }
 body.business .container #content section#slide-1 div p#p2 { font-size: 0.625em; top: -18em; left: 62%; width: 7%; }
 body.business .container #content section#slide-1 div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
 body.business .container #content section#slide-2 div ul { list-style: none; margin: 0; }
 body.business .container #content section#slide-2 div ul li { margin-bottom: 0; }
 body.business .container #content section#slide-2 div ul li:before { position: relative; top: 15px; text-align: center; padding: 5px; width: 60px; height: 60px; display: inline-block; margin-right: 0.625em; }
-body.business .container #content section#slide-2 div#offer ul li:nth-of-type(1):before { content: url(/assets/clock.png); }
+body.business .container #content section#slide-2 div#offer ul li:nth-of-type(1):before { content: url(/assets/clock3.png); }
 body.business .container #content section#slide-2 div#offer ul li:nth-of-type(2):before { content: url(/assets/location.png); }
 body.business .container #content section#slide-2 div#spread ul li:nth-of-type(1):before { content: url(/assets/browser.png); }
 body.business .container #content section#slide-2 div#spread ul li:nth-of-type(2):before { content: url(/assets/smartphone-icon.png); }
@@ -219,7 +222,7 @@ body.business .container #content section#slide-2 div#spread ul li:nth-of-type(5
 body.business .container #content section#slide-3 div { text-align: center; }
 body.business .container #content section#slide-3 div:first-of-type img { width: 70%; box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
 body.business .container #content section#slide-3 div:last-of-type img { margin-bottom: 1.25em; }
-body.business .container #content section#slide-4 div { width: 100%; }
+body.business .container #content section#slide-4 div { width: 100%; float: left; width: 94%; }
 body.business .container #content section#slide-4 div img { width: 60%; float: left; }
 body.business .container #content section#slide-4 div ul { width: 30%; margin-left: 5%; float: left; list-style: none; }
 body.business .container #content section#slide-4 div ul li { margin-bottom: 1.25em; }

@@ -504,6 +504,12 @@ body.business {
           @include border-radius($pad);
           
           
+          h2 {
+            text-transform: none;
+            font-weight: 300;
+            font-size: larger;
+          }
+          
           img {
             width: 20%;
             
@@ -530,15 +536,25 @@ body.business {
         &#slide-1 {
           div {
             @include block;
+            width: 94%;
+            
+            img {
+              margin-top: $pad;
+            }
             
             h2 {
-              margin-left: $pad*2;
+              position: relative;
+              top: -$pad*6;
+              
+              &:first-of-type {
+                padding-bottom: 0;
+              }
               
               &:last-of-type {
-                position: relative;
-                top: -$pad*7;
+                padding-top: 0;
               }
             }
+            
             
             p {
               position: relative;
@@ -546,6 +562,8 @@ body.business {
               padding: 0;
               margin: 0;
               height: $pad*5;
+              
+              color: $background;
               
               
               &#p1 {
@@ -602,7 +620,7 @@ body.business {
               ul {
                 li {
                   &:nth-of-type(1):before {
-                    content: url(/assets/clock.png);
+                    content: url(/assets/clock3.png);
                   }
                   &:nth-of-type(2):before {
                     content: url(/assets/location.png);
@@ -658,7 +676,8 @@ body.business {
         
         &#slide-4 {
           div {
-            width: 100%;
+            @include block;
+            width: 94%;
             
             img {
               width: 60%;
