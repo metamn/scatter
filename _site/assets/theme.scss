@@ -649,6 +649,23 @@ body.business {
         &#slide-4 {
           div {
             width: 100%;
+            
+            img {
+              width: 60%;
+              float: left;
+            }
+            
+            ul {
+              width: 30%;
+              margin-left: 5%;
+              float: left;
+              
+              list-style: none;
+              
+              li {
+                margin-bottom: $pad;
+              }
+            }
           }
         }
       }

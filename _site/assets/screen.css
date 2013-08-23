@@ -215,6 +215,9 @@ body.business .container #content section#slide-3 div#spread ul li:nth-of-type(3
 body.business .container #content section#slide-3 div#spread ul li:nth-of-type(4):before { content: url(/assets/twitter.png); }
 body.business .container #content section#slide-3 div#spread ul li:nth-of-type(5):before { content: url(/assets/portals.png); }
 body.business .container #content section#slide-4 div { width: 100%; }
+body.business .container #content section#slide-4 div img { width: 60%; float: left; }
+body.business .container #content section#slide-4 div ul { width: 30%; margin-left: 5%; float: left; list-style: none; }
+body.business .container #content section#slide-4 div ul li { margin-bottom: 1.25em; }
 
 .outline, .hidden { display: none; }
 
