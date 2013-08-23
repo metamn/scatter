@@ -72,18 +72,23 @@ body.business {
     #header {
       bottom: $pad;
       
+      @include big-screen {
+        bottom: $pad*6;
+      }
+      
       h1, nav {
         width: auto;
         float: left;
       }
       
       h1 {
-        margin-left: 0;
+        margin-left: $pad*2;
         margin-top: $pad/4
       }
       
       nav {
-        margin-left: 30%;
+        margin-right: $pad*2;
+        float: right;
         display: block;
       }
     }
@@ -93,10 +98,9 @@ body.business {
       position: fixed;
       right: $pad;
       float: right;
-      
-      margin-top: $pad*3;
-      
       z-index: 2;
+      
+      top: 45%;
     }
   }
 }

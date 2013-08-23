@@ -167,7 +167,7 @@ body {
       
       section {
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -215,10 +215,10 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           @include tablet-and-below {
-            background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+            background-image: url(/assets/tablet-with-scatter.png);
           }
           
           article {
@@ -325,10 +325,10 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           @include tablet-and-below {
-            background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+            background-image: url(/assets/tablet-with-scatter.png);
             margin-bottom: $pad*2;
           }
           
@@ -429,6 +429,7 @@ body.business {
   
     #header {
       nav {
+        
         background: $background;
         padding: $pad/4 $pad/2 $pad/2 $pad/4;
         opacity: .9;
@@ -447,8 +448,8 @@ body.business {
               position: absolute;
               width: 24px;
               height: 24px;
-              border-radius: 50%;
-              border: 4px solid $blue;
+              @include border-radius($pad/4);
+              border: 2px solid $blue;
             }
             
             &:hover:after,
@@ -465,6 +466,8 @@ body.business {
       
       input {
         font-size: smaller;
+        display: block;
+        
         &:last-of-type {
           @include button($background, $red);
         }
@@ -479,7 +482,13 @@ body.business {
     #content { 
   
       section {
-        background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+        background-image: url(/assets/tablet-with-scatter.png);
+        
+        article {
+          header {
+            text-align: center;
+          }
+        }
         
         div {
           width: 42%;
@@ -542,17 +551,10 @@ body.business {
               margin-top: $pad;
             }
             
-            h2 {
+            h3 {
               position: relative;
-              top: -$pad*6;
-              
-              &:first-of-type {
-                padding-bottom: 0;
-              }
-              
-              &:last-of-type {
-                padding-top: 0;
-              }
+              top: -$pad*5;
+              text-align: center;
             }
             
             
@@ -564,6 +566,7 @@ body.business {
               height: $pad*5;
               
               color: $background;
+              font-weight: 400;
               
               
               &#p1 {
@@ -620,10 +623,10 @@ body.business {
               ul {
                 li {
                   &:nth-of-type(1):before {
-                    content: url(http://metamn.github.io/scatter/assets/clock3.png);
+                    content: url(/assets/clock.png);
                   }
                   &:nth-of-type(2):before {
-                    content: url(http://metamn.github.io/scatter/assets/location2.png);
+                    content: url(/assets/location.png);
                   }
                 }
               }
@@ -633,19 +636,19 @@ body.business {
               ul {
                 li {
                   &:nth-of-type(1):before {
-                    content: url(http://metamn.github.io/scatter/assets/browser2.png);
+                    content: url(/assets/browser.png);
                   }
                   &:nth-of-type(2):before {
-                    content: url(http://metamn.github.io/scatter/assets/smartphone-icon2.png);
+                    content: url(/assets/smartphone-icon.png);
                   }
                   &:nth-of-type(3):before {
-                    content: url(http://metamn.github.io/scatter/assets/facebook3.png);
+                    content: url(/assets/facebook.png);
                   }
                   &:nth-of-type(4):before {
-                    content: url(http://metamn.github.io/scatter/assets/twitter2.png);
+                    content: url(/assets/twitter.png);
                   }
                   &:nth-of-type(5):before {
-                    content: url(http://metamn.github.io/scatter/assets/portals2.png);
+                    content: url(/assets/portals.png);
                   }
                 }
               }
@@ -658,19 +661,7 @@ body.business {
         &#slide-3 {
           div {
             text-align: center;
-            
-            &:first-of-type {
-              img {
-                width: 70%;
-                box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
-              }
-            }
-            
-            &:last-of-type {
-              img {
-                margin-bottom: $pad;
-              }
-            }
+           
           }
         }
         
