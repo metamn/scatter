@@ -53,6 +53,17 @@ $orange: #FF782A;
   margin-right: $pad;
   
   @include shadow;
+  
+  @include tablet-and-below {
+    padding: $pad/2;
+    margin: $pad/4 0;
+    
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: none;
+    
+    display: block;
+  }
 }
 
 @mixin link($type : normal) {
@@ -96,6 +107,9 @@ body {
         @include button($background, $red);
       }
       
+      @include tablet-and-below {
+        font-size: smaller;
+      }
     }
   
   
@@ -115,6 +129,10 @@ body {
           
           margin-right: $pad/4;
         }
+        
+        @include tablet-and-below {
+          font-size: 80%;
+        }
       }
     }
     
@@ -125,6 +143,10 @@ body {
         font-weight: 300;
         font-size: 170%;
         
+        @include tablet-and-below {
+          font-size: 160%;
+        }
+        
         @include big-screen {
           font-size: 220%;
         }
@@ -133,6 +155,10 @@ body {
       h2 {
         font-weight: 400;
         text-transform: uppercase;
+        
+        @include tablet-and-below {
+          font-size: 100%;
+        }
       }
       
       h1, h2 {
@@ -141,7 +167,7 @@ body {
       
       section {
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -150,6 +176,15 @@ body {
               
               h1 {
                 color: $background;
+                
+                @include tablet-and-below {
+                  @include text-shadow($color 1px 1px 0);
+                }
+              }
+              
+              
+              @include mobile-landscape {
+                margin-top: 0;
               }
             }
             
@@ -159,8 +194,18 @@ body {
                 display: inline-block;
                 margin-top: $pad*3;
                 
+                @include tablet-and-below {
+                  display: none;
+                }
+                
                 @include big-screen {
                   margin-top: $pad*5;
+                }
+              }
+              
+              @include tablet-and-below {
+                input:first-of-type {
+                  display: none;
                 }
               }
             }
@@ -170,13 +215,22 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
+          
+          @include tablet-and-below {
+            background-image: url(/assets/tablet-with-scatter.png);
+          }
           
           article {
             header {
               h1 {
                 color: $background;
+                
+                @include tablet-and-below {
+                  color: $color;
+                }
               }
+              
             }
             
             ul {
@@ -229,6 +283,24 @@ body {
                   margin-right: 0;
                   border-right: none;
                 }
+                
+                @include tablet-and-below {
+                  @include block;
+                  margin-right: 0;
+                  height: auto;
+                  
+                  margin-bottom: $pad/4;
+                  
+                  span {
+                    display: none;
+                  }
+                  
+                  p {
+                    width: auto;
+                    top: 0;
+                    padding: 0 $pad $pad*3;
+                  }
+                }
               }
             }
           
@@ -240,6 +312,11 @@ body {
               /* I'm a business */
               p {
                 display: inline-block;
+                
+                @include tablet-and-below {
+                  display: block;
+                  margin: $pad 0;
+                }
               }
             }
             
@@ -248,7 +325,12 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
+          
+          @include tablet-and-below {
+            background-image: url(/assets/tablet-with-scatter.png);
+            margin-bottom: $pad*2;
+          }
           
           article {
             ul {
@@ -265,7 +347,6 @@ body {
                 opacity: .9;
                 
                 font-weight: 400;
-                
                 cursor: pointer;
                 
                 
@@ -293,9 +374,25 @@ body {
                 p + p {
                   margin-top: 0;
                 }
-              
+                
+                @include tablet-and-below {
+                  padding-bottom: $pad;
+                  
+                  img {
+                    max-width: 30%;
+                    margin: 0 70% 0 0;
+                  }
+                  
+                  p {
+                    font-weight: 300;
+                    padding-top: $pad*2;
+                  }
+                  
+                  p + p {
+                    font-weight: 400;
+                  }
+                }
               }
-              
             }
             
             form {
@@ -306,6 +403,11 @@ body {
               /* I'm a business */
               p {
                 display: inline-block;
+                
+                @include tablet-and-below {
+                  display: block;
+                  margin: $pad 0;
+                }
               }
             }
             
@@ -369,7 +471,7 @@ body.business {
     #content { 
   
       section {
-        background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+        background-image: url(/assets/tablet-with-scatter.png);
         
         div {
           width: 40%;
@@ -517,10 +619,10 @@ body.business {
               ul {
                 li {
                   &:nth-of-type(1):before {
-                    content: url(http://metamn.github.io/scatter/assets/clock.png);
+                    content: url(/assets/clock.png);
                   }
                   &:nth-of-type(2):before {
-                    content: url(http://metamn.github.io/scatter/assets/location.png);
+                    content: url(/assets/location.png);
                   }
                 }
               }
@@ -530,19 +632,19 @@ body.business {
               ul {
                 li {
                   &:nth-of-type(1):before {
-                    content: url(http://metamn.github.io/scatter/assets/browser.png);
+                    content: url(/assets/browser.png);
                   }
                   &:nth-of-type(2):before {
-                    content: url(http://metamn.github.io/scatter/assets/smartphone-icon.png);
+                    content: url(/assets/smartphone-icon.png);
                   }
                   &:nth-of-type(3):before {
-                    content: url(http://metamn.github.io/scatter/assets/facebook.png);
+                    content: url(/assets/facebook.png);
                   }
                   &:nth-of-type(4):before {
-                    content: url(http://metamn.github.io/scatter/assets/twitter.png);
+                    content: url(/assets/twitter.png);
                   }
                   &:nth-of-type(5):before {
-                    content: url(http://metamn.github.io/scatter/assets/portals.png);
+                    content: url(/assets/portals.png);
                   }
                 }
               }

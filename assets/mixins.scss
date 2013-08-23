@@ -39,16 +39,19 @@ $breakpoint-a4-height: 1122.51px !default;
 	}
 }
 
+
 @mixin tablet {
 	@media only screen and (min-width : $breakpoint-mobile + 1) and (max-width : $breakpoint-tablet) {
 		@content;
 	}
 }
 @mixin tablet-and-below {
-	@media only screen and (max-width : $breakpoint-tablet) {
+	@media only screen and (max-width : $breakpoint-tablet - 1) {
 		@content;
 	}
 }
+
+
 @mixin small-screen {
 	@media only screen and (min-width : $breakpoint-tablet + 1) and (max-width : $breakpoint-small - 1) {
 		@content;

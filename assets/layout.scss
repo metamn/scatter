@@ -41,6 +41,18 @@ body {
           margin-left: $margin;
         }
         
+        
+        @include tablet-and-below {
+          &#features, &#testimonials {
+            height: 220%;
+            
+            article {
+              width: $major + $margin;
+              margin-left: $margin/2;
+            }
+          }
+        }
+        
       }
     }
   }
