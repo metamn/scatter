@@ -213,12 +213,12 @@ body.business .container #content section#slide-2 div ul { list-style: none; mar
 body.business .container #content section#slide-2 div ul li { margin-bottom: 0; }
 body.business .container #content section#slide-2 div ul li:before { position: relative; top: 15px; text-align: center; padding: 5px; width: 60px; height: 60px; display: inline-block; margin-right: 0.625em; }
 body.business .container #content section#slide-2 div#offer ul li:nth-of-type(1):before { content: url(/assets/clock3.png); }
-body.business .container #content section#slide-2 div#offer ul li:nth-of-type(2):before { content: url(/assets/location.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(1):before { content: url(/assets/browser.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(2):before { content: url(/assets/smartphone-icon.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(3):before { content: url(/assets/facebook.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(4):before { content: url(/assets/twitter.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(5):before { content: url(/assets/portals.png); }
+body.business .container #content section#slide-2 div#offer ul li:nth-of-type(2):before { content: url(/assets/location2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(1):before { content: url(/assets/browser2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(2):before { content: url(/assets/smartphone-icon2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(3):before { content: url(/assets/facebook2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(4):before { content: url(/assets/twitter2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(5):before { content: url(/assets/portals2.png); }
 body.business .container #content section#slide-3 div { text-align: center; }
 body.business .container #content section#slide-3 div:first-of-type img { width: 70%; box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
 body.business .container #content section#slide-3 div:last-of-type img { margin-bottom: 1.25em; }
