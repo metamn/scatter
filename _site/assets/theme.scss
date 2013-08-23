@@ -461,13 +461,17 @@ body.business {
     }
     
     form {
-      font-size: smaller;
+      font-size: small;
       
       input {
-        font-size: small;
+        font-size: smaller;
         &:last-of-type {
           @include button($background, $red);
         }
+      }
+      
+      p {
+        margin-top: $pad;
       }
     }
       
@@ -568,26 +572,8 @@ body.business {
           }
         }
 
-        &#slide-2 {
-          div {
-            text-align: center;
-            
-            &:first-of-type {
-              img {
-                width: 70%;
-                box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
-              }
-            }
-            
-            &:last-of-type {
-              img {
-                margin-bottom: $pad;
-              }
-            }
-          }
-        }
 
-        &#slide-3 {
+        &#slide-2 {
           div {
             
             ul {
@@ -647,6 +633,26 @@ body.business {
               }
             }
             
+          }
+        }
+        
+        
+        &#slide-3 {
+          div {
+            text-align: center;
+            
+            &:first-of-type {
+              img {
+                width: 70%;
+                box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+              }
+            }
+            
+            &:last-of-type {
+              img {
+                margin-bottom: $pad;
+              }
+            }
           }
         }
         

@@ -63,11 +63,6 @@ body {
 
 
 
-@mixin fixed-to-bottom {
-  
-}
-
-
 
 
 
@@ -75,6 +70,8 @@ body.business {
   .container {
   
     #header {
+      bottom: $pad;
+      
       h1, nav {
         width: auto;
         float: left;
@@ -89,6 +86,17 @@ body.business {
         margin-left: 30%;
         display: block;
       }
+    }
+    
+    form {
+      width: auto;
+      position: fixed;
+      right: $pad;
+      float: right;
+      
+      margin-top: $pad*3;
+      
+      z-index: 2;
     }
   }
 }

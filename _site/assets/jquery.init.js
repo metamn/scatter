@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   // Typer
+  
   $(function () {
     $('[data-typer-targets]').typer();
   });
@@ -13,7 +14,7 @@ $(document).ready(function() {
   // Scrolling on the business page
   
   $('.business #header nav li').click(function() {
-    var index = $(this).index() + 1;
+    var index = $(this).index() + 2;
     
     var slide = $('.business section:nth-child(' + index + ')');
     $("html, body").animate({ scrollTop: slide.offset().top }, "slow");

@@ -99,9 +99,11 @@ body .container #content section article { width: 61.804%; margin-left: 19.098%;
 @media only screen and (max-width: 766px) { body .container #content section#features, body .container #content section#testimonials { height: 220%; }
   body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; } }
 
+body.business .container #header { bottom: 1.25em; }
 body.business .container #header h1, body.business .container #header nav { width: auto; float: left; }
 body.business .container #header h1 { margin-left: 0; margin-top: 0.3125em; }
 body.business .container #header nav { margin-left: 30%; display: block; }
+body.business .container form { width: auto; position: fixed; right: 1.25em; float: right; margin-top: 3.75em; z-index: 2; }
 
 body { background: #f0efeb; color: #363636; }
 body .container a { color: #ff4637; text-decoration: none; }
@@ -181,12 +183,13 @@ body.business .container #header nav ul li.last, body.business .container #heade
 body.business .container #header nav ul li { padding-right: 1.25em; cursor: pointer; }
 body.business .container #header nav ul li:after { content: ''; position: absolute; width: 24px; height: 24px; border-radius: 50%; border: 4px solid #77c8f5; }
 body.business .container #header nav ul li:hover:after, body.business .container #header nav ul li.active:after { background: #77c8f5; }
-body.business .container form { font-size: smaller; }
-body.business .container form input { font-size: small; }
+body.business .container form { font-size: small; }
+body.business .container form input { font-size: smaller; }
 body.business .container form input:last-of-type { background: #ff4637; color: #f0efeb; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; margin-right: 1.25em; -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; }
 body.business .container form input:last-of-type:hover, body.business .container form input:last-of-type:focus, body.business .container form input:last-of-type.hover, body.business .container form input:last-of-type.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
 body.business .container form input:last-of-type:active, body.business .container form input:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.business .container form input:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
+body.business .container form p { margin-top: 1.25em; }
 body.business .container #content section { background-image: url(/assets/tablet-with-scatter.png); }
 body.business .container #content section div { width: 42%; margin-right: 2%; margin-bottom: 2%; height: 22em; display: inline-block; float: left; padding: 1.25em; background: #77c8f5; opacity: .9; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 @media only screen and (min-width: 1401px) { body.business .container #content section div { height: 30em; } }
@@ -203,19 +206,19 @@ body.business .container #content section#slide-1 div p { position: relative; ov
 body.business .container #content section#slide-1 div p#p1 { top: -10em; width: 30%; left: 13%; height: 2.5em; }
 body.business .container #content section#slide-1 div p#p2 { font-size: 0.625em; top: -18em; left: 62%; width: 7%; }
 body.business .container #content section#slide-1 div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
-body.business .container #content section#slide-2 div { text-align: center; }
-body.business .container #content section#slide-2 div:first-of-type img { width: 70%; box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
-body.business .container #content section#slide-2 div:last-of-type img { margin-bottom: 1.25em; }
-body.business .container #content section#slide-3 div ul { list-style: none; margin: 0; }
-body.business .container #content section#slide-3 div ul li { margin-bottom: 0; }
-body.business .container #content section#slide-3 div ul li:before { position: relative; top: 15px; text-align: center; padding: 5px; width: 60px; height: 60px; display: inline-block; margin-right: 0.625em; }
-body.business .container #content section#slide-3 div#offer ul li:nth-of-type(1):before { content: url(/assets/clock.png); }
-body.business .container #content section#slide-3 div#offer ul li:nth-of-type(2):before { content: url(/assets/location.png); }
-body.business .container #content section#slide-3 div#spread ul li:nth-of-type(1):before { content: url(/assets/browser.png); }
-body.business .container #content section#slide-3 div#spread ul li:nth-of-type(2):before { content: url(/assets/smartphone-icon.png); }
-body.business .container #content section#slide-3 div#spread ul li:nth-of-type(3):before { content: url(/assets/facebook.png); }
-body.business .container #content section#slide-3 div#spread ul li:nth-of-type(4):before { content: url(/assets/twitter.png); }
-body.business .container #content section#slide-3 div#spread ul li:nth-of-type(5):before { content: url(/assets/portals.png); }
+body.business .container #content section#slide-2 div ul { list-style: none; margin: 0; }
+body.business .container #content section#slide-2 div ul li { margin-bottom: 0; }
+body.business .container #content section#slide-2 div ul li:before { position: relative; top: 15px; text-align: center; padding: 5px; width: 60px; height: 60px; display: inline-block; margin-right: 0.625em; }
+body.business .container #content section#slide-2 div#offer ul li:nth-of-type(1):before { content: url(/assets/clock.png); }
+body.business .container #content section#slide-2 div#offer ul li:nth-of-type(2):before { content: url(/assets/location.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(1):before { content: url(/assets/browser.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(2):before { content: url(/assets/smartphone-icon.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(3):before { content: url(/assets/facebook.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(4):before { content: url(/assets/twitter.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(5):before { content: url(/assets/portals.png); }
+body.business .container #content section#slide-3 div { text-align: center; }
+body.business .container #content section#slide-3 div:first-of-type img { width: 70%; box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
+body.business .container #content section#slide-3 div:last-of-type img { margin-bottom: 1.25em; }
 body.business .container #content section#slide-4 div { width: 100%; }
 body.business .container #content section#slide-4 div img { width: 60%; float: left; }
 body.business .container #content section#slide-4 div ul { width: 30%; margin-left: 5%; float: left; list-style: none; }
