@@ -127,7 +127,7 @@ body .container #content h1 { font-weight: 300; font-size: 170%; }
 body .container #content h2 { font-weight: 400; text-transform: uppercase; }
 @media only screen and (max-width: 766px) { body .container #content h2 { font-size: 100%; } }
 body .container #content h1, body .container #content h2 { padding: 1.25em 0; }
-body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter.png); }
+body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 @media only screen and (max-width: 766px) { body .container #content section#intro article header h1 { text-shadow: #363636 1px 1px 0; } }
@@ -137,8 +137,8 @@ body .container #content section#intro article form a:first-of-type { display: i
 @media only screen and (max-width: 766px) { body .container #content section#intro article form a:first-of-type { display: none; } }
 @media only screen and (min-width: 1401px) { body .container #content section#intro article form a:first-of-type { margin-top: 6.25em; } }
 @media only screen and (max-width: 766px) { body .container #content section#intro article form input:first-of-type { display: none; } }
-body .container #content section#features { background-image: url(/assets/laptop-with-scatter.png); }
-@media only screen and (max-width: 766px) { body .container #content section#features { background-image: url(/assets/tablet-with-scatter.png); } }
+body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); }
+@media only screen and (max-width: 766px) { body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); } }
 body .container #content section#features article header h1 { color: #f0efeb; }
 @media only screen and (max-width: 766px) { body .container #content section#features article header h1 { color: #363636; } }
 body .container #content section#features article ul { width: 100%; float: left; display: block; margin: 0; margin: 1.25em 0; }
@@ -157,8 +157,8 @@ body .container #content section#features article form { /* I'm a business */ }
 body .container #content section#features article form input:first-of-type { display: none; }
 body .container #content section#features article form p { display: inline-block; }
 @media only screen and (max-width: 766px) { body .container #content section#features article form p { display: block; margin: 1.25em 0; } }
-body .container #content section#testimonials { background-image: url(/assets/laptop-with-scatter.png); }
-@media only screen and (max-width: 766px) { body .container #content section#testimonials { background-image: url(/assets/tablet-with-scatter.png); margin-bottom: 2.5em; } }
+body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); }
+@media only screen and (max-width: 766px) { body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); margin-bottom: 2.5em; } }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 2.5em 0 1.25em; list-style: none; }
 body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; background: #363636; color: #f0efeb; opacity: .9; font-weight: 400; cursor: pointer; }
 @media only screen and (min-width: 1401px) { body .container #content section#testimonials article ul li { max-width: 61.804%; } }
@@ -190,7 +190,7 @@ body.business .container form input:last-of-type:hover, body.business .container
 body.business .container form input:last-of-type:active, body.business .container form input:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.business .container form input:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
 body.business .container form p { margin-top: 1.25em; }
-body.business .container #content section { background-image: url(/assets/tablet-with-scatter.png); }
+body.business .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); }
 body.business .container #content section div { width: 42%; margin-right: 2%; margin-bottom: 2%; height: 22em; display: inline-block; float: left; padding: 1.25em; background: #77c8f5; opacity: .9; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; }
 @media only screen and (min-width: 1401px) { body.business .container #content section div { height: 30em; } }
 body.business .container #content section div:last-of-type { margin-right: 0; }
@@ -211,14 +211,14 @@ body.business .container #content section#slide-1 div p#p2 { font-size: 0.625em;
 body.business .container #content section#slide-1 div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
 body.business .container #content section#slide-2 div ul { list-style: none; margin: 0; }
 body.business .container #content section#slide-2 div ul li { margin-bottom: 0; }
-body.business .container #content section#slide-2 div ul li:before { position: relative; top: 20px; text-align: center; padding: 5px; width: 60px; height: 60px; display: inline-block; margin-right: 0.625em; }
-body.business .container #content section#slide-2 div#offer ul li:nth-of-type(1):before { content: url(/assets/clock3.png); }
-body.business .container #content section#slide-2 div#offer ul li:nth-of-type(2):before { content: url(/assets/location2.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(1):before { content: url(/assets/browser2.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(2):before { content: url(/assets/smartphone-icon2.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(3):before { content: url(/assets/facebook3.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(4):before { content: url(/assets/twitter2.png); }
-body.business .container #content section#slide-2 div#spread ul li:nth-of-type(5):before { content: url(/assets/portals2.png); }
+body.business .container #content section#slide-2 div ul li:before { position: relative; top: 15px; text-align: center; padding: 5px; width: 50px; height: 50px; display: inline-block; margin-right: 0.625em; }
+body.business .container #content section#slide-2 div#offer ul li:nth-of-type(1):before { content: url(http://metamn.github.io/scatter/assets/clock3.png); }
+body.business .container #content section#slide-2 div#offer ul li:nth-of-type(2):before { content: url(http://metamn.github.io/scatter/assets/location2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(1):before { content: url(http://metamn.github.io/scatter/assets/browser2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(2):before { content: url(http://metamn.github.io/scatter/assets/smartphone-icon2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(3):before { content: url(http://metamn.github.io/scatter/assets/facebook3.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(4):before { content: url(http://metamn.github.io/scatter/assets/twitter2.png); }
+body.business .container #content section#slide-2 div#spread ul li:nth-of-type(5):before { content: url(http://metamn.github.io/scatter/assets/portals2.png); }
 body.business .container #content section#slide-3 div { text-align: center; }
 body.business .container #content section#slide-3 div:first-of-type img { width: 70%; box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset; }
 body.business .container #content section#slide-3 div:last-of-type img { margin-bottom: 1.25em; }
