@@ -428,20 +428,13 @@ body.business {
   .container {
   
     #header {
-      bottom: 0;
-      
-      form {
-        font-size: smaller;
-        
-        input {
-          font-size: small;
-          &:last-of-type {
-            @include button($background, $red);
-          }
-        }
-      }
-      
       nav {
+        background: $background;
+        padding: $pad/4 $pad/2 $pad/2 $pad/4;
+        opacity: .9;
+        
+        @include border-radius($pad/2);
+        
         ul {
           @include list-inline;
           
@@ -463,6 +456,17 @@ body.business {
               background: $blue;
             }
           }
+        }
+      }
+    }
+    
+    form {
+      font-size: smaller;
+      
+      input {
+        font-size: small;
+        &:last-of-type {
+          @include button($background, $red);
         }
       }
     }

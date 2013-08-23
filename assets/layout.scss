@@ -9,20 +9,23 @@ html, body, .container, #content, #content section {
 body {
   .container {
     #header {
-      @include block;
+      position: fixed;
+      bottom: $pad*2;
+      z-index: 1;
       
-      h1 {
-        width: $major;
-        margin-left: $margin;
-        
-        position: fixed;
-        z-index: 1;
-        
-        bottom: $pad;
-        padding-bottom: 0;
+      width: $major;
+      margin-left: $margin;
+      
+      @include big-screen {
+        bottom: $pad*4;
       }
       
-      form, nav {
+      h1 {
+        padding: 0;
+        margin: 0;
+      }
+      
+      nav {
         display: none;
       }
     }
@@ -60,21 +63,8 @@ body {
 
 
 
-
-
-@mixin form-buttons {
-  display: inline-block;
-  width: auto;
-  margin-right: $pad*2;
-  
-  position: relative;
-  float: left;
-}
-
 @mixin fixed-to-bottom {
-  position: fixed;
-  bottom: $pad*2;
-  z-index: 1;
+  
 }
 
 
@@ -85,10 +75,19 @@ body.business {
   .container {
   
     #header {
-      @include fixed-to-bottom;
+      h1, nav {
+        width: auto;
+        float: left;
+      }
       
-      h1, form, nav {
-        @include form-buttons;
+      h1 {
+        margin-left: 0;
+        margin-top: $pad/4
+      }
+      
+      nav {
+        margin-left: 30%;
+        display: block;
       }
     }
   }
