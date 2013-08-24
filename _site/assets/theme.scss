@@ -595,6 +595,10 @@ body.business {
 
         &#slide-2 {
           div {
+            h3 {
+              padding: 1.25em 0;
+            }
+            
             ul {
               font-weight: 400;
             }
@@ -629,11 +633,16 @@ body.business {
               ul {
                 
                 li {
-                  padding: $pad/2;
-                  margin-bottom: $pad/2;
+                  padding: $pad/4;
+                  margin-bottom: $pad - $pad/4;
                   
                   border: $pad/4 solid;
                   @include border-radius($pad/2);
+                  
+                  @include big-screen {
+                    padding: $pad/2;
+                    margin-bottom: $pad + $pad/4;
+                  }
                 }
               }
             }
@@ -645,7 +654,12 @@ body.business {
         &#slide-3 {
           div {
             text-align: center;
-           
+            
+            &:first-of-type {
+              img {
+                width: 96%;
+              }
+            }
           }
         }
         
@@ -668,6 +682,10 @@ body.business {
               
               li {
                 margin-bottom: $pad;
+              }
+              
+              @include big-screen {
+                font-size: larger;
               }
             }
           }

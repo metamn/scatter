@@ -209,6 +209,7 @@ body.business .container #content section#slide-1 div p { position: relative; ov
 body.business .container #content section#slide-1 div p#p1 { top: -10em; width: 30%; left: 13%; height: 2.5em; }
 body.business .container #content section#slide-1 div p#p2 { font-size: 0.625em; top: -18em; left: 62%; width: 7%; }
 body.business .container #content section#slide-1 div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
+body.business .container #content section#slide-2 div h3 { padding: 1.25em 0; }
 body.business .container #content section#slide-2 div ul { font-weight: 400; }
 body.business .container #content section#slide-2 div#offer img:first-of-type { width: 100%; }
 body.business .container #content section#slide-2 div#offer ul { display: block; margin: 0; margin: 0; font-size: small; }
@@ -217,12 +218,15 @@ body.business .container #content section#slide-2 div#offer ul li.last, body.bus
 body.business .container #content section#slide-2 div#offer ul li { margin-bottom: 0; }
 body.business .container #content section#slide-2 div#offer ul li img { width: 50px; }
 body.business .container #content section#slide-2 div#offer ul li:nth-child(even) { width: 25%; }
-body.business .container #content section#slide-2 div#spread ul li { padding: 0.625em; margin-bottom: 0.625em; border: 0.3125em solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
+body.business .container #content section#slide-2 div#spread ul li { padding: 0.3125em; margin-bottom: 0.9375em; border: 0.3125em solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
+@media only screen and (min-width: 1401px) { body.business .container #content section#slide-2 div#spread ul li { padding: 0.625em; margin-bottom: 1.5625em; } }
 body.business .container #content section#slide-3 div { text-align: center; }
+body.business .container #content section#slide-3 div:first-of-type img { width: 96%; }
 body.business .container #content section#slide-4 div { width: 100%; float: left; width: 94%; }
 body.business .container #content section#slide-4 div img { width: 60%; float: left; }
 body.business .container #content section#slide-4 div ul { width: 30%; margin-left: 5%; float: left; list-style: none; }
 body.business .container #content section#slide-4 div ul li { margin-bottom: 1.25em; }
+@media only screen and (min-width: 1401px) { body.business .container #content section#slide-4 div ul { font-size: larger; } }
 
 .outline, .hidden { display: none; }
 
