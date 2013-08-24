@@ -490,9 +490,18 @@ body.business {
         }
         
         div {
-          width: 40%;
+          display: inline-block;
+          float: left;
+          
+          width: 43%;
           margin-right: 1%;
           margin-bottom: 1%;
+          
+          padding: 2%;
+          background: transparent;
+          border: $pad/4 solid;
+          @include border-radius($pad);
+          
           height: 22em;
           
           @include big-screen {
@@ -503,13 +512,6 @@ body.business {
             margin-right: 0;
           }
           
-          display: inline-block;
-          float: left;
-          
-          padding: $pad;
-          background: transparent;
-          border: $pad/4 solid;
-          @include border-radius($pad);
           
           
           h2 {
@@ -544,7 +546,7 @@ body.business {
         &#slide-1 {
           div {
             @include block;
-            width: 94%;
+            width: 93%;
             
             img {
               margin-top: $pad;
@@ -593,45 +595,31 @@ body.business {
 
         &#slide-2 {
           div {
-            
             ul {
-              list-style: none;
-              margin: 0;
-                
-              li {
-                margin-bottom: 0;
-                font-weight: 400;
-                  
-                &:before {
-                  position: relative;
-                  top: 15px;
-                  
-                  text-align: center;
-                  padding: 5px;
-                  width: 50px;
-                  height: 50px;
-                  display: inline-block;
-                  
-                  margin-right: $pad/2;
-                }
-              }
+              font-weight: 400;
             }
             
             &#offer {
               img {
-                width: 100%;
+                &:first-of-type {
+                  width: 100%;
+                }
               }
               
               ul {
-                position: relative;
-                top: -$pad*3;
-              
+                @include list-inline;
+                margin: 0;
+                font-size: small;
+                  
                 li {
-                  &:nth-of-type(1):before {
-                    content: url(/assets/clock.png);
+                  margin-bottom: 0;
+                  
+                  img {
+                    width: 50px;
                   }
-                  &:nth-of-type(2):before {
-                    content: url(/assets/location.png);
+                  
+                  &:nth-child(even) {
+                    width: 25%;
                   }
                 }
               }
@@ -639,22 +627,13 @@ body.business {
             
             &#spread {
               ul {
+                
                 li {
-                  &:nth-of-type(1):before {
-                    content: url(/assets/browser.png);
-                  }
-                  &:nth-of-type(2):before {
-                    content: url(/assets/smartphone-icon.png);
-                  }
-                  &:nth-of-type(3):before {
-                    content: url(/assets/facebook.png);
-                  }
-                  &:nth-of-type(4):before {
-                    content: url(/assets/twitter.png);
-                  }
-                  &:nth-of-type(5):before {
-                    content: url(/assets/portals.png);
-                  }
+                  padding: $pad/2;
+                  margin-bottom: $pad/2;
+                  
+                  border: $pad/4 solid;
+                  @include border-radius($pad/2);
                 }
               }
             }
