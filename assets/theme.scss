@@ -325,26 +325,25 @@ body {
         
         
         &#testimonials {
-          background-image: url(/assets/laptop-with-scatter.png);
+          background-image: url(/assets/tablet-with-scatter.png);
           
           @include tablet-and-below {
-            background-image: url(/assets/tablet-with-scatter.png);
             margin-bottom: $pad*2;
           }
           
           article {
             ul {
               @include block;
-              margin: $pad*2 0 $pad;
+              margin: $pad 0;
               list-style: none;
               
               li {
                 margin-bottom: $pad;
                 @include block;
-                  
-                background: $color;
-                color: $background;
-                opacity: .9;
+                
+                border: $pad/4 solid;
+                @include border-radius($pad);
+                padding: $pad/2;
                 
                 font-weight: 400;
                 cursor: pointer;
@@ -355,19 +354,19 @@ body {
                 }
                 
                 img {
-                  max-width: $pad*5;
+                  max-width: $pad*4;
                   float: left;
                   margin-right: $pad;
+                  @include border-radius($pad/2);
                 }
                 
                 p {
                   padding: $pad;
                   padding-bottom: 0;
-                  color: $orange;
                   
                   &:nth-of-type(2) {
                     font-size: small;
-                    color: $background;
+                    color: $orange;
                   }
                 }
                 
@@ -597,6 +596,7 @@ body.business {
           div {
             h3 {
               padding: 1.25em 0;
+              text-align: center;
             }
             
             ul {
@@ -607,6 +607,8 @@ body.business {
               img {
                 &:first-of-type {
                   width: 100%;
+                  position: relative;
+                  top: -$pad/2;
                 }
               }
               
@@ -624,6 +626,10 @@ body.business {
                   
                   &:nth-child(even) {
                     width: 25%;
+                    
+                    @include big-screen {
+                      width: 35%;
+                    }
                   }
                 }
               }
@@ -636,7 +642,7 @@ body.business {
                   padding: $pad/4;
                   margin-bottom: $pad - $pad/4;
                   
-                  border: $pad/4 solid;
+                  border: $pad/8 solid;
                   @include border-radius($pad/2);
                   
                   @include big-screen {

@@ -158,14 +158,14 @@ body .container #content section#features article form { /* I'm a business */ }
 body .container #content section#features article form input:first-of-type { display: none; }
 body .container #content section#features article form p { display: inline-block; }
 @media only screen and (max-width: 766px) { body .container #content section#features article form p { display: block; margin: 1.25em 0; } }
-body .container #content section#testimonials { background-image: url(/assets/laptop-with-scatter.png); }
-@media only screen and (max-width: 766px) { body .container #content section#testimonials { background-image: url(/assets/tablet-with-scatter.png); margin-bottom: 2.5em; } }
-body .container #content section#testimonials article ul { width: 100%; float: left; margin: 2.5em 0 1.25em; list-style: none; }
-body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; background: #363636; color: #f0efeb; opacity: .9; font-weight: 400; cursor: pointer; }
+body .container #content section#testimonials { background-image: url(/assets/tablet-with-scatter.png); }
+@media only screen and (max-width: 766px) { body .container #content section#testimonials { margin-bottom: 2.5em; } }
+body .container #content section#testimonials article ul { width: 100%; float: left; margin: 1.25em 0; list-style: none; }
+body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; border: 0.3125em solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; padding: 0.625em; font-weight: 400; cursor: pointer; }
 @media only screen and (min-width: 1401px) { body .container #content section#testimonials article ul li { max-width: 61.804%; } }
-body .container #content section#testimonials article ul li img { max-width: 6.25em; float: left; margin-right: 1.25em; }
-body .container #content section#testimonials article ul li p { padding: 1.25em; padding-bottom: 0; color: #ff782a; }
-body .container #content section#testimonials article ul li p:nth-of-type(2) { font-size: small; color: #f0efeb; }
+body .container #content section#testimonials article ul li img { max-width: 5em; float: left; margin-right: 1.25em; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
+body .container #content section#testimonials article ul li p { padding: 1.25em; padding-bottom: 0; }
+body .container #content section#testimonials article ul li p:nth-of-type(2) { font-size: small; color: #ff782a; }
 body .container #content section#testimonials article ul li p + p { margin-top: 0; }
 @media only screen and (max-width: 766px) { body .container #content section#testimonials article ul li { padding-bottom: 1.25em; }
   body .container #content section#testimonials article ul li img { max-width: 30%; margin: 0 70% 0 0; }
@@ -209,16 +209,17 @@ body.business .container #content section#slide-1 div p { position: relative; ov
 body.business .container #content section#slide-1 div p#p1 { top: -10em; width: 30%; left: 13%; height: 2.5em; }
 body.business .container #content section#slide-1 div p#p2 { font-size: 0.625em; top: -18em; left: 62%; width: 7%; }
 body.business .container #content section#slide-1 div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
-body.business .container #content section#slide-2 div h3 { padding: 1.25em 0; }
+body.business .container #content section#slide-2 div h3 { padding: 1.25em 0; text-align: center; }
 body.business .container #content section#slide-2 div ul { font-weight: 400; }
-body.business .container #content section#slide-2 div#offer img:first-of-type { width: 100%; }
+body.business .container #content section#slide-2 div#offer img:first-of-type { width: 100%; position: relative; top: -0.625em; }
 body.business .container #content section#slide-2 div#offer ul { display: block; margin: 0; margin: 0; font-size: small; }
 body.business .container #content section#slide-2 div#offer ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
 body.business .container #content section#slide-2 div#offer ul li.last, body.business .container #content section#slide-2 div#offer ul li:last-of-type { margin-right: 0; }
 body.business .container #content section#slide-2 div#offer ul li { margin-bottom: 0; }
 body.business .container #content section#slide-2 div#offer ul li img { width: 50px; }
 body.business .container #content section#slide-2 div#offer ul li:nth-child(even) { width: 25%; }
-body.business .container #content section#slide-2 div#spread ul li { padding: 0.3125em; margin-bottom: 0.9375em; border: 0.3125em solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
+@media only screen and (min-width: 1401px) { body.business .container #content section#slide-2 div#offer ul li:nth-child(even) { width: 35%; } }
+body.business .container #content section#slide-2 div#spread ul li { padding: 0.3125em; margin-bottom: 0.9375em; border: 0.15625em solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
 @media only screen and (min-width: 1401px) { body.business .container #content section#slide-2 div#spread ul li { padding: 0.625em; margin-bottom: 1.5625em; } }
 body.business .container #content section#slide-3 div { text-align: center; }
 body.business .container #content section#slide-3 div:first-of-type img { width: 96%; }

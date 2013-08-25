@@ -11,3 +11,5 @@
 <a href="http://thenounproject.com/noun/analytics/#icon-No20788" target="_blank">Analytics</a> designed by <a href="http://thenounproject.com/Luboš Volkov" target="_blank">Luboš Volkov</a> from The Noun Project
 <a href="http://thenounproject.com/noun/computer/#icon-No115" target="_blank">Computer</a>  from The Noun Project
 
+<a href="http://thenounproject.com/noun/speech-bubble/#icon-No6784" target="_blank">Speech Bubble</a> designed by <a href="http://thenounproject.com/olynleroy" target="_blank">Olyn LeRoy</a> from The Noun Project
+
