@@ -44,7 +44,8 @@ $orange: #FF782A;
 
 @mixin button($background, $color) {
   background: $color;        
-  color: $background;    
+  color: $background;   
+  cursor: pointer; 
     
   text-transform: uppercase;
   font-weight: 700;
@@ -462,12 +463,23 @@ body.business {
     form {
       font-size: small;
       
-      input {
+      button {
         font-size: smaller;
         display: block;
+        @include button($background, $color);
+        
+        span {
+          display: block;
+          text-transform: none;
+          padding-top: $pad/2;
+          margin-top: $pad/2;
+          border-top: 1px solid;
+          color: $red;
+        }
         
         &:last-of-type {
           @include button($background, $red);
+          margin-top: $pad/2;
         }
       }
       
@@ -601,6 +613,7 @@ body.business {
             
             ul {
               font-weight: 400;
+              list-style: circle;
             }
             
             &#offer {
