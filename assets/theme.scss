@@ -167,7 +167,7 @@ body {
       
       section {
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png);
+          background-image: url(/assets/smartphone-with-scatter.png);
           
           article {
             header {
@@ -215,10 +215,10 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png);
+          background-image: url(/assets/laptop-with-scatter.png);
           
           @include tablet-and-below {
-            background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+            background-image: url(/assets/tablet-with-scatter.png);
           }
           
           article {
@@ -325,7 +325,7 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+          background-image: url(/assets/tablet-with-scatter.png);
           
           @include tablet-and-below {
             margin-bottom: $pad*2;
@@ -480,7 +480,7 @@ body.business {
     #content { 
   
       section {
-        background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png);
+        background-image: url(/assets/tablet-with-scatter.png);
         
         article {
           header {
