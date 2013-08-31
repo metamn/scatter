@@ -594,9 +594,15 @@ body.business {
           background-image: url(/assets/tablet-with-scatter-optimized-mobile.png);
         }
         
+        
         article {
           header {
             text-align: center;
+          }
+          
+          @include mobile {
+            width: 96%;
+            margin: 0 2%;
           }
         }
         
@@ -619,11 +625,21 @@ body.business {
             height: 30em;
           }
           
-          &:last-of-type {
-            margin-right: 0;
+          @include mobile {
+            @include block;
+            display: block;
+            
+            width: 90%;
+            height: auto;
+            
+            margin: 0;
+            margin-bottom: $pad*2;
           }
           
           
+          &:last-of-type {
+            margin-right: 0;
+          }
           
           h2 {
             text-transform: none;
@@ -652,6 +668,7 @@ body.business {
               width: 100%;
             }
           }
+          
         }
         
         &#slide-1 {
@@ -660,13 +677,19 @@ body.business {
             width: 93%;
             
             img {
-              margin-top: $pad;
+              @include mobile {
+                margin-top: $pad*2;
+              }
             }
             
             h3 {
               position: relative;
               top: -$pad*5;
               text-align: center;
+              
+              @include mobile {
+                top: 0;
+              }
             }
             
             
@@ -698,6 +721,10 @@ body.business {
                 top: -20em;
                 left: 75%;
                 width: 8%;
+              }
+              
+              @include mobile {
+                display: none;
               }
             }
           }
@@ -742,6 +769,11 @@ body.business {
                     
                     @include big-screen {
                       width: 35%;
+                    }
+                    
+                    @include mobile {
+                      width: 70%;
+                      margin-bottom: $pad*2;
                     }
                   }
                 }
@@ -805,6 +837,17 @@ body.business {
               
               @include big-screen {
                 font-size: larger;
+              }
+            }
+            
+            @include mobile {
+              img, ul {
+                @include block;
+              }
+              
+              img {
+                padding: $pad;
+                width: 80%;
               }
             }
           }

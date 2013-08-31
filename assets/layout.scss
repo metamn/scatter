@@ -46,13 +46,17 @@ body {
         
         
         @include tablet-and-below {
-          &#features, &#testimonials {
+          &#features, &#testimonials{
             height: 220%;
             
             article {
               width: $major + $margin;
               margin-left: $margin/2;
             }
+          }
+          
+          &#slide-2, &#slide-3{
+            height: 180%;
           }
         }
         
@@ -100,6 +104,10 @@ body.business {
         margin-right: 5%;
         float: right;
         display: block;
+        
+        @include mobile {
+          display: none;
+        }
       }
     }
     
@@ -111,6 +119,10 @@ body.business {
       z-index: 2;
       
       top: 40%;
+      
+      @include mobile {
+        display: none;
+      }
     }
   }
 }
