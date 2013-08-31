@@ -128,7 +128,8 @@ body .container #content h1 { font-weight: 300; font-size: 170%; }
 body .container #content h2 { font-weight: 400; text-transform: uppercase; }
 @media only screen and (max-width: 766px) { body .container #content h2 { font-size: 100%; } }
 body .container #content h1, body .container #content h2 { padding: 1.25em 0; }
-body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter.png); }
+body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter-optimized-mobile.png); } }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 @media only screen and (max-width: 766px) { body .container #content section#intro article header h1 { text-shadow: #363636 1px 1px 0; } }
@@ -138,8 +139,8 @@ body .container #content section#intro article form a:first-of-type { display: i
 @media only screen and (max-width: 766px) { body .container #content section#intro article form a:first-of-type { display: none; } }
 @media only screen and (min-width: 1401px) { body .container #content section#intro article form a:first-of-type { margin-top: 6.25em; } }
 @media only screen and (max-width: 766px) { body .container #content section#intro article form input:first-of-type { display: none; } }
-body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter.png); }
-@media only screen and (max-width: 766px) { body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); } }
+body .container #content section#features { background-image: url(/assets/laptop-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body .container #content section#features { background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
 body .container #content section#features article header h1 { color: #f0efeb; }
 @media only screen and (max-width: 766px) { body .container #content section#features article header h1 { color: #363636; } }
 body .container #content section#features article ul { width: 100%; float: left; display: block; margin: 0; margin: 1.25em 0; }
@@ -158,8 +159,8 @@ body .container #content section#features article form { /* I'm a business */ }
 body .container #content section#features article form input:first-of-type { display: none; }
 body .container #content section#features article form p { display: inline-block; }
 @media only screen and (max-width: 766px) { body .container #content section#features article form p { display: block; margin: 1.25em 0; } }
-body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); }
-@media only screen and (max-width: 766px) { body .container #content section#testimonials { margin-bottom: 2.5em; } }
+body .container #content section#testimonials { background-image: url(/assets/tablet-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body .container #content section#testimonials { margin-bottom: 2.5em; background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 1.25em 0; list-style: none; }
 body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; border: 0.3125em solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; padding: 0.625em; font-weight: 400; cursor: pointer; }
 @media only screen and (min-width: 1401px) { body .container #content section#testimonials article ul li { max-width: 61.804%; } }
@@ -195,7 +196,8 @@ body.business .container form button:last-of-type:hover, body.business .containe
 body.business .container form button:last-of-type:active, body.business .container form button:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.business .container form button:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
 body.business .container form p { margin-top: 1.25em; }
-body.business .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter.png); }
+body.business .container #content section { background-image: url(/assets/tablet-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body.business .container #content section { background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
 body.business .container #content section article header { text-align: center; }
 body.business .container #content section div { display: inline-block; float: left; width: 43%; margin-right: 1%; margin-bottom: 1%; padding: 2%; background: transparent; border: 0.3125em solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; height: 22em; }
 @media only screen and (min-width: 1401px) { body.business .container #content section div { height: 30em; } }

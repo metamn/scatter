@@ -1,15 +1,18 @@
 <a href="http://thenounproject.com/noun/laptop/#icon-No114" target="_blank">Laptop</a>  from The Noun Project
+
 <a href="http://thenounproject.com/noun/smartphone/#icon-No1023" target="_blank">Smartphone</a> designed by <a href="http://thenounproject.com/george.agpoon" target="_blank">George Agpoon</a> from The Noun Project
-<a href="http://thenounproject.com/noun/house/#icon-No11562" target="_blank">House</a> designed by <a href="http://thenounproject.com/simge.gevende" target="_blank">Simge Gevende</a> from The Noun Project
-<a href="http://thenounproject.com/noun/people/#icon-No16570" target="_blank">People</a> designed by <a href="http://thenounproject.com/ofcapl" target="_blank">Łukasz Kupś (OfcaPL)</a> from The Noun Project
-<a href="http://thenounproject.com/noun/web-portal/#icon-No6468" target="_blank">Web Portal</a> designed by <a href="http://thenounproject.com/pjsmits" target="_blank">Pieter J. Smits</a> from The Noun Project
-<a href="http://thenounproject.com/noun/facebook/#icon-No20845" target="_blank">Facebook</a> designed by <a href="http://thenounproject.com/Luboš Volkov" target="_blank">Luboš Volkov</a> from The Noun Project
-<a href="http://thenounproject.com/noun/browser/#icon-No20809" target="_blank">Browser</a> designed by <a href="http://thenounproject.com/Luboš Volkov" target="_blank">Luboš Volkov</a> from The Noun Project
+
 <a href="http://thenounproject.com/noun/clock/#icon-No20008" target="_blank">Clock</a> designed by <a href="http://thenounproject.com/logorado" target="_blank">Nadir Balcikli</a> from The Noun Project
-<a href="http://thenounproject.com/noun/incoming-call/#icon-No139" target="_blank">Incoming Call</a>  from The Noun Project
+
 <a href="http://thenounproject.com/noun/telephone/#icon-No19915" target="_blank">Telephone</a> designed by <a href="http://thenounproject.com/derthomas" target="_blank">Thomas Uebe</a> from The Noun Project
+
 <a href="http://thenounproject.com/noun/analytics/#icon-No20788" target="_blank">Analytics</a> designed by <a href="http://thenounproject.com/Luboš Volkov" target="_blank">Luboš Volkov</a> from The Noun Project
 <a href="http://thenounproject.com/noun/computer/#icon-No115" target="_blank">Computer</a>  from The Noun Project
 
-<a href="http://thenounproject.com/noun/speech-bubble/#icon-No6784" target="_blank">Speech Bubble</a> designed by <a href="http://thenounproject.com/olynleroy" target="_blank">Olyn LeRoy</a> from The Noun Project
+
+Free icons
+
+- tablet
+- location
+
 
