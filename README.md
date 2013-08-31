@@ -1,5 +1,8 @@
 # Deliverables
 
+
+
+
 ## Images
 
 ### Background images
@@ -27,5 +30,9 @@
 * They can be found with .xcf (Gimp) and .psd (Photoshop) extensions
 
 * They are freely modifiable
+
+### Mobile images
+
+* They are suffixed with 'mobile'
 
 

@@ -96,7 +96,11 @@ body {
       @include block;
       
       input[type="submit"] {
-        @include button($background, $color)
+        @include button($background, $color);
+        
+        @include normal-screen {
+          font-size: small;
+        }
       }
       
       a {
@@ -110,6 +114,11 @@ body {
       
       @include tablet-and-below {
         font-size: smaller;
+        margin-bottom: $pad*5;
+      }
+      
+      @include normal-screen {
+        font-size: small;
       }
     }
   
@@ -135,6 +144,14 @@ body {
           font-size: 80%;
         }
       }
+      
+      @include tablet-and-below {
+        bottom: $pad;
+      }
+      
+      @include normal-screen {
+        bottom: $pad;
+      }
     }
     
     
@@ -148,6 +165,10 @@ body {
           font-size: 160%;
         }
         
+        @include normal-screen {
+          font-size: 130%;
+        }
+        
         @include big-screen {
           font-size: 220%;
         }
@@ -158,6 +179,10 @@ body {
         text-transform: uppercase;
         
         @include tablet-and-below {
+          font-size: 100%;
+        }
+        
+        @include normal-screen {
           font-size: 100%;
         }
       }
@@ -183,6 +208,14 @@ body {
                 color: $background;
                 
                 @include tablet-and-below {
+                  @include text-shadow($color 1px 1px 0);
+                }
+                
+                @include small-screen {
+                  @include text-shadow($color 1px 1px 0);
+                }
+                
+                @include normal-screen {
                   @include text-shadow($color 1px 1px 0);
                 }
               }
@@ -227,6 +260,7 @@ body {
           }
           
           article {
+          
             header {
               h1 {
                 color: $background;
@@ -234,8 +268,15 @@ body {
                 @include tablet-and-below {
                   color: $color;
                 }
+                
+                @include small-screen {
+                  @include text-shadow($color 1px 1px 0);
+                }
+                
+                @include normal-screen {
+                  @include text-shadow($color 1px 1px 0);
+                }
               }
-              
             }
             
             ul {
@@ -306,6 +347,38 @@ body {
                     padding: 0 $pad $pad*3;
                   }
                 }
+                
+                @include small-screen {
+                  h2 {
+                    padding: $pad $pad/2;
+                    word-wrap: break-word;
+                  }
+                  
+                  span {
+                    display: none;
+                  }
+                  
+                  p {
+                    width: auto;
+                    padding: $pad $pad/2;
+                  }
+                }
+                
+                @include normal-screen {
+                  h2 {
+                    padding: $pad $pad/2;
+                    word-wrap: break-word;
+                  }
+                  
+                  span {
+                    display: none;
+                  }
+                  
+                  p {
+                    width: auto;
+                    padding: $pad $pad/2;
+                  }
+                }
               }
             }
           
@@ -323,6 +396,7 @@ body {
                   margin: $pad 0;
                 }
               }
+              
             }
             
           }
@@ -342,6 +416,10 @@ body {
               @include block;
               margin: $pad 0;
               list-style: none;
+              
+              @include normal-screen {
+                margin: $pad/4 0;
+              }
               
               li {
                 margin-bottom: $pad;
@@ -382,10 +460,11 @@ body {
                 
                 @include tablet-and-below {
                   padding-bottom: $pad;
+                  width: 90%;
                   
                   img {
                     max-width: 30%;
-                    margin: 0 70% 0 0;
+                    margin: 0 70% $pad 0;
                   }
                   
                   p {
@@ -396,6 +475,10 @@ body {
                   p + p {
                     font-weight: 400;
                   }
+                }
+                
+                @include normal-screen {
+                  margin-bottom: $pad/2;
                 }
               }
             }
@@ -413,6 +496,14 @@ body {
                   display: block;
                   margin: $pad 0;
                 }
+              }
+              
+              @include tablet-and-below {
+                margin-top: $pad*3;
+              }
+              
+              @include normal-screen {
+                font-size: small;
               }
             }
             
