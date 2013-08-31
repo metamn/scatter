@@ -98,6 +98,10 @@ body {
       input[type="submit"] {
         @include button($background, $color);
         
+        @include tablet-landscape {
+          font-size: small;
+        }
+        
         @include normal-screen {
           font-size: small;
         }
@@ -110,6 +114,10 @@ body {
       /* Enter now */
       input:last-of-type {
         @include button($background, $red);
+      }
+      
+      @include tablet-landscape {
+        font-size: smaller;
       }
       
       @include tablet-and-below {
@@ -149,6 +157,10 @@ body {
         bottom: $pad;
       }
       
+      @include tablet-landscape {
+        bottom: $pad;
+      }
+      
       @include normal-screen {
         bottom: $pad;
       }
@@ -165,6 +177,10 @@ body {
           font-size: 160%;
         }
         
+        @include tablet-landscape {
+          font-size: 150%;
+        }
+        
         @include normal-screen {
           font-size: 130%;
         }
@@ -179,6 +195,10 @@ body {
         text-transform: uppercase;
         
         @include tablet-and-below {
+          font-size: 100%;
+        }
+        
+        @include tablet-landscape {
           font-size: 100%;
         }
         
@@ -294,6 +314,10 @@ body {
                 h2 {
                   padding: $pad;
                   height: $pad*2 + $pad/2;
+                  
+                  @include tablet-and-below {
+                    height: auto;
+                  }
                 }
                 
                 span {
@@ -345,6 +369,20 @@ body {
                     width: auto;
                     top: 0;
                     padding: 0 $pad $pad*3;
+                  }
+                }
+                
+                @include tablet-landscape {
+                  height: auto;
+                  
+                  h2 {
+                    padding: $pad $pad/2;
+                    word-wrap: break-word;
+                  }
+                  
+                  p {
+                    width: auto;
+                    padding: $pad $pad/2;
                   }
                 }
                 
@@ -477,6 +515,16 @@ body {
                   }
                 }
                 
+                @include tablet-landscape {
+                  margin-bottom: $pad/2;
+                  img {
+                    max-width: 15%;
+                  }
+                  p {
+                    font-size: small;
+                  }
+                }
+                
                 @include normal-screen {
                   margin-bottom: $pad/2;
                 }
@@ -524,6 +572,19 @@ body.business {
   .container {
   
     #header {
+      
+      @include small-screen-and-below {
+        @include block;
+        
+        background: $background;
+        opacity: .9;
+        
+        padding: $pad/4 $pad/4 $pad/2 $margin/2;
+        bottom: 0;
+        margin: 0;
+      }
+      
+      
       nav {
         background: $background;
         padding: $pad/4 $pad/2 $pad/2 $pad/4;
@@ -601,10 +662,9 @@ body.business {
             
             position: relative;
             float: none;
-            left: 0;
             
             width: $major;
-            margin: 0 auto;
+            margin: 0 18%;
           }
         }
       }

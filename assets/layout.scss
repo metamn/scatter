@@ -44,9 +44,8 @@ body {
           margin-left: $margin;
         }
         
-        
         @include tablet-and-below {
-          &#features, &#testimonials{
+          &#features, &#testimonials {
             height: 220%;
             
             article {
@@ -54,7 +53,6 @@ body {
               margin-left: $margin/2;
             }
           }
-          
         }
         
         @include small-screen-and-below {
@@ -98,6 +96,7 @@ body.business {
       @include big-screen {
         bottom: $pad*6;
       }
+      
       
       h1, nav {
         width: auto;
