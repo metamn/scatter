@@ -586,7 +586,29 @@ body.business {
       
       
     #content { 
-  
+      #form-for-mobile {
+        display: none;
+        
+        @include small-screen-and-below {
+          display: block;
+          @include block;
+          
+          margin-bottom: $pad*3;
+          
+          form {
+            display: block;
+            @include block;
+            
+            position: relative;
+            float: none;
+            left: 0;
+            
+            width: $major;
+            margin: 0 auto;
+          }
+        }
+      }
+      
       section {
         background-image: url(/assets/tablet-with-scatter-optimized.png);
         
@@ -598,6 +620,11 @@ body.business {
         article {
           header {
             text-align: center;
+          }
+          
+          @include small-screen-and-below {
+            width: 70%;
+            margin: 0 15%;
           }
           
           @include mobile {
@@ -625,7 +652,7 @@ body.business {
             height: 30em;
           }
           
-          @include mobile {
+          @include small-screen-and-below {
             @include block;
             display: block;
             
@@ -677,7 +704,7 @@ body.business {
             width: 93%;
             
             img {
-              @include mobile {
+              @include small-screen-and-below {
                 margin-top: $pad*2;
               }
             }
@@ -687,7 +714,7 @@ body.business {
               top: -$pad*5;
               text-align: center;
               
-              @include mobile {
+              @include small-screen-and-below {
                 top: 0;
               }
             }
@@ -723,8 +750,22 @@ body.business {
                 width: 8%;
               }
               
-              @include mobile {
+              @include small-screen-and-below {
                 display: none;
+              }
+              
+              @include normal-screen {
+                &#p1 {
+                  top: -8em;
+                }
+                
+                &#p2 {
+                  top: -15em;
+                }
+                
+                &#p3 {
+                  top: -18em;
+                }
               }
             }
           }
@@ -771,7 +812,7 @@ body.business {
                       width: 35%;
                     }
                     
-                    @include mobile {
+                    @include small-screen-and-below {
                       width: 70%;
                       margin-bottom: $pad*2;
                     }
@@ -840,7 +881,7 @@ body.business {
               }
             }
             
-            @include mobile {
+            @include small-screen-and-below {
               img, ul {
                 @include block;
               }
@@ -853,6 +894,8 @@ body.business {
           }
         }
       }
+      
+      
     }
   }
 }
