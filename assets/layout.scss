@@ -53,6 +53,10 @@ body {
               margin-left: $margin/2;
             }
           }
+          
+          &#slide-2, &#slide-3, &#slide-4 {
+            height: 280%;
+          }
         }
         
         @include tablet {
@@ -63,6 +67,10 @@ body {
               width: $major + $margin;
               margin-left: $margin/2;
             }
+          }
+          
+          &#slide-2, &#slide-3, &#slide-4 {
+            height: 160%;
           }
         }
         
@@ -76,21 +84,13 @@ body {
               margin-left: $margin/2;
             }
           }
-        }
-        
-        
-        
-        @include small-screen-and-below {
-          &#slide-2, &#slide-3 {
-            height: 220%;
+          
+          &#slide-2, &#slide-3, &#slide-4 {
+            height: 420%;
           }
         }
         
-        @include mobile-landscape {
-          &#slide-2, &#slide-3 {
-            height: 320%;
-          }
-        }
+        
         
         @include small-screen {
           &#features {
@@ -122,7 +122,6 @@ body.business {
         bottom: $pad*6;
       }
       
-      
       h1, nav {
         width: auto;
         float: left;
@@ -137,10 +136,10 @@ body.business {
         margin-right: 5%;
         float: right;
         display: block;
-        
-        @include small-screen-and-below {
-          display: none;
-        }
+      }
+      
+      @include small-screen-and-below {
+        display: none;
       }
     }
     

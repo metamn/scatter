@@ -7,10 +7,7 @@ class: business
 
 <div id="content" class="business">
   
-  <form>
-    <button>Sign up now!<span>Try it for free</span></button>
-    <button>Login</button>
-  </form> 
+  {% include form-business.html %}
 
   <section id="slide-1">
     <article>
@@ -29,8 +26,15 @@ class: business
         
         <h3>Create an ad. We shoot it everywhere.</h3>
       </div>
-      
     </article>
+    
+    <div id="logo" class="mobile">
+      {% include logo.html %}
+    </div>
+    
+    <div id="form" class="mobile">
+      {% include form-business.html %}
+    </div>
   </section>
   
   
@@ -42,13 +46,15 @@ class: business
       
       <div id="offer">
         <h3>Create time and location based offers</h3>
-        <img src="{{ site.url }}/assets/map-preview.png" alt="Map">
-        <ul>
-          <li><img src="{{ site.url }}/assets/clock.png" alt="Clock"></li>
-          <li>Set duration for which your ad is shown</li>
-          <li><img src="{{ site.url }}/assets/location.png" alt="Location"></li>
-          <li>Choose the location where your offer is seen</li>
-        </ul>
+        <img id="map" src="{{ site.url }}/assets/map-preview.png" alt="Map">
+        <p>
+          <img src="{{ site.url }}/assets/clock.png" alt="Clock">
+          Set duration for which your ad is shown
+        </p>
+        <p>
+          <img src="{{ site.url }}/assets/location.png" alt="Location">
+          Choose the location where your offer is seen
+        </p>
       </div>
     
       <div id="spread">
@@ -62,6 +68,14 @@ class: business
         </ul>
       </div>
     </article>
+    
+    <div id="logo" class="mobile">
+      {% include logo.html %}
+    </div>
+    
+    <div id="form" class="mobile">
+      {% include form-business.html %}
+    </div>
   </section>
   
   
@@ -81,6 +95,14 @@ class: business
         <h3>Talk directly to your customers</h3>
       </div>
     </article>
+    
+    <div id="logo" class="mobile">
+      {% include logo.html %}
+    </div>
+    
+    <div id="form" class="mobile">
+      {% include form-business.html %}
+    </div>
   </section>
   
   
@@ -99,10 +121,15 @@ class: business
         </ul>
       </div>
     </article>
+    
+    <div id="logo" class="mobile">
+      {% include logo.html %}
+    </div>
+    
+    <div id="form" class="mobile">
+      {% include form-business.html %}
+    </div>
   </section>
   
-  <div class="mobile">
-    {% include form.html %}
-  </div>
   
 </div>

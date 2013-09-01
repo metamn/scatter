@@ -97,13 +97,14 @@ body .container #header nav { display: none; }
 body .container #content section { position: relative; background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 body .container #content section article { width: 61.804%; margin-left: 19.098%; }
 @media (max-width: 380px) { body .container #content section#features, body .container #content section#testimonials { height: 280%; }
-  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; } }
+  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; }
+  body .container #content section#slide-2, body .container #content section#slide-3, body .container #content section#slide-4 { height: 280%; } }
 @media only screen and (min-width: 381px) and (max-width: 767px) { body .container #content section#features, body .container #content section#testimonials { height: 160%; }
-  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; } }
+  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; }
+  body .container #content section#slide-2, body .container #content section#slide-3, body .container #content section#slide-4 { height: 160%; } }
 @media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container #content section#features, body .container #content section#testimonials { height: 420%; }
-  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; } }
-@media only screen and (max-width: 1024px) { body .container #content section#slide-2, body .container #content section#slide-3 { height: 220%; } }
-@media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container #content section#slide-2, body .container #content section#slide-3 { height: 320%; } }
+  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; }
+  body .container #content section#slide-2, body .container #content section#slide-3, body .container #content section#slide-4 { height: 420%; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) { body .container #content section#features article { width: 80.902%; margin-left: 9.549%; } }
 
 body.business .container #header { bottom: 1.25em; }
@@ -111,7 +112,7 @@ body.business .container #header { bottom: 1.25em; }
 body.business .container #header h1, body.business .container #header nav { width: auto; float: left; }
 body.business .container #header h1 { margin-left: 2.5em; margin-top: 0.3125em; }
 body.business .container #header nav { margin-right: 5%; float: right; display: block; }
-@media only screen and (max-width: 1024px) { body.business .container #header nav { display: none; } }
+@media only screen and (max-width: 1024px) { body.business .container #header { display: none; } }
 body.business .container form { width: auto; position: fixed; right: 1.25em; float: right; z-index: 2; top: 40%; }
 @media only screen and (max-width: 1024px) { body.business .container form { display: none; } }
 
@@ -224,7 +225,6 @@ body .container #content section#testimonials article form p { display: inline-b
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body .container #content section#testimonials article form { font-size: small; } }
 body .container #content section#testimonials.active { display: block; }
 
-@media only screen and (max-width: 1024px) { body.business .container #header { width: 100%; float: left; background: #f0efeb; opacity: .9; padding: 0.3125em 0.3125em 0.625em 9.549%; bottom: 0; margin: 0; } }
 body.business .container #header nav { background: #f0efeb; padding: 0.3125em 0.625em 0.625em 0.3125em; opacity: .9; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
 body.business .container #header nav ul { display: block; margin: 0; }
 body.business .container #header nav ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
@@ -243,58 +243,69 @@ body.business .container form button:last-of-type:hover, body.business .containe
 body.business .container form button:last-of-type:active, body.business .container form button:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.business .container form button:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
 body.business .container form p { margin-top: 1.25em; }
-body.business .container #content #form-for-mobile { display: none; }
-@media only screen and (max-width: 1024px) { body.business .container #content #form-for-mobile { display: block; width: 100%; float: left; margin-bottom: 3.75em; }
-  body.business .container #content #form-for-mobile form { display: block; width: 100%; float: left; position: relative; float: none; width: 61.804%; margin: 0 18%; } }
 body.business .container #content section { background-image: url(/assets/tablet-with-scatter-optimized.png); }
 @media only screen and (max-width: 766px) { body.business .container #content section { background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
+body.business .container #content section article { float: left; }
 body.business .container #content section article header { text-align: center; }
-@media only screen and (max-width: 1024px) { body.business .container #content section article { width: 70%; margin: 0 15%; } }
-@media (max-width: 380px) { body.business .container #content section article { width: 96%; margin: 0 2%; } }
-body.business .container #content section div { display: inline-block; float: left; width: 43%; margin-right: 1%; margin-bottom: 1%; padding: 2%; background: transparent; border: 0.3125em solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; height: 22em; }
-@media only screen and (min-width: 1442px) { body.business .container #content section div { height: 30em; } }
-@media only screen and (max-width: 1024px) { body.business .container #content section div { width: 100%; float: left; display: block; width: 90%; height: auto; margin: 0; margin-bottom: 2.5em; } }
-body.business .container #content section div:last-of-type { margin-right: 0; }
-body.business .container #content section div h2 { text-transform: none; font-weight: 300; font-size: larger; }
-body.business .container #content section div img { width: 20%; }
-body.business .container #content section div img#laptop { width: 60%; }
-body.business .container #content section div img#smartphone { width: 10%; position: relative; top: -1.25em; }
-body.business .container #content section div img#map { width: 100%; }
-body.business .container #content section div img#communicate, body.business .container #content section div img#buyers { width: 100%; }
-body.business .container #content section#slide-1 div { width: 100%; float: left; width: 93%; }
-@media only screen and (max-width: 1024px) { body.business .container #content section#slide-1 div img { margin-top: 2.5em; } }
-body.business .container #content section#slide-1 div h3 { position: relative; top: -6.25em; text-align: center; }
-@media only screen and (max-width: 1024px) { body.business .container #content section#slide-1 div h3 { top: 0; } }
-body.business .container #content section#slide-1 div p { position: relative; overflow: hidden; padding: 0; margin: 0; height: 6.25em; font-weight: 400; }
-body.business .container #content section#slide-1 div p#p1 { top: -10em; width: 30%; left: 13%; height: 2.5em; }
-body.business .container #content section#slide-1 div p#p2 { font-size: 0.625em; top: -18em; left: 62%; width: 7%; }
-body.business .container #content section#slide-1 div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
-@media only screen and (max-width: 1024px) { body.business .container #content section#slide-1 div p { display: none; } }
-@media only screen and (min-width: 1024px) and (max-width: 1279px) { body.business .container #content section#slide-1 div p#p1 { top: -8em; }
-  body.business .container #content section#slide-1 div p#p2 { top: -15em; }
-  body.business .container #content section#slide-1 div p#p3 { top: -18em; } }
-body.business .container #content section#slide-2 div h3 { padding: 1.25em 0; text-align: center; }
-body.business .container #content section#slide-2 div ul { font-weight: 400; list-style: circle; }
-body.business .container #content section#slide-2 div#offer img:first-of-type { width: 100%; position: relative; top: -0.625em; }
-body.business .container #content section#slide-2 div#offer ul { display: block; margin: 0; margin: 0; font-size: small; }
-body.business .container #content section#slide-2 div#offer ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
-body.business .container #content section#slide-2 div#offer ul li.last, body.business .container #content section#slide-2 div#offer ul li:last-of-type { margin-right: 0; }
-body.business .container #content section#slide-2 div#offer ul li { margin-bottom: 0; }
-body.business .container #content section#slide-2 div#offer ul li img { width: 50px; }
-body.business .container #content section#slide-2 div#offer ul li:nth-child(even) { width: 25%; }
-@media only screen and (min-width: 1442px) { body.business .container #content section#slide-2 div#offer ul li:nth-child(even) { width: 35%; } }
-@media only screen and (max-width: 1024px) { body.business .container #content section#slide-2 div#offer ul li:nth-child(even) { width: 70%; margin-bottom: 2.5em; } }
-body.business .container #content section#slide-2 div#spread ul li { padding: 0.3125em; margin-bottom: 0.9375em; border: 0.15625em solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
-@media only screen and (min-width: 1442px) { body.business .container #content section#slide-2 div#spread ul li { padding: 0.625em; margin-bottom: 1.5625em; } }
-body.business .container #content section#slide-3 div { text-align: center; }
-body.business .container #content section#slide-3 div:first-of-type img { width: 96%; }
-body.business .container #content section#slide-4 div { width: 100%; float: left; width: 94%; }
-body.business .container #content section#slide-4 div img { width: 60%; float: left; }
-body.business .container #content section#slide-4 div ul { width: 30%; margin-left: 5%; float: left; list-style: none; }
-body.business .container #content section#slide-4 div ul li { margin-bottom: 1.25em; }
-@media only screen and (min-width: 1442px) { body.business .container #content section#slide-4 div ul { font-size: larger; } }
-@media only screen and (max-width: 1024px) { body.business .container #content section#slide-4 div img, body.business .container #content section#slide-4 div ul { width: 100%; float: left; }
-  body.business .container #content section#slide-4 div img { padding: 1.25em; width: 80%; } }
+@media only screen and (max-width: 766px) { body.business .container #content section article { width: 70%; margin: 0 15%; } }
+@media (max-width: 380px) { body.business .container #content section article { width: 94%; margin: 0 3%; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content section article { width: 90%; margin: 0 5%; } }
+body.business .container #content section article div { display: inline-block; float: left; width: 43%; margin-right: 1%; margin-bottom: 1%; padding: 2%; background: transparent; border: 0.3125em solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; height: 22em; }
+@media only screen and (min-width: 1442px) { body.business .container #content section article div { height: 30em; } }
+@media only screen and (max-width: 766px) { body.business .container #content section article div { width: 100%; float: left; display: block; width: 90%; height: auto; margin: 0; margin-bottom: 2.5em; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content section article div { height: auto; } }
+body.business .container #content section article div:last-of-type { margin-right: 0; }
+body.business .container #content section article div h2 { text-transform: none; font-weight: 300; font-size: larger; }
+body.business .container #content section article div img { width: 20%; }
+body.business .container #content section article div img#laptop { width: 60%; }
+body.business .container #content section article div img#smartphone { width: 10%; position: relative; top: -1.25em; }
+body.business .container #content section article div img#map { width: 100%; }
+body.business .container #content section article div img#communicate, body.business .container #content section article div img#buyers { width: 100%; }
+body.business .container #content section#slide-1 article div { width: 100%; float: left; width: 90%; }
+body.business .container #content section#slide-1 article div img { margin-top: 2.5em; }
+body.business .container #content section#slide-1 article div h3 { position: relative; top: -6.25em; text-align: center; }
+@media only screen and (max-width: 1024px) { body.business .container #content section#slide-1 article div h3 { top: 0; } }
+body.business .container #content section#slide-1 article div p { position: relative; overflow: hidden; padding: 0; margin: 0; height: 6.25em; font-weight: 400; }
+body.business .container #content section#slide-1 article div p#p1 { top: -10em; width: 30%; left: 13%; height: 2.5em; }
+body.business .container #content section#slide-1 article div p#p2 { font-size: 0.625em; top: -18em; left: 62%; width: 7%; }
+body.business .container #content section#slide-1 article div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
+@media only screen and (max-width: 1024px) { body.business .container #content section#slide-1 article div p { display: none; } }
+@media only screen and (min-width: 1024px) and (max-width: 1279px) { body.business .container #content section#slide-1 article div p#p1 { top: -8em; }
+  body.business .container #content section#slide-1 article div p#p2 { top: -15em; }
+  body.business .container #content section#slide-1 article div p#p3 { top: -18em; } }
+body.business .container #content section#slide-2 article div h3 { padding: 1.25em 0; text-align: center; }
+body.business .container #content section#slide-2 article div ul { font-weight: 400; list-style: circle; }
+body.business .container #content section#slide-2 article div#offer img#map { width: 100%; position: relative; top: -0.625em; }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content section#slide-2 article div#offer img#map { width: 76%; } }
+body.business .container #content section#slide-2 article div#offer p { font-weight: 400; width: 100%; float: left; }
+body.business .container #content section#slide-2 article div#offer p img { width: 50px; height: 50px; display: inline-block; float: left; margin-right: 0.3125em; }
+body.business .container #content section#slide-2 article div#offer p + p { margin-top: 0.625em; }
+body.business .container #content section#slide-2 article div#spread ul li { padding: 0.3125em; margin-bottom: 0.9375em; border: 0.15625em solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; }
+@media only screen and (min-width: 1442px) { body.business .container #content section#slide-2 article div#spread ul li { padding: 0.625em; margin-bottom: 1.5625em; } }
+body.business .container #content section#slide-3 article div { text-align: center; }
+body.business .container #content section#slide-3 article div:first-of-type img { width: 96%; }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content section#slide-3 article div:first-of-type img { width: 99%; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content section#slide-3 article div h3 { height: 2.5em; } }
+body.business .container #content section#slide-4 article div { width: 100%; float: left; width: 94%; }
+body.business .container #content section#slide-4 article div img { width: 60%; float: left; }
+body.business .container #content section#slide-4 article div ul { width: 30%; margin-left: 5%; float: left; list-style: none; }
+body.business .container #content section#slide-4 article div ul li { margin-bottom: 1.25em; }
+@media only screen and (min-width: 1442px) { body.business .container #content section#slide-4 article div ul { font-size: larger; } }
+@media only screen and (max-width: 766px) { body.business .container #content section#slide-4 article div img, body.business .container #content section#slide-4 article div ul { width: 100%; float: left; }
+  body.business .container #content section#slide-4 article div img { padding: 1.25em; width: 80%; } }
+body.business .container #content #logo { width: 100%; float: left; top: 0; }
+body.business .container #content #logo h1 { display: inline-block; padding-left: 1.25em; }
+@media only screen and (min-width: 381px) and (max-width: 767px) { body.business .container #content #logo h1 { padding-left: 19.098%; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content #logo { display: block; width: 40%; float: left; margin: 1.25em 0 2.5em; }
+  body.business .container #content #logo h1 { font-size: 120%; padding-left: 2.5em; } }
+body.business .container #content #form { width: 100%; float: left; }
+body.business .container #content #form form { width: 100%; float: left; display: block; position: relative; top: 0; float: left; left: 1.25em; width: auto; }
+@media only screen and (min-width: 381px) and (max-width: 767px) { body.business .container #content #form form { left: 19.098%; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content #form { display: block; width: 60%; float: left; margin: 1.25em 0 2.5em; }
+  body.business .container #content #form form { left: 3.75em; }
+  body.business .container #content #form form button { font-size: small; } }
+@media only screen and (max-width: 1024px) { body.business .container #content #form form button { display: inline-block; }
+  body.business .container #content #form form button span { display: none; } }
 
 .outline, .hidden { display: none; }
 
