@@ -44,9 +44,9 @@ body {
           margin-left: $margin;
         }
         
-        @include tablet-and-below {
+        @include mobile {
           &#features, &#testimonials {
-            height: 220%;
+            height: 280%;
             
             article {
               width: $major + $margin;
@@ -54,6 +54,31 @@ body {
             }
           }
         }
+        
+        @include tablet {
+          &#features, &#testimonials {
+            height: 160%;
+            
+            article {
+              width: $major + $margin;
+              margin-left: $margin/2;
+            }
+          }
+        }
+        
+        
+        @include mobile-landscape {
+          &#features, &#testimonials {
+            height: 420%;
+            
+            article {
+              width: $major + $margin;
+              margin-left: $margin/2;
+            }
+          }
+        }
+        
+        
         
         @include small-screen-and-below {
           &#slide-2, &#slide-3 {

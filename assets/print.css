@@ -25,9 +25,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Responsive mixins - http://paulstamatiou.com/responsive-retina-blog-development-part-1
 */
-@media only screen and (max-width: 380px) { .mobile { display: block; }
+@media only screen and (max-width: 767px) { .mobile { display: block; }
   .desktop { display: none !important; } }
-@media only screen and (min-width: 381px) { .mobile { display: none; }
+@media only screen and (min-width: 768px) { .mobile { display: none; }
   .desktop { display: block; } }
 /* Site specific mixins
 */
@@ -96,7 +96,11 @@ body .container #header h1 { padding: 0; margin: 0; }
 body .container #header nav { display: none; }
 body .container #content section { position: relative; background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 body .container #content section article { width: 61.804%; margin-left: 19.098%; }
-@media only screen and (max-width: 766px) { body .container #content section#features, body .container #content section#testimonials { height: 220%; }
+@media (max-width: 380px) { body .container #content section#features, body .container #content section#testimonials { height: 280%; }
+  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; } }
+@media only screen and (min-width: 381px) and (max-width: 767px) { body .container #content section#features, body .container #content section#testimonials { height: 160%; }
+  body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; } }
+@media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container #content section#features, body .container #content section#testimonials { height: 420%; }
   body .container #content section#features article, body .container #content section#testimonials article { width: 80.902%; margin-left: 9.549%; } }
 @media only screen and (max-width: 1024px) { body .container #content section#slide-2, body .container #content section#slide-3 { height: 220%; } }
 @media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container #content section#slide-2, body .container #content section#slide-3 { height: 320%; } }
@@ -131,8 +135,7 @@ body .container form input:last-of-type:active, body .container form input:last-
 body .container #header h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #header h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
 @media only screen and (max-width: 766px) { body .container #header h1 { font-size: 80%; } }
-@media only screen and (max-width: 766px) { body .container #header { bottom: 1.25em; } }
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) { body .container #header { bottom: 1.25em; } }
+@media only screen and (max-width: 766px) { body .container #header { display: none; } }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body .container #header { bottom: 1.25em; } }
 body .container #content h1 { font-weight: 300; font-size: 170%; }
 @media only screen and (max-width: 766px) { body .container #content h1 { font-size: 160%; } }
@@ -144,6 +147,10 @@ body .container #content h2 { font-weight: 400; text-transform: uppercase; }
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) { body .container #content h2 { font-size: 100%; } }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body .container #content h2 { font-size: 100%; } }
 body .container #content h1, body .container #content h2 { padding: 1.25em 0; }
+body .container #content #logo { position: relative; top: -3.75em; }
+body .container #content #logo h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
+body .container #content #logo h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
+@media only screen and (max-width: 766px) { body .container #content #logo h1 { font-size: 80%; } }
 body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter-optimized.png); }
 @media only screen and (max-width: 766px) { body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter-optimized-mobile.png); } }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
@@ -157,6 +164,7 @@ body .container #content section#intro article form a:first-of-type { display: i
 @media only screen and (max-width: 766px) { body .container #content section#intro article form a:first-of-type { display: none; } }
 @media only screen and (min-width: 1442px) { body .container #content section#intro article form a:first-of-type { margin-top: 6.25em; } }
 @media only screen and (max-width: 766px) { body .container #content section#intro article form input:first-of-type { display: none; } }
+@media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container #content section#intro article #logo { display: none; } }
 body .container #content section#features { background-image: url(/assets/laptop-with-scatter-optimized.png); }
 @media only screen and (max-width: 766px) { body .container #content section#features { background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
 body .container #content section#features article header h1 { color: #f0efeb; }
@@ -189,6 +197,7 @@ body .container #content section#features article form { /* I'm a business */ }
 body .container #content section#features article form input:first-of-type { display: none; }
 body .container #content section#features article form p { display: inline-block; }
 @media only screen and (max-width: 766px) { body .container #content section#features article form p { display: block; margin: 1.25em 0; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body .container #content section#features article form { padding-left: 9.549%; } }
 body .container #content section#testimonials { background-image: url(/assets/tablet-with-scatter-optimized.png); }
 @media only screen and (max-width: 766px) { body .container #content section#testimonials { margin-bottom: 2.5em; background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 1.25em 0; list-style: none; }

@@ -75,6 +75,26 @@ $orange: #FF782A;
   }
 }
 
+@mixin logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: $pad/2;
+  
+  &:first-letter {
+    border: 2px solid;
+    @include border-radius($pad/4);
+    
+    padding: $pad/12 $pad/3 $pad/8; /* S is aligned left */
+    /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */
+    
+    margin-right: $pad/4;
+  }
+  
+  @include tablet-and-below {
+    font-size: 80%;
+  }
+}
+
 
 
 
@@ -83,9 +103,7 @@ body {
   background: $background;
   color: $color;
   
-  
   .container {
-  
     a {
       color: $red;
       text-decoration: none;
@@ -134,31 +152,11 @@ body {
   
     #header {
       h1 {
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: $pad/2;
-        
-        &:first-letter {
-          border: 2px solid;
-          @include border-radius($pad/4);
-          
-          padding: $pad/12 $pad/3 $pad/8; /* S is aligned left */
-          /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */
-          
-          margin-right: $pad/4;
-        }
-        
-        @include tablet-and-below {
-          font-size: 80%;
-        }
+        @include logo;
       }
       
       @include tablet-and-below {
-        bottom: $pad;
-      }
-      
-      @include tablet-landscape {
-        bottom: $pad;
+        display: none;
       }
       
       @include normal-screen {
@@ -209,6 +207,15 @@ body {
       
       h1, h2 {
         padding: $pad 0;
+      }
+      
+      #logo {
+        position: relative;
+        top: -$pad*3;
+        
+        h1 {
+          @include logo;
+        }
       }
       
       section {
@@ -267,6 +274,12 @@ body {
                 }
               }
             }
+            
+            #logo {
+              @include mobile-landscape {
+                display: none;
+              }
+            }
           }
         }
         
@@ -280,7 +293,6 @@ body {
           }
           
           article {
-          
             header {
               h1 {
                 color: $background;
@@ -435,6 +447,9 @@ body {
                 }
               }
               
+              @include small-screen {
+                padding-left: $margin/2;
+              }
             }
             
           }
