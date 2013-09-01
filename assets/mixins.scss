@@ -62,7 +62,7 @@ $breakpoint-a4-height: 1122.51px !default;
 	}
 }
 @mixin small-screen-and-below {
-	@media only screen and (max-width : $breakpoint-small) {
+	@media only screen and (max-width : $breakpoint-small - 1) {
 		@content;
 	}
 }
