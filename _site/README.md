@@ -1,11 +1,12 @@
-# Deliverables
+# License
+
+HTML, CSS, JS and design (c) copyright 2013 Csongor Bartus.
+Licensed for Abhijeet Dwivedi to use exculisvely with the Scatter app website.
 
 
+# Images
 
-
-## Images
-
-### Background images
+## Background images
 
 * Created with http://placeit.breezi.com/
 
@@ -13,11 +14,11 @@
 
 * Optimized images are suffixed with 'optimized'
 
-### To be purchased
+## To be purchased
 
 * The map image on the Business section to be purchased from http://www.istockphoto.com/stock-photo-17481076-streetmap-route-amp-location-marker.php?st=2ff2b45
 
-### Icons
+## Icons
 
 * Taken form http://thenounproject.com/
 
@@ -25,13 +26,13 @@
 
 * In humans.txt you'll find more info on every icon used
 
-### Created by me
+## Created by me
 
 * They can be found with .xcf (Gimp) and .psd (Photoshop) extensions
 
 * They are freely modifiable
 
-### Mobile images
+## Mobile images
 
 * They are suffixed with 'mobile'
 

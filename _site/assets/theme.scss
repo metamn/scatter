@@ -220,10 +220,10 @@ body {
       
       section {
         &#intro {
-          background-image: url(/assets/smartphone-with-scatter-optimized.png);
+          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter-optimized.png);
           
           @include tablet-and-below {
-            background-image: url(/assets/smartphone-with-scatter-optimized-mobile.png);
+            background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter-optimized-mobile.png);
           }
           
           article {
@@ -286,10 +286,10 @@ body {
         
         
         &#features {
-          background-image: url(/assets/laptop-with-scatter-optimized.png);
+          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter-optimized.png);
           
           @include tablet-and-below {
-            background-image: url(/assets/tablet-with-scatter-optimized-mobile.png);
+            background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
           }
           
           article {
@@ -457,11 +457,11 @@ body {
         
         
         &#testimonials {
-          background-image: url(/assets/tablet-with-scatter-optimized.png);
+          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png);
           
           @include tablet-and-below {
             margin-bottom: $pad*2;
-            background-image: url(/assets/tablet-with-scatter-optimized-mobile.png);
+            background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
           }
           
           article {
@@ -649,10 +649,10 @@ body.business {
       
     #content { 
       section {
-        background-image: url(/assets/tablet-with-scatter-optimized.png);
+        background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png);
         
         @include tablet-and-below {
-          background-image: url(/assets/tablet-with-scatter-optimized-mobile.png);
+          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
         }
         
         article {
@@ -844,6 +844,10 @@ body.business {
                     @include small-screen {
                       width: 76%;
                     }
+                    
+                    @include h900 {
+                      width: 76%;
+                    }
                   }
                 }
                 
@@ -929,6 +933,7 @@ body.business {
                 float: left;
                 
                 list-style: none;
+                font-weight: 400;
                 
                 li {
                   margin-bottom: $pad;

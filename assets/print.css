@@ -152,8 +152,8 @@ body .container #content #logo { position: relative; top: -3.75em; }
 body .container #content #logo h1 { text-transform: uppercase; font-weight: bold; letter-spacing: 0.625em; }
 body .container #content #logo h1:first-letter { border: 2px solid; -webkit-border-radius: 0.3125em; -moz-border-radius: 0.3125em; -ms-border-radius: 0.3125em; -o-border-radius: 0.3125em; border-radius: 0.3125em; padding: 0.10417em 0.41667em 0.15625em; /* S is aligned left */ /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */ margin-right: 0.3125em; }
 @media only screen and (max-width: 766px) { body .container #content #logo h1 { font-size: 80%; } }
-body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter-optimized.png); }
-@media only screen and (max-width: 766px) { body .container #content section#intro { background-image: url(/assets/smartphone-with-scatter-optimized-mobile.png); } }
+body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body .container #content section#intro { background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter-optimized-mobile.png); } }
 body .container #content section#intro article header { width: 100%; float: left; margin-top: 38.196%; }
 body .container #content section#intro article header h1 { color: #f0efeb; }
 @media only screen and (max-width: 766px) { body .container #content section#intro article header h1 { text-shadow: #363636 1px 1px 0; } }
@@ -166,8 +166,8 @@ body .container #content section#intro article form a:first-of-type { display: i
 @media only screen and (min-width: 1442px) { body .container #content section#intro article form a:first-of-type { margin-top: 6.25em; } }
 @media only screen and (max-width: 766px) { body .container #content section#intro article form input:first-of-type { display: none; } }
 @media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container #content section#intro article #logo { display: none; } }
-body .container #content section#features { background-image: url(/assets/laptop-with-scatter-optimized.png); }
-@media only screen and (max-width: 766px) { body .container #content section#features { background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
+body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body .container #content section#features { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png); } }
 body .container #content section#features article header h1 { color: #f0efeb; }
 @media only screen and (max-width: 766px) { body .container #content section#features article header h1 { color: #363636; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) { body .container #content section#features article header h1 { text-shadow: #363636 1px 1px 0; } }
@@ -199,8 +199,8 @@ body .container #content section#features article form input:first-of-type { dis
 body .container #content section#features article form p { display: inline-block; }
 @media only screen and (max-width: 766px) { body .container #content section#features article form p { display: block; margin: 1.25em 0; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) { body .container #content section#features article form { padding-left: 9.549%; } }
-body .container #content section#testimonials { background-image: url(/assets/tablet-with-scatter-optimized.png); }
-@media only screen and (max-width: 766px) { body .container #content section#testimonials { margin-bottom: 2.5em; background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
+body .container #content section#testimonials { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body .container #content section#testimonials { margin-bottom: 2.5em; background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png); } }
 body .container #content section#testimonials article ul { width: 100%; float: left; margin: 1.25em 0; list-style: none; }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body .container #content section#testimonials article ul { margin: 0.3125em 0; } }
 body .container #content section#testimonials article ul li { margin-bottom: 1.25em; width: 100%; float: left; border: 0.3125em solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; padding: 0.625em; font-weight: 400; cursor: pointer; }
@@ -243,8 +243,8 @@ body.business .container form button:last-of-type:hover, body.business .containe
 body.business .container form button:last-of-type:active, body.business .container form button:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.business .container form button:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
 body.business .container form p { margin-top: 1.25em; }
-body.business .container #content section { background-image: url(/assets/tablet-with-scatter-optimized.png); }
-@media only screen and (max-width: 766px) { body.business .container #content section { background-image: url(/assets/tablet-with-scatter-optimized-mobile.png); } }
+body.business .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png); }
+@media only screen and (max-width: 766px) { body.business .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png); } }
 body.business .container #content section article { float: left; }
 body.business .container #content section article header { text-align: center; }
 @media only screen and (max-width: 766px) { body.business .container #content section article { width: 70%; margin: 0 15%; } }
@@ -277,6 +277,7 @@ body.business .container #content section#slide-2 article div h3 { padding: 1.25
 body.business .container #content section#slide-2 article div ul { font-weight: 400; list-style: circle; }
 body.business .container #content section#slide-2 article div#offer img#map { width: 100%; position: relative; top: -0.625em; }
 @media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content section#slide-2 article div#offer img#map { width: 76%; } }
+@media all and (min-height: 899px) and (max-height: 901px) { body.business .container #content section#slide-2 article div#offer img#map { width: 76%; } }
 body.business .container #content section#slide-2 article div#offer p { font-weight: 400; width: 100%; float: left; }
 body.business .container #content section#slide-2 article div#offer p img { width: 50px; height: 50px; display: inline-block; float: left; margin-right: 0.3125em; }
 body.business .container #content section#slide-2 article div#offer p + p { margin-top: 0.625em; }
@@ -288,7 +289,7 @@ body.business .container #content section#slide-3 article div:first-of-type img 
 @media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content section#slide-3 article div h3 { height: 2.5em; } }
 body.business .container #content section#slide-4 article div { width: 100%; float: left; width: 94%; }
 body.business .container #content section#slide-4 article div img { width: 60%; float: left; }
-body.business .container #content section#slide-4 article div ul { width: 30%; margin-left: 5%; float: left; list-style: none; }
+body.business .container #content section#slide-4 article div ul { width: 30%; margin-left: 5%; float: left; list-style: none; font-weight: 400; }
 body.business .container #content section#slide-4 article div ul li { margin-bottom: 1.25em; }
 @media only screen and (min-width: 1442px) { body.business .container #content section#slide-4 article div ul { font-size: larger; } }
 @media only screen and (max-width: 766px) { body.business .container #content section#slide-4 article div img, body.business .container #content section#slide-4 article div ul { width: 100%; float: left; }
