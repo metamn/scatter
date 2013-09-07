@@ -220,10 +220,10 @@ body {
       
       section {
         &#intro {
-          background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter-optimized.png);
+          background-image: url(/assets/smartphone-with-scatter-optimized.png);
           
           @include tablet-and-below {
-            background-image: url(http://metamn.github.io/scatter/assets/smartphone-with-scatter-optimized-mobile.png);
+            background-image: url(/assets/smartphone-with-scatter-optimized-mobile.png);
           }
           
           article {
@@ -286,10 +286,10 @@ body {
         
         
         &#features {
-          background-image: url(http://metamn.github.io/scatter/assets/laptop-with-scatter-optimized.png);
+          background-image: url(/assets/laptop-with-scatter-optimized.png);
           
           @include tablet-and-below {
-            background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
+            background-image: url(/assets/tablet-with-scatter-optimized-mobile.png);
           }
           
           article {
@@ -457,11 +457,11 @@ body {
         
         
         &#testimonials {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png);
+          background-image: url(/assets/tablet-with-scatter-optimized.png);
           
           @include tablet-and-below {
             margin-bottom: $pad*2;
-            background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
+            background-image: url(/assets/tablet-with-scatter-optimized-mobile.png);
           }
           
           article {
@@ -586,13 +586,15 @@ body {
 body.business {
   .container {
     #header {
-      nav {
+      h1, nav {
         background: $background;
         padding: $pad/4 $pad/2 $pad/2 $pad/4;
         opacity: .9;
         
         @include border-radius($pad/2);
-        
+      }
+      nav {
+      
         ul {
           @include list-inline;
           
@@ -649,10 +651,10 @@ body.business {
       
     #content { 
       section {
-        background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png);
+        background-image: url(/assets/tablet-with-scatter-optimized.png);
         
         @include tablet-and-below {
-          background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
+          background-image: url(/assets/tablet-with-scatter-optimized-mobile.png);
         }
         
         article {
@@ -837,22 +839,19 @@ body.business {
               &#offer {
                 img {
                   &#map {
-                    width: 100%;
+                    width: 76%;
+                    margin: 0 auto;
+                    display: block;
+                    
                     position: relative;
                     top: -$pad/2;
                     
-                    @include small-screen {
-                      width: 76%;
-                    }
-                    
-                    @include h900 {
-                      width: 76%;
-                    }
                   }
                 }
                 
                 p {
                   font-weight: 400;
+                  font-size: smaller;
                   @include block;
                   
                   img {
@@ -861,6 +860,9 @@ body.business {
                     display: inline-block;
                     float: left;
                     margin-right: $pad/4;
+                    
+                    position: relative;
+                    top: -$pad/2
                   }
                 }
                 
