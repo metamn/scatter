@@ -306,6 +306,17 @@ body.business .container #content #form form { width: 100%; float: left; display
 @media only screen and (max-width: 1023px) { body.business .container #content #form form button { display: inline-block; }
   body.business .container #content #form form button span { display: none; } }
 
+body.pricing .container #content section article #pricing-table, body.pricing .container #content section article #estimations { width: 45%; margin-right: 10%; float: left; }
+body.pricing .container #content section article #pricing-table table th, body.pricing .container #content section article #pricing-table table td { padding: 0.625em 1.25em; }
+body.pricing .container #content section article #estimations { margin-right: 0; }
+body.pricing .container #content section article #estimations form { margin-top: 1.25em; }
+body.pricing .container #content section article #estimations form input[type="text"] { /* removing the button effect */ }
+body.pricing .container #content section article #estimations form input[type="text"]:hover, body.pricing .container #content section article #estimations form input[type="text"]:focus { transform: none; }
+body.pricing .container #content section article #monthly, body.pricing .container #content section article #pag { width: 100%; float: left; }
+body.pricing .container #content section article #monthly p, body.pricing .container #content section article #monthly ul, body.pricing .container #content section article #pag p, body.pricing .container #content section article #pag ul { width: 45%; margin-right: 10%; float: left; }
+body.pricing .container #content section article #monthly ul, body.pricing .container #content section article #pag ul { margin: 0; }
+body.pricing .container #content section article #monthly table, body.pricing .container #content section article #pag table { width: 100%; float: left; }
+
 .outline, .hidden { display: none; }
 
 img { max-width: 100%; }

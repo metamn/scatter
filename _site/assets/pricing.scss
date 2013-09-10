@@ -1,0 +1,61 @@
+
+body.pricing {
+  .container {
+    #content {
+      section {
+        article {
+          
+          #pricing-table, #estimations {
+            width: 45%;
+            margin-right: 10%;
+            float: left;
+          }
+          
+          #pricing-table {
+            table {
+              th, td {
+                padding: $pad/2 $pad;
+              }
+            }
+          }
+        
+          #estimations {
+            margin-right: 0;
+            
+            form {
+              margin-top: $pad;
+              
+              input[type="text"] {
+                //width: 23em;
+                
+                /* removing the button effect */
+                &:hover, &:focus {
+                  transform: none;
+                }
+              }
+            }
+          }
+          
+          #monthly, #pag {
+            @include block;
+            
+            p, ul {
+              width: 45%;
+              margin-right: 10%;
+              float: left;
+            }
+            
+            ul {
+              margin: 0;
+            }
+            
+            table {
+              @include block;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
