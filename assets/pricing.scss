@@ -1,39 +1,47 @@
 
 body.pricing {
   .container {
+    #header {
+      display: none;
+    }
+    
     #content {
       section {
         background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png);
         @include tablet-and-below {
           background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
         }
-        height: 220%;
+        height: 250%;
         
         
         article {
-        
           div {
             @include block;
             margin-bottom: $pad*5;
             
-            p, ul {
-              float: left;
-              font-weight: normal;
+            border: $pad/8 solid;
+            @include border-radius($pad);
+            padding: $pad;
+            
+            h2 {
+              border-bottom: $pad/8 solid;
+              margin-bottom: $pad;
             }
             
             p {
-              width: 50%;
-              margin-right: 5%;
+              width: 60%;
+              margin-right: 2%;
+              float: left;
               
-              line-height: 1.75;
-              
-              border: $pad/8 solid;
-              @include border-radius($pad/2);
-              padding: $pad;
+              line-height: 1.5;
+              font-weight: normal;
             }
             
             ul {
-              width: 35%;
+              width: 38%;
+              float: left;
+              
+              font-weight: normal;
               
               margin: 0;
               list-style: none;
@@ -61,7 +69,7 @@ body.pricing {
               @include block;
               
               th {
-                padding: $pad $pad + $pad/2;
+                padding: $pad;
                 
                 &:before {
                   content: '$';
@@ -70,7 +78,7 @@ body.pricing {
                 
                 &:first-of-type {
                   font-weight: bold;
-                  padding-left: $pad;
+                  padding-left: 0;
                   
                   &:before {
                     content: '';
@@ -81,10 +89,15 @@ body.pricing {
               tr {
                 td {  
                   font-size: larger;
+                  padding-left: $pad/2 + $pad/4;
                 
                   button {
                     @include button($background, $color);
                     border: 1px solid;
+                  }
+                  
+                  &:first-of-type {
+                    padding-left: 0;
                   }
                 }
                 
@@ -93,8 +106,12 @@ body.pricing {
                     border: 0;
                     padding: $pad 0;
                     
-                    &:last-of-type {
-                      padding: $pad;
+                    &:first-of-type {
+                      h1 {
+                        @include logo;
+                        font-size: 100%;
+                        padding: $pad/4 0 0;
+                      }
                     }
                   }
                 }

@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'tablet-and-below'.
-        on line 7 of /home/cs/work/scatter/assets/pricing.scss, in `tablet-and-below'
-        from line 7 of /home/cs/work/scatter/assets/pricing.scss
+        on line 11 of /home/cs/work/scatter/assets/pricing.scss, in `tablet-and-below'
+        from line 11 of /home/cs/work/scatter/assets/pricing.scss
 
 Backtrace:
-/home/cs/work/scatter/assets/pricing.scss:7:in `tablet-and-below'
-/home/cs/work/scatter/assets/pricing.scss:7
+/home/cs/work/scatter/assets/pricing.scss:11:in `tablet-and-below'
+/home/cs/work/scatter/assets/pricing.scss:11
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -104,4 +104,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'tablet-and-below'.\A         on line 7 of /home/cs/work/scatter/assets/pricing.scss, in `tablet-and-below'\A         from line 7 of /home/cs/work/scatter/assets/pricing.scss"; }
+  content: "Syntax error: Undefined mixin 'tablet-and-below'.\A         on line 11 of /home/cs/work/scatter/assets/pricing.scss, in `tablet-and-below'\A         from line 11 of /home/cs/work/scatter/assets/pricing.scss"; }
