@@ -306,16 +306,26 @@ body.business .container #content #form form { width: 100%; float: left; display
 @media only screen and (max-width: 1023px) { body.business .container #content #form form button { display: inline-block; }
   body.business .container #content #form form button span { display: none; } }
 
-body.pricing .container #content section article #pricing-table, body.pricing .container #content section article #estimations { width: 45%; margin-right: 10%; float: left; }
-body.pricing .container #content section article #pricing-table table th, body.pricing .container #content section article #pricing-table table td { padding: 0.625em 1.25em; }
-body.pricing .container #content section article #estimations { margin-right: 0; }
-body.pricing .container #content section article #estimations form { margin-top: 1.25em; }
-body.pricing .container #content section article #estimations form input[type="text"] { /* removing the button effect */ }
-body.pricing .container #content section article #estimations form input[type="text"]:hover, body.pricing .container #content section article #estimations form input[type="text"]:focus { transform: none; }
-body.pricing .container #content section article #monthly, body.pricing .container #content section article #pag { width: 100%; float: left; }
-body.pricing .container #content section article #monthly p, body.pricing .container #content section article #monthly ul, body.pricing .container #content section article #pag p, body.pricing .container #content section article #pag ul { width: 45%; margin-right: 10%; float: left; }
-body.pricing .container #content section article #monthly ul, body.pricing .container #content section article #pag ul { margin: 0; }
-body.pricing .container #content section article #monthly table, body.pricing .container #content section article #pag table { width: 100%; float: left; }
+body.pricing .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png); height: 220%; }
+@media only screen and (max-width: 766px) { body.pricing .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png); } }
+body.pricing .container #content section article div { width: 100%; float: left; margin-bottom: 6.25em; }
+body.pricing .container #content section article div p, body.pricing .container #content section article div ul { float: left; font-weight: normal; }
+body.pricing .container #content section article div p { width: 50%; margin-right: 5%; line-height: 1.75; border: 0.15625em solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; padding: 1.25em; }
+body.pricing .container #content section article div ul { width: 35%; margin: 0; list-style: none; background: #77c8f5; }
+body.pricing .container #content section article div ul li { border-bottom: 1px solid #f0efeb; padding: 0.625em 1.25em; }
+body.pricing .container #content section article div ul li:before { content: '+'; margin-right: 0.3125em; font-size: larger; font-weight: 300; position: relative; top: 2px; }
+body.pricing .container #content section article div table { width: 100%; float: left; }
+body.pricing .container #content section article div table th { padding: 1.25em 1.875em; }
+body.pricing .container #content section article div table th:before { content: '$'; font-weight: bold; }
+body.pricing .container #content section article div table th:first-of-type { font-weight: bold; padding-left: 1.25em; }
+body.pricing .container #content section article div table th:first-of-type:before { content: ''; }
+body.pricing .container #content section article div table tr td { font-size: larger; }
+body.pricing .container #content section article div table tr td button { background: #363636; color: #f0efeb; cursor: pointer; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; margin-right: 1.25em; -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; border: 1px solid; }
+body.pricing .container #content section article div table tr td button:hover, body.pricing .container #content section article div table tr td button:focus, body.pricing .container #content section article div table tr td button.hover, body.pricing .container #content section article div table tr td button.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
+body.pricing .container #content section article div table tr td button:active, body.pricing .container #content section article div table tr td button.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
+@media only screen and (max-width: 766px) { body.pricing .container #content section article div table tr td button { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
+body.pricing .container #content section article div table tr:last-of-type td { border: 0; padding: 1.25em 0; }
+body.pricing .container #content section article div table tr:last-of-type td:last-of-type { padding: 1.25em; }
 
 .outline, .hidden { display: none; }
 
