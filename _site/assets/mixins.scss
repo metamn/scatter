@@ -50,6 +50,11 @@ $breakpoint-a4-height: 1122.51px !default;
 		@content;
 	}
 }
+@mixin tablet-and-up {
+	@media only screen and (min-width : $breakpoint-tablet + 1) {
+		@content;
+	}
+}
 @mixin tablet-landscape {
 	@media only screen and (min-width : $breakpoint-tablet + 1) and (max-width : $breakpoint-small - 1) and (orientation : landscape) {
 		@content;
