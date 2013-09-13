@@ -310,17 +310,13 @@ body.pricing .container #header { display: none; }
 body.pricing .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png); height: 250%; }
 @media only screen and (max-width: 766px) { body.pricing .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png); } }
 body.pricing .container #content section article { float: left; }
-body.pricing .container #content section article header { text-align: center; }
-@media only screen and (max-width: 766px) { body.pricing .container #content section article { width: 70%; margin: 0 15%; } }
-@media (max-width: 380px) { body.pricing .container #content section article { width: 94%; margin: 0 3%; } }
-@media only screen and (min-width: 768px) and (max-width: 1023px) { body.pricing .container #content section article { width: 90%; margin: 0 5%; } }
 body.pricing .container #content section article div { width: 100%; float: left; margin-bottom: 6.25em; border: 0.15625em solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; padding: 1.25em; }
 body.pricing .container #content section article div h2 { border-bottom: 0.15625em solid; margin-bottom: 1.25em; }
 body.pricing .container #content section article div p { width: 60%; margin-right: 2%; float: left; padding-top: 1.25em; line-height: 1.5; font-weight: normal; }
 body.pricing .container #content section article div ul { width: 38%; float: left; font-weight: normal; margin: 0; list-style: none; background: #77c8f5; }
 body.pricing .container #content section article div ul li { border-bottom: 1px solid #f0efeb; padding: 0.625em 1.25em 0.9375em; }
 body.pricing .container #content section article div ul li:before { content: '+'; margin-right: 0.3125em; font-size: larger; font-weight: 300; position: relative; top: 2px; }
-body.pricing .container #content section article div table { width: 100%; float: left; }
+body.pricing .container #content section article div table { width: 100%; float: left; /* Desktop */ /* Mobile */ }
 @media only screen and (max-width: 766px) { body.pricing .container #content section article div table:nth-of-type(odd) { display: none; } }
 body.pricing .container #content section article div table:nth-of-type(odd) th { padding: 1.25em; }
 body.pricing .container #content section article div table:nth-of-type(odd) th:before { content: '$'; font-weight: bold; }
@@ -338,12 +334,13 @@ body.pricing .container #content section article div table:nth-of-type(odd) tr:l
 @media only screen and (max-width: 766px) { body.pricing .container #content section article div table:nth-of-type(odd) tr:last-of-type td:first-of-type h1 { font-size: 80%; } }
 @media only screen and (min-width: 768px) { body.pricing .container #content section article div table:nth-of-type(even) { display: none; } }
 body.pricing .container #content section article div table:nth-of-type(even) tr, body.pricing .container #content section article div table:nth-of-type(even) thead, body.pricing .container #content section article div table:nth-of-type(even) tbody { width: 100%; float: left; padding: 0; }
-body.pricing .container #content section article div table:nth-of-type(even) th, body.pricing .container #content section article div table:nth-of-type(even) td { padding: 0; display: inline-block; width: 30%; margin-right: 5%; float: left; }
-body.pricing .container #content section article div table:nth-of-type(even) th:last-of-type, body.pricing .container #content section article div table:nth-of-type(even) td:last-of-type { margin-right: 0; }
-body.pricing .container #content section article div table:nth-of-type(even) th { height: 2.5em; }
+body.pricing .container #content section article div table:nth-of-type(even) th, body.pricing .container #content section article div table:nth-of-type(even) td { padding: 0; display: inline-block; border: none; width: 30%; padding-right: 5%; float: left; }
+body.pricing .container #content section article div table:nth-of-type(even) th:last-of-type, body.pricing .container #content section article div table:nth-of-type(even) td:last-of-type { padding-right: 0; float: right; }
+body.pricing .container #content section article div table:nth-of-type(even) th { height: 2.5em; border-bottom: 1px solid; }
+body.pricing .container #content section article div table:nth-of-type(even) tbody tr { border-bottom: 1px solid; }
 body.pricing .container #content section article div table:nth-of-type(even) tbody tr td { padding: 1.25em 0; }
 body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:first-of-type:before { content: '$'; font-weight: bold; }
-body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type { padding: 0 0 0.3125em; }
+body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type { padding: 0.3125em 0; }
 body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type button { background: #363636; color: #f0efeb; cursor: pointer; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; margin-right: 1.25em; -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; }
 body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type button:hover, body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type button:focus, body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type button.hover, body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type button.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
 body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type button:active, body.pricing .container #content section article div table:nth-of-type(even) tbody tr td:last-of-type button.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
@@ -352,7 +349,14 @@ body.pricing .container #content section article div table:nth-of-type(even) tbo
   body.pricing .container #content section article div h2, body.pricing .container #content section article div p { text-align: center; }
   body.pricing .container #content section article div p, body.pricing .container #content section article div ul { width: auto; margin-right: 0; }
   body.pricing .container #content section article div ul { width: 99%; margin: 1.25em auto; }
-  body.pricing .container #content section article div table, body.pricing .container #content section article div thead, body.pricing .container #content section article div tbody, body.pricing .container #content section article div th, body.pricing .container #content section article div td, body.pricing .container #content section article div tr { display: block; } }
+  body.pricing .container #content section article div table, body.pricing .container #content section article div thead, body.pricing .container #content section article div tbody, body.pricing .container #content section article div th, body.pricing .container #content section article div td, body.pricing .container #content section article div tr { display: block; }
+  body.pricing .container #content section article div table button, body.pricing .container #content section article div thead button, body.pricing .container #content section article div tbody button, body.pricing .container #content section article div th button, body.pricing .container #content section article div td button, body.pricing .container #content section article div tr button { font-size: 80%; } }
+@media only screen and (max-width: 766px) { body.pricing .container #content section article { width: 70%; margin: 0 15%; }
+  body.pricing .container #content section article header { text-align: center; } }
+@media (max-width: 380px) { body.pricing .container #content section article { width: 94%; margin: 0 3%; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) { body.pricing .container #content section article { width: 80%; margin: 0 10%; }
+  body.pricing .container #content section article button { font-size: 40%; } }
+@media only screen and (min-width: 1024px) and (max-width: 1279px) { body.pricing .container #content section article button { font-size: 40%; } }
 
 .outline, .hidden { display: none; }
 

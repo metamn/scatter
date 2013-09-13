@@ -17,26 +17,6 @@ body.pricing {
         article {
           float: left;
           
-          header {
-            text-align: center;
-          }
-          
-          @include tablet-and-below {
-            width: 70%;
-            margin: 0 15%;
-          }
-          
-          @include mobile {
-            width: 94%;
-            margin: 0 3%;
-          }
-          
-          @include small-screen {
-            width: 90%;
-            margin: 0 5%;
-          }
-          
-          
           div {
             @include block;
             margin-bottom: $pad*5;
@@ -90,6 +70,7 @@ body.pricing {
             table {
               @include block;
               
+              /* Desktop */
               &:nth-of-type(odd) {
                 @include tablet-and-below {
                   display: none;
@@ -145,6 +126,7 @@ body.pricing {
                 }
               }
               
+              /* Mobile */
               &:nth-of-type(even) {
                 @include tablet-and-up {
                   display: none;
@@ -158,22 +140,27 @@ body.pricing {
                 th, td {
                   padding: 0;
                   display: inline-block;
+                  border: none;
                   
                   width: 30%;
-                  margin-right: 5%;
+                  padding-right: 5%;
                   float: left;
                   
                   &:last-of-type {
-                    margin-right: 0;
+                    padding-right: 0;
+                    float: right;
                   }
                 }
                 
                 th {
                   height: $pad*2;
+                  border-bottom: 1px solid;
                 }
                 
                 tbody {
                   tr {
+                    border-bottom: 1px solid;
+                    
                     td {
                       padding: $pad 0;
                       
@@ -185,7 +172,7 @@ body.pricing {
                       }
                       
                       &:last-of-type {
-                        padding: 0 0 $pad/4;
+                        padding: $pad/4 0;
                         
                         button {
                           @include button($background, $color);
@@ -216,14 +203,43 @@ body.pricing {
               
               table, thead, tbody, th, td, tr { 
 		            display: block; 
-		          }
-		          
-		          table {  
 		            
-	            }
+		            button {
+		              font-size: 80%;
+		            }
+		          }
+            }
+           
+          }
+          
+          @include tablet-and-below {
+            width: 70%;
+            margin: 0 15%;
+            
+            header {
+              text-align: center;
             }
           }
           
+          @include mobile {
+            width: 94%;
+            margin: 0 3%;
+          }
+          
+          @include small-screen {
+            width: 80%;
+            margin: 0 10%;
+            
+            button {
+              font-size: 40%;
+            }
+          }
+          
+          @include normal-screen {
+            button {
+              font-size: 40%;
+            }
+          }
         }
       }
     }
