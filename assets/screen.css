@@ -358,6 +358,20 @@ body.pricing .container #content section article div table:nth-of-type(even) tbo
   body.pricing .container #content section article button { font-size: 40%; } }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body.pricing .container #content section article button { font-size: 40%; } }
 
+body.dashboard .container { width: 100%; margin: 0 auto; background: #fff; }
+body.dashboard .container #header { width: 100%; float: left; width: 19.098%; overflow: hidden; position: fixed; top: 0; margin: 0; height: 100%; background: #f0efeb; }
+body.dashboard .container #header.hide { width: 5em; }
+body.dashboard .container #header h1 { padding: 1.25em; }
+body.dashboard .container #header nav { width: 100%; float: left; display: block; }
+body.dashboard .container #header nav ul { margin: 0; padding: 1.25em; padding-right: 0; list-style: none; }
+body.dashboard .container #header nav ul li { padding: 0.625em 0.3125em; border-bottom: 1px solid #f0efeb; cursor: pointer; }
+body.dashboard .container #header nav ul li.active, body.dashboard .container #header nav ul li:hover { background: #fff; }
+body.dashboard .container #header #arrows { position: fixed; bottom: 1.25em; left: 1.25em; }
+body.dashboard .container #header #arrows span { cursor: pointer; display: none; }
+body.dashboard .container #header #arrows span.active { display: block; }
+body.dashboard .container main { width: 100%; float: left; width: auto; margin-left: 19.098%; }
+body.dashboard .container main.expand { margin-left: 5em; }
+
 .outline, .hidden { display: none; }
 
 img { max-width: 100%; }
