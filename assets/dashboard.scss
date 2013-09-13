@@ -12,6 +12,28 @@ body.dashboard {
       
       &.hide {
         width: $pad*4;
+        
+        h1 {
+          a {
+            color: $background;
+          }
+          
+          &:first-letter {
+            color: $red;
+          }
+        }
+        
+        nav {
+          li {
+            a {
+              span {
+                &:last-of-type {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
       }
       
       position: fixed;
@@ -39,10 +61,26 @@ body.dashboard {
           li {
             padding: $pad/2 $pad/4;
             border-bottom: 1px solid $background;
-            cursor: pointer;
+            height: $pad + $pad/2;
             
             &.active, &:hover {
               background: #fff;
+            }
+            
+            a, a:visited, a:active, a:hover {
+              text-decoration: none;
+              color: $color;
+              
+              span {
+                &:first-of-type {
+                  position: relative;
+                  top: $pad/3;
+                  margin-right: $pad/2;
+                  img {
+                    max-width: 35px;
+                  }
+                }
+              }
             }
           }
         }
@@ -68,6 +106,7 @@ body.dashboard {
       @include block;
       width: auto;
       margin-left: $minor/2;
+      padding: 0 $pad;
       
       &.expand {
         margin-left: $pad*4;
@@ -75,5 +114,52 @@ body.dashboard {
     }
     
     
+  }
+}
+
+
+body.compose {
+  #header {
+    nav {
+      li.compose {
+        background: #fff;
+      }
+    }
+  }
+}
+body.my-scatters {
+  #header {
+    nav {
+      li.my-scatters {
+        background: #fff;
+      }
+    }
+  }
+}
+body.statistics {
+  #header {
+    nav {
+      li.statistics {
+        background: #fff;
+      }
+    }
+  }
+}
+body.inbox {
+  #header {
+    nav {
+      li.inbox {
+        background: #fff;
+      }
+    }
+  }
+}
+body.account {
+  #header {
+    nav {
+      li.account {
+        background: #fff;
+      }
+    }
   }
 }
