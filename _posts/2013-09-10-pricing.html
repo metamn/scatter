@@ -4,6 +4,7 @@ title: Pricing
 class: pricing
 ---
 
+
 <div id="content">
   <section>
     <article>
@@ -43,9 +44,9 @@ class: pricing
             
             <tr>
               <td>{% include logo.html %}</td>
-              <td><button>Sign up</button></td>
-              <td><button>Sign up</button></td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="5" data-name="Scatter monthly subscription" data-description="30 ads, $5/month">Sign up</button></form></td>
+              <td><form><button data-amount="10" data-name="Scatter monthly subscription" data-description="100 ads, $10/month">Sign up</button></form></td>
+              <td><form><button data-amount="20" data-name="Scatter monthly subscription" data-description="Unlimited ads, $20/month">Sign up</button></form></td>
             </tr>
           </tbody>
         </table>
@@ -64,19 +65,19 @@ class: pricing
             <tr>
               <td>5</td>
               <td>30</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="5" data-name="Scatter monthly subscription" data-description="30 ads, $5/month">Sign up</button></form></td>
             </tr>
             
             <tr>
               <td>10</td>
               <td>100</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="10" data-name="Scatter monthly subscription" data-description="100 ads, $10/month">Sign up</button></form></td>
             </tr>
             
             <tr>
               <td>20</td>
               <td>unlimited</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="20" data-name="Scatter monthly subscription" data-description="Unlimited ads, $20/month">Sign up</button></form></td>
             </tr>
           </tbody>
         </table>
@@ -114,9 +115,9 @@ class: pricing
             
             <tr>
               <td>{% include logo.html %}</td>
-              <td><button>Sign up</button></td>
-              <td><button>Sign up</button></td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="4" data-name="Scatter Pay as you go" data-description="? ads, $4">Sign up</button></form></td>
+              <td><form><button data-amount="6" data-name="Scatter Pay as you go" data-description="? ads, $6">Sign up</button></form></td>
+              <td><form><button data-amount="9" data-name="Scatter Pay as you go" data-description="? ads, $9">Sign up</button></form></td>
             </tr>
           </tbody>
         </table>
@@ -134,19 +135,19 @@ class: pricing
             <tr>
               <td>4</td>
               <td>?</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="4" data-name="Scatter Pay as you go" data-description="? ads, $4">Sign up</button></form></td>
             </tr>
             
             <tr>
               <td>6</td>
               <td>?</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="6" data-name="Scatter Pay as you go" data-description="? ads, $6">Sign up</button></form></td>
             </tr>
             
             <tr>
               <td>9</td>
               <td>?</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="9" data-name="Scatter Pay as you go" data-description="? ads, $9">Sign up</button></form></td>
             </tr>
           </tbody>
         </table>
@@ -184,9 +185,9 @@ class: pricing
             
             <tr>
               <td>{% include logo.html %}</td>
-              <td><button>Sign up</button></td>
-              <td><button>Sign up</button></td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="19" data-name="Scatter Annual plan" data-description="500 ads, $19/year">Sign up</button></form></td>
+              <td><form><button data-amount="39" data-name="Scatter Annual plan" data-description="1,000 ads, $39/year">Sign up</button></form></td>
+              <td><form><button data-amount="59" data-name="Scatter Annual plan" data-description="unlimited ads, $59/year">Sign up</button></form></td>
             </tr>
           </tbody>
         </table>
@@ -204,19 +205,19 @@ class: pricing
             <tr>
               <td>19</td>
               <td>500</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="19" data-name="Scatter Annual plan" data-description="500 ads, $19/year">Sign up</button></form></td>
             </tr>
             
             <tr>
               <td>39</td>
               <td>1000</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="39" data-name="Scatter Annual plan" data-description="1,000 ads, $39/year">Sign up</button></form></td>
             </tr>
             
             <tr>
               <td>59</td>
               <td>unlimited</td>
-              <td><button>Sign up</button></td>
+              <td><form><button data-amount="59" data-name="Scatter Annual plan" data-description="unlimited ads, $59/year">Sign up</button></form></td>
             </tr>
           </tbody>
         </table>
@@ -224,3 +225,6 @@ class: pricing
     </article>
   </section>
 </div>
+
+
+<script src="https://checkout.stripe.com/v2/checkout.js"></script>

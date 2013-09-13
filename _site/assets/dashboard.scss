@@ -1,9 +1,9 @@
+
 body.dashboard {
   .container {
     width: 100%;
     margin: 0 auto;
-    
-    background: #fff;
+    height: auto;
     
     #header {
       @include block;
@@ -47,6 +47,7 @@ body.dashboard {
         padding: $pad;
       }
      
+      /* The menu */
       nav {
         @include block;
         display: block;
@@ -102,14 +103,58 @@ body.dashboard {
       }
     }
     
-    main {
+    #content {
       @include block;
       width: auto;
+      height: auto;
       margin-left: $minor/2;
-      padding: 0 $pad;
+      
+      background: #fff;
       
       &.expand {
         margin-left: $pad*4;
+      }
+      
+      h1 {
+        padding: $pad/4;
+      }
+      
+      
+      section {
+        @include block;
+        width: auto;
+        height: auto;
+        padding: 0 $pad/2;
+        
+        nav {
+          @include block;
+          margin: $pad 0;
+          
+          ul {
+            @include list-inline;
+            
+            li {
+              cursor: pointer;
+            }
+          }
+        }
+        
+        article {
+          @include plan;
+          width: auto;
+          margin-left: 0;
+          
+          h2 {
+            span {
+              font-size: small;
+              margin-left: $pad;
+            }
+          }
+          
+          button {
+            @include button($background, $color);
+          }
+        }
       }
     }
     
