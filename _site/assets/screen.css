@@ -436,6 +436,10 @@ body.dashboard .container #content section article button { background: #363636;
 body.dashboard .container #content section article button:hover, body.dashboard .container #content section article button:focus, body.dashboard .container #content section article button.hover, body.dashboard .container #content section article button.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
 body.dashboard .container #content section article button:active, body.dashboard .container #content section article button.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.dashboard .container #content section article button { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
+body.dashboard .container #content section article form ul { width: 100%; float: left; display: block; margin: 0; }
+body.dashboard .container #content section article form ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
+body.dashboard .container #content section article form ul li.last, body.dashboard .container #content section article form ul li:last-of-type { margin-right: 0; }
+body.dashboard .container #content section article form ul li label { display: block; }
 
 body.compose #header nav li.compose { background: #fff; }
 

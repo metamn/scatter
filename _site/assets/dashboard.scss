@@ -154,6 +154,19 @@ body.dashboard {
           button {
             @include button($background, $color);
           }
+          
+          form {
+            ul {
+              @include block;
+              @include list-inline;
+              
+              li {
+                label {
+                  display: block;
+                }
+              }
+            }
+          }
         }
       }
     }
