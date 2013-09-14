@@ -126,10 +126,10 @@ body .container form input[type="submit"]:active, body .container form input[typ
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) { body .container form input[type="submit"] { font-size: small; } }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body .container form input[type="submit"] { font-size: small; } }
 body .container form a { color: #363636; border-bottom: 1px solid #ff4637; text-decoration: none; }
-body .container form input:last-of-type { background: #ff4637; color: #f0efeb; cursor: pointer; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; margin-right: 1.25em; -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; }
-body .container form input:last-of-type:hover, body .container form input:last-of-type:focus, body .container form input:last-of-type.hover, body .container form input:last-of-type.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
-body .container form input:last-of-type:active, body .container form input:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
-@media only screen and (max-width: 766px) { body .container form input:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
+body .container form input[type="submit"]:last-of-type { background: #ff4637; color: #f0efeb; cursor: pointer; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; margin-right: 1.25em; -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae; }
+body .container form input[type="submit"]:last-of-type:hover, body .container form input[type="submit"]:last-of-type:focus, body .container form input[type="submit"]:last-of-type.hover, body .container form input[type="submit"]:last-of-type.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
+body .container form input[type="submit"]:last-of-type:active, body .container form input[type="submit"]:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
+@media only screen and (max-width: 766px) { body .container form input[type="submit"]:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) { body .container form { font-size: smaller; } }
 @media only screen and (max-width: 766px) { body .container form { font-size: smaller; margin-bottom: 6.25em; } }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body .container form { font-size: small; } }
@@ -380,8 +380,8 @@ body.dashboard .container #header #arrows span { cursor: pointer; display: none;
 body.dashboard .container #header #arrows span.active { display: block; }
 body.dashboard .container #content { width: 100%; float: left; width: auto; height: auto; margin-left: 19.098%; background: #fff; }
 body.dashboard .container #content.expand { margin-left: 5em; }
-body.dashboard .container #content h1 { padding: 0.3125em; }
-body.dashboard .container #content section { width: 100%; float: left; width: auto; height: auto; padding: 0 0.625em; }
+body.dashboard .container #content h1 { padding: 0.3125em 1.04167em; }
+body.dashboard .container #content section { width: 100%; float: left; width: auto; height: auto; padding: 0 2.5em; }
 body.dashboard .container #content section nav { width: 100%; float: left; margin: 1.25em 0; }
 body.dashboard .container #content section nav ul { display: block; margin: 0; }
 body.dashboard .container #content section nav ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
@@ -436,10 +436,14 @@ body.dashboard .container #content section article button { background: #363636;
 body.dashboard .container #content section article button:hover, body.dashboard .container #content section article button:focus, body.dashboard .container #content section article button.hover, body.dashboard .container #content section article button.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
 body.dashboard .container #content section article button:active, body.dashboard .container #content section article button.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.dashboard .container #content section article button { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
-body.dashboard .container #content section article form ul { width: 100%; float: left; display: block; margin: 0; }
+body.dashboard .container #content section article form ul { width: 100%; float: left; display: block; margin: 0; background: #f0efeb; }
 body.dashboard .container #content section article form ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
 body.dashboard .container #content section article form ul li.last, body.dashboard .container #content section article form ul li:last-of-type { margin-right: 0; }
 body.dashboard .container #content section article form ul li label { display: block; }
+body.dashboard .container #content section article form ul li input[type="text"] { background: #ff4637; color: #f0efeb; cursor: pointer; text-transform: uppercase; font-weight: 700; letter-spacing: 0.15625em; padding: 1.25em; margin-right: 1.25em; }
+@media only screen and (max-width: 766px) { body.dashboard .container #content section article form ul li input[type="text"] { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
+body.dashboard .container #content section article form ul li:before { content: ''; }
+body.dashboard .container #content section article form button { margin-top: 1.25em; }
 
 body.compose #header nav li.compose { background: #fff; }
 
@@ -450,6 +454,8 @@ body.statistics #header nav li.statistics { background: #fff; }
 body.inbox #header nav li.inbox { background: #fff; }
 
 body.account #header nav li.account { background: #fff; }
+body.account #content section article:nth-of-type(2) table { margin-bottom: 0; }
+body.account #content section article:nth-of-type(2) h2:nth-of-type(2) { margin-top: 2.5em; }
 
 .outline, .hidden { display: none; }
 

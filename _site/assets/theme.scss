@@ -200,8 +200,7 @@ $orange: #FF782A;
           
           &.active {
             background: $lightred;
-            
-          margin-right: $pad;
+            margin-right: $pad;
             
             button {
               display: none;
@@ -344,7 +343,7 @@ body {
       }
       
       /* Enter now */
-      input:last-of-type {
+      input[type="submit"]:last-of-type {
         @include button($background, $red);
       }
       
