@@ -1,4 +1,7 @@
 
+
+
+
 body.pricing {
   .container {
     #header {
@@ -18,7 +21,66 @@ body.pricing {
           float: left;
           
           div {
-            @include plan;
+            @include card;
+            
+            ul {
+              @include list-blue;
+            }
+            
+            table {
+              @include table;
+              
+              th {
+                font-weight: bold;
+              }
+              
+              &:nth-of-type(odd) {
+                tr {
+                  /* Ads */
+                  &:nth-of-type(1) {
+                    td {
+                      font-weight: bold;
+                    }
+                  }
+                  
+                  /* Valid */
+                  &:nth-of-type(2) {
+                    td {}
+                  }
+                  
+                  /* Buttons */
+                  &:last-of-type {
+                    td {
+                      border: 0;
+                      padding: $pad 0;
+                      
+                      &:first-of-type {
+                        h1 {
+                          @include logo;
+                          font-size: 100%;
+                          padding: $pad/4 0 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              
+              /* Mobile */
+              &:nth-of-type(even) {
+                tr {
+                  td {
+                    font-weight: normal;
+                    
+                    /* button */
+                    &:nth-of-type(4) {
+                      padding: 0 0 $pad;
+                      width: auto;
+                    }
+                  }
+                }
+              }
+            }
           }
           
           @include tablet-and-below {
@@ -40,13 +102,13 @@ body.pricing {
             margin: 0 10%;
             
             button {
-              font-size: 40%;
+              font-size: 60%;
             }
           }
           
           @include normal-screen {
             button {
-              font-size: 40%;
+              font-size: 80%;
             }
           }
         }
@@ -54,3 +116,8 @@ body.pricing {
     }
   }
 }
+
+
+
+
+
