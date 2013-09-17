@@ -367,8 +367,12 @@ body.categories .container #categories { width: 100%; float: left; width: 96%; p
 body.categories .container #categories ul { width: 100%; float: left; display: block; margin: 0; }
 body.categories .container #categories ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
 body.categories .container #categories ul li.last, body.categories .container #categories ul li:last-of-type { margin-right: 0; }
-body.categories .container #categories ul li { width: 19%; margin-right: 2%; padding: 2%; margin-bottom: 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; position: relative; cursor: pointer; }
+body.categories .container #categories ul li { width: 18%; margin-right: 2%; padding: 2%; margin-bottom: 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; position: relative; cursor: pointer; }
 body.categories .container #categories ul li:nth-of-type(4n) { margin-right: 0; }
+@media only screen and (max-width: 766px) { body.categories .container #categories ul li { width: 42%; margin-right: 6%; }
+  body.categories .container #categories ul li:nth-of-type(2n) { margin-right: 0; } }
+@media (max-width: 380px) { body.categories .container #categories ul li { width: auto; }
+  body.categories .container #categories ul li:nth-of-type(4n) { margin-right: 2%; } }
 body.categories .container #categories ul li:hover { border-color: #ff4637; }
 body.categories .container #categories ul li img { width: 50%; margin-bottom: 1.25em; float: right; }
 body.categories .container #categories ul li p { position: absolute; bottom: 1.25em; }

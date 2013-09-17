@@ -19,13 +19,32 @@ body.categories {
         @include list-inline;
         
         li {
-          width: 19%;
+          width: 18%;
           margin-right: 2%;
           padding: 2%;
           
           &:nth-of-type(4n) {
             margin-right: 0;
           }
+          
+          @include tablet-and-below {
+            width: 42%;
+            margin-right: 6%;
+            
+            &:nth-of-type(2n) {
+              margin-right: 0;
+            }
+          }
+          
+          @include mobile {
+            width: auto;
+            
+            &:nth-of-type(4n) {
+              margin-right: 2%;
+            }
+          }
+          
+          
           
           &:hover {
             border-color: $red;
