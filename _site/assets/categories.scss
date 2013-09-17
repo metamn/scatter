@@ -1,0 +1,57 @@
+body.categories {
+  height: auto;
+  background: #fff;
+  
+  .container {
+    height: auto;
+    
+    #header {
+      display: none;
+    }
+    
+    #categories {
+      @include block;
+      width: 96%;
+      padding: 2%;
+      
+      ul {
+        @include block;
+        @include list-inline;
+        
+        li {
+          width: 19%;
+          margin-right: 2%;
+          padding: 2%;
+          
+          &:nth-of-type(4n) {
+            margin-right: 0;
+          }
+          
+          &:hover {
+            border-color: $red;
+          }
+          
+          margin-bottom: $pad;
+          
+          border: 2px solid;
+          @include border-radius($pad);
+          
+          position: relative;
+          
+          cursor: pointer;
+          
+          img {
+            width: 50%;
+            margin-bottom: $pad;
+            float: right;
+          }
+          
+          p {
+            position: absolute;
+            bottom: $pad;
+          }
+        }
+      }
+    }
+  }
+}
