@@ -11,8 +11,8 @@ body.categories {
     
     #categories {
       @include block;
-      width: 96%;
-      padding: 2%;
+      width: 80%;
+      padding: 10%;
       
       ul {
         @include block;
@@ -22,6 +22,8 @@ body.categories {
           width: 18%;
           margin-right: 2%;
           padding: 2%;
+          margin-bottom: $pad;
+          height: 8em;
           
           &:nth-of-type(4n) {
             margin-right: 0;
@@ -46,28 +48,38 @@ body.categories {
           
           
           
-          &:hover {
-            border-color: $red;
+          background: $gray;
+          border: 2px solid $gray;
+          @include border-radius($pad);
+          transition: all 0.5s ease-in-out;
+          
+          a {
+            color: $color;
           }
           
-          margin-bottom: $pad;
-          
-          border: 2px solid;
-          @include border-radius($pad);
-          
-          position: relative;
+          &:hover {
+            border-color: $red;
+            background: $red;
+            
+            a {
+              color: $gray;
+            }
+          }
           
           cursor: pointer;
           
           img {
-            width: 50%;
+            max-width: 200px;
+            width: 100%;
+            
             margin-bottom: $pad;
             float: right;
           }
           
           p {
-            position: absolute;
-            bottom: $pad;
+            margin-top: $pad;
+            font-weight: 400;
+            font-size: smaller;
           }
         }
       }
