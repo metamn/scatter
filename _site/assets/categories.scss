@@ -14,9 +14,15 @@ body.categories {
       width: 80%;
       padding: 10%;
       
+      button {
+        position: relative;
+        top: -5em;
+      }
+      
       ul {
         @include block;
         @include list-inline;
+        display: none;
         
         li {
           width: 18%;

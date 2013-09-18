@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+  // Show categories
+  $('.categories button').hover(
+    function() {
+      $('.categories #categories ul').slideToggle('slow');
+    }, function() {
+      //
+    }
+  );
+
   // Stripe
   
   $('.pricing button').click(function(){
