@@ -271,7 +271,7 @@ body.business .container #content section#slide-1 article div p#p2 { font-size: 
 body.business .container #content section#slide-1 article div p#p3 { font-size: small; top: -20em; left: 75%; width: 8%; }
 @media only screen and (max-width: 1023px) { body.business .container #content section#slide-1 article div p { display: none; } }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) { body.business .container #content section#slide-1 article div p#p1 { top: -8em; }
-  body.business .container #content section#slide-1 article div p#p2 { top: -20em; font-size: 0.41667em; }
+  body.business .container #content section#slide-1 article div p#p2 { top: -22em; font-size: 0.41667em; }
   body.business .container #content section#slide-1 article div p#p3 { top: -23em; font-size: 0.41667em; width: 10%; left: 76%; } }
 body.business .container #content section#slide-2 article div h3 { padding: 1.25em 0; text-align: center; }
 body.business .container #content section#slide-2 article div ul { font-weight: 400; list-style: circle; }
