@@ -1,3 +1,7 @@
-.outline, .hidden { display: none; }
+.outline, .hidden {
+  display: none;
+}
 
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+}
