@@ -1000,11 +1000,15 @@ body.business {
                   }
                   
                   &#p2 {
-                    top: -16em;
+                    top: -20em;
+                    font-size: $pad/3;
                   }
                   
                   &#p3 {
-                    top: -18em;
+                    top: -16em;
+                    font-size: $pad/2;
+                    width: 10%;
+                    left: 76%;
                   }
                 }
               }
