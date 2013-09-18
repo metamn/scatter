@@ -61,7 +61,7 @@ $(document).ready(function() {
   // Scrolling on the frontpage
 
   // Scroll to features
-  $('#intro form input').click(function() {
+  $('#intro form input').first().click(function() {
     $("html, body").animate({ scrollTop: $('#features').offset().top }, "slow");
     return false;
   });

@@ -1,4 +1,7 @@
 <form>
-  <button>Sign up now!<span>Try it for free</span></button>
-  <button>Login</button>
+  <button formaction="/signup" formmethod="post">Sign up now!<span>Try it for free</span></button>
+  <button formaction="/login" formmethod="post">Login</button>
+  <p>
+    <a href="{{ site.url }}/pricing" title="Plans & Pricing">Plans & Pricing &rarr;</a>
+  </p>
 </form> 

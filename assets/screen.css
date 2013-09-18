@@ -242,7 +242,7 @@ body.business .container form button:last-of-type { background: #ff4637; color: 
 body.business .container form button:last-of-type:hover, body.business .container form button:last-of-type:focus, body.business .container form button:last-of-type.hover, body.business .container form button:last-of-type.focus { transform: translate(2px, 2px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae; }
 body.business .container form button:last-of-type:active, body.business .container form button:last-of-type.active { transform: translate(4px, 4px); -webkit-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; -moz-box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae; }
 @media only screen and (max-width: 766px) { body.business .container form button:last-of-type { padding: 0.625em; margin: 0.3125em 0; font-weight: 400; letter-spacing: 1px; text-transform: none; display: block; } }
-body.business .container form p { margin-top: 1.25em; }
+body.business .container form p { margin-top: 2.5em; font-size: larger; }
 body.business .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png); }
 @media only screen and (max-width: 766px) { body.business .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png); } }
 body.business .container #content section article { float: left; }
@@ -303,8 +303,10 @@ body.business .container #content #form form { width: 100%; float: left; display
 @media only screen and (min-width: 768px) and (max-width: 1023px) { body.business .container #content #form { display: block; width: 60%; float: left; margin: 1.25em 0 2.5em; }
   body.business .container #content #form form { left: 3.75em; }
   body.business .container #content #form form button { font-size: small; } }
-@media only screen and (max-width: 1023px) { body.business .container #content #form form button { display: inline-block; }
-  body.business .container #content #form form button span { display: none; } }
+@media only screen and (max-width: 1023px) { body.business .container #content #form form button { display: inline-block; margin-right: 0.625em; }
+  body.business .container #content #form form button:last-of-type { margin-right: 1.25em; }
+  body.business .container #content #form form button span { display: none; }
+  body.business .container #content #form form p { display: inline-block; font-weight: normal; } }
 
 body.pricing .container #header { display: none; }
 body.pricing .container #content section { background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png); height: 250%; }

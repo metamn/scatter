@@ -834,7 +834,8 @@ body.business {
       }
       
       p {
-        margin-top: $pad;
+        margin-top: $pad*2;
+        font-size: larger;
       }
     }
       
@@ -1219,10 +1220,20 @@ body.business {
           form {
             button {
               display: inline-block;
+              margin-right: $pad/2;
+              
+              &:last-of-type {
+                margin-right: $pad;
+              }
               
               span {
                 display: none;
               }
+            }
+            
+            p {
+              display: inline-block;
+              font-weight: normal;
             }
           }
         }
