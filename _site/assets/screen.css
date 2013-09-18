@@ -367,17 +367,17 @@ body.categories .container #categories { width: 100%; float: left; width: 80%; p
 body.categories .container #categories ul { width: 100%; float: left; display: block; margin: 0; }
 body.categories .container #categories ul li { display: inline-block; list-style-type: none; margin-left: 0; float: left; margin-right: 1.25em; }
 body.categories .container #categories ul li.last, body.categories .container #categories ul li:last-of-type { margin-right: 0; }
-body.categories .container #categories ul li { width: 18%; margin-right: 2%; padding: 2%; margin-bottom: 1.25em; height: 8em; background: #f1f1f1; border: 2px solid #f1f1f1; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; transition: all 0.5s ease-in-out; cursor: pointer; }
+body.categories .container #categories ul li { width: 18%; margin-right: 2%; padding: 2%; margin-bottom: 1.25em; height: 8em; background: #f1f1f1; border: 2px solid #f1f1f1; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; transition: all 0.5s ease-in-out; cursor: pointer; }
 body.categories .container #categories ul li:nth-of-type(4n) { margin-right: 0; }
-@media only screen and (max-width: 766px) { body.categories .container #categories ul li { width: 42%; margin-right: 6%; }
+@media only screen and (min-width: 381px) and (max-width: 767px) { body.categories .container #categories ul li { width: 42%; margin-right: 6%; height: 10em; }
   body.categories .container #categories ul li:nth-of-type(2n) { margin-right: 0; } }
-@media (max-width: 380px) { body.categories .container #categories ul li { width: auto; }
+@media (max-width: 380px) { body.categories .container #categories ul li { width: 80%; height: auto; padding: 1.25em; }
   body.categories .container #categories ul li:nth-of-type(4n) { margin-right: 2%; } }
 body.categories .container #categories ul li a { color: #363636; }
 body.categories .container #categories ul li:hover { border-color: #ff4637; background: #ff4637; }
 body.categories .container #categories ul li:hover a { color: #f1f1f1; }
-body.categories .container #categories ul li img { max-width: 200px; width: 100%; margin-bottom: 1.25em; float: right; }
-body.categories .container #categories ul li p { margin-top: 1.25em; font-weight: 400; font-size: smaller; }
+body.categories .container #categories ul li img { max-width: 10em; /* 200px */ max-height: 6.65em; /* 133px */ width: 100%; margin-bottom: 1.25em; float: right; }
+body.categories .container #categories ul li p { width: 100%; float: left; font-weight: 400; font-size: smaller; letter-spacing: 2px; word-wrap: break-word; }
 
 .outline, .hidden { display: none; }
 

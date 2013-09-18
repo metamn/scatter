@@ -29,9 +29,10 @@ body.categories {
             margin-right: 0;
           }
           
-          @include tablet-and-below {
+          @include tablet {
             width: 42%;
             margin-right: 6%;
+            height: 10em;
             
             &:nth-of-type(2n) {
               margin-right: 0;
@@ -39,7 +40,9 @@ body.categories {
           }
           
           @include mobile {
-            width: auto;
+            width: 80%;
+            height: auto;
+            padding: $pad;
             
             &:nth-of-type(4n) {
               margin-right: 2%;
@@ -50,7 +53,7 @@ body.categories {
           
           background: $gray;
           border: 2px solid $gray;
-          @include border-radius($pad);
+          @include border-radius($pad/2);
           transition: all 0.5s ease-in-out;
           
           a {
@@ -69,7 +72,8 @@ body.categories {
           cursor: pointer;
           
           img {
-            max-width: 200px;
+            max-width: 10em; /* 200px */
+            max-height: 6.65em; /* 133px */
             width: 100%;
             
             margin-bottom: $pad;
@@ -77,9 +81,12 @@ body.categories {
           }
           
           p {
-            margin-top: $pad;
+            @include block;
             font-weight: 400;
             font-size: smaller;
+            
+            letter-spacing: 2px;
+            word-wrap: break-word;
           }
         }
       }
