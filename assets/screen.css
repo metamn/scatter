@@ -1962,7 +1962,7 @@ body.main .container #content article .labelcontainer .timeremaining {
   width: 60%;
   float: left;
   text-align: right;
-  font-size: small;
+  font-size: smaller;
   margin-top: 0.15625em;
 }
 body.main .container #content article .votebutton, body.main .container #content article .actionbuttons, body.main .container #content article .flagbutton, body.main .container #content article .cardfooter {
