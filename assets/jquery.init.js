@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
   // Show categories
   $('.categories button').hover(
     function() {
@@ -8,9 +9,9 @@ $(document).ready(function() {
       //
     }
   );
+  
 
   // Stripe
-  
   $('.pricing button').click(function(){
     // Insert token
     var token = function(res){
@@ -40,7 +41,6 @@ $(document).ready(function() {
     
 
   // Typer
-  
   $(function () {
     $('[data-typer-targets]').typer();
   });
@@ -50,8 +50,8 @@ $(document).ready(function() {
   })
   
   
-  // Scrolling on the business page
   
+  // Scrolling on the business page
   $('.business #header nav li').click(function() {
     var index = $(this).index() + 2;
     
@@ -66,11 +66,8 @@ $(document).ready(function() {
   
   
   
-  
   // Scrolling on the frontpage
-
-  // Scroll to features
-  $('#intro form input').first().click(function() {
+  $('#intro #form input').first().click(function() {
     $("html, body").animate({ scrollTop: $('#features').offset().top }, "slow");
     return false;
   });
