@@ -1836,6 +1836,143 @@ body.categories .container #categories ul li p {
   word-wrap: break-word;
 }
 
+body.main {
+  height: auto;
+}
+body.main .container {
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+}
+body.main .container #header {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-left: 0;
+  top: 2.5em;
+}
+body.main .container #header h1, body.main .container #header nav {
+  width: auto;
+  float: left;
+  display: block;
+}
+body.main .container #header nav {
+  display: block;
+}
+body.main .container #header nav ul {
+  display: block;
+  margin: 0;
+}
+body.main .container #header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  float: left;
+  margin-right: 1.25em;
+}
+body.main .container #header nav ul li.last, body.main .container #header nav ul li:last-of-type {
+  margin-right: 0;
+}
+body.main .container #header nav ul li button {
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 0.625em 1.25em;
+  cursor: pointer;
+  background: #f0efeb;
+}
+body.main .container #header nav#main {
+  float: right;
+}
+body.main .container #header nav#explore {
+  width: 100%;
+  float: left;
+  margin: 1.25em 0;
+}
+body.main .container #header nav#explore ul li:last-of-type {
+  float: right;
+}
+body.main .container #header nav#explore ul li:last-of-type input[type="text"] {
+  padding: 0.3125em;
+}
+body.main .container #content {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-top: 2.5em;
+}
+body.main .container #content article {
+  width: 100%;
+  float: left;
+  width: 16%;
+  margin-right: 2%;
+  margin-bottom: 1.25em;
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 1.25em 0.625em;
+}
+body.main .container #content article:nth-of-type(5n) {
+  margin-right: 0;
+}
+body.main .container #content article .cardcategory {
+  font-size: small;
+}
+body.main .container #content article .userinfolink h3 {
+  padding: 0;
+}
+body.main .container #content article .messagelocation {
+  font-size: small;
+}
+body.main .container #content article .labelcontainer {
+  width: 100%;
+  float: left;
+}
+body.main .container #content article .labelcontainer a {
+  width: 35%;
+  margin-right: 5%;
+  float: left;
+}
+body.main .container #content article .labelcontainer a .l_followbtn {
+  font-size: small;
+  text-align: center;
+  font-weight: 400;
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 0.15625em;
+}
+body.main .container #content article .labelcontainer .timeremaining {
+  width: 60%;
+  float: left;
+  text-align: right;
+  font-size: small;
+}
+body.main .container #content article .votebutton, body.main .container #content article .actionbuttons, body.main .container #content article .flagbutton, body.main .container #content article .cardfooter {
+  display: none;
+}
+body.main .container #content article .message {
+  width: 100%;
+  float: left;
+  width: 90%;
+  height: 15em;
+  background: #fff;
+  padding: 0.625em;
+  margin: 0.625em 0;
+}
+
 .outline, .hidden {
   display: none;
 }

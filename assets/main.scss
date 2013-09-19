@@ -1,0 +1,137 @@
+body.main {
+  height: auto;
+  
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    
+    #header {
+      @include block;
+      
+      position: relative;
+      margin-left: 0;
+      top: $pad*2;
+      
+      h1, nav {
+        width: auto;
+        float: left;
+        display: block;
+      }
+      
+      nav {
+        display: block;
+        
+        ul {
+          @include list-inline;
+          
+          li {
+            button {
+              @include border;
+              padding: $pad/2 $pad;
+              cursor: pointer;
+              background: $background;
+            }
+          }
+        }
+        
+        &#main {
+          float: right;
+        }
+        
+        &#explore {
+          @include block;
+          margin: $pad 0;
+          
+          ul {
+            li {
+              &:last-of-type {
+                float: right;
+                
+                input[type="text"] {
+                  padding: $pad/4;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    
+    #content {
+      @include block;
+      height: auto;
+      margin-top: $pad*2;
+      
+      article {
+        @include block;
+        width: 16%;
+        margin-right: 2%;
+        margin-bottom: $pad;
+        
+        @include border;
+        padding: $pad $pad/2;
+        
+        &:nth-of-type(5n) {
+          margin-right: 0;
+        }
+        
+        .cardcategory {
+          font-size: small;
+        }
+        
+        .userinfolink {
+          h3 {
+            padding: 0;
+          }
+        }
+        
+        .messagelocation {
+          font-size: small;
+        }
+        
+        .labelcontainer {
+          @include block;
+          
+          a {
+            width: 35%;
+            margin-right: 5%;
+            float: left;
+            
+            .l_followbtn {
+              font-size: small;
+              text-align: center;
+              font-weight: 400;
+              
+              @include border;
+              padding: $pad/8;
+            }
+          }
+          
+          .timeremaining {
+            width: 60%;
+            float: left;
+            
+            text-align: right;
+            font-size: small;
+          }
+        }
+        
+        .votebutton, .actionbuttons, .flagbutton, .cardfooter {
+          display: none;
+        }
+        
+        .message {
+          @include block;
+          width: 90%;
+          
+          height: 15em;
+          background: #fff;
+          padding: $pad/2;
+          margin: $pad/2 0;
+        }
+      }
+    }
+  }
+}
