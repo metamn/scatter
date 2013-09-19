@@ -82,12 +82,16 @@ body.main {
         }
         
         .userinfolink {
+          height: $pad*2;
+          
           h3 {
             padding: 0;
           }
         }
         
         .messagelocation {
+          height: $pad*2;
+          
           font-size: small;
         }
         
@@ -115,6 +119,7 @@ body.main {
             
             text-align: right;
             font-size: small;
+            margin-top: $pad/8;
           }
         }
         
@@ -124,12 +129,17 @@ body.main {
         
         .message {
           @include block;
-          width: 90%;
+          width: 85%;
+          height: 11em;
           
-          height: 15em;
-          background: #fff;
-          padding: $pad/2;
+          @include border-radius($pad/2);
+          background: $blue;
+          padding: $pad;
           margin: $pad/2 0;
+          
+          font-weight: 400;
+          font-size: small;
+          line-height: 1.75;
         }
       }
     }

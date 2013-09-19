@@ -1926,10 +1926,14 @@ body.main .container #content article:nth-of-type(5n) {
 body.main .container #content article .cardcategory {
   font-size: small;
 }
+body.main .container #content article .userinfolink {
+  height: 2.5em;
+}
 body.main .container #content article .userinfolink h3 {
   padding: 0;
 }
 body.main .container #content article .messagelocation {
+  height: 2.5em;
   font-size: small;
 }
 body.main .container #content article .labelcontainer {
@@ -1959,6 +1963,7 @@ body.main .container #content article .labelcontainer .timeremaining {
   float: left;
   text-align: right;
   font-size: small;
+  margin-top: 0.15625em;
 }
 body.main .container #content article .votebutton, body.main .container #content article .actionbuttons, body.main .container #content article .flagbutton, body.main .container #content article .cardfooter {
   display: none;
@@ -1966,11 +1971,19 @@ body.main .container #content article .votebutton, body.main .container #content
 body.main .container #content article .message {
   width: 100%;
   float: left;
-  width: 90%;
-  height: 15em;
-  background: #fff;
-  padding: 0.625em;
+  width: 85%;
+  height: 11em;
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
+  background: #77c8f5;
+  padding: 1.25em;
   margin: 0.625em 0;
+  font-weight: 400;
+  font-size: small;
+  line-height: 1.75;
 }
 
 .outline, .hidden {
