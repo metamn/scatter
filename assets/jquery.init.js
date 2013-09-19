@@ -52,6 +52,7 @@ $(document).ready(function() {
   
   
   // Scrolling on the business page
+  // Click on the scroller
   $('.business #header nav li').click(function() {
     var index = $(this).index() + 2;
     
@@ -64,6 +65,27 @@ $(document).ready(function() {
     return false;
   });
   
+  // Scroll manually
+  // http://stackoverflow.com/questions/14161132/jquery-scroll-change-navigation-active-class-as-the-page-is-scrolling-relative
+  $(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    
+    if (windscroll >= 100) {
+      $('section').each(function(i) {
+        if ($(this).position().top <= windscroll - 90) {
+          $('.business #header nav li.active').removeClass('active');
+          $('.business #header nav li').eq(i+1).addClass('active');
+        }
+      });
+      
+    } else {
+      $('.business #header nav li.active').removeClass('active');
+      $('.business #header nav li').first().addClass('active');
+    }
+  }).scroll();
+  
+  
+  
   
   
   // Scrolling on the frontpage
@@ -74,3 +96,5 @@ $(document).ready(function() {
 
 
 });
+
+

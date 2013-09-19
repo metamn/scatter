@@ -383,6 +383,7 @@ body.business .container #header h1 {
 }
 body.business .container #header nav {
   margin-right: 5%;
+  margin-top: 0.41667em;
   float: right;
   display: block;
 }
