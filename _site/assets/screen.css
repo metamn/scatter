@@ -1923,6 +1923,30 @@ body.main .container #content article {
   padding: 1.25em;
   margin-bottom: 1.25em;
   float: left;
+  /*
+  @include small-screen-and-up {
+    width: 25%;
+    margin-right: 2%;
+    
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  
+  @include big-screen {
+    width: 18%;
+    margin-right: 2%;
+    padding: 1%;
+    
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+  */
+  width: 18%;
+  margin-right: 2%;
+  padding: 1%;
 }
 @media (max-width: 380px) {
   body.main .container #content article {
@@ -1941,29 +1965,15 @@ body.main .container #content article {
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 1025px) {
-  body.main .container #content article {
-    width: 25%;
-    margin-right: 2%;
-  }
-  body.main .container #content article:nth-of-type(3n) {
-    margin-right: 0;
-  }
-}
-@media only screen and (min-width: 1442px) {
-  body.main .container #content article {
-    width: 18%;
-    margin-right: 2%;
-    padding: 1%;
-  }
-  body.main .container #content article:nth-of-type(4n) {
-    margin-right: 0;
-  }
+body.main .container #content article:nth-of-type(4n) {
+  margin-right: 0;
 }
 body.main .container #content article .cardcategory {
   width: 100%;
   float: left;
   font-size: small;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 body.main .container #content article .cardcategory img {
   -webkit-border-radius: 0.625em;
@@ -1971,6 +1981,7 @@ body.main .container #content article .cardcategory img {
   -ms-border-radius: 0.625em;
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
+  display: none;
 }
 body.main .container #content article .usercontainer {
   width: 100%;
@@ -1998,6 +2009,7 @@ body.main .container #content article .messagecontainer .distance, body.main .co
 }
 body.main .container #content article .messagecontainer .timeremaining {
   float: right;
+  text-align: right;
 }
 body.main .container #content article .messagecontainer .message {
   width: 100%;
@@ -2016,7 +2028,7 @@ body.main .container #content article .cardfooter {
 }
 body.main .container #content article .cardfooter a {
   width: auto;
-  margin-right: 10%;
+  margin-right: 3%;
   float: left;
 }
 body.main .container #content article .cardfooter a img {

@@ -91,6 +91,7 @@ body.main {
           }
         }
         
+        /*
         @include small-screen-and-up {
           width: 25%;
           margin-right: 2%;
@@ -99,6 +100,7 @@ body.main {
             margin-right: 0;
           }
         }
+        
         
         @include big-screen {
           width: 18%;
@@ -109,13 +111,25 @@ body.main {
             margin-right: 0;
           }
         }
+        */
+        
+        width: 18%;
+        margin-right: 2%;
+        padding: 1%;
+        
+        &:nth-of-type(4n) {
+          margin-right: 0;
+        }
         
         .cardcategory {
           @include block;
           font-size: small;
+          font-weight: 400;
+          text-transform: uppercase;
           
           img {
             @include border-radius($pad/2);
+            display: none;
           }
         }
         
@@ -124,6 +138,10 @@ body.main {
           
           h3 {
             padding: $pad/4 0;
+            
+            &:first-of-type {
+              
+            }
             
             &.messagelocation {
               font-size: small;
@@ -149,6 +167,7 @@ body.main {
           
           .timeremaining {
             float: right;
+            text-align: right;
           }
           
           .message {
@@ -171,7 +190,7 @@ body.main {
           
           a {
             width: auto;
-            margin-right: 10%;
+            margin-right: 3%;
             float: left;
             
             img {
