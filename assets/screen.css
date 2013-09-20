@@ -1847,6 +1847,7 @@ body.main .container {
 body.main .container #header {
   width: 100%;
   float: left;
+  display: none;
   position: relative;
   margin-left: 0;
   top: 2.5em;
@@ -1908,9 +1909,6 @@ body.main .container #content {
 body.main .container #content article {
   width: 100%;
   float: left;
-  width: 16%;
-  margin-right: 2%;
-  margin-bottom: 1.25em;
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -1918,72 +1916,119 @@ body.main .container #content article {
   -o-border-radius: 1.25em;
   border-radius: 1.25em;
   padding: 1.25em;
-  padding: 1.25em 0.625em;
+  width: 18%;
+  margin-right: 2%;
+  padding: 1%;
+  margin-bottom: 1.25em;
+  height: 25em;
 }
-body.main .container #content article:nth-of-type(5n) {
+body.main .container #content article:nth-of-type(4n) {
   margin-right: 0;
 }
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+  body.main .container #content article {
+    width: 42%;
+    margin-right: 6%;
+    height: 10em;
+  }
+  body.main .container #content article:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 380px) {
+  body.main .container #content article {
+    width: 80%;
+    height: auto;
+    padding: 1.25em;
+  }
+  body.main .container #content article:nth-of-type(4n) {
+    margin-right: 2%;
+  }
+}
 body.main .container #content article .cardcategory {
+  width: 100%;
+  float: left;
   font-size: small;
 }
-body.main .container #content article .userinfolink {
-  height: 2.5em;
+body.main .container #content article .cardcategory img {
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
 }
-body.main .container #content article .userinfolink h3 {
-  padding: 0;
-}
-body.main .container #content article .messagelocation {
-  height: 2.5em;
-  font-size: small;
-}
-body.main .container #content article .labelcontainer {
+body.main .container #content article .usercontainer {
   width: 100%;
   float: left;
 }
-body.main .container #content article .labelcontainer a {
-  width: 35%;
-  margin-right: 5%;
+body.main .container #content article .usercontainer h3 {
+  padding: 0.3125em 0;
+  display: inline-block;
   float: left;
 }
-body.main .container #content article .labelcontainer a .l_followbtn {
+body.main .container #content article .usercontainer h3.messagelocation {
   font-size: small;
-  text-align: center;
-  font-weight: 400;
-  border: 0.15625em solid;
-  -webkit-border-radius: 1.25em;
-  -moz-border-radius: 1.25em;
-  -ms-border-radius: 1.25em;
-  -o-border-radius: 1.25em;
-  border-radius: 1.25em;
-  padding: 1.25em;
-  padding: 0.15625em;
 }
-body.main .container #content article .labelcontainer .timeremaining {
-  width: 60%;
-  float: left;
-  text-align: right;
-  font-size: small;
-  margin-top: 0.15625em;
-}
-body.main .container #content article .votebutton, body.main .container #content article .actionbuttons, body.main .container #content article .flagbutton, body.main .container #content article .cardfooter {
-  display: none;
-}
-body.main .container #content article .message {
+body.main .container #content article .messagecontainer {
   width: 100%;
   float: left;
-  width: 85%;
-  height: 11em;
+  width: 93%;
+  min-height: 11em;
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
   -ms-border-radius: 0.625em;
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
   background: #77c8f5;
-  padding: 1.25em;
+  padding: 0.625em;
   margin: 0.625em 0;
   font-weight: 400;
   font-size: small;
   line-height: 1.75;
+}
+body.main .container #content article .messagecontainer .distance, body.main .container #content article .messagecontainer .timeremaining {
+  width: auto;
+  float: left;
+}
+body.main .container #content article .messagecontainer .timeremaining {
+  float: right;
+}
+body.main .container #content article .messagecontainer .message {
+  width: 100%;
+  float: left;
+  border-top: 1px solid;
+  padding-top: 0.625em;
+}
+body.main .container #content article .cardfooter {
+  width: 100%;
+  float: left;
+}
+body.main .container #content article .cardfooter a {
+  width: auto;
+  margin-right: 10%;
+  float: left;
+}
+body.main .container #content article .cardfooter a img {
+  max-width: 1.25em;
+  max-height: 1.25em;
+}
+body.main .container #content article .cardfooter a.l_followbtn {
+  font-size: small;
+  text-align: center;
+  font-weight: 400;
+  color: #363636;
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 0.3125em 0.625em;
+  width: 50%;
+}
+body.main .container #content article .cardfooter a.mapicon {
+  margin-right: 0;
 }
 
 .outline, .hidden {
