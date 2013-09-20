@@ -1971,9 +1971,8 @@ body.main .container #content article .usercontainer h3.messagelocation {
 body.main .container #content article .messagecontainer {
   width: 100%;
   float: left;
-  width: 93%;
-  padding: 0.625em 0;
-  margin: 0.625em 0;
+  width: 90%;
+  margin: 1.25em 0 2.5em;
   font-weight: 400;
   font-size: small;
   line-height: 1.75;
@@ -1988,14 +1987,17 @@ body.main .container #content article .messagecontainer .timeremaining {
 body.main .container #content article .messagecontainer .message {
   width: 100%;
   float: left;
-  border-top: 3px solid;
-  border-bottom: 3px solid;
-  padding: 0.625em 0;
+  border-top: 1px double;
+  border-bottom: 3px double;
+  padding: 1.25em 0.625em;
+}
+body.main .container #content article .messagecontainer .message:first-line {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 body.main .container #content article .cardfooter {
   width: 100%;
   float: left;
-  position: relative;
 }
 body.main .container #content article .cardfooter a {
   width: auto;
