@@ -2,9 +2,13 @@ body.main {
   height: auto;
   
   .container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     height: auto;
+    
+    @include big-screen {
+      width: 70%;
+    }
     
     #header {
       @include block;
@@ -68,14 +72,13 @@ body.main {
       article {
         @include block;
         @include border;
-        
-        width: 18%;
-        margin-right: 2%;
-        padding: 1%;
         margin-bottom: $pad;
+        float: left;
         
-        &:nth-of-type(4n) {
-          margin-right: 0;
+        @include mobile {
+          width: 80%;
+          height: auto;
+          padding: $pad;
         }
         
         @include tablet {
@@ -88,13 +91,22 @@ body.main {
           }
         }
         
-        @include mobile {
-          width: 80%;
-          height: auto;
-          padding: $pad;
+        @include small-screen-and-up {
+          width: 25%;
+          margin-right: 2%;
+          
+          &:nth-of-type(3n) {
+            margin-right: 0;
+          }
+        }
+        
+        @include big-screen {
+          width: 18%;
+          margin-right: 2%;
+          padding: 1%;
           
           &:nth-of-type(4n) {
-            margin-right: 2%;
+            margin-right: 0;
           }
         }
         
@@ -113,11 +125,9 @@ body.main {
           h3 {
             padding: $pad/4 0;
             
-            display: inline-block;
-            float: left; 
-            
             &.messagelocation {
               font-size: small;
+              color: $brown-gray;
             }
           }
         }
@@ -144,7 +154,7 @@ body.main {
           .message {
             @include block;
             
-            border-top: 1px double;
+            border-top: 1px solid;
             border-bottom: 3px double;
             padding: $pad $pad/2;
             
