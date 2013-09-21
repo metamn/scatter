@@ -1852,17 +1852,13 @@ body.main .container {
 body.main .container #header {
   width: 100%;
   float: left;
-  display: none;
   position: relative;
   margin-left: 0;
   top: 2.5em;
 }
-body.main .container #header h1, body.main .container #header nav {
-  width: auto;
-  float: left;
-  display: block;
-}
 body.main .container #header nav {
+  width: 100%;
+  float: left;
   display: block;
 }
 body.main .container #header nav ul {
@@ -1891,18 +1887,25 @@ body.main .container #header nav ul li button {
   cursor: pointer;
   background: #f0efeb;
 }
-body.main .container #header nav#main {
+body.main .container #header nav ul li img {
+  width: 1.25em;
+}
+body.main .container #header nav ul li:last-of-type {
   float: right;
+  text-align: right;
 }
 body.main .container #header nav#explore {
-  width: 100%;
-  float: left;
-  margin: 1.25em 0;
+  border-top: 1px solid;
+  border-bottom: 3px double;
+  margin: 0.625em 0 1.25em;
+  padding: 0.625em 0;
 }
-body.main .container #header nav#explore ul li:last-of-type {
-  float: right;
+body.main .container #header nav#explore ul li a {
+  color: #363636;
+  font-weight: 400;
+  font-size: medium;
 }
-body.main .container #header nav#explore ul li:last-of-type input[type="text"] {
+body.main .container #header nav#explore ul li input {
   padding: 0.3125em;
 }
 body.main .container #content {
@@ -1914,6 +1917,50 @@ body.main .container #content {
 body.main .container #content article {
   width: 100%;
   float: left;
+  float: left;
+  width: 45%;
+  margin-right: 4%;
+  margin-bottom: 1.25em;
+}
+body.main .container #content article:nth-of-type(2n) {
+  margin-right: 0;
+}
+@media (max-width: 380px) {
+  body.main .container #content article {
+    width: auto;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  body.main .container #content article {
+    width: 30%;
+    margin-right: 3%;
+  }
+  body.main .container #content article:nth-of-type(3n) {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  body.main .container #content article {
+    width: 24%;
+    margin-right: 1%;
+  }
+  body.main .container #content article:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1442px) {
+  body.main .container #content article {
+    width: 19%;
+    margin-right: 1%;
+  }
+  body.main .container #content article:nth-of-type(5n) {
+    margin-right: 0;
+  }
+}
+body.main .container #content article #inner {
+  width: 100%;
+  float: left;
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -1921,80 +1968,41 @@ body.main .container #content article {
   -o-border-radius: 1.25em;
   border-radius: 1.25em;
   padding: 1.25em;
-  margin-bottom: 1.25em;
-  float: left;
-  /*
-  @include small-screen-and-up {
-    width: 25%;
-    margin-right: 2%;
-    
-    &:nth-of-type(3n) {
-      margin-right: 0;
-    }
-  }
-  
-  
-  @include big-screen {
-    width: 18%;
-    margin-right: 2%;
-    padding: 1%;
-    
-    &:nth-of-type(4n) {
-      margin-right: 0;
-    }
-  }
-  */
-  width: 18%;
-  margin-right: 2%;
-  padding: 1%;
+  width: auto;
 }
-@media (max-width: 380px) {
-  body.main .container #content article {
-    width: 80%;
-    height: auto;
-    padding: 1.25em;
-  }
-}
-@media only screen and (min-width: 381px) and (max-width: 767px) {
-  body.main .container #content article {
-    width: 42%;
-    margin-right: 6%;
-    height: 10em;
-  }
-  body.main .container #content article:nth-of-type(2n) {
-    margin-right: 0;
-  }
-}
-body.main .container #content article:nth-of-type(4n) {
-  margin-right: 0;
-}
-body.main .container #content article .cardcategory {
+body.main .container #content article #inner .cardcategory {
   width: 100%;
   float: left;
   font-size: small;
   font-weight: 400;
   text-transform: uppercase;
 }
-body.main .container #content article .cardcategory img {
+body.main .container #content article #inner .cardcategory img {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
   -ms-border-radius: 0.625em;
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
-  display: none;
+  width: 50%;
+  margin-right: 5%;
+  float: left;
 }
-body.main .container #content article .usercontainer {
+body.main .container #content article #inner .cardcategory p {
+  width: 45%;
+  float: left;
+}
+body.main .container #content article #inner .usercontainer {
   width: 100%;
   float: left;
 }
-body.main .container #content article .usercontainer h3 {
+body.main .container #content article #inner .usercontainer h3 {
   padding: 0.3125em 0;
 }
-body.main .container #content article .usercontainer h3.messagelocation {
+body.main .container #content article #inner .usercontainer h3.messagelocation {
   font-size: small;
   color: #70706e;
 }
-body.main .container #content article .messagecontainer {
+body.main .container #content article #inner .messagecontainer {
   width: 100%;
   float: left;
   width: 90%;
@@ -2003,39 +2011,40 @@ body.main .container #content article .messagecontainer {
   font-size: small;
   line-height: 1.75;
 }
-body.main .container #content article .messagecontainer .distance, body.main .container #content article .messagecontainer .timeremaining {
+body.main .container #content article #inner .messagecontainer .distance, body.main .container #content article #inner .messagecontainer .timeremaining {
   width: auto;
   float: left;
+  color: #70706e;
 }
-body.main .container #content article .messagecontainer .timeremaining {
+body.main .container #content article #inner .messagecontainer .timeremaining {
   float: right;
   text-align: right;
 }
-body.main .container #content article .messagecontainer .message {
+body.main .container #content article #inner .messagecontainer .message {
   width: 100%;
   float: left;
   border-top: 1px solid;
   border-bottom: 3px double;
   padding: 1.25em 0.625em;
 }
-body.main .container #content article .messagecontainer .message:first-line {
+body.main .container #content article #inner .messagecontainer .message:first-line {
   text-transform: uppercase;
   font-weight: bold;
 }
-body.main .container #content article .cardfooter {
+body.main .container #content article #inner .cardfooter {
   width: 100%;
   float: left;
 }
-body.main .container #content article .cardfooter a {
+body.main .container #content article #inner .cardfooter a {
   width: auto;
   margin-right: 3%;
   float: left;
 }
-body.main .container #content article .cardfooter a img {
+body.main .container #content article #inner .cardfooter a img {
   max-width: 1.25em;
   max-height: 1.25em;
 }
-body.main .container #content article .cardfooter a.l_followbtn {
+body.main .container #content article #inner .cardfooter a.l_followbtn {
   font-size: small;
   text-align: center;
   font-weight: 400;
@@ -2048,9 +2057,12 @@ body.main .container #content article .cardfooter a.l_followbtn {
   border-radius: 1.25em;
   padding: 1.25em;
   padding: 0.3125em 0.625em;
-  width: 50%;
+  width: 40%;
 }
-body.main .container #content article .cardfooter a.mapicon {
+body.main .container #content article #inner .cardfooter a.l_followbtn.active {
+  background: #77c8f5;
+}
+body.main .container #content article #inner .cardfooter a.mapicon {
   margin-right: 0;
 }
 

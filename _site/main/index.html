@@ -49,19 +49,17 @@
 
 
 <header id="header">
-  
+  <nav id="main">
+  <ul>
+    <li>
 <h1>
   <a href="" title="Scatter">
     Scatter
   </a>
 </h1>
-
-  <nav id="main">
-  <ul>
+</li>
     <li>
       <button onclick="location.href='/signup';">Sign up</button>
-    </li>
-    <li>
       <button onclick="location.href='/login';">Login</button>
     </li>
   </ul>
@@ -70,10 +68,19 @@
 <nav id="explore">
   <ul>
     <li>
-      <button onclick="location.href='/explore';">Explore my neighborhood</button>
+      <a href="">Explore my neighborhood</a>
     </li>
     <li>
-      <button>Search</button>
+      <a href="">Set your precise location</a>
+    </li>
+    <li>
+      <a href="">Browse categories</a>
+    </li>
+    <li>
+      <a href="">Nearest to me</a>
+    </li>
+    <li>
+      <input type="text" placeholder="Search">
     </li>
   </ul>
 </nav>
@@ -82,57 +89,32 @@
 
 <main id="content">
   <article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/1446023/2/stock-photo-1446023-recipe-card-dividers.jpg" alt="All categories">
-      <p>Category</p>
-    </a>
-  </div>
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/1446023/2/stock-photo-1446023-recipe-card-dividers.jpg" alt="All categories">
+        <p>Category</p>
+      </a>
+    </div>
 
-  <div class="usercontainer">
-    <h3 class="username">Oxygen Eco Friendly Drycleaning</h3>
-    <h3 class="messagelocation">Deen Dayal Upadhaya Marg, Barakhamba, New Delhi</h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">12.3 Km</div>
-    <div class="timeremaining">6234h : 42m left</div>
-    <p class="message">Join us for Aarey Forest Half Marathon. Dt:16th Jun Time:6.00a.m. Assembly Point:Toll Naka, Off the Western Expr. Highway, Goregaon East</p>
-  </div>
+    <div class="usercontainer">
+      <h3 class="username">Oxygen Eco Friendly Drycleaning</h3>
+      <h3 class="messagelocation">Deen Dayal Upadhaya Marg, Barakhamba, New Delhi</h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">12.3 Km</div>
+      <div class="timeremaining">6234h : 42m left</div>
+      <p class="message">Join us for Aarey Forest Half Marathon. Dt:16th Jun Time:6.00a.m. Assembly Point:Toll Naka, Off the Western Expr. Highway, Goregaon East</p>
+    </div>
+    
+    <div class="cardfooter">
+  <a class="l_followbtn active" href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
 
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
-  </div>
-</article>
-
-
-
-
-<article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/25046882/2/stock-photo-25046882-traditional-chinese-dish.jpg" alt="All categories">
-      <p>Hobby class</p>
-    </a>
-  </div>
-
-  <div class="usercontainer">
-    <h3 class="username">Dance Villa</h3>
-    <h3 class="messagelocation">New Colony, Sector 7, Gurgaon</h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">4798 Km</div>
-    <div class="timeremaining">12h : 42m left</div>
-    <p class="message">Dance Villa provides salsa dance classes. We have excellent staff that is courteous and professional. Call now for very competitive prices.</p>
-  </div>
-
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
   </div>
 </article>
 
@@ -140,138 +122,32 @@
 
 
 <article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/6486134/2/stock-photo-6486134-real-estate-news.jpg" alt="All categories">
-      <p>Real estate agent</p>
-    </a>
-  </div>
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/25046882/2/stock-photo-25046882-traditional-chinese-dish.jpg" alt="All categories">
+        <p>Hobby class</p>
+      </a>
+    </div>
 
-  <div class="usercontainer">
-    <h3 class="username">Big Deal Infrastructure</h3>
-    <h3 class="messagelocation">Jacobpura, Sector-12A, Gurgaon</h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">12 Km</div>
-    <div class="timeremaining">0h : 42m left</div>
-    <p class="message">Palm Drive flat for sale in Gurgaon, Golf Course Extension Road. Immediate requirement. Contact right now!</p>
-  </div>
+    <div class="usercontainer">
+      <h3 class="username">Dance Villa</h3>
+      <h3 class="messagelocation">New Colony, Sector 7, Gurgaon</h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">4798 Km</div>
+      <div class="timeremaining">12h : 42m left</div>
+      <p class="message">Dance Villa provides salsa dance classes. We have excellent staff that is courteous and professional. Call now for very competitive prices.</p>
+    </div>
 
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
-  </div>
-</article>
+    <div class="cardfooter">
+  <a class="l_followbtn " href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
 
-
-
-<article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/12499972/2/stock-photo-12499972-car.jpg" alt="All categories">
-      <p>Pharmacy</p>
-    </a>
-  </div>
-
-  <div class="usercontainer">
-    <h3 class="username">Thirty Six Six The Chemist</h3>
-    <h3 class="messagelocation">PWO Appartments, Sector 43, Gurgaon </h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">12 Km</div>
-    <div class="timeremaining">0h : 42m left</div>
-    <p class="message">We are the specialist in skin medicare. Visit us for best service.</p>
-  </div>
-
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
-  </div>
-</article>
-
-
-
-<article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/6486134/2/stock-photo-6486134-real-estate-news.jpg" alt="All categories">
-      <p>Real estate agent</p>
-    </a>
-  </div>
-
-  <div class="usercontainer">
-    <h3 class="username">Big Deal Infrastructure</h3>
-    <h3 class="messagelocation">Jacobpura, Sector-12A, Gurgaon</h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">12 Km</div>
-    <div class="timeremaining">0h : 42m left</div>
-    <p class="message">Palm Drive flat for sale in Gurgaon, Golf Course Extension Road. Immediate requirement. Contact right now!</p>
-  </div>
-
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
-  </div>
-</article>
-
-
-
-<article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/12499972/2/stock-photo-12499972-car.jpg" alt="All categories">
-      <p>Pharmacy</p>
-    </a>
-  </div>
-
-  <div class="usercontainer">
-    <h3 class="username">Thirty Six Six The Chemist</h3>
-    <h3 class="messagelocation">PWO Appartments, Sector 43, Gurgaon </h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">12 Km</div>
-    <div class="timeremaining">0h : 42m left</div>
-    <p class="message">We are the specialist in skin medicare. Visit us for best service.</p>
-  </div>
-
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
-  </div>
-</article>
-
-<article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/1446023/2/stock-photo-1446023-recipe-card-dividers.jpg" alt="All categories">
-      <p>Category</p>
-    </a>
-  </div>
-
-  <div class="usercontainer">
-    <h3 class="username">Oxygen Eco Friendly Drycleaning</h3>
-    <h3 class="messagelocation">Deen Dayal Upadhaya Marg, Barakhamba, New Delhi</h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">12.3 Km</div>
-    <div class="timeremaining">6234h : 42m left</div>
-    <p class="message">Join us for Aarey Forest Half Marathon. Dt:16th Jun Time:6.00a.m. Assembly Point:Toll Naka, Off the Western Expr. Highway, Goregaon East</p>
-  </div>
-
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
   </div>
 </article>
 
@@ -279,28 +155,191 @@
 
 
 <article class="card">
-  <div class="cardcategory">
-    <a href="/" title="All categories">
-      <img src="http://i.istockimg.com/file_thumbview_approve/25046882/2/stock-photo-25046882-traditional-chinese-dish.jpg" alt="All categories">
-      <p>Hobby class</p>
-    </a>
-  </div>
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/6486134/2/stock-photo-6486134-real-estate-news.jpg" alt="All categories">
+        <p>Real estate agent</p>
+      </a>
+    </div>
 
-  <div class="usercontainer">
-    <h3 class="username">Dance Villa</h3>
-    <h3 class="messagelocation">New Colony, Sector 7, Gurgaon</h3>
-  </div>
-  
-  <div class="messagecontainer">
-    <div class="distance">4798 Km</div>
-    <div class="timeremaining">12h : 42m left</div>
-    <p class="message">Dance Villa provides salsa dance classes. We have excellent staff that is courteous and professional. Call now for very competitive prices.</p>
-  </div>
+    <div class="usercontainer">
+      <h3 class="username">Big Deal Infrastructure</h3>
+      <h3 class="messagelocation">Jacobpura, Sector-12A, Gurgaon</h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">12 Km</div>
+      <div class="timeremaining">0h : 42m left</div>
+      <p class="message">Palm Drive flat for sale in Gurgaon, Golf Course Extension Road. Immediate requirement. Contact right now!</p>
+    </div>
 
-  <div class="cardfooter">
-    <a class="l_followbtn" href="/login?q=4">Follow</a>
-    <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
-    <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+    <div class="cardfooter">
+  <a class="l_followbtn " href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
+
+  </div>
+</article>
+
+
+
+<article class="card">
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/12499972/2/stock-photo-12499972-car.jpg" alt="All categories">
+        <p>Pharmacy</p>
+      </a>
+    </div>
+
+    <div class="usercontainer">
+      <h3 class="username">Thirty Six Six The Chemist</h3>
+      <h3 class="messagelocation">PWO Appartments, Sector 43, Gurgaon </h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">12 Km</div>
+      <div class="timeremaining">0h : 42m left</div>
+      <p class="message">We are the specialist in skin medicare. Visit us for best service.</p>
+    </div>
+
+    <div class="cardfooter">
+  <a class="l_followbtn " href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
+
+  </div>
+</article>
+
+
+
+<article class="card">
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/6486134/2/stock-photo-6486134-real-estate-news.jpg" alt="All categories">
+        <p>Real estate agent</p>
+      </a>
+    </div>
+
+    <div class="usercontainer">
+      <h3 class="username">Big Deal Infrastructure</h3>
+      <h3 class="messagelocation">Jacobpura, Sector-12A, Gurgaon</h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">12 Km</div>
+      <div class="timeremaining">0h : 42m left</div>
+      <p class="message">Palm Drive flat for sale in Gurgaon, Golf Course Extension Road. Immediate requirement. Contact right now!</p>
+    </div>
+
+    <div class="cardfooter">
+  <a class="l_followbtn " href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
+
+  </div>
+</article>
+
+
+
+<article class="card">
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/12499972/2/stock-photo-12499972-car.jpg" alt="All categories">
+        <p>Pharmacy</p>
+      </a>
+    </div>
+
+    <div class="usercontainer">
+      <h3 class="username">Thirty Six Six The Chemist</h3>
+      <h3 class="messagelocation">PWO Appartments, Sector 43, Gurgaon </h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">12 Km</div>
+      <div class="timeremaining">0h : 42m left</div>
+      <p class="message">We are the specialist in skin medicare. Visit us for best service.</p>
+    </div>
+
+    <div class="cardfooter">
+  <a class="l_followbtn " href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
+
+  </div>
+</article>
+
+<article class="card">
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/1446023/2/stock-photo-1446023-recipe-card-dividers.jpg" alt="All categories">
+        <p>Category</p>
+      </a>
+    </div>
+
+    <div class="usercontainer">
+      <h3 class="username">Oxygen Eco Friendly Drycleaning</h3>
+      <h3 class="messagelocation">Deen Dayal Upadhaya Marg, Barakhamba, New Delhi</h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">12.3 Km</div>
+      <div class="timeremaining">6234h : 42m left</div>
+      <p class="message">Join us for Aarey Forest Half Marathon. Dt:16th Jun Time:6.00a.m. Assembly Point:Toll Naka, Off the Western Expr. Highway, Goregaon East</p>
+    </div>
+
+    <div class="cardfooter">
+  <a class="l_followbtn active" href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
+
+  </div>
+</article>
+
+
+
+
+<article class="card">
+  <div id="inner">
+    <div class="cardcategory">
+      <a href="/" title="All categories">
+        <img src="http://i.istockimg.com/file_thumbview_approve/25046882/2/stock-photo-25046882-traditional-chinese-dish.jpg" alt="All categories">
+        <p>Hobby class</p>
+      </a>
+    </div>
+
+    <div class="usercontainer">
+      <h3 class="username">Dance Villa</h3>
+      <h3 class="messagelocation">New Colony, Sector 7, Gurgaon</h3>
+    </div>
+    
+    <div class="messagecontainer">
+      <div class="distance">4798 Km</div>
+      <div class="timeremaining">12h : 42m left</div>
+      <p class="message">Dance Villa provides salsa dance classes. We have excellent staff that is courteous and professional. Call now for very competitive prices.</p>
+    </div>
+
+    <div class="cardfooter">
+  <a class="l_followbtn " href="/login?q=4">Follow</a>
+  <a class="l_chat" href="/login?q=5"><img src="/assets/chat.png" alt="Chat" /></a>
+  <a class="l_camera" href="/login?q=5"><img src="/assets/camera.png" alt="Photos" /></a>
+  <a class="mapicon" href="#" lat="44.4325" lon="26.103889"><img src="/assets/location.png" alt="Map" /></a>
+</div>
+
   </div>
 </article>
 

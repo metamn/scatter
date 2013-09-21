@@ -1,3 +1,49 @@
+
+@mixin cols {
+  float: left;
+  width: 45%;
+  margin-right: 4%;
+  
+  &:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  
+  @include mobile {
+    width: auto;
+    margin-right: 0;
+  }
+  
+  @include small-screen-and-up {
+    width: 30%;
+    margin-right: 3%;
+    
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  @include large-screen {
+    width: 24%;
+    margin-right: 1%;
+    
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+  
+  
+  @include big-screen {
+    width: 19%;
+    margin-right: 1%;
+    
+    &:nth-of-type(5n) {
+      margin-right: 0;
+    }
+  }
+  
+}
+
+
 body.main {
   height: auto;
   
@@ -12,19 +58,13 @@ body.main {
     
     #header {
       @include block;
-      display: none;
       
       position: relative;
       margin-left: 0;
       top: $pad*2;
       
-      h1, nav {
-        width: auto;
-        float: left;
-        display: block;
-      }
-      
       nav {
+        @include block;
         display: block;
         
         ul {
@@ -37,26 +77,37 @@ body.main {
               cursor: pointer;
               background: $background;
             }
+            
+            img {
+              width: $pad;
+            }
+            
+            &:last-of-type {
+              float: right;
+              text-align: right;
+            }
           }
         }
         
-        &#main {
-          float: right;
-        }
         
         &#explore {
-          @include block;
-          margin: $pad 0;
-          
+          border-top: 1px solid;
+          border-bottom: 3px double;
+          margin: $pad/2 0 $pad;
+          padding: $pad/2 0;
+            
           ul {
             li {
-              &:last-of-type {
-                float: right;
-                
-                input[type="text"] {
-                  padding: $pad/4;
-                }
+              a {
+                color: $color;
+                font-weight: 400;
+                font-size: medium
               }
+              
+              input {
+                padding: $pad/4;
+              }
+            
             }
           }
         }
@@ -69,154 +120,121 @@ body.main {
       height: auto;
       margin-top: $pad*2;
       
+      
       article {
         @include block;
-        @include border;
+        @include cols;
         margin-bottom: $pad;
-        float: left;
         
-        @include mobile {
-          width: 80%;
-          height: auto;
-          padding: $pad;
-        }
-        
-        @include tablet {
-          width: 42%;
-          margin-right: 6%;
-          height: 10em;
-          
-          &:nth-of-type(2n) {
-            margin-right: 0;
-          }
-        }
-        
-        /*
-        @include small-screen-and-up {
-          width: 25%;
-          margin-right: 2%;
-          
-          &:nth-of-type(3n) {
-            margin-right: 0;
-          }
-        }
-        
-        
-        @include big-screen {
-          width: 18%;
-          margin-right: 2%;
-          padding: 1%;
-          
-          &:nth-of-type(4n) {
-            margin-right: 0;
-          }
-        }
-        */
-        
-        width: 18%;
-        margin-right: 2%;
-        padding: 1%;
-        
-        &:nth-of-type(4n) {
-          margin-right: 0;
-        }
-        
-        .cardcategory {
+        #inner {
           @include block;
-          font-size: small;
-          font-weight: 400;
-          text-transform: uppercase;
+          @include border;
+          width: auto;
           
-          img {
-            @include border-radius($pad/2);
-            display: none;
-          }
-        }
-        
-        .usercontainer {
-          @include block;
-          
-          h3 {
-            padding: $pad/4 0;
-            
-            &:first-of-type {
-              
-            }
-            
-            &.messagelocation {
-              font-size: small;
-              color: $brown-gray;
-            }
-          }
-        }
-        
-        .messagecontainer {
-          @include block;
-          width: 90%;
-          
-          margin: $pad 0 $pad*2;
-          
-          font-weight: 400;
-          font-size: small;
-          line-height: 1.75;
-          
-          .distance, .timeremaining {
-            width: auto;
-            float: left;
-          }
-          
-          .timeremaining {
-            float: right;
-            text-align: right;
-          }
-          
-          .message {
+          .cardcategory {
             @include block;
-            
-            border-top: 1px solid;
-            border-bottom: 3px double;
-            padding: $pad $pad/2;
-            
-            &:first-line {
-              text-transform: uppercase;
-              font-weight: bold;
-            }
-          }
-        }
-        
-        
-        .cardfooter {
-          @include block;
-          
-          a {
-            width: auto;
-            margin-right: 3%;
-            float: left;
+            font-size: small;
+            font-weight: 400;
+            text-transform: uppercase;
             
             img {
-              max-width: $pad;
-              max-height: $pad;
-            }
+              @include border-radius($pad/2);
             
-            &.l_followbtn {
-              font-size: small;
-              text-align: center;
-              font-weight: 400;
-              
-              color: $color;
-              @include border;
-              padding: $pad/4 $pad/2;
-              
               width: 50%;
+              margin-right: 5%;
+              float: left;
+            }
+              
+            p {
+              width: 45%;
+              float: left;
+            }
+          }
+          
+          .usercontainer {
+            @include block;
+            
+            h3 {
+              padding: $pad/4 0;
+              
+              &.messagelocation {
+                font-size: small;
+                color: $brown-gray;
+              }
+            }
+          }
+          
+          .messagecontainer {
+            @include block;
+            width: 90%;
+            
+            margin: $pad 0 $pad*2;
+            
+            font-weight: 400;
+            font-size: small;
+            line-height: 1.75;
+            
+            .distance, .timeremaining {
+              width: auto;
+              float: left;
+              
+              color: $brown-gray;
             }
             
-            &.mapicon {
-              margin-right: 0;
+            .timeremaining {
+              float: right;
+              text-align: right;
+            }
+            
+            .message {
+              @include block;
+              border-top: 1px solid;
+              border-bottom: 3px double;
+              padding: $pad $pad/2;
+              
+              &:first-line {
+                text-transform: uppercase;
+                font-weight: bold;
+              }
+            }
+          }
+          
+          
+          .cardfooter {
+            @include block;
+            
+            a {
+              width: auto;
+              margin-right: 3%;
+              float: left;
+              
+              img {
+                max-width: $pad;
+                max-height: $pad;
+              }
+              
+              &.l_followbtn {
+                font-size: small;
+                text-align: center;
+                font-weight: 400;
+                
+                color: $color;
+                @include border;
+                padding: $pad/4 $pad/2;
+                
+                width: 40%;
+                
+                &.active {
+                  background: $blue;
+                }
+              }
+              
+              &.mapicon {
+                margin-right: 0;
+              }
             }
           }
         }
-        
-        
       }
     }
   }

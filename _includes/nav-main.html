@@ -1,9 +1,8 @@
 <nav id="main">
   <ul>
+    <li>{% include logo.html %}</li>
     <li>
       <button onclick="location.href='/signup';">Sign up</button>
-    </li>
-    <li>
       <button onclick="location.href='/login';">Login</button>
     </li>
   </ul>
@@ -12,10 +11,19 @@
 <nav id="explore">
   <ul>
     <li>
-      <button onclick="location.href='/explore';">Explore my neighborhood</button>
+      <a href="">Explore my neighborhood</a>
     </li>
     <li>
-      <button>Search</button>
+      <a href="">Set your precise location</a>
+    </li>
+    <li>
+      <a href="">Browse categories</a>
+    </li>
+    <li>
+      <a href="">Nearest to me</a>
+    </li>
+    <li>
+      <input type="text" placeholder="Search">
     </li>
   </ul>
 </nav>

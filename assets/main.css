@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'big-screen'.
-        on line 9 of /home/cs/work/scatter/assets/main.scss, in `big-screen'
-        from line 9 of /home/cs/work/scatter/assets/main.scss
+        on line 55 of /home/cs/work/scatter/assets/main.scss, in `big-screen'
+        from line 55 of /home/cs/work/scatter/assets/main.scss
 
 Backtrace:
-/home/cs/work/scatter/assets/main.scss:9:in `big-screen'
-/home/cs/work/scatter/assets/main.scss:9
+/home/cs/work/scatter/assets/main.scss:55:in `big-screen'
+/home/cs/work/scatter/assets/main.scss:55
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -84,4 +84,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'big-screen'.\A         on line 9 of /home/cs/work/scatter/assets/main.scss, in `big-screen'\A         from line 9 of /home/cs/work/scatter/assets/main.scss"; }
+  content: "Syntax error: Undefined mixin 'big-screen'.\A         on line 55 of /home/cs/work/scatter/assets/main.scss, in `big-screen'\A         from line 55 of /home/cs/work/scatter/assets/main.scss"; }
