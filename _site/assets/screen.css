@@ -1913,6 +1913,7 @@ body.main .container #content {
   float: left;
   height: auto;
   margin-top: 2.5em;
+  position: relative;
 }
 body.main .container #content article {
   width: 100%;
@@ -1921,6 +1922,8 @@ body.main .container #content article {
   width: 45%;
   margin-right: 4%;
   margin-bottom: 1.25em;
+  position: relative;
+  background: #f0efeb;
 }
 body.main .container #content article:nth-of-type(2n) {
   margin-right: 0;
@@ -1994,6 +1997,7 @@ body.main .container #content article #inner .cardcategory p {
 body.main .container #content article #inner .usercontainer {
   width: 100%;
   float: left;
+  cursor: pointer;
 }
 body.main .container #content article #inner .usercontainer h3 {
   padding: 0.3125em 0;
@@ -2001,6 +2005,15 @@ body.main .container #content article #inner .usercontainer h3 {
 body.main .container #content article #inner .usercontainer h3.messagelocation {
   font-size: small;
   color: #70706e;
+}
+body.main .container #content article #inner .companyinfo {
+  display: none;
+}
+body.main .container #content article #inner .companyinfo dl {
+  font-size: small;
+}
+body.main .container #content article #inner .companyinfo dl dt {
+  margin: 1.25em 0 0.625em;
 }
 body.main .container #content article #inner .messagecontainer {
   width: 100%;
@@ -2031,6 +2044,9 @@ body.main .container #content article #inner .messagecontainer .message:first-li
   text-transform: uppercase;
   font-weight: bold;
 }
+body.main .container #content article #inner .messagecontainer.hide {
+  opacity: 0;
+}
 body.main .container #content article #inner .cardfooter {
   width: 100%;
   float: left;
@@ -2058,12 +2074,16 @@ body.main .container #content article #inner .cardfooter a.l_followbtn {
   padding: 1.25em;
   padding: 0.3125em 0.625em;
   width: 40%;
+  transition: all 0.5s ease-in-out;
 }
 body.main .container #content article #inner .cardfooter a.l_followbtn.active {
   background: #77c8f5;
 }
 body.main .container #content article #inner .cardfooter a.mapicon {
   margin-right: 0;
+}
+body.main .container #content article.active {
+  z-index: 10;
 }
 
 .outline, .hidden {
