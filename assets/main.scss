@@ -213,9 +213,34 @@ body.main {
               }
             }
             
+            .sendmessage {
+              @include block;
+              display: none;
+              
+              margin-top: $pad;
+              
+              textarea {
+                width: 100%;
+                height: $pad*6;
+                padding: $pad/4;
+              }
+              
+              button {
+                @include border;
+                background: $background;
+                padding: $pad/2 $pad;
+                cursor: pointer;
+              }
+            }
+          }
+          
+          .companyphoto {
+            @include block;
+            display: none;
+            margin-bottom: $pad;
             
-            &.hide {
-              opacity: 0;
+            img {
+              width: 100%;
             }
           }
           
@@ -258,7 +283,34 @@ body.main {
         }
         
         &.active {
-          z-index: 10;
+          z-index: 1;
+        }
+      }
+      
+      
+      #map {
+        position: absolute;
+        
+        
+        background: $gray;
+        padding: $pad;
+        @include border;
+        
+        display: none;
+        z-index: 2;
+        
+        span {
+          position: absolute;
+          top: $pad/4;
+          right: $pad/4;
+          
+          z-index: 3;
+          cursor: pointer;
+          
+          &:before {
+            content: '\2715';
+            color: $red;
+          }
         }
       }
     }
