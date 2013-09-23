@@ -1,27 +1,21 @@
 $(document).ready(function() {
 
-  // Close  map
-  $('.main #map span').click(function() {
-    $('.main #map').slideToggle('slow');
-    return false;
-  });
-
   // Click on map
-  $('.main article .cardfooter .mapicon').click(function() {
+  $('.main article .cardfooter .mapicon, .main #map span').click(function() {
     $('.main #map').slideToggle('slow');
     return false;
   });
 
   // Click on photo
   $('.main article .cardfooter .l_camera').click(function() {
-    $(this).parent().parent().parent().toggleClass('active');
+    closeHidden($(this).parent().parent().parent());
     $(this).parent().parent().children('.companyphoto').slideToggle('slow');
     return false;
   });
 
   // Click on message
   $('.main article .cardfooter .l_chat').click(function() {
-    $(this).parent().parent().parent().toggleClass('active');
+    closeHidden($(this).parent().parent().parent());
     $(this).parent().parent().children('.messagecontainer').children('.sendmessage').slideToggle('slow');
     return false;
   });
@@ -36,9 +30,21 @@ $(document).ready(function() {
   
   // Click on company name
   $('.main article .usercontainer').click(function() {
-    $(this).parent().parent().toggleClass('active');
-    $(this).children('.companyinfo').slideToggle('slow');   
+    closeHidden($(this).parent().parent()); 
+    $(this).children('.companyinfo').slideToggle('slow');  
   });
+  
+  
+  // Close all hidden content
+  function closeHidden(card) {
+    /*
+    card.children().children('.usercontainer').children('.companyinfo').hide();
+    card.children().children('.messagecontainer').children('.sendmessage').hide();
+    card.children().children('.companyphoto').hide();
+    */
+    
+    card.toggleClass('active');
+  }
 
 });
 

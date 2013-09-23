@@ -2001,10 +2001,13 @@ body.main .container #content article #inner .usercontainer {
 }
 body.main .container #content article #inner .usercontainer h3 {
   padding: 0.3125em 0;
+  color: #70706e;
+}
+body.main .container #content article #inner .usercontainer h3.username {
+  font-size: 100%;
 }
 body.main .container #content article #inner .usercontainer h3.messagelocation {
   font-size: small;
-  color: #70706e;
 }
 body.main .container #content article #inner .companyinfo {
   display: none;
@@ -2018,11 +2021,8 @@ body.main .container #content article #inner .companyinfo dl dt {
 body.main .container #content article #inner .messagecontainer {
   width: 100%;
   float: left;
-  width: 90%;
   margin: 1.25em 0 2.5em;
-  font-weight: 400;
   font-size: small;
-  line-height: 1.75;
 }
 body.main .container #content article #inner .messagecontainer .distance, body.main .container #content article #inner .messagecontainer .timeremaining {
   width: auto;
@@ -2036,9 +2036,13 @@ body.main .container #content article #inner .messagecontainer .timeremaining {
 body.main .container #content article #inner .messagecontainer .message {
   width: 100%;
   float: left;
+  width: auto;
   border-top: 1px solid;
   border-bottom: 3px double;
   padding: 1.25em 0.625em;
+  font-size: larger;
+  font-weight: 400;
+  line-height: 1.5;
 }
 body.main .container #content article #inner .messagecontainer .message:first-line {
   text-transform: uppercase;
@@ -2103,10 +2107,10 @@ body.main .container #content article #inner .cardfooter a.l_followbtn {
   padding: 1.25em;
   padding: 0.3125em 0.625em;
   width: 40%;
-  transition: all 0.5s ease-in-out;
 }
-body.main .container #content article #inner .cardfooter a.l_followbtn.active {
-  background: #77c8f5;
+body.main .container #content article #inner .cardfooter a.l_followbtn.active:before {
+  content: '\2714';
+  margin-right: 0.625em;
 }
 body.main .container #content article #inner .cardfooter a.mapicon {
   margin-right: 0;
