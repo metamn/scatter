@@ -9,8 +9,10 @@ $(document).ready(function() {
 
   // Click on map
   $('.main article .cardfooter .mapicon, .main #map span').click(function() {
-    $('.main #map').slideToggle('slow');
     $('.main article').toggleClass('hidden');
+    
+    $(this).parent().parent().parent().toggleClass('expanded');
+    $(this).parent().parent().children('#map').slideToggle();
     return false;
   });
 

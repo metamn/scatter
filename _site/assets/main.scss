@@ -283,67 +283,58 @@ body.main {
         }
         
         &.active {
+         z-index: 1;
+        }
+        
+        &.expanded {
+          display: block;
+          
+          width: 100%;
+          left: 0 !important;
+          top: 0 !important;
           z-index: 1;
+          
+          #inner {
+            width: 18%;
+          }
+          
+          #inner, #map {
+            float: left;
+          }
+          
+          #map {
+            display: block;
+          }
         }
       }
       
       
       #map {
-        position: absolute;
-        
-        background: $gray;
-        padding: $pad;
+        display: none;
         @include border;
         
-        display: none;
-        z-index: 2;
+        width: auto;
+        margin-left: $pad;
         
-        .map {
-          margin-bottom: $pad;
-        }
-        
-        .companyphoto, .usercontainer {
+        dl, .companyphoto {
           width: 40%;
           float: left;
+          margin-right: 10%;
+        }
+        
+        dl {
+          @include border;
+          font-size: small;
         }
         
         .companyphoto {
+          margin-right: 0;
           margin-top: $pad;
           
           img {
             @include border-radius($pad/2);
           }
         }
-        
-        .usercontainer {
-          margin-right: 10%;
-          @include border;
-          
-          h3 {
-            padding: $pad/4 0;
-            
-            &.username {
-              font-size: 100%;
-            }
-            
-            &.messagelocation {
-              font-size: small;
-              color: $brown-gray;
-            }
-          }
-          
-          .companyinfo {
-            margin-right: 10%;  
-            dl {
-              font-size: small;
-              
-              dt {
-                margin: $pad 0 $pad/2;
-              }
-            }
-          }
-        }
-        
         
         span {
           position: absolute;
