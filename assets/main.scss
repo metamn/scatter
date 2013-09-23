@@ -156,11 +156,9 @@ body.main {
           
           .usercontainer {
             @include block;
-            cursor: pointer;
             
             h3 {
               padding: $pad/4 0;
-              color: $brown-gray;
               
               &.username {
                 font-size: 100%;
@@ -168,20 +166,11 @@ body.main {
               
               &.messagelocation {
                 font-size: small;
+                color: $brown-gray;
               }
             }
           }
           
-          .companyinfo {
-            display: none;
-            dl {
-              font-size: small;
-              
-              dt {
-                margin: $pad 0 $pad/2;
-              }
-            }
-          }
           
           .messagecontainer {
             @include block;
@@ -239,16 +228,6 @@ body.main {
             }
           }
           
-          .companyphoto {
-            @include block;
-            display: none;
-            margin-bottom: $pad;
-            
-            img {
-              width: 100%;
-            }
-          }
-          
           
           .cardfooter {
             @include block;
@@ -276,7 +255,7 @@ body.main {
                 
                 &.active {
                   &:before {
-                    content: '\2714';
+                    content: '\2022';
                     margin-right: $pad/2;
                   }
                 }
@@ -298,13 +277,59 @@ body.main {
       #map {
         position: absolute;
         
-        
         background: $gray;
         padding: $pad;
         @include border;
         
         display: none;
         z-index: 2;
+        
+        .map {
+          margin-bottom: $pad;
+        }
+        
+        .companyphoto, .usercontainer {
+          width: 40%;
+          float: left;
+        }
+        
+        .companyphoto {
+          margin-top: $pad;
+          
+          img {
+            @include border-radius($pad/2);
+          }
+        }
+        
+        .usercontainer {
+          margin-right: 10%;
+          @include border;
+          
+          h3 {
+            padding: $pad/4 0;
+            
+            &.username {
+              font-size: 100%;
+            }
+            
+            &.messagelocation {
+              font-size: small;
+              color: $brown-gray;
+            }
+          }
+          
+          .companyinfo {
+            margin-right: 10%;  
+            dl {
+              font-size: small;
+              
+              dt {
+                margin: $pad 0 $pad/2;
+              }
+            }
+          }
+        }
+        
         
         span {
           position: absolute;
@@ -313,10 +338,13 @@ body.main {
           
           z-index: 3;
           cursor: pointer;
+          @include border;
+          padding: $pad/8 $pad/4;
+          background: $background;
           
           &:before {
             content: '\2715';
-            color: $red;
+            font-weight: bold;
           }
         }
       }

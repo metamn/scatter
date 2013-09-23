@@ -6,16 +6,9 @@ $(document).ready(function() {
     return false;
   });
 
-  // Click on photo
-  $('.main article .cardfooter .l_camera').click(function() {
-    closeHidden($(this).parent().parent().parent());
-    $(this).parent().parent().children('.companyphoto').slideToggle('slow');
-    return false;
-  });
-
   // Click on message
   $('.main article .cardfooter .l_chat').click(function() {
-    closeHidden($(this).parent().parent().parent());
+    $(this).parent().parent().parent().toggleClass('active');
     $(this).parent().parent().children('.messagecontainer').children('.sendmessage').slideToggle('slow');
     return false;
   });
@@ -27,24 +20,6 @@ $(document).ready(function() {
     return false;
   });
   
-  
-  // Click on company name
-  $('.main article .usercontainer').click(function() {
-    closeHidden($(this).parent().parent()); 
-    $(this).children('.companyinfo').slideToggle('slow');  
-  });
-  
-  
-  // Close all hidden content
-  function closeHidden(card) {
-    /*
-    card.children().children('.usercontainer').children('.companyinfo').hide();
-    card.children().children('.messagecontainer').children('.sendmessage').hide();
-    card.children().children('.companyphoto').hide();
-    */
-    
-    card.toggleClass('active');
-  }
 
 });
 
