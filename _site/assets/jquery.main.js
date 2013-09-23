@@ -1,8 +1,16 @@
 $(document).ready(function() {
 
+  // Browse categories
+  $('.main #explore #browse-categories').click(function() {
+    $('.main #categories').slideToggle('slow');
+    $(this).toggleClass('active');
+    $('.main article').toggleClass('hidden');
+  });
+
   // Click on map
   $('.main article .cardfooter .mapicon, .main #map span').click(function() {
     $('.main #map').slideToggle('slow');
+    $('.main article').toggleClass('hidden');
     return false;
   });
 

@@ -1,3 +1,85 @@
+@mixin categories {
+  @include block;
+  
+  ul {
+    @include block;
+    @include list-inline;
+    
+    li {
+      width: 18%;
+      margin-right: 2%;
+      padding: 2%;
+      margin-bottom: $pad;
+      height: 9em;
+      
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+      
+      @include tablet {
+        width: 42%;
+        margin-right: 6%;
+        height: 10em;
+        
+        &:nth-of-type(2n) {
+          margin-right: 0;
+        }
+      }
+      
+      @include mobile {
+        width: 80%;
+        height: auto;
+        padding: $pad;
+        
+        &:nth-of-type(4n) {
+          margin-right: 2%;
+        }
+      }
+      
+      
+      
+      background: $gray;
+      border: 2px solid $gray;
+      @include border-radius($pad/2);
+      transition: all 0.5s ease-in-out;
+      
+      a {
+        color: $color;
+      }
+      
+      &:hover {
+        border-color: $red;
+        background: $red;
+        
+        a {
+          color: $gray;
+        }
+      }
+      
+      cursor: pointer;
+      
+      img {
+        max-width: 10em; /* 200px */
+        max-height: 6.65em; /* 133px */
+        width: 100%;
+        
+        margin-bottom: $pad;
+        float: right;
+      }
+      
+      p {
+        @include block;
+        font-weight: 400;
+        font-size: smaller;
+        
+        letter-spacing: 2px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+
 body.categories {
   height: auto;
   background: #fff;
@@ -10,92 +92,7 @@ body.categories {
     }
     
     #categories {
-      @include block;
-      width: 80%;
-      padding: 10%;
-      
-      button {
-        position: relative;
-        top: -5em;
-      }
-      
-      ul {
-        @include block;
-        @include list-inline;
-        display: none;
-        
-        li {
-          width: 18%;
-          margin-right: 2%;
-          padding: 2%;
-          margin-bottom: $pad;
-          height: 9em;
-          
-          &:nth-of-type(4n) {
-            margin-right: 0;
-          }
-          
-          @include tablet {
-            width: 42%;
-            margin-right: 6%;
-            height: 10em;
-            
-            &:nth-of-type(2n) {
-              margin-right: 0;
-            }
-          }
-          
-          @include mobile {
-            width: 80%;
-            height: auto;
-            padding: $pad;
-            
-            &:nth-of-type(4n) {
-              margin-right: 2%;
-            }
-          }
-          
-          
-          
-          background: $gray;
-          border: 2px solid $gray;
-          @include border-radius($pad/2);
-          transition: all 0.5s ease-in-out;
-          
-          a {
-            color: $color;
-          }
-          
-          &:hover {
-            border-color: $red;
-            background: $red;
-            
-            a {
-              color: $gray;
-            }
-          }
-          
-          cursor: pointer;
-          
-          img {
-            max-width: 10em; /* 200px */
-            max-height: 6.65em; /* 133px */
-            width: 100%;
-            
-            margin-bottom: $pad;
-            float: right;
-          }
-          
-          p {
-            @include block;
-            font-weight: 400;
-            font-size: smaller;
-            
-            letter-spacing: 2px;
-            word-wrap: break-word;
-          }
-        }
-      }
+      @include categories;
     }
   }
 }

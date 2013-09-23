@@ -94,23 +94,37 @@ body.main {
           border-top: 1px solid;
           border-bottom: 3px double;
           margin: $pad/2 0 $pad;
-          padding: $pad/2 0;
+          padding: $pad/2 0 $pad/4;
             
           ul {
             li {
-              a {
-                color: $color;
-                font-weight: 400;
-                font-size: medium
+              color: $color;
+              font-weight: bold;
+              font-size: medium;
+              cursor: pointer;
+              
+              &#browse-categories, &#filter {
+                &:after {
+                  content: '\2794';
+                  margin-left: $pad/4;
+                }
               }
               
               input {
+                @include border;
                 padding: $pad/4;
               }
-            
+              
+              &.active {
+                color: $red;
+              }
             }
           }
         }
+      }
+      
+      @include tablet-and-below {
+        display: block;
       }
     }
     
@@ -348,6 +362,27 @@ body.main {
           }
         }
       }
+      
+      #categories {
+        display: none;
+        @include categories;
+        
+        position: relative;
+        z-index: 3;
+        
+        background: $background;
+        
+        ul {
+          @include border;
+          width: auto;
+          
+          li {
+            background: $brown-white;
+          }
+        }
+        
+      }
+    
     }
   }
 }
