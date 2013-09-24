@@ -173,6 +173,7 @@ body.main {
             
             h3 {
               padding: $pad/4 0;
+              cursor: pointer;
               
               &.username {
                 font-size: 100%;
@@ -181,6 +182,25 @@ body.main {
               &.messagelocation {
                 font-size: small;
                 color: $brown-gray;
+                
+                &:after {
+                  content: '...';
+                  margin-left: $pad/4;
+                }
+              }
+            }
+            
+            .companyinfo {
+              display: none;
+              font-size: small;
+              
+              dl {
+                dt {
+                  margin: $pad/2 0;
+                }
+                dd + dt {
+                  margin-top: $pad/2;
+                }
               }
             }
           }
@@ -189,7 +209,7 @@ body.main {
           .messagecontainer {
             @include block;
             
-            margin: $pad 0 $pad*2;
+            margin: $pad 0;
             font-size: small;
             
             .distance, .timeremaining {
@@ -221,6 +241,23 @@ body.main {
               }
             }
             
+            .messagephoto-icon {
+              cursor: pointer;
+              
+              img {
+                width: 25px;
+              }
+            }
+            
+            .messagephoto {
+              display: none;
+              
+              img {
+                width: 100%;
+                @include border-radius($pad/2);
+              }
+            }
+            
             .sendmessage {
               @include block;
               display: none;
@@ -236,7 +273,7 @@ body.main {
               button {
                 @include border;
                 background: $background;
-                padding: $pad/2 $pad;
+                padding: $pad/4 $pad/2;
                 cursor: pointer;
               }
             }
@@ -268,10 +305,7 @@ body.main {
                 width: 40%;
                 
                 &.active {
-                  &:before {
-                    content: '\2022';
-                    margin-right: $pad/2;
-                  }
+                  background: $blue;
                 }
               }
               
@@ -284,27 +318,7 @@ body.main {
         
         &.active {
          z-index: 1;
-        }
-        
-        &.expanded {
-          display: block;
-          
-          width: 100%;
-          left: 0 !important;
-          top: 0 !important;
-          z-index: 1;
-          
-          #inner {
-            width: 18%;
-          }
-          
-          #inner, #map {
-            float: left;
-          }
-          
-          #map {
-            display: block;
-          }
+         
         }
       }
       
@@ -313,28 +327,12 @@ body.main {
         display: none;
         @include border;
         
-        width: auto;
-        margin-left: $pad;
+        z-index: 2;
+        position: relative;
+        background: $background;
         
-        dl, .companyphoto {
-          width: 40%;
-          float: left;
-          margin-right: 10%;
-        }
-        
-        dl {
-          @include border;
-          font-size: small;
-        }
-        
-        .companyphoto {
-          margin-right: 0;
-          margin-top: $pad;
-          
-          img {
-            @include border-radius($pad/2);
-          }
-        }
+        width: 80%;
+        margin: $pad auto;
         
         span {
           position: absolute;
