@@ -1832,6 +1832,42 @@ body.categories .container #categories ul li p {
 body.main {
   height: auto;
 }
+body.main #map {
+  display: none;
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  z-index: 2;
+  background: #f0efeb;
+  position: fixed;
+  width: auto;
+  height: auto;
+  margin: 10%;
+}
+body.main #map span {
+  position: absolute;
+  top: 0.3125em;
+  right: 0.3125em;
+  z-index: 3;
+  cursor: pointer;
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 0.15625em 0.3125em;
+  background: #f0efeb;
+}
+body.main #map span:before {
+  content: '\2715';
+  font-weight: bold;
+}
 body.main .container {
   width: 90%;
   margin: 0 auto;
@@ -2115,10 +2151,6 @@ body.main .container #content article #inner .cardfooter a {
   margin-right: 3%;
   float: left;
 }
-body.main .container #content article #inner .cardfooter a img {
-  max-width: 1.25em;
-  max-height: 1.25em;
-}
 body.main .container #content article #inner .cardfooter a.l_followbtn {
   font-size: small;
   text-align: center;
@@ -2137,46 +2169,18 @@ body.main .container #content article #inner .cardfooter a.l_followbtn {
 body.main .container #content article #inner .cardfooter a.l_followbtn.active {
   background: #77c8f5;
 }
+body.main .container #content article #inner .cardfooter a.l_chat img {
+  width: 30px;
+}
 body.main .container #content article #inner .cardfooter a.mapicon {
   margin-right: 0;
+  margin-top: 0.15625em;
+}
+body.main .container #content article #inner .cardfooter a.mapicon img {
+  width: 25px;
 }
 body.main .container #content article.active {
   z-index: 1;
-}
-body.main .container #content #map {
-  display: none;
-  border: 0.15625em solid;
-  -webkit-border-radius: 1.25em;
-  -moz-border-radius: 1.25em;
-  -ms-border-radius: 1.25em;
-  -o-border-radius: 1.25em;
-  border-radius: 1.25em;
-  padding: 1.25em;
-  z-index: 2;
-  position: relative;
-  background: #f0efeb;
-  width: 80%;
-  margin: 1.25em auto;
-}
-body.main .container #content #map span {
-  position: absolute;
-  top: 0.3125em;
-  right: 0.3125em;
-  z-index: 3;
-  cursor: pointer;
-  border: 0.15625em solid;
-  -webkit-border-radius: 1.25em;
-  -moz-border-radius: 1.25em;
-  -ms-border-radius: 1.25em;
-  -o-border-radius: 1.25em;
-  border-radius: 1.25em;
-  padding: 1.25em;
-  padding: 0.15625em 0.3125em;
-  background: #f0efeb;
-}
-body.main .container #content #map span:before {
-  content: '\2715';
-  font-weight: bold;
 }
 body.main .container #content #categories {
   display: none;
