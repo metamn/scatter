@@ -2036,7 +2036,7 @@ body.main .container #content article {
   float: left;
   width: 45%;
   margin-right: 4%;
-  margin-bottom: 1.25em;
+  margin-bottom: 24px;
   position: relative;
   background: #f0efeb;
 }
@@ -2249,7 +2249,7 @@ body.main .container #content article #inner .cardfooter a.mapicon img {
 body.main .container #content article.active {
   z-index: 1;
 }
-body.main .container #content #categories {
+body.main .container #content #categories, body.main .container #content #location {
   display: none;
   width: 100%;
   float: left;
@@ -2257,23 +2257,23 @@ body.main .container #content #categories {
   z-index: 3;
   background: #f0efeb;
 }
-body.main .container #content #categories ul {
+body.main .container #content #categories ul, body.main .container #content #location ul {
   width: 100%;
   float: left;
   display: block;
   margin: 0;
 }
-body.main .container #content #categories ul li {
+body.main .container #content #categories ul li, body.main .container #content #location ul li {
   display: inline-block;
   list-style-type: none;
   margin-left: 0;
   float: left;
   margin-right: 1.25em;
 }
-body.main .container #content #categories ul li.last, body.main .container #content #categories ul li:last-of-type {
+body.main .container #content #categories ul li.last, body.main .container #content #categories ul li:last-of-type, body.main .container #content #location ul li.last, body.main .container #content #location ul li:last-of-type {
   margin-right: 0;
 }
-body.main .container #content #categories ul li {
+body.main .container #content #categories ul li, body.main .container #content #location ul li {
   width: 18%;
   margin-right: 2%;
   padding: 2%;
@@ -2289,40 +2289,40 @@ body.main .container #content #categories ul li {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-body.main .container #content #categories ul li:nth-of-type(4n) {
+body.main .container #content #categories ul li:nth-of-type(4n), body.main .container #content #location ul li:nth-of-type(4n) {
   margin-right: 0;
 }
 @media only screen and (min-width: 381px) and (max-width: 767px) {
-  body.main .container #content #categories ul li {
+  body.main .container #content #categories ul li, body.main .container #content #location ul li {
     width: 42%;
     margin-right: 6%;
     height: 10em;
   }
-  body.main .container #content #categories ul li:nth-of-type(2n) {
+  body.main .container #content #categories ul li:nth-of-type(2n), body.main .container #content #location ul li:nth-of-type(2n) {
     margin-right: 0;
   }
 }
 @media (max-width: 380px) {
-  body.main .container #content #categories ul li {
+  body.main .container #content #categories ul li, body.main .container #content #location ul li {
     width: 80%;
     height: auto;
     padding: 1.25em;
   }
-  body.main .container #content #categories ul li:nth-of-type(4n) {
+  body.main .container #content #categories ul li:nth-of-type(4n), body.main .container #content #location ul li:nth-of-type(4n) {
     margin-right: 2%;
   }
 }
-body.main .container #content #categories ul li a {
+body.main .container #content #categories ul li a, body.main .container #content #location ul li a {
   color: #363636;
 }
-body.main .container #content #categories ul li:hover {
+body.main .container #content #categories ul li:hover, body.main .container #content #location ul li:hover {
   border-color: #ff4637;
   background: #ff4637;
 }
-body.main .container #content #categories ul li:hover a {
+body.main .container #content #categories ul li:hover a, body.main .container #content #location ul li:hover a {
   color: #f1f1f1;
 }
-body.main .container #content #categories ul li img {
+body.main .container #content #categories ul li img, body.main .container #content #location ul li img {
   max-width: 10em;
   /* 200px */
   max-height: 6.65em;
@@ -2331,7 +2331,7 @@ body.main .container #content #categories ul li img {
   margin-bottom: 1.25em;
   float: right;
 }
-body.main .container #content #categories ul li p {
+body.main .container #content #categories ul li p, body.main .container #content #location ul li p {
   width: 100%;
   float: left;
   font-weight: 400;
@@ -2339,7 +2339,7 @@ body.main .container #content #categories ul li p {
   letter-spacing: 2px;
   word-wrap: break-word;
 }
-body.main .container #content #categories ul {
+body.main .container #content #categories ul, body.main .container #content #location ul {
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -2349,8 +2349,54 @@ body.main .container #content #categories ul {
   padding: 1.25em;
   width: auto;
 }
-body.main .container #content #categories ul li {
+body.main .container #content #categories ul li, body.main .container #content #location ul li {
   background: #ebebf0;
+}
+body.main .container #content #location {
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  width: auto;
+}
+body.main .container #content #location .map, body.main .container #content #location #set {
+  float: left;
+  margin-right: 5%;
+}
+body.main .container #content #location .map {
+  width: 55%;
+}
+body.main .container #content #location #set {
+  width: 40%;
+  margin-right: 0;
+  font-weight: 400;
+  font-size: medium;
+}
+body.main .container #content #location #set p + p {
+  margin-top: 3.75em;
+}
+body.main .container #content #location #set input {
+  padding: 0.625em;
+  margin-bottom: 0.625em;
+}
+body.main .container #content #location #set button {
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 0.625em 1.25em;
+  background: #f0efeb;
+  cursor: pointer;
+}
+body.main .container #content #location #set p:last-of-type {
+  position: absolute;
+  bottom: 2.5em;
 }
 
 .outline, .hidden {

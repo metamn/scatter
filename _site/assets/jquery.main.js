@@ -10,6 +10,13 @@ $(document).ready(function() {
     $('.main nav#main button').slideToggle();
     return false;
   });
+  
+  // Explore location
+  $('.main #explore #explore-location').click(function() {
+    $('.main #location').slideToggle('slow');
+    $(this).toggleClass('active');
+    $('.main article').toggleClass('hidden');
+  });
 
   // Browse categories
   $('.main #explore #browse-categories').click(function() {
@@ -68,6 +75,7 @@ $(document).ready(function() {
   }
 
 });
+
 
 
 var container = document.querySelector('.main #content');

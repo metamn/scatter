@@ -247,7 +247,7 @@ body.main {
       article {
         @include block;
         @include cols;
-        margin-bottom: $pad;
+        margin-bottom: 24px;
         position: relative;
         background: $background;
         
@@ -438,7 +438,7 @@ body.main {
       }
       
       
-      #categories {
+      #categories, #location {
         display: none;
         @include categories;
         
@@ -455,7 +455,50 @@ body.main {
             background: $brown-white;
           }
         }
+      }
+      
+      #location {
+        @include border;
+        width: auto;
         
+        .map, #set {
+          float: left;
+          margin-right: 5%;
+        }
+        
+        .map {
+          width: 55%;
+        }
+        
+        #set {
+          width: 40%;
+          margin-right: 0;
+          font-weight: 400;
+          font-size: medium;
+          
+          p + p {
+            margin-top: $pad*3;
+          }
+          
+          input {
+            padding: $pad/2;
+            margin-bottom: $pad/2;
+          }
+          
+          button {
+            @include border;
+            padding: $pad/2 $pad;
+            background: $background;
+            cursor: pointer;
+          }
+          
+          p {
+            &:last-of-type {
+              position: absolute;
+              bottom: $pad*2;
+            }
+          }
+        }
       }
     
     }
