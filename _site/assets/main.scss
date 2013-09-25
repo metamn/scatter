@@ -189,40 +189,41 @@ body.main {
               }
               
               &#filter {
-                transition: all 0.5s ease-in-out;
-                z-index: 2;
+                position: relative;
                 
                 span {
+                  display: inline-block;
+                }
+                
+                div {
                   display: none;
+                  position: absolute;
+                  z-index: 1;
                   
-                  &.active {
-                    display: inline-block;
+                  @include border;
+                  background: $background;
+                  min-width: 10em;
+                  
+                  span {
+                    margin-bottom: $pad/4;
+                    
+                    &.active, &:hover {
+                      color: red;
+                    }
                   }
                 }
                 
                 &.active {
                   color: $color;
                   
-                  span {
-                    display: inline-block;
-                    margin-right: $pad/2;
-                    transition: all 0.5s ease-in-out;
+                  div {
+                    display: block;
                     
-                    &.active, &:hover {
-                      color: $red;
-                    }
-                    
-                    &:after {
-                      content: '\2022';
-                      margin-left: $pad/2;
-                    }
-                    
-                    &:last-of-type {
-                      &:after {
-                        content: '';
-                      }
+                    span {
+                      display: block;
                     }
                   }
+                  
                 }
               }
               

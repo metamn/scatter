@@ -1991,32 +1991,39 @@ body.main .container #header nav#explore ul li.active {
   color: #ff4637;
 }
 body.main .container #header nav#explore ul li#filter {
-  transition: all 0.5s ease-in-out;
-  z-index: 2;
+  position: relative;
 }
 body.main .container #header nav#explore ul li#filter span {
-  display: none;
-}
-body.main .container #header nav#explore ul li#filter span.active {
   display: inline-block;
+}
+body.main .container #header nav#explore ul li#filter div {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  background: #f0efeb;
+  min-width: 10em;
+}
+body.main .container #header nav#explore ul li#filter div span {
+  margin-bottom: 0.3125em;
+}
+body.main .container #header nav#explore ul li#filter div span.active, body.main .container #header nav#explore ul li#filter div span:hover {
+  color: red;
 }
 body.main .container #header nav#explore ul li#filter.active {
   color: #363636;
 }
-body.main .container #header nav#explore ul li#filter.active span {
-  display: inline-block;
-  margin-right: 0.625em;
-  transition: all 0.5s ease-in-out;
+body.main .container #header nav#explore ul li#filter.active div {
+  display: block;
 }
-body.main .container #header nav#explore ul li#filter.active span.active, body.main .container #header nav#explore ul li#filter.active span:hover {
-  color: #ff4637;
-}
-body.main .container #header nav#explore ul li#filter.active span:after {
-  content: '\2022';
-  margin-left: 0.625em;
-}
-body.main .container #header nav#explore ul li#filter.active span:last-of-type:after {
-  content: '';
+body.main .container #header nav#explore ul li#filter.active div span {
+  display: block;
 }
 @media only screen and (max-width: 766px) {
   body.main .container #header {

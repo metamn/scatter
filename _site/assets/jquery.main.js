@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // Click on menu / filter
   $('.main nav#explore #filter').click(function() {
-    $(this).toggleClass('active');
+    $(this).children('div').slideToggle();
   }); 
 
   // Click on Signup / Login
