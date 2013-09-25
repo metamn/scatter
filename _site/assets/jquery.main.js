@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+  // Click on menu / filter
+  $('.main nav#explore #filter').click(function() {
+    $(this).toggleClass('active');
+  }); 
+
+  // Click on Signup / Login
+  $('.main nav#main button').click(function() {
+    $('.main nav#main button').slideToggle();
+    return false;
+  });
+
   // Browse categories
   $('.main #explore #browse-categories').click(function() {
     $('.main #categories').slideToggle('slow');

@@ -69,8 +69,9 @@
 </h1>
 </li>
     <li>
-      <button onclick="location.href='/signup';">Sign up</button>
-      <button onclick="location.href='/login';">Login</button>
+      <button>Sign up</button>
+      <button>Login</button>
+      <button>Welcome Abhijeet!</button>
     </li>
   </ul>
 </nav>
@@ -78,15 +79,18 @@
 <nav id="explore">
   <ul>
     <li id="location">
-      Explore my neighborhood / Set your precise location
+      Explore my neighborhood
     </li>
     <li id="browse-categories">
       Browse categories
     </li>
     <li id="filter">
-      Nearest to me
+      <span>Popular in my area</span>
+      <span>Expiring soon</span>
+      <span>Latest in my area</span>
+      <span class='active'>Nearest to me</span>
     </li>
-    <li>
+    <li id="search">
       <input type="text" placeholder="Search">
     </li>
   </ul>

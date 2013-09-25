@@ -106,6 +106,14 @@ body.main {
               padding: $pad/2 $pad;
               cursor: pointer;
               background: $background;
+              
+              &:hover {
+                background: $blue;
+              }
+              
+              &:last-of-type {
+                display: none;
+              }
             }
             
             img {
@@ -119,35 +127,105 @@ body.main {
           }
         }
         
+        &#main {
+          ul {
+            height: $pad*2; /* Otherwise the signup/login click flips the page */
+          }
+        }
         
         &#explore {
           border-top: 1px solid;
           border-bottom: 3px double;
-          margin: $pad/2 0 $pad;
-          padding: $pad/2 0 $pad/4;
+          margin: 0 0 $pad;
+          padding: $pad/2 0;
             
           ul {
             li {
-              color: $color;
-              font-weight: bold;
+              @include border;
+              padding: $pad/2 $pad;
+              font-weight: 400;
               font-size: medium;
               cursor: pointer;
               
-              &#browse-categories, &#filter {
-                &:after {
-                  content: '\2794';
-                  margin-left: $pad/4;
-                }
+              transition: all 0.5s ease-in-out;
+              
+              position: relative;
+              z-index: 1;
+              
+              &:after {
+                content: '\2022';
+                margin-left: $pad/4;
+                color: $blue;
               }
               
-              input {
-                @include border;
-                padding: $pad/4;
+              &:before {
+                content: '\2022';
+                margin-right: $pad/4;
+                color: $blue;
+              }
+              
+              &:last-of-type {
+                width: 35%;
+                height: $pad;
+                border: none;
+                padding-right: 0;
+                
+                input {
+                  @include border;
+                  padding: $pad/4 $pad/2;
+                  width: 90%;
+                  
+                  position: relative;
+                  top: -$pad/4;
+                }
+                
+                &:before, &:after {
+                  content: '';
+                }
               }
               
               &.active {
                 color: $red;
               }
+              
+              &#filter {
+                transition: all 0.5s ease-in-out;
+                z-index: 2;
+                
+                span {
+                  display: none;
+                  
+                  &.active {
+                    display: inline-block;
+                  }
+                }
+                
+                &.active {
+                  color: $color;
+                  
+                  span {
+                    display: inline-block;
+                    margin-right: $pad/2;
+                    transition: all 0.5s ease-in-out;
+                    
+                    &.active, &:hover {
+                      color: $red;
+                    }
+                    
+                    &:after {
+                      content: '\2022';
+                      margin-left: $pad/2;
+                    }
+                    
+                    &:last-of-type {
+                      &:after {
+                        content: '';
+                      }
+                    }
+                  }
+                }
+              }
+              
             }
           }
         }
@@ -298,6 +376,7 @@ body.main {
                 width: 100%;
                 height: $pad*6;
                 padding: $pad/4;
+                resize: none;
               }
               
               button {
@@ -355,7 +434,6 @@ body.main {
         
         &.active {
          z-index: 1;
-         
         }
       }
       

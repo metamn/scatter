@@ -1916,6 +1916,12 @@ body.main .container #header nav ul li button {
   cursor: pointer;
   background: #f0efeb;
 }
+body.main .container #header nav ul li button:hover {
+  background: #77c8f5;
+}
+body.main .container #header nav ul li button:last-of-type {
+  display: none;
+}
 body.main .container #header nav ul li img {
   width: 1.25em;
 }
@@ -1923,23 +1929,17 @@ body.main .container #header nav ul li:last-of-type {
   float: right;
   text-align: right;
 }
+body.main .container #header nav#main ul {
+  height: 2.5em;
+  /* Otherwise the signup/login click flips the page */
+}
 body.main .container #header nav#explore {
   border-top: 1px solid;
   border-bottom: 3px double;
-  margin: 0.625em 0 1.25em;
-  padding: 0.625em 0 0.3125em;
+  margin: 0 0 1.25em;
+  padding: 0.625em 0;
 }
 body.main .container #header nav#explore ul li {
-  color: #363636;
-  font-weight: bold;
-  font-size: medium;
-  cursor: pointer;
-}
-body.main .container #header nav#explore ul li#browse-categories:after, body.main .container #header nav#explore ul li#filter:after {
-  content: '\2794';
-  margin-left: 0.3125em;
-}
-body.main .container #header nav#explore ul li input {
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -1947,10 +1947,76 @@ body.main .container #header nav#explore ul li input {
   -o-border-radius: 1.25em;
   border-radius: 1.25em;
   padding: 1.25em;
-  padding: 0.3125em;
+  padding: 0.625em 1.25em;
+  font-weight: 400;
+  font-size: medium;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+body.main .container #header nav#explore ul li:after {
+  content: '\2022';
+  margin-left: 0.3125em;
+  color: #77c8f5;
+}
+body.main .container #header nav#explore ul li:before {
+  content: '\2022';
+  margin-right: 0.3125em;
+  color: #77c8f5;
+}
+body.main .container #header nav#explore ul li:last-of-type {
+  width: 35%;
+  height: 1.25em;
+  border: none;
+  padding-right: 0;
+}
+body.main .container #header nav#explore ul li:last-of-type input {
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 0.3125em 0.625em;
+  width: 90%;
+  position: relative;
+  top: -0.3125em;
+}
+body.main .container #header nav#explore ul li:last-of-type:before, body.main .container #header nav#explore ul li:last-of-type:after {
+  content: '';
 }
 body.main .container #header nav#explore ul li.active {
   color: #ff4637;
+}
+body.main .container #header nav#explore ul li#filter {
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+body.main .container #header nav#explore ul li#filter span {
+  display: none;
+}
+body.main .container #header nav#explore ul li#filter span.active {
+  display: inline-block;
+}
+body.main .container #header nav#explore ul li#filter.active {
+  color: #363636;
+}
+body.main .container #header nav#explore ul li#filter.active span {
+  display: inline-block;
+  margin-right: 0.625em;
+  transition: all 0.5s ease-in-out;
+}
+body.main .container #header nav#explore ul li#filter.active span.active, body.main .container #header nav#explore ul li#filter.active span:hover {
+  color: #ff4637;
+}
+body.main .container #header nav#explore ul li#filter.active span:after {
+  content: '\2022';
+  margin-left: 0.625em;
+}
+body.main .container #header nav#explore ul li#filter.active span:last-of-type:after {
+  content: '';
 }
 @media only screen and (max-width: 766px) {
   body.main .container #header {
@@ -2129,6 +2195,7 @@ body.main .container #content article #inner .messagecontainer .sendmessage text
   width: 100%;
   height: 7.5em;
   padding: 0.3125em;
+  resize: none;
 }
 body.main .container #content article #inner .messagecontainer .sendmessage button {
   border: 0.15625em solid;
