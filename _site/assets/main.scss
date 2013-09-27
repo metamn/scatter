@@ -89,14 +89,22 @@ body.main {
     #header {
       @include block;
       
+      @include tablet-and-below {
+        display: block;
+      }
+      
       position: relative;
       margin-left: 0;
       top: $pad*2;
       margin-bottom: $pad*2;
       
-      nav {
+      nav.desktop {
         @include block;
         display: block;
+        
+        @include small-screen-and-below {
+          display: none;
+        }
         
         ul {
           @include list-inline;
@@ -132,6 +140,7 @@ body.main {
                   background: $red;
                 }
               }
+              
             }
             
             input {
@@ -151,6 +160,7 @@ body.main {
           ul {
             height: $pad*2; /* Otherwise the signup/login click flips the page */
           }
+          
         }
         
         &#explore {
@@ -215,15 +225,108 @@ body.main {
                 }
               }
               
+              @include normal-screen {
+                margin-right: $pad/2;
+                
+                &:after, &:before {
+                  content: '';
+                  margin: 0;
+                }
+                
+                &#filter {
+                  span {
+                    padding: $pad/4 $pad/2;
+                  }
+                }
+              }
+              
+            }
+          }
+        }
+        
+        
+      }
+      
+      nav.mobile {
+        @include small-screen-and-below {
+          display: block !important;
+        }
+        
+        ul {
+          margin: 0;
+          list-style: none;
+          
+          li {
+            @include block;
+            margin-bottom: $pad/4;
+            cursor: pointer;
+            
+            button {
+              @include border;
+              padding: $pad/4 $pad/2;
+              background: $background;
+              margin: $pad 0 $pad/2;
+              
+              cursor: pointer;
+              
+              &#welcome, &#search {
+                display: none;
+              }
+            }
+            
+            input {
+              padding: $pad/2 $pad;
+            }
+            
+            &:nth-of-type(1), &:nth-of-type(2) {
+              border-bottom: 0;
+              margin-bottom: 0;
+            }
+            
+            &:nth-of-type(2) {
+              margin: $pad/2 0 $pad;
+            }
+            
+            &:nth-of-type(3), &:nth-of-type(4) {
+              font-size: smaller;
+              
+              &:after {
+                content: '\2794';
+              }
+            }
+            
+            &:nth-of-type(3) {
+              border-top: 1px solid $light-gray;
+              padding-top: $pad/4;
+            }
+            
+            &:last-of-type {
+              border-top: 1px solid $light-gray;
+              border-bottom: 1px solid $light-gray;
+              padding: $pad/2 0;
+              font-size: smaller;
+              
+              span {
+                margin-right: $pad/2;
+                
+                &.active {
+                  font-weight: 400;
+                  
+                  &:after {
+                    content: '\2714';
+                    margin-left: $pad/4;
+                  }
+                }
+                
+                &:hover {
+                  font-weight: 400;
+                }
+              }
             }
           }
         }
       }
-      
-      
-      @include tablet-and-below {
-        display: block;
-      }
+     
     }
     
     

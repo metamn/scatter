@@ -1886,26 +1886,36 @@ body.main .container #header {
   top: 2.5em;
   margin-bottom: 2.5em;
 }
-body.main .container #header nav {
+@media only screen and (max-width: 766px) {
+  body.main .container #header {
+    display: block;
+  }
+}
+body.main .container #header nav.desktop {
   width: 100%;
   float: left;
   display: block;
 }
-body.main .container #header nav ul {
+@media only screen and (max-width: 1023px) {
+  body.main .container #header nav.desktop {
+    display: none;
+  }
+}
+body.main .container #header nav.desktop ul {
   display: block;
   margin: 0;
 }
-body.main .container #header nav ul li {
+body.main .container #header nav.desktop ul li {
   display: inline-block;
   list-style-type: none;
   margin-left: 0;
   float: left;
   margin-right: 1.25em;
 }
-body.main .container #header nav ul li.last, body.main .container #header nav ul li:last-of-type {
+body.main .container #header nav.desktop ul li.last, body.main .container #header nav.desktop ul li:last-of-type {
   margin-right: 0;
 }
-body.main .container #header nav ul li button {
+body.main .container #header nav.desktop ul li button {
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -1918,25 +1928,25 @@ body.main .container #header nav ul li button {
   background: #f0efeb;
   transition: all 0.5s ease-in-out;
 }
-body.main .container #header nav ul li button:hover {
+body.main .container #header nav.desktop ul li button:hover {
   background: #77c8f5;
 }
-body.main .container #header nav ul li button#welcome {
+body.main .container #header nav.desktop ul li button#welcome {
   display: none;
 }
-body.main .container #header nav ul li button#search {
+body.main .container #header nav.desktop ul li button#search {
   border-color: #ff4637;
 }
-body.main .container #header nav ul li button#search img {
+body.main .container #header nav.desktop ul li button#search img {
   width: 16px;
   margin-right: 0.20833em;
   position: relative;
   top: 0.20833em;
 }
-body.main .container #header nav ul li button#search:hover {
+body.main .container #header nav.desktop ul li button#search:hover {
   background: #ff4637;
 }
-body.main .container #header nav ul li input {
+body.main .container #header nav.desktop ul li input {
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -1947,20 +1957,20 @@ body.main .container #header nav ul li input {
   padding: 0.625em 1.25em;
   display: none;
 }
-body.main .container #header nav ul li:last-of-type {
+body.main .container #header nav.desktop ul li:last-of-type {
   float: right;
   text-align: right;
 }
-body.main .container #header nav#main ul {
+body.main .container #header nav.desktop#main ul {
   height: 2.5em;
   /* Otherwise the signup/login click flips the page */
 }
-body.main .container #header nav#explore {
+body.main .container #header nav.desktop#explore {
   border-top: 1px solid;
   border-bottom: 3px double;
   padding: 0.625em 0;
 }
-body.main .container #header nav#explore ul li {
+body.main .container #header nav.desktop#explore ul li {
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -1976,29 +1986,29 @@ body.main .container #header nav#explore ul li {
   position: relative;
   z-index: 1;
 }
-body.main .container #header nav#explore ul li:after {
+body.main .container #header nav.desktop#explore ul li:after {
   content: '\2022';
   margin-left: 0.3125em;
   color: #77c8f5;
 }
-body.main .container #header nav#explore ul li:before {
+body.main .container #header nav.desktop#explore ul li:before {
   content: '\2022';
   margin-right: 0.3125em;
   color: #77c8f5;
 }
-body.main .container #header nav#explore ul li.active, body.main .container #header nav#explore ul li:hover {
+body.main .container #header nav.desktop#explore ul li.active, body.main .container #header nav.desktop#explore ul li:hover {
   background: #77c8f5;
 }
-body.main .container #header nav#explore ul li#filter {
+body.main .container #header nav.desktop#explore ul li#filter {
   width: auto;
   height: 1.25em;
   border: none;
   padding-right: 0;
 }
-body.main .container #header nav#explore ul li#filter:before, body.main .container #header nav#explore ul li#filter:after {
+body.main .container #header nav.desktop#explore ul li#filter:before, body.main .container #header nav.desktop#explore ul li#filter:after {
   content: '';
 }
-body.main .container #header nav#explore ul li#filter span {
+body.main .container #header nav.desktop#explore ul li#filter span {
   display: inline-block;
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
@@ -2011,16 +2021,93 @@ body.main .container #header nav#explore ul li#filter span {
   font-size: small;
   transition: all 0.5s ease-in-out;
 }
-body.main .container #header nav#explore ul li#filter span.active, body.main .container #header nav#explore ul li#filter span:hover {
+body.main .container #header nav.desktop#explore ul li#filter span.active, body.main .container #header nav.desktop#explore ul li#filter span:hover {
   background: #77c8f5;
 }
-body.main .container #header nav#explore ul li#filter:hover {
+body.main .container #header nav.desktop#explore ul li#filter:hover {
   background: transparent;
 }
-@media only screen and (max-width: 766px) {
-  body.main .container #header {
-    display: block;
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  body.main .container #header nav.desktop#explore ul li {
+    margin-right: 0.625em;
   }
+  body.main .container #header nav.desktop#explore ul li:after, body.main .container #header nav.desktop#explore ul li:before {
+    content: '';
+    margin: 0;
+  }
+  body.main .container #header nav.desktop#explore ul li#filter span {
+    padding: 0.3125em 0.625em;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body.main .container #header nav.mobile {
+    display: block !important;
+  }
+}
+body.main .container #header nav.mobile ul {
+  margin: 0;
+  list-style: none;
+}
+body.main .container #header nav.mobile ul li {
+  width: 100%;
+  float: left;
+  margin-bottom: 0.3125em;
+  cursor: pointer;
+}
+body.main .container #header nav.mobile ul li button {
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+  padding: 0.3125em 0.625em;
+  background: #f0efeb;
+  margin: 1.25em 0 0.625em;
+  cursor: pointer;
+}
+body.main .container #header nav.mobile ul li button#welcome, body.main .container #header nav.mobile ul li button#search {
+  display: none;
+}
+body.main .container #header nav.mobile ul li input {
+  padding: 0.625em 1.25em;
+}
+body.main .container #header nav.mobile ul li:nth-of-type(1), body.main .container #header nav.mobile ul li:nth-of-type(2) {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+body.main .container #header nav.mobile ul li:nth-of-type(2) {
+  margin: 0.625em 0 1.25em;
+}
+body.main .container #header nav.mobile ul li:nth-of-type(3), body.main .container #header nav.mobile ul li:nth-of-type(4) {
+  font-size: smaller;
+}
+body.main .container #header nav.mobile ul li:nth-of-type(3):after, body.main .container #header nav.mobile ul li:nth-of-type(4):after {
+  content: '\2794';
+}
+body.main .container #header nav.mobile ul li:nth-of-type(3) {
+  border-top: 1px solid #cccccc;
+  padding-top: 0.3125em;
+}
+body.main .container #header nav.mobile ul li:last-of-type {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 0.625em 0;
+  font-size: smaller;
+}
+body.main .container #header nav.mobile ul li:last-of-type span {
+  margin-right: 0.625em;
+}
+body.main .container #header nav.mobile ul li:last-of-type span.active {
+  font-weight: 400;
+}
+body.main .container #header nav.mobile ul li:last-of-type span.active:after {
+  content: '\2714';
+  margin-left: 0.3125em;
+}
+body.main .container #header nav.mobile ul li:last-of-type span:hover {
+  font-weight: 400;
 }
 body.main .container #content {
   width: 100%;
