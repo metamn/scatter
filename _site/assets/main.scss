@@ -269,13 +269,24 @@ body.main {
               
               cursor: pointer;
               
-              &#welcome, &#search {
+              &#welcome {
                 display: none;
+              }
+              
+              &#search {
+                img {
+                  display: none;
+                }
               }
             }
             
             input {
               padding: $pad/2 $pad;
+              display: none;
+            }
+            
+            &:nth-of-type(1) {
+              font-size: larger;
             }
             
             &:nth-of-type(1), &:nth-of-type(2) {

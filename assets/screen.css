@@ -2067,11 +2067,18 @@ body.main .container #header nav.mobile ul li button {
   margin: 1.25em 0 0.625em;
   cursor: pointer;
 }
-body.main .container #header nav.mobile ul li button#welcome, body.main .container #header nav.mobile ul li button#search {
+body.main .container #header nav.mobile ul li button#welcome {
+  display: none;
+}
+body.main .container #header nav.mobile ul li button#search img {
   display: none;
 }
 body.main .container #header nav.mobile ul li input {
   padding: 0.625em 1.25em;
+  display: none;
+}
+body.main .container #header nav.mobile ul li:nth-of-type(1) {
+  font-size: larger;
 }
 body.main .container #header nav.mobile ul li:nth-of-type(1), body.main .container #header nav.mobile ul li:nth-of-type(2) {
   border-bottom: 0;
