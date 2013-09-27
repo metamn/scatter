@@ -1,13 +1,21 @@
 $(document).ready(function() {
 
   // Click on menu / filter
-  $('.main nav#explore #filter').click(function() {
-    $(this).children('div').slideToggle();
+  $('.main nav#explore #filter span').click(function() {
+    $('.main nav#explore #filter span').removeClass('active');
+    $(this).toggleClass('active');
   }); 
+  
+  // Click on Search
+  $('.main nav#main #search').click(function() {
+    $('.main nav#main input').slideToggle();
+    $(this).siblings('button').hide();
+    return false;
+  });
 
   // Click on Signup / Login
-  $('.main nav#main button').click(function() {
-    $('.main nav#main button').slideToggle();
+  $('.main nav#main #signup, .main nav#main #login, .main nav#main #welcome').click(function() {
+    $('.main nav#main #signup, .main nav#main #login, .main nav#main #welcome').slideToggle();
     return false;
   });
   

@@ -92,6 +92,7 @@ body.main {
       position: relative;
       margin-left: 0;
       top: $pad*2;
+      margin-bottom: $pad*2;
       
       nav {
         @include block;
@@ -111,13 +112,29 @@ body.main {
                 background: $blue;
               }
               
-              &:last-of-type {
+              &#welcome {
                 display: none;
+              }
+              
+              &#search {
+                border-color: $red;
+                background: $red;
+                color: $background;
+                
+                img {
+                  width: 16px;
+                  margin-right: $pad/6;
+                  position: relative;
+                  top: $pad/4;
+                }
+                
               }
             }
             
-            img {
-              width: $pad;
+            input {
+              @include border;
+              padding: $pad/2 $pad;
+              display: none;
             }
             
             &:last-of-type {
@@ -136,7 +153,6 @@ body.main {
         &#explore {
           border-top: 1px solid;
           border-bottom: 3px double;
-          margin: 0 0 $pad;
           padding: $pad/2 0;
             
           ul {
@@ -164,66 +180,29 @@ body.main {
                 color: $blue;
               }
               
-              &:last-of-type {
-                width: 35%;
-                height: $pad;
-                border: none;
-                padding-right: 0;
-                
-                input {
-                  @include border;
-                  padding: $pad/4 $pad/2;
-                  width: 90%;
-                  
-                  position: relative;
-                  top: -$pad/4;
-                }
-                
-                &:before, &:after {
-                  content: '';
-                }
-              }
-              
               &.active {
                 color: $red;
               }
               
               &#filter {
-                position: relative;
+                width: auto;
+                height: $pad;
+                border: none;
+                padding-right: 0;
+                
+                &:before, &:after {
+                  content: '';
+                }
                 
                 span {
                   display: inline-block;
-                }
-                
-                div {
-                  display: none;
-                  position: absolute;
-                  z-index: 1;
-                  
                   @include border;
-                  background: $background;
-                  min-width: 10em;
-                  
-                  span {
-                    margin-bottom: $pad/4;
-                    
-                    &.active, &:hover {
-                      color: red;
-                    }
+                  padding: $pad/4 $pad;
+                  font-size: small;
+                                    
+                  &.active, &:hover {
+                    background: $blue;
                   }
-                }
-                
-                &.active {
-                  color: $color;
-                  
-                  div {
-                    display: block;
-                    
-                    span {
-                      display: block;
-                    }
-                  }
-                  
                 }
               }
               
@@ -231,6 +210,7 @@ body.main {
           }
         }
       }
+      
       
       @include tablet-and-below {
         display: block;
