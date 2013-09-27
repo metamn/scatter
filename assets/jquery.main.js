@@ -23,14 +23,26 @@ $(document).ready(function() {
   $('.main #explore #explore-location').click(function() {
     $('.main #location').slideToggle('slow');
     $(this).toggleClass('active');
-    $('.main article').toggleClass('hidden');
+    $('.main article').toggleClass('inactive');
+    
+    if ($('.main #categories').is(":visible")) {
+      $('.main #categories').slideToggle('slow');
+      $('.main #explore #browse-categories').toggleClass('active');
+      $('.main article').toggleClass('inactive');
+    }
   });
 
   // Browse categories
   $('.main #explore #browse-categories').click(function() {
     $('.main #categories').slideToggle('slow');
     $(this).toggleClass('active');
-    $('.main article').toggleClass('hidden');
+    $('.main article').toggleClass('inactive');
+    
+    if ($('.main #location').is(":visible")) {
+      $('.main #location').slideToggle('slow');
+      $('.main #explore #explore-location').toggleClass('active');
+      $('.main article').toggleClass('inactive');
+    }
   });
   
   

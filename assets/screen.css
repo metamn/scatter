@@ -1916,6 +1916,7 @@ body.main .container #header nav ul li button {
   padding: 0.625em 1.25em;
   cursor: pointer;
   background: #f0efeb;
+  transition: all 0.5s ease-in-out;
 }
 body.main .container #header nav ul li button:hover {
   background: #77c8f5;
@@ -1925,14 +1926,15 @@ body.main .container #header nav ul li button#welcome {
 }
 body.main .container #header nav ul li button#search {
   border-color: #ff4637;
-  background: #ff4637;
-  color: #f0efeb;
 }
 body.main .container #header nav ul li button#search img {
   width: 16px;
   margin-right: 0.20833em;
   position: relative;
   top: 0.20833em;
+}
+body.main .container #header nav ul li button#search:hover {
+  background: #ff4637;
 }
 body.main .container #header nav ul li input {
   border: 0.15625em solid;
@@ -1984,8 +1986,8 @@ body.main .container #header nav#explore ul li:before {
   margin-right: 0.3125em;
   color: #77c8f5;
 }
-body.main .container #header nav#explore ul li.active {
-  color: #ff4637;
+body.main .container #header nav#explore ul li.active, body.main .container #header nav#explore ul li:hover {
+  background: #77c8f5;
 }
 body.main .container #header nav#explore ul li#filter {
   width: auto;
@@ -2007,9 +2009,13 @@ body.main .container #header nav#explore ul li#filter span {
   padding: 1.25em;
   padding: 0.3125em 1.25em;
   font-size: small;
+  transition: all 0.5s ease-in-out;
 }
 body.main .container #header nav#explore ul li#filter span.active, body.main .container #header nav#explore ul li#filter span:hover {
   background: #77c8f5;
+}
+body.main .container #header nav#explore ul li#filter:hover {
+  background: transparent;
 }
 @media only screen and (max-width: 766px) {
   body.main .container #header {
@@ -2185,7 +2191,7 @@ body.main .container #content article #inner .messagecontainer .sendmessage {
   margin-top: 1.25em;
 }
 body.main .container #content article #inner .messagecontainer .sendmessage textarea {
-  width: 100%;
+  width: 95%;
   height: 7.5em;
   padding: 0.3125em;
   resize: none;
@@ -2200,7 +2206,12 @@ body.main .container #content article #inner .messagecontainer .sendmessage butt
   padding: 1.25em;
   background: #f0efeb;
   padding: 0.3125em 0.625em;
+  font-size: small;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+body.main .container #content article #inner .messagecontainer .sendmessage button:hover {
+  background: #77c8f5;
 }
 body.main .container #content article #inner .cardfooter {
   width: 100%;
@@ -2225,8 +2236,9 @@ body.main .container #content article #inner .cardfooter a.l_followbtn {
   padding: 1.25em;
   padding: 0.3125em 0.625em;
   width: 40%;
+  transition: all 0.5s ease-in-out;
 }
-body.main .container #content article #inner .cardfooter a.l_followbtn.active {
+body.main .container #content article #inner .cardfooter a.l_followbtn.active, body.main .container #content article #inner .cardfooter a.l_followbtn:hover {
   background: #77c8f5;
 }
 body.main .container #content article #inner .cardfooter a.l_chat img {
@@ -2242,13 +2254,16 @@ body.main .container #content article #inner .cardfooter a.mapicon img {
 body.main .container #content article.active {
   z-index: 1;
 }
+body.main .container #content article.inactive {
+  opacity: .05;
+}
 body.main .container #content #categories, body.main .container #content #location {
   display: none;
   width: 100%;
   float: left;
   position: relative;
   z-index: 3;
-  background: #f0efeb;
+  background: #f1f1f1;
 }
 body.main .container #content #categories ul, body.main .container #content #location ul {
   width: 100%;

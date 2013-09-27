@@ -108,6 +108,8 @@ body.main {
               cursor: pointer;
               background: $background;
               
+              transition: all 0.5s ease-in-out;
+              
               &:hover {
                 background: $blue;
               }
@@ -118,8 +120,6 @@ body.main {
               
               &#search {
                 border-color: $red;
-                background: $red;
-                color: $background;
                 
                 img {
                   width: 16px;
@@ -128,6 +128,9 @@ body.main {
                   top: $pad/6;
                 }
                 
+                &:hover {
+                  background: $red;
+                }
               }
             }
             
@@ -180,8 +183,8 @@ body.main {
                 color: $blue;
               }
               
-              &.active {
-                color: $red;
+              &.active, &:hover {
+                background: $blue;
               }
               
               &#filter {
@@ -199,10 +202,16 @@ body.main {
                   @include border;
                   padding: $pad/4 $pad;
                   font-size: small;
+                  
+                  transition: all 0.5s ease-in-out;
                                     
                   &.active, &:hover {
                     background: $blue;
                   }
+                }
+                
+                &:hover {
+                  background: transparent;
                 }
               }
               
@@ -354,7 +363,7 @@ body.main {
               margin-top: $pad;
               
               textarea {
-                width: 100%;
+                width: 95%;
                 height: $pad*6;
                 padding: $pad/4;
                 resize: none;
@@ -364,7 +373,14 @@ body.main {
                 @include border;
                 background: $background;
                 padding: $pad/4 $pad/2;
+                font-size: small;
                 cursor: pointer;
+                
+                transition: all 0.5s ease-in-out;
+                
+                &:hover {
+                  background: $blue;
+                }
               }
             }
           }
@@ -390,7 +406,9 @@ body.main {
                 
                 width: 40%;
                 
-                &.active {
+                transition: all 0.5s ease-in-out;
+                
+                &.active, &:hover {
                   background: $blue;
                 }
               }
@@ -416,6 +434,10 @@ body.main {
         &.active {
          z-index: 1;
         }
+        
+        &.inactive {
+          opacity: .05;
+        }
       }
       
       
@@ -426,7 +448,7 @@ body.main {
         position: relative;
         z-index: 3;
         
-        background: $background;
+        background: $gray;
         
         ul {
           @include border;
