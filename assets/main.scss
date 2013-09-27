@@ -256,82 +256,98 @@ body.main {
           margin: 0;
           list-style: none;
           
-          li {
-            @include block;
-            margin-bottom: $pad/4;
-            cursor: pointer;
-            
-            button {
-              @include border;
-              padding: $pad/4 $pad/2;
-              background: $background;
-              margin: $pad 0 $pad/2;
-              
+          &:first-of-type {
+            li {
+              @include block;
+              margin-bottom: $pad/4;
               cursor: pointer;
               
-              &#welcome {
+              button {
+                @include border;
+                padding: $pad/4 $pad/2;
+                background: $background;
+                margin: $pad 0 $pad/2;
+                
+                cursor: pointer;
+                
+                width: 30%;
+                margin-right: 3%;
+                
+                &#welcome {
+                  display: none;
+                }
+                
+                &#search {
+                  margin-right: 0;
+                  
+                  img {
+                    display: none;
+                  }
+                }
+              }
+              
+              input {
+                padding: $pad/2 $pad;
                 display: none;
               }
               
-              &#search {
-                img {
-                  display: none;
-                }
+              &:nth-of-type(1) {
+                font-size: larger;
               }
-            }
-            
-            input {
-              padding: $pad/2 $pad;
-              display: none;
-            }
-            
-            &:nth-of-type(1) {
-              font-size: larger;
-            }
-            
-            &:nth-of-type(1), &:nth-of-type(2) {
-              border-bottom: 0;
-              margin-bottom: 0;
-            }
-            
-            &:nth-of-type(2) {
-              margin: $pad/2 0 $pad;
-            }
-            
-            &:nth-of-type(3), &:nth-of-type(4) {
-              font-size: smaller;
               
-              &:after {
-                content: '\2794';
+              &:nth-of-type(1), &:nth-of-type(2) {
+                border-bottom: 0;
+                margin-bottom: 0;
+              }
+              
+              &:nth-of-type(2) {
+                margin: $pad/2 0 $pad;
               }
             }
+          }
+          
+          &:last-of-type {
+            float: left;
+            width: auto;
+            @include border;
             
-            &:nth-of-type(3) {
-              border-top: $pad/8 solid;
+            
+            
+            li {
+              font-size: smaller;
+              font-size: smaller;
+              cursor: pointer;
               border-bottom: 1px solid $light-gray;
-              padding: $pad/2 0;
-            }
-            
-            &:last-of-type {
-              border-top: 1px solid $light-gray;
-              border-bottom: $pad/8 solid;
-              padding: $pad/2 0 $pad/2 + $pad/4;
-              font-size: smaller;
-              
-              span {
-                margin-right: $pad/2;
+              padding-bottom: $pad/4;
+              margin-bottom: $pad/4;
                 
-                &.active {
-                  font-weight: 400;
-                  
-                  &:after {
-                    content: '\2714';
-                    margin-left: $pad/6;
-                  }
+              &:nth-of-type(1), &:nth-of-type(2) {
+                &:after {
+                  content: '\2794';
+                  color: $light-gray;
                 }
                 
                 &:hover {
-                  font-weight: 400;
+                  &:after {
+                    color: $color;
+                  }
+                }
+              }
+              
+              &:last-of-type {
+                span {
+                  margin-right: $pad/2;
+                  font-size: smaller;
+                  
+                  &.active, &:hover {
+                    font-weight: 400;
+                    
+                    &:after {
+                      content: '\2714';
+                      margin-left: $pad/8;
+                    }
+                  }
+                  
                 }
               }
             }

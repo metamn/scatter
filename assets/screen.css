@@ -2048,13 +2048,13 @@ body.main .container #header nav.mobile ul {
   margin: 0;
   list-style: none;
 }
-body.main .container #header nav.mobile ul li {
+body.main .container #header nav.mobile ul:first-of-type li {
   width: 100%;
   float: left;
   margin-bottom: 0.3125em;
   cursor: pointer;
 }
-body.main .container #header nav.mobile ul li button {
+body.main .container #header nav.mobile ul:first-of-type li button {
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -2066,56 +2066,68 @@ body.main .container #header nav.mobile ul li button {
   background: #f0efeb;
   margin: 1.25em 0 0.625em;
   cursor: pointer;
+  width: 30%;
+  margin-right: 3%;
 }
-body.main .container #header nav.mobile ul li button#welcome {
+body.main .container #header nav.mobile ul:first-of-type li button#welcome {
   display: none;
 }
-body.main .container #header nav.mobile ul li button#search img {
+body.main .container #header nav.mobile ul:first-of-type li button#search {
+  margin-right: 0;
+}
+body.main .container #header nav.mobile ul:first-of-type li button#search img {
   display: none;
 }
-body.main .container #header nav.mobile ul li input {
+body.main .container #header nav.mobile ul:first-of-type li input {
   padding: 0.625em 1.25em;
   display: none;
 }
-body.main .container #header nav.mobile ul li:nth-of-type(1) {
+body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(1) {
   font-size: larger;
 }
-body.main .container #header nav.mobile ul li:nth-of-type(1), body.main .container #header nav.mobile ul li:nth-of-type(2) {
+body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(1), body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(2) {
   border-bottom: 0;
   margin-bottom: 0;
 }
-body.main .container #header nav.mobile ul li:nth-of-type(2) {
+body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(2) {
   margin: 0.625em 0 1.25em;
 }
-body.main .container #header nav.mobile ul li:nth-of-type(3), body.main .container #header nav.mobile ul li:nth-of-type(4) {
+body.main .container #header nav.mobile ul:last-of-type {
+  float: left;
+  width: auto;
+  border: 0.15625em solid;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  padding: 1.25em;
+}
+body.main .container #header nav.mobile ul:last-of-type li {
   font-size: smaller;
-}
-body.main .container #header nav.mobile ul li:nth-of-type(3):after, body.main .container #header nav.mobile ul li:nth-of-type(4):after {
-  content: '\2794';
-}
-body.main .container #header nav.mobile ul li:nth-of-type(3) {
-  border-top: 0.15625em solid;
+  font-size: smaller;
+  cursor: pointer;
   border-bottom: 1px solid #cccccc;
-  padding: 0.625em 0;
+  padding-bottom: 0.3125em;
+  margin-bottom: 0.3125em;
 }
-body.main .container #header nav.mobile ul li:last-of-type {
-  border-top: 1px solid #cccccc;
-  border-bottom: 0.15625em solid;
-  padding: 0.625em 0 0.9375em;
+body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(1):after, body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(2):after {
+  content: '\2794';
+  color: #cccccc;
+}
+body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(1):hover:after, body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(2):hover:after {
+  color: #363636;
+}
+body.main .container #header nav.mobile ul:last-of-type li:last-of-type span {
+  margin-right: 0.625em;
   font-size: smaller;
 }
-body.main .container #header nav.mobile ul li:last-of-type span {
-  margin-right: 0.625em;
-}
-body.main .container #header nav.mobile ul li:last-of-type span.active {
+body.main .container #header nav.mobile ul:last-of-type li:last-of-type span.active, body.main .container #header nav.mobile ul:last-of-type li:last-of-type span:hover {
   font-weight: 400;
 }
-body.main .container #header nav.mobile ul li:last-of-type span.active:after {
+body.main .container #header nav.mobile ul:last-of-type li:last-of-type span.active:after, body.main .container #header nav.mobile ul:last-of-type li:last-of-type span:hover:after {
   content: '\2714';
-  margin-left: 0.20833em;
-}
-body.main .container #header nav.mobile ul li:last-of-type span:hover {
-  font-weight: 400;
+  margin-left: 0.15625em;
 }
 body.main .container #content {
   width: 100%;
