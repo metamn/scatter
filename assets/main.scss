@@ -307,14 +307,15 @@ body.main {
             }
             
             &:nth-of-type(3) {
-              border-top: 1px solid $light-gray;
-              padding-top: $pad/4;
+              border-top: $pad/8 solid;
+              border-bottom: 1px solid $light-gray;
+              padding: $pad/2 0;
             }
             
             &:last-of-type {
               border-top: 1px solid $light-gray;
-              border-bottom: 1px solid $light-gray;
-              padding: $pad/2 0;
+              border-bottom: $pad/8 solid;
+              padding: $pad/2 0 $pad/2 + $pad/4;
               font-size: smaller;
               
               span {
@@ -325,7 +326,7 @@ body.main {
                   
                   &:after {
                     content: '\2714';
-                    margin-left: $pad/4;
+                    margin-left: $pad/6;
                   }
                 }
                 

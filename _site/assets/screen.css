@@ -2094,13 +2094,14 @@ body.main .container #header nav.mobile ul li:nth-of-type(3):after, body.main .c
   content: '\2794';
 }
 body.main .container #header nav.mobile ul li:nth-of-type(3) {
-  border-top: 1px solid #cccccc;
-  padding-top: 0.3125em;
+  border-top: 0.15625em solid;
+  border-bottom: 1px solid #cccccc;
+  padding: 0.625em 0;
 }
 body.main .container #header nav.mobile ul li:last-of-type {
   border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-  padding: 0.625em 0;
+  border-bottom: 0.15625em solid;
+  padding: 0.625em 0 0.9375em;
   font-size: smaller;
 }
 body.main .container #header nav.mobile ul li:last-of-type span {
@@ -2111,7 +2112,7 @@ body.main .container #header nav.mobile ul li:last-of-type span.active {
 }
 body.main .container #header nav.mobile ul li:last-of-type span.active:after {
   content: '\2714';
-  margin-left: 0.3125em;
+  margin-left: 0.20833em;
 }
 body.main .container #header nav.mobile ul li:last-of-type span:hover {
   font-weight: 400;
