@@ -10,7 +10,7 @@ body {
   .container {
     #header {
       position: fixed;
-      bottom: $pad*2;
+      bottom: $pad;
       z-index: 1;
       
       width: $major;

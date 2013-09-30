@@ -295,7 +295,7 @@ body .container {
 }
 body .container #header {
   position: fixed;
-  bottom: 2.5em;
+  bottom: 1.25em;
   z-index: 1;
   width: 61.804%;
   margin-left: 19.098%;
@@ -1236,13 +1236,13 @@ body.business .container #content section#slide-1 article div p#p1 {
 }
 body.business .container #content section#slide-1 article div p#p2 {
   font-size: 0.625em;
-  top: -18em;
+  top: -17em;
   left: 62%;
   width: 7%;
 }
 body.business .container #content section#slide-1 article div p#p3 {
   font-size: small;
-  top: -20em;
+  top: -19em;
   left: 75%;
   width: 8%;
 }
