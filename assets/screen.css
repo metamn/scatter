@@ -1848,6 +1848,9 @@ body.main #map {
   height: auto;
   margin: 10%;
 }
+body.main #map img {
+  width: 100%;
+}
 body.main #map span {
   position: absolute;
   top: 0.3125em;
@@ -2039,6 +2042,10 @@ body.main .container #header nav.desktop#explore ul li#filter:hover {
     padding: 0.3125em 0.625em;
   }
 }
+body.main .container #header nav.mobile {
+  width: 100%;
+  float: left;
+}
 @media only screen and (max-width: 1023px) {
   body.main .container #header nav.mobile {
     display: block !important;
@@ -2071,6 +2078,7 @@ body.main .container #header nav.mobile ul:first-of-type li button {
 }
 body.main .container #header nav.mobile ul:first-of-type li button#welcome {
   display: none;
+  width: 60%;
 }
 body.main .container #header nav.mobile ul:first-of-type li button#search {
   margin-right: 0;
@@ -2081,6 +2089,11 @@ body.main .container #header nav.mobile ul:first-of-type li button#search img {
 body.main .container #header nav.mobile ul:first-of-type li input {
   padding: 0.625em 1.25em;
   display: none;
+}
+@media (max-width: 380px) {
+  body.main .container #header nav.mobile ul:first-of-type li input {
+    margin: 1.25em 0 0;
+  }
 }
 body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(1) {
   font-size: larger;
@@ -2093,8 +2106,8 @@ body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(2) {
   margin: 0.625em 0 1.25em;
 }
 body.main .container #header nav.mobile ul:last-of-type {
+  width: 100%;
   float: left;
-  width: auto;
   border: 0.15625em solid;
   -webkit-border-radius: 1.25em;
   -moz-border-radius: 1.25em;
@@ -2102,32 +2115,41 @@ body.main .container #header nav.mobile ul:last-of-type {
   -o-border-radius: 1.25em;
   border-radius: 1.25em;
   padding: 1.25em;
+  width: 86%;
+}
+@media (max-width: 380px) {
+  body.main .container #header nav.mobile ul:last-of-type {
+    width: 80%;
+  }
 }
 body.main .container #header nav.mobile ul:last-of-type li {
   font-size: smaller;
-  font-size: smaller;
+  font-weight: 400;
   cursor: pointer;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid;
   padding-bottom: 0.3125em;
   margin-bottom: 0.3125em;
 }
 body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(1):after, body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(2):after {
   content: '\2794';
-  color: #cccccc;
 }
-body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(1):hover:after, body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(2):hover:after {
-  color: #363636;
+body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(1).active, body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(2).active {
+  color: #ff4637;
 }
 body.main .container #header nav.mobile ul:last-of-type li:last-of-type span {
-  margin-right: 0.625em;
+  margin-right: 0.3125em;
   font-size: smaller;
 }
+body.main .container #header nav.mobile ul:last-of-type li:last-of-type span:after {
+  content: '\2714';
+  color: #f0efeb;
+  margin-left: 0.15625em;
+}
 body.main .container #header nav.mobile ul:last-of-type li:last-of-type span.active, body.main .container #header nav.mobile ul:last-of-type li:last-of-type span:hover {
-  font-weight: 400;
+  font-weight: bold;
 }
 body.main .container #header nav.mobile ul:last-of-type li:last-of-type span.active:after, body.main .container #header nav.mobile ul:last-of-type li:last-of-type span:hover:after {
-  content: '\2714';
-  margin-left: 0.15625em;
+  color: #363636;
 }
 body.main .container #content {
   width: 100%;
@@ -2141,7 +2163,7 @@ body.main .container #content article {
   float: left;
   float: left;
   width: 45%;
-  margin-right: 4%;
+  margin-right: 5%;
   margin-bottom: 24px;
   position: relative;
   background: #f0efeb;
@@ -2484,6 +2506,9 @@ body.main .container #content #location .map, body.main .container #content #loc
 body.main .container #content #location .map {
   width: 55%;
 }
+body.main .container #content #location .map img {
+  width: 100%;
+}
 body.main .container #content #location #set {
   width: 40%;
   margin-right: 0;
@@ -2512,6 +2537,24 @@ body.main .container #content #location #set button {
 body.main .container #content #location #set p:last-of-type {
   position: absolute;
   bottom: 2.5em;
+}
+@media only screen and (max-width: 1023px) {
+  body.main .container #content #location {
+    max-width: 86%;
+  }
+  body.main .container #content #location .map, body.main .container #content #location #set {
+    width: auto;
+    margin-right: 0;
+  }
+  body.main .container #content #location #set p, body.main .container #content #location #set p + p {
+    width: 100%;
+    float: left;
+    margin: 1.25em 0;
+  }
+  body.main .container #content #location #set p:last-of-type {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .outline, .hidden {

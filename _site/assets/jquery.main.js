@@ -1,46 +1,46 @@
 $(document).ready(function() {
 
   // Click on menu / filter
-  $('.main nav#explore #filter span').click(function() {
-    $('.main nav#explore #filter span').removeClass('active');
+  $('.main #filter span').click(function() {
+    $('.main #filter span').removeClass('active');
     $(this).toggleClass('active');
   }); 
   
   // Click on Search
-  $('.main nav#main #search').click(function() {
-    $('.main nav#main input').slideToggle();
+  $('.main #search').click(function() {
+    $('.main input').slideToggle();
     $(this).siblings('button').hide();
     return false;
   });
 
   // Click on Signup / Login
-  $('.main nav#main #signup, .main nav#main #login, .main nav#main #welcome').click(function() {
-    $('.main nav#main #signup, .main nav#main #login, .main nav#main #welcome').slideToggle();
+  $('.main #signup, .main #login, .main #welcome').click(function() {
+    $('.main #signup, .main #login, .main #welcome').slideToggle();
     return false;
   });
   
   // Explore location
-  $('.main #explore #explore-location').click(function() {
+  $('.main #explore-location').click(function() {
     $('.main #location').slideToggle('slow');
     $(this).toggleClass('active');
     $('.main article').toggleClass('inactive');
     
     if ($('.main #categories').is(":visible")) {
       $('.main #categories').slideToggle('slow');
-      $('.main #explore #browse-categories').toggleClass('active');
+      $('.main #browse-categories').toggleClass('active');
       $('.main article').toggleClass('inactive');
     }
   });
 
   // Browse categories
-  $('.main #explore #browse-categories').click(function() {
+  $('.main #browse-categories').click(function() {
     $('.main #categories').slideToggle('slow');
     $(this).toggleClass('active');
     $('.main article').toggleClass('inactive');
     
     if ($('.main #location').is(":visible")) {
       $('.main #location').slideToggle('slow');
-      $('.main #explore #explore-location').toggleClass('active');
+      $('.main #explore-location').toggleClass('active');
       $('.main article').toggleClass('inactive');
     }
   });
