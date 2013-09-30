@@ -1446,11 +1446,26 @@ body.pricing .container #header {
 }
 body.pricing .container #content section {
   background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized.png);
-  height: 250%;
+  height: 400%;
 }
 @media only screen and (max-width: 766px) {
   body.pricing .container #content section {
     background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
+  }
+}
+@media (max-width: 380px) {
+  body.pricing .container #content section {
+    height: 1000%;
+  }
+}
+@media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) {
+  body.pricing .container #content section {
+    height: 1400%;
+  }
+}
+@media only screen and (min-width: 1442px) {
+  body.pricing .container #content section {
+    height: 280%;
   }
 }
 body.pricing .container #content section article {
@@ -1510,19 +1525,12 @@ body.pricing .container #content section article div ul li {
   border-bottom: 1px solid #f0efeb;
   padding: 0.625em 1.25em 0.9375em;
 }
-body.pricing .container #content section article div ul li:before {
-  content: '+';
-  margin-right: 0.3125em;
-  font-size: larger;
-  font-weight: 300;
-  position: relative;
-  top: 2px;
-}
 body.pricing .container #content section article div table {
   width: 100%;
   float: left;
   /* Desktop */
   /* Mobile */
+  /* Desktop */
   /* Mobile */
 }
 body.pricing .container #content section article div table tr td form {
@@ -1702,6 +1710,31 @@ body.pricing .container #content section article div table:nth-of-type(even) tr 
   padding: 0 0 1.25em;
   width: auto;
 }
+body.pricing .container #content section article div table:nth-of-type(even) tr td h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.625em;
+}
+body.pricing .container #content section article div table:nth-of-type(even) tr td h1:first-letter {
+  border: 2px solid;
+  -webkit-border-radius: 0.3125em;
+  -moz-border-radius: 0.3125em;
+  -ms-border-radius: 0.3125em;
+  -o-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  padding: 0.10417em 0.41667em 0.15625em;
+  /* S is aligned left */
+  /* padding: $pad/12 0 $pad/8 $pad/2;   S is centered */
+  margin-right: 0.3125em;
+}
+@media only screen and (max-width: 766px) {
+  body.pricing .container #content section article div table:nth-of-type(even) tr td h1 {
+    font-size: 80%;
+  }
+}
+body.pricing .container #content section article div table:nth-of-type(even) tr:last-of-type {
+  border: none;
+}
 @media only screen and (max-width: 766px) {
   body.pricing .container #content section article {
     width: 70%;
@@ -1723,12 +1756,20 @@ body.pricing .container #content section article div table:nth-of-type(even) tr 
     margin: 0 10%;
   }
   body.pricing .container #content section article button {
-    font-size: 60%;
+    font-size: 50%;
+  }
+  body.pricing .container #content section article td h1 {
+    font-size: 70% !important;
+    margin-right: 1.25em;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   body.pricing .container #content section article button {
-    font-size: 80%;
+    font-size: 50%;
+  }
+  body.pricing .container #content section article td h1 {
+    font-size: 80% !important;
+    margin-right: 1.25em;
   }
 }
 

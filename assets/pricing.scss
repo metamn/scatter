@@ -1,7 +1,4 @@
 
-
-
-
 body.pricing {
   .container {
     #header {
@@ -14,7 +11,21 @@ body.pricing {
         @include tablet-and-below {
           background-image: url(http://metamn.github.io/scatter/assets/tablet-with-scatter-optimized-mobile.png);
         }
-        height: 250%;
+        
+        height: 400%;
+        
+        @include mobile {
+          height: 1000%;
+        }
+        
+        @include mobile-landscape {
+          height: 1400%;
+        }
+        
+        @include big-screen {
+          height: 280%;
+        }
+        
         
         
         article {
@@ -34,6 +45,7 @@ body.pricing {
                 font-weight: bold;
               }
               
+              /* Desktop */
               &:nth-of-type(odd) {
                 tr {
                   /* Ads */
@@ -77,6 +89,14 @@ body.pricing {
                       padding: 0 0 $pad;
                       width: auto;
                     }
+                    
+                    h1 {
+                      @include logo;
+                    }
+                  }
+                  
+                  &:last-of-type {
+                    border: none;
                   }
                 }
               }
@@ -97,18 +117,33 @@ body.pricing {
             margin: 0 3%;
           }
           
+          
           @include small-screen {
             width: 80%;
             margin: 0 10%;
             
             button {
-              font-size: 60%;
+              font-size: 50%;
+            }
+            
+            td {
+              h1 {
+                font-size: 70% !important;
+                margin-right: $pad;
+              }
             }
           }
           
           @include normal-screen {
             button {
-              font-size: 80%;
+              font-size: 50%;
+            }
+            
+            td {
+              h1 {
+                font-size: 80% !important;
+                margin-right: $pad;
+              }
             }
           }
         }
