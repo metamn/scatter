@@ -2000,10 +2000,12 @@ body.main .container #header nav.desktop ul li input {
   padding: 1.25em;
   padding: 0.625em 1.25em;
   display: none;
+  width: 60%;
 }
 body.main .container #header nav.desktop ul li:last-of-type {
   float: right;
   text-align: right;
+  width: 60%;
 }
 body.main .container #header nav.desktop#main ul {
   height: 2.5em;
@@ -2144,7 +2146,7 @@ body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(1), body
   margin-bottom: 0;
 }
 body.main .container #header nav.mobile ul:first-of-type li:nth-of-type(2) {
-  margin: 0.625em 0 1.25em;
+  margin: 0.625em 0;
 }
 body.main .container #header nav.mobile ul:last-of-type {
   width: 100%;
@@ -2157,6 +2159,7 @@ body.main .container #header nav.mobile ul:last-of-type {
   border-radius: 1.25em;
   padding: 1.25em;
   width: 86%;
+  padding: 0.3125em 1.25em;
 }
 @media (max-width: 380px) {
   body.main .container #header nav.mobile ul:last-of-type {
@@ -2167,15 +2170,32 @@ body.main .container #header nav.mobile ul:last-of-type li {
   font-size: smaller;
   font-weight: 400;
   cursor: pointer;
-  border-bottom: 1px solid;
-  padding-bottom: 0.3125em;
-  margin-bottom: 0.3125em;
+  display: none;
+  border-bottom: 0.15625em solid;
+  margin: 1.25em 0;
+  padding: 0.3125em 0;
 }
-body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(1):after, body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(2):after {
+body.main .container #header nav.mobile ul:last-of-type li:first-of-type {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+body.main .container #header nav.mobile ul:last-of-type li:first-of-type:after {
   content: '\2794';
+  float: right;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: larger;
+  position: relative;
 }
-body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(1).active, body.main .container #header nav.mobile ul:last-of-type li:nth-of-type(2).active {
+body.main .container #header nav.mobile ul:last-of-type li.active {
   color: #ff4637;
+}
+body.main .container #header nav.mobile ul:last-of-type li:first-of-type {
+  display: block;
 }
 body.main .container #header nav.mobile ul:last-of-type li:last-of-type span {
   margin-right: 0.3125em;

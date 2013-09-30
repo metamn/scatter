@@ -151,11 +151,13 @@ body.main {
               @include border;
               padding: $pad/2 $pad;
               display: none;
+              width: 60%;
             }
             
             &:last-of-type {
               float: right;
               text-align: right;
+              width: 60%;
             }
           }
         }
@@ -312,7 +314,7 @@ body.main {
               }
               
               &:nth-of-type(2) {
-                margin: $pad/2 0 $pad;
+                margin: $pad/2 0;
               }
             }
           }
@@ -322,6 +324,8 @@ body.main {
             @include border;
             width: 86%;
             
+            padding: $pad/4 $pad;
+            
             @include mobile {
               width: 80%;
             }
@@ -330,18 +334,34 @@ body.main {
               font-size: smaller;
               font-weight: 400;
               cursor: pointer;
-              border-bottom: 1px solid;
-              padding-bottom: $pad/4;
-              margin-bottom: $pad/4;
+              display: none;
+              
+              border-bottom: $pad/8 solid;
+              margin: $pad 0;
+              padding: $pad/4 0;
+              
+              &:first-of-type {
+                border: none;
+                margin: 0;
+                padding: 0;
                 
-              &:nth-of-type(1), &:nth-of-type(2) {
                 &:after {
                   content: '\2794';
+                  float: right;
+                  @include transform(rotate(90deg));
+                  font-size: larger;
+                  position: relative;
                 }
+              }
                 
-                &.active {
-                  color: $red;
-                }
+              
+              
+              &.active {
+                color: $red;
+              }
+              
+              &:first-of-type {
+                display: block;
               }
               
               &:last-of-type {

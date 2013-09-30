@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  // Click on Explore, browse, filter on mobile
+  $('.main nav#mobile #switch').click(function() {
+    $('.main nav#mobile ul:last-of-type li').slideToggle();
+  }); 
+
   // Click on menu / filter
   $('.main #filter span').click(function() {
     $('.main #filter span').removeClass('active');
