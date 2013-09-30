@@ -383,7 +383,8 @@ body.main {
       article {
         @include block;
         @include cols;
-        margin-bottom: 24px;
+        margin-bottom: $pad;
+        
         position: relative;
         background: $background;
         

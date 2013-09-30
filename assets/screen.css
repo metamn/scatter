@@ -2164,7 +2164,7 @@ body.main .container #content article {
   float: left;
   width: 45%;
   margin-right: 5%;
-  margin-bottom: 24px;
+  margin-bottom: 1.25em;
   position: relative;
   background: #f0efeb;
 }

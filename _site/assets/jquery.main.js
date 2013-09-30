@@ -103,3 +103,6 @@ var msnry = new Masonry( container, {
   // options
   itemSelector: '.card'
 });
+
+msnry.layout();
+
